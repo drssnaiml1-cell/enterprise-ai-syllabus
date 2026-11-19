@@ -327,6 +327,358 @@ One flagship product per industry domain. Each combines several courses into a r
 
 </details>
 
+## Unicorn Track: 10 Frontier Products Inspired by 2026's Unicorn Categories
+
+Ten frontier product ideas modelled on the categories that are producing AI unicorns in 2026. Each is deliberately complex: it combines 6 to 8 courses, several system layers and at least one hard technical moat. Built in stages, each starts as a 12-week team MVP and grows into a venture-scale platform, the kind of portfolio that wins top offers, research funding or start-up incubation. [Explore the venture blueprints on the website](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn).
+
+| # | Unicorn category | Frontier product | Complexity | Courses |
+|:-:|:--|:--|:-:|:--|
+| 1 | 🧑‍💻 AI coding & app-building agents | [**Autonomous Software Engineer Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-1) | ★★★★★ | 7, 6, 10, 9, 1, 14, 3 |
+| 2 | 🎧 AI customer-experience agents | [**Multilingual Voice-First Customer Operations Agent**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-2) | ★★★★☆ | 6, 7, 2, 9, 10, 8 |
+| 3 | 🇮🇳 Sovereign Indic AI | [**Sovereign Indic Foundation Model & Inference Stack**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-3) | ★★★★★ | 3, 6, 4, 8, 9, 10, 12 |
+| 4 | 🖥️ AI infrastructure & sovereign compute | [**Energy-Aware GPU Inference Cloud**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-4) | ★★★★★ | 3, 9, 4, 12, 10, 6, 7 |
+| 5 | 🩺 Vertical AI agents: healthcare | [**Clinical AI Agent Workforce**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-5) | ★★★★★ | 6, 7, 10, 5, 9, 2, 12 |
+| 6 | 🤖 Humanoid & embodied AI | [**General-Purpose Robot Brain & Fleet Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-6) | ★★★★★ | 13, 4, 5, 3, 12, 7, 10 |
+| 7 | 💳 Fintech infrastructure | [**Agentic Payments, Risk & Compliance OS**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-7) | ★★★★★ | 2, 9, 14, 7, 15, 10, 3 |
+| 8 | 🛡️ AI security | [**AI Agent Firewall & Model Supply-Chain Assurance**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-8) | ★★★★☆ | 10, 14, 6, 7, 15, 9, 2 |
+| 9 | 🛰️ Space tech & geospatial AI | [**Space-to-Earth Geospatial Intelligence Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-9) | ★★★★☆ | 5, 3, 9, 2, 12, 11, 8 |
+| 10 | 🧪 AI for science: drugs & materials | [**Autonomous Discovery Lab for Drugs & Materials**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-10) | ★★★★★ | 8, 3, 11, 13, 4, 9, 6 |
+
+<details>
+<summary><b>🧑‍💻 1. Autonomous Software Engineer Platform</b> (AI coding & app-building agents)</summary>
+
+**Why now:** AI coding tools were among the most active new-unicorn categories in H1 2026, and Indian app-building agent start-up Emergent crossed a $1B valuation in July 2026. _Category examples: Cursor, Emergent._
+
+**What it does:** A multi-agent system that turns a product brief into a running application: a planner breaks work into tickets, coder agents write code in a sandbox, tester agents write and run tests, a reviewer agent enforces security and style, and a deployer ships to the cloud with a human approving each release.
+
+**System architecture**
+
+1. **Experience:** chat + IDE plug-in where users brief, review diffs and approve releases
+2. **Agent orchestration:** planner, coder, tester, reviewer and deployer agents with shared memory
+3. **Code intelligence:** repository graph, embeddings over code and docs, retrieval of relevant files
+4. **Execution sandbox:** isolated containers to build, run and test generated code safely
+5. **Model layer:** routing between frontier APIs and fine-tuned open code models for cost and privacy
+6. **Trust layer:** secret scanning, licence checks, prompt-injection defence and full action audit
+
+**Hard problems (the moat):** Reliable long-horizon planning across large, real repositories; Evaluation harness that proves generated code works before a human sees it; Cost and latency control across many agent calls per task
+
+**12-week team MVP:** A web app that converts a one-page spec into a tested CRUD application with CI, deployed on one click.
+
+**Venture-scale platform:** Enterprise edition connected to private repos, Jira and CI/CD, with on-prem model hosting and per-team policy controls.
+
+**Business model:** Seat-based SaaS for developers plus usage-based pricing per agent task; enterprise licences for on-prem deployment.
+
+**Courses:** 7. Agentic AI, 6. Large Language Models, 10. Trustworthy AI, 9. Data Engineering for AI, 1. Artificial Intelligence, 14. AI-Driven Cybersecurity, 3. Deep Learning
+
+**Stack:** LangGraph, Model Context Protocol, Tree-sitter, pgvector, Docker / Firecracker sandboxes, vLLM, GitHub Actions, OpenTelemetry
+
+**Roles:** Agentic AI Engineer, AI Platform Engineer, LLMOps Engineer, AI Security Engineer
+
+</details>
+
+<details>
+<summary><b>🎧 2. Multilingual Voice-First Customer Operations Agent</b> (AI customer-experience agents)</summary>
+
+**Why now:** AI customer-support agents were one of the four most active AI unicorn categories in H1 2026, with category leaders such as Sierra and Decagon raising at multi-billion-dollar valuations. _Category examples: Sierra, Decagon._
+
+**What it does:** A voice and chat agent that answers, authenticates and actually completes tasks (refunds, bookings, KYC updates, claims) across phone, WhatsApp and web, escalating to humans with full context when needed.
+
+**System architecture**
+
+1. **Channels:** telephony (SIP), WhatsApp, web chat and email in one inbox
+2. **Speech:** streaming speech-to-text and text-to-speech in Indian languages with low latency
+3. **Conversation brain:** LLM agent with tools for CRM, payments, orders and ticketing
+4. **Knowledge:** RAG over policies, manuals and past resolutions with citations
+5. **Quality & analytics:** auto-scoring of every conversation, intent and sentiment trends
+6. **Guardrails:** identity checks, PII redaction, compliance scripts and human hand-off
+
+**Hard problems (the moat):** Sub-second voice turn-taking that sounds natural in code-mixed languages; Safe action-taking on live business systems; Continuous learning from resolved conversations
+
+**12-week team MVP:** A WhatsApp + voice agent for one business that resolves the top five request types with human hand-off.
+
+**Venture-scale platform:** Multi-tenant platform with per-client knowledge, analytics dashboards and outcome-based pricing.
+
+**Business model:** Outcome-based pricing per resolved conversation, plus platform fees for large contact centres.
+
+**Courses:** 6. Large Language Models, 7. Agentic AI, 2. Machine Learning, 9. Data Engineering for AI, 10. Trustworthy AI, 8. Generative AI
+
+**Stack:** Streaming ASR/TTS models, Bhashini APIs, LiveKit / SIP, LangGraph, RAG + reranking, Kafka, ClickHouse, Presidio (PII)
+
+**Roles:** Conversational AI Developer, LLM Engineer, Agentic AI Engineer, Data Engineer
+
+</details>
+
+<details>
+<summary><b>🇮🇳 3. Sovereign Indic Foundation Model & Inference Stack</b> (Sovereign Indic AI)</summary>
+
+**Why now:** Sarvam AI became a unicorn in June 2026 building India's sovereign AI stack, and investors are backing Indian-language foundation models and sovereign compute. _Category examples: Sarvam AI, Krutrim._
+
+**What it does:** A compact multilingual language and speech model family for Indian languages, with a data pipeline, training recipes, alignment, evaluation benchmarks and an efficient serving stack that government and enterprises can host on-premises.
+
+**System architecture**
+
+1. **Data:** web, government and licensed corpora; cleaning, de-duplication and language ID at scale
+2. **Tokeniser and pre-training:** Indic-optimised tokeniser and distributed training
+3. **Alignment:** instruction tuning, preference optimisation (DPO/RLHF) and safety tuning
+4. **Evaluation:** Indic benchmarks for reasoning, translation, safety and bias
+5. **Serving:** quantised models on GPUs and edge devices with an OpenAI-compatible API
+6. **Governance:** data provenance records, model cards and usage policies
+
+**Hard problems (the moat):** High-quality Indic data at scale; Tokeniser efficiency for Indian scripts; Low-cost inference that runs inside India
+
+**12-week team MVP:** A fine-tuned open model for three Indian languages with a public benchmark and a hosted API.
+
+**Venture-scale platform:** Full model family (text, speech, vision) with government and BFSI deployments and domain-tuned variants.
+
+**Business model:** API usage fees, on-prem licences for government and regulated industries, and domain fine-tuning services.
+
+**Courses:** 3. Deep Learning, 6. Large Language Models, 4. Reinforcement Learning, 8. Generative AI, 9. Data Engineering for AI, 10. Trustworthy AI, 12. Edge AI, TinyML & AIoT
+
+**Stack:** PyTorch FSDP / DeepSpeed, SentencePiece, Hugging Face TRL, Spark, vLLM / TensorRT-LLM, llama.cpp (edge), lm-eval-harness, Ray
+
+**Roles:** AI Research Engineer, LLM Alignment Engineer, ML Performance Engineer, AI Data Engineer
+
+</details>
+
+<details>
+<summary><b>🖥️ 4. Energy-Aware GPU Inference Cloud</b> (AI infrastructure & sovereign compute)</summary>
+
+**Why now:** AI infrastructure produced the most new unicorns in January 2026, Indian AI-cloud start-up Neysa became a unicorn in February 2026, and 2026 analysts describe value shifting from models to megawatts. _Category examples: Neysa._
+
+**What it does:** A platform that hosts many customers' models on shared GPU clusters, auto-scales them, places workloads where energy is cheapest and cleanest, and reports cost and carbon per request.
+
+**System architecture**
+
+1. **Developer API:** deploy a model and get an endpoint with SLAs
+2. **Scheduler:** GPU bin-packing, autoscaling and multi-tenant isolation
+3. **Serving engines:** batching, KV-cache sharing, quantisation and speculative decoding
+4. **Energy optimiser:** RL policy that shifts load by price, carbon intensity and thermal limits
+5. **Observability:** tokens, latency, cost and grams of CO2 per request
+6. **Security:** tenant isolation, encrypted weights and compliance controls
+
+**Hard problems (the moat):** Higher GPU utilisation than competitors; Energy-aware scheduling as a cost advantage; Data residency for regulated Indian customers
+
+**12-week team MVP:** A Kubernetes-based serving layer for two open models with autoscaling and a per-request cost and energy dashboard.
+
+**Venture-scale platform:** Multi-region sovereign AI cloud with reserved capacity for enterprises and government.
+
+**Business model:** Pay-per-token and reserved GPU capacity; premium for compliance and dedicated clusters.
+
+**Courses:** 3. Deep Learning, 9. Data Engineering for AI, 4. Reinforcement Learning, 12. Edge AI, TinyML & AIoT, 10. Trustworthy AI, 6. Large Language Models, 7. Agentic AI
+
+**Stack:** Kubernetes, NVIDIA Triton / vLLM, Ray Serve, KEDA, Prometheus / DCGM, Ray RLlib, Terraform, Grafana
+
+**Roles:** ML Performance Engineer, AI Platform Engineer, Reinforcement Learning Engineer, Data Platform Architect
+
+</details>
+
+<details>
+<summary><b>🩺 5. Clinical AI Agent Workforce</b> (Vertical AI agents: healthcare)</summary>
+
+**Why now:** Vertical AI for healthcare was one of the most active AI unicorn categories in H1 2026, led by healthcare-agent companies such as Hippocratic AI. _Category examples: Hippocratic AI._
+
+**What it does:** A set of narrow, safety-tested agents that work alongside clinicians: an ambient scribe that drafts notes from consultations, a follow-up agent that calls patients after discharge, and a coordination agent that books tests and chases results.
+
+**System architecture**
+
+1. **Ambient capture:** consent-aware audio capture and speaker separation
+2. **Clinical NLP:** note drafting, coding and medication reconciliation
+3. **Patient agents:** multilingual voice calls with escalation rules
+4. **Integration:** FHIR / ABDM connectors to hospital systems
+5. **Clinical safety:** red-teaming, hallucination checks and clinician sign-off
+6. **Compliance:** DPDP-compliant consent, audit trail and data residency
+
+**Hard problems (the moat):** Clinical-grade safety evaluation; Trust of hospitals and regulators; Integration with real hospital workflows
+
+**12-week team MVP:** An ambient scribe for outpatient consultations in English and Hindi with clinician review.
+
+**Venture-scale platform:** Agent suite across specialities and hospital chains, priced per agent-hour.
+
+**Business model:** Per-agent-hour or per-encounter pricing for hospitals and telehealth providers.
+
+**Courses:** 6. Large Language Models, 7. Agentic AI, 10. Trustworthy AI, 5. Computer Vision, 9. Data Engineering for AI, 2. Machine Learning, 12. Edge AI, TinyML & AIoT
+
+**Stack:** Whisper-class ASR, pyannote, Clinical LLMs + RAG, FHIR, LangGraph, Guardrails, Postgres, Azure / on-prem GPUs
+
+**Roles:** LLM Engineer, Responsible AI Specialist, Conversational AI Developer, AI Product Manager
+
+</details>
+
+<details>
+<summary><b>🤖 6. General-Purpose Robot Brain & Fleet Platform</b> (Humanoid & embodied AI)</summary>
+
+**Why now:** Robotics was the second-largest sector for new unicorns in 2026, with 26 companies, and analysts call robotics the structural story of this year's AI unicorn class. _Category examples: Robotics and embodied-AI start-ups (2026 cohort)._
+
+**What it does:** A vision-language-action model that lets warehouse arms, mobile robots and humanoids learn new tasks from demonstrations and natural-language instructions, plus a fleet platform to deploy, monitor and update robots safely.
+
+**System architecture**
+
+1. **Data engine:** teleoperation and demonstration capture with automatic labelling
+2. **Simulation:** digital twins and synthetic data for safe, large-scale training
+3. **Robot foundation model:** vision-language-action policy fine-tuned per task
+4. **On-robot runtime:** optimised inference on edge GPUs with safety controllers
+5. **Fleet management:** OTA updates, monitoring, incident replay
+6. **Safety:** geofencing, force limits, human-in-the-loop overrides
+
+**Hard problems (the moat):** Proprietary demonstration data; Sim-to-real transfer that works; Safety certification for working near people
+
+**12-week team MVP:** A robot arm that learns three pick-and-place tasks from 50 demonstrations each and a language instruction interface.
+
+**Venture-scale platform:** Robot-as-a-service fleets in warehouses, factories and hospitals.
+
+**Business model:** Robot-as-a-service subscription per robot per month, plus model licensing to hardware makers.
+
+**Courses:** 13. Physical AI & Intelligent Robotics, 4. Reinforcement Learning, 5. Computer Vision, 3. Deep Learning, 12. Edge AI, TinyML & AIoT, 7. Agentic AI, 10. Trustworthy AI
+
+**Stack:** ROS 2, Isaac Sim / Isaac Lab, MuJoCo, LeRobot, PyTorch, NVIDIA Jetson Thor-class, Foxglove, Kubernetes (fleet)
+
+**Roles:** Robot Learning Engineer, Robotics Software Engineer, Simulation & Digital Twin Engineer, Physical AI Engineer
+
+</details>
+
+<details>
+<summary><b>💳 7. Agentic Payments, Risk & Compliance OS</b> (Fintech infrastructure)</summary>
+
+**Why now:** Fintech produced 18 new unicorns in 2026, including Indian payments-infrastructure company Juspay at a $1.2B valuation. _Category examples: Juspay._
+
+**What it does:** A payments orchestration layer that picks the best route for each payment, scores fraud in real time, reconciles settlements automatically and uses agents to draft regulatory reports and handle disputes.
+
+**System architecture**
+
+1. **Orchestration:** smart routing across gateways, UPI and card networks
+2. **Real-time risk:** streaming fraud scores and graph-based mule detection
+3. **Reconciliation:** ML matching of transactions, settlements and bank statements
+4. **Compliance agents:** draft reports, run KYC refresh and manage disputes with approvals
+5. **Ledger:** immutable, auditable event ledger
+6. **Developer platform:** SDKs, sandbox and analytics for merchants
+
+**Hard problems (the moat):** Payment success-rate uplift from routing; Low-latency risk at national scale; Deep regulatory knowledge encoded in agents
+
+**12-week team MVP:** A routing and fraud-scoring API for a test merchant with a reconciliation dashboard.
+
+**Venture-scale platform:** Multi-country payments OS for large merchants, banks and PSPs.
+
+**Business model:** Per-transaction fees plus SaaS for risk and compliance modules.
+
+**Courses:** 2. Machine Learning, 9. Data Engineering for AI, 14. AI-Driven Cybersecurity, 7. Agentic AI, 15. Blockchain & Decentralised AI, 10. Trustworthy AI, 3. Deep Learning
+
+**Stack:** Kafka, Flink, XGBoost, PyTorch Geometric, Postgres + event sourcing, LangGraph, Go services, Hyperledger Fabric (audit)
+
+**Roles:** Machine Learning Engineer, Streaming Engineer, Security Data Scientist, Agentic AI Engineer
+
+</details>
+
+<details>
+<summary><b>🛡️ 8. AI Agent Firewall & Model Supply-Chain Assurance</b> (AI security)</summary>
+
+**Why now:** Security propelled by AI was one of the leading sectors for new unicorns in January 2026, and every enterprise rolling out agents now needs to secure them. _Category examples: AI-security start-ups (2026 cohort)._
+
+**What it does:** A platform that inventories all models and agents, verifies where they came from, red-teams them continuously, and blocks prompt injection, data leakage and unsafe tool calls at runtime.
+
+**System architecture**
+
+1. **Discovery:** inventory of models, datasets, prompts and agents across the company
+2. **Provenance:** signed model and dataset lineage (AI bill of materials) on a tamper-evident ledger
+3. **Red-teaming:** automated jailbreak, injection and poisoning tests before release
+4. **Runtime firewall:** inspects prompts, outputs and tool calls in real time
+5. **Policy engine:** who can use which model for what, with approvals
+6. **Compliance:** evidence packs for the EU AI Act, ISO/IEC 42001 and the DPDP Act
+
+**Hard problems (the moat):** Detection that keeps up with new attack techniques; Low-latency inline inspection; Trusted provenance that auditors accept
+
+**12-week team MVP:** A proxy that sits in front of an LLM app, blocks prompt injection and data leaks, and logs every decision.
+
+**Venture-scale platform:** Enterprise AI security platform integrated with SOC tools and cloud AI services.
+
+**Business model:** Annual enterprise subscription priced by number of models, agents and requests protected.
+
+**Courses:** 10. Trustworthy AI, 14. AI-Driven Cybersecurity, 6. Large Language Models, 7. Agentic AI, 15. Blockchain & Decentralised AI, 9. Data Engineering for AI, 2. Machine Learning
+
+**Stack:** LLM guard models, OPA (policy), Sigstore, Hyperledger Fabric, Garak / PyRIT, Envoy proxy, Elastic / SIEM, Go
+
+**Roles:** AI Security Engineer, AI Red-Team Engineer, AI Provenance Engineer, Detection Engineer
+
+</details>
+
+<details>
+<summary><b>🛰️ 9. Space-to-Earth Geospatial Intelligence Platform</b> (Space tech & geospatial AI)</summary>
+
+**Why now:** Skyroot Aerospace became India's first space-tech unicorn in 2026, and satellite-imaging companies raised large rounds to expand constellations. _Category examples: Skyroot Aerospace, ICEYE._
+
+**What it does:** A platform that ingests optical and radar satellite imagery, runs AI models to detect crops, floods, construction and damage, and delivers alerts and APIs to insurers, banks, governments and agribusiness.
+
+**System architecture**
+
+1. **Ingestion:** multi-satellite optical and SAR feeds, tiling and cloud masking
+2. **Earth-observation models:** segmentation, change detection and object counting
+3. **Fusion:** combine satellite, weather, drone and ground-sensor data
+4. **Tasking optimiser:** choose which areas to image next (classical and quantum optimisation)
+5. **Products:** crop insurance claims, flood maps, loan collateral checks
+6. **Delivery:** APIs, alerts and map dashboards
+
+**Hard problems (the moat):** Models that work through clouds using radar; Ground-truth data partnerships; Speed from capture to customer answer
+
+**12-week team MVP:** Weekly crop-health and flood-extent maps for one district from free Sentinel imagery, with an alert API.
+
+**Venture-scale platform:** National-scale geospatial intelligence for insurers, banks and government programmes.
+
+**Business model:** Subscriptions per area monitored and per-API-call pricing for insurers and lenders.
+
+**Courses:** 5. Computer Vision, 3. Deep Learning, 9. Data Engineering for AI, 2. Machine Learning, 12. Edge AI, TinyML & AIoT, 11. Quantum Computing & Quantum AI, 8. Generative AI
+
+**Stack:** Sentinel-1/2, Google Earth Engine, TorchGeo, Rasterio / GDAL, STAC, Dask, Qiskit Optimization, Mapbox / Leaflet
+
+**Roles:** Computer Vision Engineer, AI Data Engineer, Quantum Algorithm Developer, Data Platform Architect
+
+</details>
+
+<details>
+<summary><b>🧪 10. Autonomous Discovery Lab for Drugs & Materials</b> (AI for science: drugs & materials)</summary>
+
+**Why now:** Healthcare minted three new unicorns in February 2026, and AI-native healthcare and science companies remain among the most active categories in this year's unicorn class. _Category examples: AI-for-science labs (2026 cohort)._
+
+**What it does:** A closed-loop discovery system: generative models propose candidate molecules or materials, quantum and classical simulation screens them, robots run the most promising experiments, and results retrain the models.
+
+**System architecture**
+
+1. **Generative design:** diffusion and graph models that propose molecules with target properties
+2. **Property prediction:** GNN surrogates for toxicity, binding and stability
+3. **Simulation:** quantum chemistry on simulators and real quantum hardware
+4. **Lab automation:** robotic liquid handling scheduled by an RL planner
+5. **Knowledge:** literature agent that mines papers and patents
+6. **Data governance:** experiment provenance and IP records
+
+**Hard problems (the moat):** Proprietary experimental data from the closed loop; Speed from idea to validated candidate; IP generated by the platform
+
+**12-week team MVP:** A generative pipeline that proposes and ranks candidate molecules for one target, validated against public assay data.
+
+**Venture-scale platform:** Discovery partnerships with pharma, battery and specialty-chemical companies.
+
+**Business model:** Partnership fees, milestone payments and royalties on discovered compounds and materials.
+
+**Courses:** 8. Generative AI, 3. Deep Learning, 11. Quantum Computing & Quantum AI, 13. Physical AI & Intelligent Robotics, 4. Reinforcement Learning, 9. Data Engineering for AI, 6. Large Language Models
+
+**Stack:** RDKit, PyTorch Geometric, Diffusion models, Qiskit Nature, OpenMM, Opentrons, Ray, LangGraph (literature agent)
+
+**Roles:** Generative AI Engineer, Quantum ML Researcher, Robot Learning Engineer, AI Research Engineer
+
+</details>
+
+Company names show the market category each idea comes from; they are not partners or endorsements of AlgoProfessor.
+
+<details><summary><b>Market sources</b></summary>
+
+- [Crunchbase News: Global unicorn counts rise with AI, robotics and chips (H1 2026)](https://news.crunchbase.com/venture/global-unicorn-counts-rise-ai-robotics-chips-h1-2026/)
+- [Crunchbase News: AI leads unicorn board count (January 2026)](https://news.crunchbase.com/venture/ai-leads-unicorn-board-count-january-2026/)
+- [Presenc AI: AI startup unicorn tracker 2026](https://presenc.ai/research/ai-startup-unicorn-tracker-2026)
+- [Wealth Professional: AI unicorns attract record VC in 2026 (robotics, fintech incl. Juspay)](https://www.wealthprofessional.ca/news/industry-news/ai-unicorn-startups-attract-record-venture-capital-in-2026/393478)
+- [Drishti IAS: Sarvam becomes India's newest AI unicorn (June 2026)](https://www.drishtiias.com/daily-updates/daily-news-analysis/sarvam-becomes-indias-newest-ai-unicorn/print_manually)
+- [Inc42: Indian AI startup funding H1 2026](https://inc42.com/features/indian-ai-startup-funding-soars-over-4x-yoy-in-h1-2026-but-is-it-enough-to-compete-globally/)
+- [Inc42: Indian soonicorn tracker 2026](https://inc42.com/features/indian-soonicorn-tracker-list-of-indias-unicorns-of-tomorrow/?login=1)
+- [TechJack Solutions: From models to megawatts, the 2026 AI unicorn class](https://techjacksolutions.com/ai-brief/from-models-to-megawatts-2026-ai-unicorn-class-value-accruing/)
+
+</details>
+
 ## Skills & Jobs by Course
 
 **Colour code:** 🟠 Saffron = Fresher / Entry (0–2 yrs) · 🔵 Chakra navy = Mid-level (3–5 yrs) · 🟢 Green = Senior (6+ yrs)
@@ -939,6 +1291,7 @@ Enterprise_AI_Syllabus.pdf  the complete 55-page syllabus
 data/courses.json           structured data for all 15 courses
 data/careers.json           skills, jobs, companies, salaries and career pathways
 data/products.json          10 real-time enterprise product blueprints
+data/unicorn.json           10 unicorn-track frontier product blueprints
 src/template.html           website template
 scripts/parse.py            extracts course data from the syllabus text
 scripts/build.py            builds index.html from the template and data
