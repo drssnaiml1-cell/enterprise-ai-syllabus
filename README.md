@@ -62,6 +62,8 @@ Every course follows one arc: **foundations → core methods → advanced method
 
 ## Skills & Jobs by Course
 
+**Colour code:** 🟠 Saffron = Fresher / Entry (0–2 yrs) · 🔵 Chakra navy = Mid-level (3–5 yrs) · 🟢 Green = Senior (6+ yrs)
+
 Every course ends with job-ready skills and a GitHub portfolio (five unit artefacts, eight lab projects and an enterprise capstone). Click a course to see its full skills list and the jobs it prepares learners for.
 
 <details>
@@ -82,18 +84,18 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **AI Engineer** | Fresher / Entry | Builds and integrates AI decision components into products and internal tools. |
-| **Decision Scientist** | Fresher / Entry | Turns business questions into optimisation and probabilistic decision models. |
-| **Optimisation Engineer** | 2–5 yrs | Designs schedulers, routers and allocation engines that cut cost and time. |
-| **Knowledge Graph Engineer** | 2–5 yrs | Models enterprise data as graphs that power search, recommendations and GraphRAG. |
-| **AI Product Manager** | 2–5 yrs | Scopes AI use-cases, defines KPIs and ROI, and steers build-vs-buy decisions. |
-| **AI Solutions Architect** | Senior | Designs end-to-end decision-intelligence platforms for enterprise clients. |
+| **AI Engineer** | 🟠 Fresher / Entry | Builds and integrates AI decision components into products and internal tools. |
+| **Decision Scientist** | 🟠 Fresher / Entry | Turns business questions into optimisation and probabilistic decision models. |
+| **Optimisation Engineer** | 🔵 Mid (3–5 yrs) | Designs schedulers, routers and allocation engines that cut cost and time. |
+| **Knowledge Graph Engineer** | 🔵 Mid (3–5 yrs) | Models enterprise data as graphs that power search, recommendations and GraphRAG. |
+| **AI Product Manager** | 🔵 Mid (3–5 yrs) | Scopes AI use-cases, defines KPIs and ROI, and steers build-vs-buy decisions. |
+| **AI Solutions Architect** | 🟢 Senior (6+ yrs) | Designs end-to-end decision-intelligence platforms for enterprise clients. |
 
 **Industries hiring:** Logistics & supply chain, banking & insurance, consulting, e-commerce, telecom, government tech
 
 **Top companies hiring these skills:** Google, Microsoft, Amazon, Flipkart, Walmart Global Tech, JPMorgan Chase, Accenture, Deloitte, TCS, Infosys
 
-**Indicative salary in India (CTC):** Fresher ₹6–15 LPA · Mid (3–5 yrs) ₹15–30 LPA · Senior (6+ yrs) ₹30–60+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹6–15 LPA · 🔵 Mid (3–5 yrs) ₹15–30 LPA · 🟢 Senior (6+ yrs) ₹30–60+ LPA
 
 **Capstone for your portfolio:** Enterprise Decision-Intelligence Engine
 
@@ -117,17 +119,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Data Scientist** | Fresher / Entry | Builds predictive models and insights that drive product and business decisions. |
-| **Machine Learning Engineer** | Fresher / Entry | Takes models from notebooks to reliable, scalable production services. |
-| **Analytics Engineer** | Fresher / Entry | Builds clean, modelled datasets and metrics layers that ML and BI depend on. |
-| **MLOps Engineer** | 2–5 yrs | Automates training, deployment, monitoring and retraining of ML models. |
-| **Applied Scientist** | Senior | Invents and validates new ML methods for high-impact product problems. |
+| **Data Scientist** | 🟠 Fresher / Entry | Builds predictive models and insights that drive product and business decisions. |
+| **Machine Learning Engineer** | 🟠 Fresher / Entry | Takes models from notebooks to reliable, scalable production services. |
+| **Analytics Engineer** | 🟠 Fresher / Entry | Builds clean, modelled datasets and metrics layers that ML and BI depend on. |
+| **MLOps Engineer** | 🔵 Mid (3–5 yrs) | Automates training, deployment, monitoring and retraining of ML models. |
+| **Applied Scientist** | 🟢 Senior (6+ yrs) | Invents and validates new ML methods for high-impact product problems. |
 
 **Industries hiring:** Fintech & banking, retail & e-commerce, healthcare, SaaS, analytics consultancies, GCCs (global capability centres)
 
 **Top companies hiring these skills:** Google, Amazon, Microsoft, Flipkart, PhonePe, Razorpay, Swiggy, American Express, Fractal Analytics, Tiger Analytics
 
-**Indicative salary in India (CTC):** Fresher ₹5–12 LPA · Mid (3–5 yrs) ₹18–35 LPA · Senior (6+ yrs) ₹35–65+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹5–12 LPA · 🔵 Mid (3–5 yrs) ₹18–35 LPA · 🟢 Senior (6+ yrs) ₹35–65+ LPA
 
 **Capstone for your portfolio:** Customer Intelligence Platform
 
@@ -151,17 +153,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Deep Learning Engineer** | Fresher / Entry | Designs, trains and tunes neural networks for vision, text and signals. |
-| **AI Research Engineer** | 2–5 yrs | Turns research papers into working, benchmarked model implementations. |
-| **ML Performance Engineer** | 2–5 yrs | Speeds up training and inference on GPUs through profiling and optimisation. |
-| **Edge AI Engineer** | 2–5 yrs | Compresses and deploys deep models onto phones, cameras and devices. |
-| **Applied Scientist** | Senior | Leads novel deep-learning solutions from experiment to product. |
+| **Deep Learning Engineer** | 🟠 Fresher / Entry | Designs, trains and tunes neural networks for vision, text and signals. |
+| **AI Research Engineer** | 🔵 Mid (3–5 yrs) | Turns research papers into working, benchmarked model implementations. |
+| **ML Performance Engineer** | 🔵 Mid (3–5 yrs) | Speeds up training and inference on GPUs through profiling and optimisation. |
+| **Edge AI Engineer** | 🔵 Mid (3–5 yrs) | Compresses and deploys deep models onto phones, cameras and devices. |
+| **Applied Scientist** | 🟢 Senior (6+ yrs) | Leads novel deep-learning solutions from experiment to product. |
 
 **Industries hiring:** AI product companies, semiconductor & GPU firms, healthcare imaging, autonomous systems, big-tech research labs
 
 **Top companies hiring these skills:** NVIDIA, Google, Microsoft, Qualcomm, Intel, Samsung R&D, Adobe, Amazon, Siemens Healthineers, Philips
 
-**Indicative salary in India (CTC):** Fresher ₹6–15 LPA · Mid (3–5 yrs) ₹18–35 LPA · Senior (6+ yrs) ₹35–70+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹6–15 LPA · 🔵 Mid (3–5 yrs) ₹18–35 LPA · 🟢 Senior (6+ yrs) ₹35–70+ LPA
 
 **Capstone for your portfolio:** Deep Learning Inference Service
 
@@ -185,17 +187,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Reinforcement Learning Engineer** | Fresher / Entry | Builds agents that learn policies for control, pricing or recommendation. |
-| **Decision Scientist** | Fresher / Entry | Optimises sequential business decisions such as inventory, bidding and pricing. |
-| **Robotics AI Engineer** | 2–5 yrs | Trains robot behaviours in simulation and transfers them to hardware. |
-| **LLM Alignment Engineer** | 2–5 yrs | Uses RLHF and preference optimisation to make LLMs helpful and safe. |
-| **Operations Research Scientist** | Senior | Combines RL with optimisation for large-scale planning problems. |
+| **Reinforcement Learning Engineer** | 🟠 Fresher / Entry | Builds agents that learn policies for control, pricing or recommendation. |
+| **Decision Scientist** | 🟠 Fresher / Entry | Optimises sequential business decisions such as inventory, bidding and pricing. |
+| **Robotics AI Engineer** | 🔵 Mid (3–5 yrs) | Trains robot behaviours in simulation and transfers them to hardware. |
+| **LLM Alignment Engineer** | 🔵 Mid (3–5 yrs) | Uses RLHF and preference optimisation to make LLMs helpful and safe. |
+| **Operations Research Scientist** | 🟢 Senior (6+ yrs) | Combines RL with optimisation for large-scale planning problems. |
 
 **Industries hiring:** Robotics, gaming, ad-tech & recommendation, energy & grids, quant finance, LLM labs
 
 **Top companies hiring these skills:** Google DeepMind, Microsoft Research India, Amazon, Uber, Flipkart, Dream11, Krutrim, GreyOrange
 
-**Indicative salary in India (CTC):** Fresher ₹6–15 LPA · Mid (3–5 yrs) ₹18–40 LPA · Senior (6+ yrs) ₹40–70+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹6–15 LPA · 🔵 Mid (3–5 yrs) ₹18–40 LPA · 🟢 Senior (6+ yrs) ₹40–70+ LPA
 
 **Capstone for your portfolio:** Adaptive Pricing and Inventory Optimiser
 
@@ -219,17 +221,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Computer Vision Engineer** | Fresher / Entry | Builds detection, segmentation and recognition systems for real cameras. |
-| **Document AI Engineer** | Fresher / Entry | Automates reading of invoices, forms and records with OCR and layout models. |
-| **Video Analytics Engineer** | 2–5 yrs | Delivers real-time video understanding for safety, retail and traffic. |
-| **Edge AI Engineer** | 2–5 yrs | Runs vision models efficiently on Jetson-class and embedded devices. |
-| **Perception Engineer (Robotics/Autonomy)** | Senior | Builds the vision stack that lets robots and vehicles understand the world. |
+| **Computer Vision Engineer** | 🟠 Fresher / Entry | Builds detection, segmentation and recognition systems for real cameras. |
+| **Document AI Engineer** | 🟠 Fresher / Entry | Automates reading of invoices, forms and records with OCR and layout models. |
+| **Video Analytics Engineer** | 🔵 Mid (3–5 yrs) | Delivers real-time video understanding for safety, retail and traffic. |
+| **Edge AI Engineer** | 🔵 Mid (3–5 yrs) | Runs vision models efficiently on Jetson-class and embedded devices. |
+| **Perception Engineer (Robotics/Autonomy)** | 🟢 Senior (6+ yrs) | Builds the vision stack that lets robots and vehicles understand the world. |
 
 **Industries hiring:** Manufacturing & quality inspection, retail analytics, smart cities, healthcare imaging, automotive, banking (document AI)
 
 **Top companies hiring these skills:** NVIDIA, Qualcomm, Intel, Samsung R&D, Bosch, Continental, Mobileye, Siemens Healthineers, Adobe, Flipkart
 
-**Indicative salary in India (CTC):** Fresher ₹8–16 LPA · Mid (3–5 yrs) ₹15–30 LPA · Senior (6+ yrs) ₹26–70 LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹8–16 LPA · 🔵 Mid (3–5 yrs) ₹15–30 LPA · 🟢 Senior (6+ yrs) ₹26–70 LPA
 
 **Capstone for your portfolio:** Smart Visual Inspection System
 
@@ -253,18 +255,18 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **LLM Engineer** | Fresher / Entry | Builds chat, search and summarisation features on top of large language models. |
-| **AI Engineer (GenAI)** | Fresher / Entry | Integrates LLM APIs and open models into company products and workflows. |
-| **NLP Engineer** | Fresher / Entry | Solves text classification, extraction and translation, including Indian languages. |
-| **Search & Retrieval Engineer** | 2–5 yrs | Designs RAG pipelines, embeddings and vector search that ground LLM answers. |
-| **Conversational AI Developer** | 2–5 yrs | Builds reliable customer-facing assistants and voice/chat bots. |
-| **LLMOps Engineer** | 2–5 yrs | Runs, evaluates and cost-optimises LLMs in production. |
+| **LLM Engineer** | 🟠 Fresher / Entry | Builds chat, search and summarisation features on top of large language models. |
+| **AI Engineer (GenAI)** | 🟠 Fresher / Entry | Integrates LLM APIs and open models into company products and workflows. |
+| **NLP Engineer** | 🟠 Fresher / Entry | Solves text classification, extraction and translation, including Indian languages. |
+| **Search & Retrieval Engineer** | 🔵 Mid (3–5 yrs) | Designs RAG pipelines, embeddings and vector search that ground LLM answers. |
+| **Conversational AI Developer** | 🔵 Mid (3–5 yrs) | Builds reliable customer-facing assistants and voice/chat bots. |
+| **LLMOps Engineer** | 🔵 Mid (3–5 yrs) | Runs, evaluates and cost-optimises LLMs in production. |
 
 **Industries hiring:** Every enterprise adopting GenAI: IT services & GCCs, banking, legal, healthcare, edtech, SaaS and AI start-ups
 
 **Top companies hiring these skills:** Google, Microsoft, Amazon, Sarvam AI, Krutrim, Flipkart, Razorpay, Infosys, TCS, Accenture
 
-**Indicative salary in India (CTC):** Fresher ₹6–12 LPA · Mid (3–5 yrs) ₹20–40 LPA · Senior (6+ yrs) ₹35–80+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹6–12 LPA · 🔵 Mid (3–5 yrs) ₹20–40 LPA · 🟢 Senior (6+ yrs) ₹35–80+ LPA
 
 **Capstone for your portfolio:** Enterprise Knowledge Assistant
 
@@ -288,18 +290,18 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Agentic AI Engineer** | Fresher / Entry | Builds tool-using AI agents that complete real business tasks end to end. |
-| **Forward-Deployed AI Engineer** | Fresher / Entry | Works on-site with clients to design and ship agents for their workflows. |
-| **AI Automation Architect** | 2–5 yrs | Redesigns business processes around agents with approvals and audit trails. |
-| **AI Platform Engineer** | 2–5 yrs | Builds the shared agent infrastructure: tools, memory, evaluation and guardrails. |
-| **AI Product Manager** | 2–5 yrs | Defines agent products, success metrics and safe levels of autonomy. |
-| **AI Solutions Architect** | Senior | Designs enterprise-wide agentic systems integrated with existing IT. |
+| **Agentic AI Engineer** | 🟠 Fresher / Entry | Builds tool-using AI agents that complete real business tasks end to end. |
+| **Forward-Deployed AI Engineer** | 🟠 Fresher / Entry | Works on-site with clients to design and ship agents for their workflows. |
+| **AI Automation Architect** | 🔵 Mid (3–5 yrs) | Redesigns business processes around agents with approvals and audit trails. |
+| **AI Platform Engineer** | 🔵 Mid (3–5 yrs) | Builds the shared agent infrastructure: tools, memory, evaluation and guardrails. |
+| **AI Product Manager** | 🔵 Mid (3–5 yrs) | Defines agent products, success metrics and safe levels of autonomy. |
+| **AI Solutions Architect** | 🟢 Senior (6+ yrs) | Designs enterprise-wide agentic systems integrated with existing IT. |
 
 **Industries hiring:** IT services & consulting, SaaS, banking operations, customer support, enterprise automation and AI-first start-ups
 
 **Top companies hiring these skills:** Microsoft, Google, Amazon (AWS), Salesforce, ServiceNow, Zoho, Freshworks, Sarvam AI, Accenture, Infosys
 
-**Indicative salary in India (CTC):** Fresher ₹8–20 LPA · Mid (3–5 yrs) ₹20–45 LPA · Senior (6+ yrs) ₹40–80+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹8–20 LPA · 🔵 Mid (3–5 yrs) ₹20–45 LPA · 🟢 Senior (6+ yrs) ₹40–80+ LPA
 
 **Capstone for your portfolio:** Autonomous Operations Copilot
 
@@ -323,18 +325,18 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Generative AI Developer** | Fresher / Entry | Builds apps that generate text, images, audio or code for users. |
-| **Generative AI Engineer** | Fresher / Entry | Fine-tunes and deploys generative models behind product features. |
-| **Synthetic Data Engineer** | 2–5 yrs | Creates privacy-safe synthetic datasets to train and test AI systems. |
-| **Multimodal AI Engineer** | 2–5 yrs | Combines vision, language and audio models in a single product. |
-| **Creative Technologist** | 2–5 yrs | Uses generative AI to prototype campaigns, designs and interactive experiences. |
-| **AI Research Engineer** | Senior | Advances generative architectures and their evaluation. |
+| **Generative AI Developer** | 🟠 Fresher / Entry | Builds apps that generate text, images, audio or code for users. |
+| **Generative AI Engineer** | 🟠 Fresher / Entry | Fine-tunes and deploys generative models behind product features. |
+| **Synthetic Data Engineer** | 🔵 Mid (3–5 yrs) | Creates privacy-safe synthetic datasets to train and test AI systems. |
+| **Multimodal AI Engineer** | 🔵 Mid (3–5 yrs) | Combines vision, language and audio models in a single product. |
+| **Creative Technologist** | 🔵 Mid (3–5 yrs) | Uses generative AI to prototype campaigns, designs and interactive experiences. |
+| **AI Research Engineer** | 🟢 Senior (6+ yrs) | Advances generative architectures and their evaluation. |
 
 **Industries hiring:** Media & advertising, design and creative tools, gaming, e-commerce content, edtech, synthetic-data and AI start-ups
 
 **Top companies hiring these skills:** Adobe, Google, Microsoft, NVIDIA, Sarvam AI, Krutrim, Glance, Infosys, Accenture, Wipro
 
-**Indicative salary in India (CTC):** Fresher ₹6–12 LPA · Mid (3–5 yrs) ₹18–40 LPA · Senior (6+ yrs) ₹35–80+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹6–12 LPA · 🔵 Mid (3–5 yrs) ₹18–40 LPA · 🟢 Senior (6+ yrs) ₹35–80+ LPA
 
 **Capstone for your portfolio:** AI Creative & Synthetic-Data Studio
 
@@ -358,18 +360,18 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Data Engineer** | Fresher / Entry | Builds the reliable batch and streaming pipelines every AI product depends on. |
-| **Analytics Engineer** | Fresher / Entry | Models raw data into trusted tables and metrics with SQL and dbt. |
-| **AI Data Engineer** | 2–5 yrs | Prepares features, documents and embeddings for ML and LLM systems. |
-| **Streaming Engineer** | 2–5 yrs | Runs real-time event pipelines for fraud, IoT and personalisation. |
-| **DataOps Engineer** | 2–5 yrs | Automates testing, deployment and monitoring of data pipelines. |
-| **Data Platform Architect** | Senior | Designs the company-wide lakehouse, governance and data strategy. |
+| **Data Engineer** | 🟠 Fresher / Entry | Builds the reliable batch and streaming pipelines every AI product depends on. |
+| **Analytics Engineer** | 🟠 Fresher / Entry | Models raw data into trusted tables and metrics with SQL and dbt. |
+| **AI Data Engineer** | 🔵 Mid (3–5 yrs) | Prepares features, documents and embeddings for ML and LLM systems. |
+| **Streaming Engineer** | 🔵 Mid (3–5 yrs) | Runs real-time event pipelines for fraud, IoT and personalisation. |
+| **DataOps Engineer** | 🔵 Mid (3–5 yrs) | Automates testing, deployment and monitoring of data pipelines. |
+| **Data Platform Architect** | 🟢 Senior (6+ yrs) | Designs the company-wide lakehouse, governance and data strategy. |
 
 **Industries hiring:** Every data-driven company: banks, telecom, retail, GCCs, cloud and consulting firms, product start-ups
 
 **Top companies hiring these skills:** Databricks, Snowflake, Amazon, Microsoft, Walmart Global Tech, Flipkart, PhonePe, Swiggy, LatentView, Accenture
 
-**Indicative salary in India (CTC):** Fresher ₹5–14 LPA · Mid (3–5 yrs) ₹13–26 LPA · Senior (6+ yrs) ₹26–58+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹5–14 LPA · 🔵 Mid (3–5 yrs) ₹13–26 LPA · 🟢 Senior (6+ yrs) ₹26–58+ LPA
 
 **Capstone for your portfolio:** AI-Ready Enterprise Data Platform
 
@@ -393,18 +395,18 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Responsible AI Specialist** | Fresher / Entry | Tests models for fairness, explainability and safety before release. |
-| **AI Red-Team Engineer** | 2–5 yrs | Attacks AI systems to find jailbreaks, leaks and unsafe behaviour first. |
-| **AI Security Engineer** | 2–5 yrs | Secures models, data and AI pipelines against modern AI-specific threats. |
-| **AI Auditor** | 2–5 yrs | Assesses AI systems against regulations, standards and company policy. |
-| **AI Risk Manager** | Senior | Owns the AI risk register and controls across the organisation. |
-| **AI Governance & Compliance Lead** | Senior | Leads AI policy, approvals and regulatory readiness. |
+| **Responsible AI Specialist** | 🟠 Fresher / Entry | Tests models for fairness, explainability and safety before release. |
+| **AI Red-Team Engineer** | 🔵 Mid (3–5 yrs) | Attacks AI systems to find jailbreaks, leaks and unsafe behaviour first. |
+| **AI Security Engineer** | 🔵 Mid (3–5 yrs) | Secures models, data and AI pipelines against modern AI-specific threats. |
+| **AI Auditor** | 🔵 Mid (3–5 yrs) | Assesses AI systems against regulations, standards and company policy. |
+| **AI Risk Manager** | 🟢 Senior (6+ yrs) | Owns the AI risk register and controls across the organisation. |
+| **AI Governance & Compliance Lead** | 🟢 Senior (6+ yrs) | Leads AI policy, approvals and regulatory readiness. |
 
 **Industries hiring:** Banks & insurers, big tech, Big-4 and consulting, healthcare, government and regulators, AI-assurance firms
 
 **Top companies hiring these skills:** Deloitte, EY, KPMG, PwC, Microsoft, Google, IBM, JPMorgan Chase, HDFC Bank, Accenture
 
-**Indicative salary in India (CTC):** Fresher ₹6–12 LPA · Mid (3–5 yrs) ₹15–30 LPA · Senior (6+ yrs) ₹30–60+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹6–12 LPA · 🔵 Mid (3–5 yrs) ₹15–30 LPA · 🟢 Senior (6+ yrs) ₹30–60+ LPA
 
 **Capstone for your portfolio:** Responsible-AI Assurance Toolkit
 
@@ -428,17 +430,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Quantum Software Engineer** | Fresher / Entry | Writes and optimises quantum circuits and hybrid quantum–classical code. |
-| **Quantum Algorithm Developer** | 2–5 yrs | Designs quantum algorithms for optimisation, chemistry and finance. |
-| **Quantum ML Researcher** | 2–5 yrs | Explores quantum-enhanced machine learning and benchmarks it honestly. |
-| **Post-Quantum Cryptography Engineer** | 2–5 yrs | Migrates systems to quantum-safe cryptography. |
-| **Quantum Solutions Consultant** | Senior | Identifies where quantum adds value and plans enterprise roadmaps. |
+| **Quantum Software Engineer** | 🟠 Fresher / Entry | Writes and optimises quantum circuits and hybrid quantum–classical code. |
+| **Quantum Algorithm Developer** | 🔵 Mid (3–5 yrs) | Designs quantum algorithms for optimisation, chemistry and finance. |
+| **Quantum ML Researcher** | 🔵 Mid (3–5 yrs) | Explores quantum-enhanced machine learning and benchmarks it honestly. |
+| **Post-Quantum Cryptography Engineer** | 🔵 Mid (3–5 yrs) | Migrates systems to quantum-safe cryptography. |
+| **Quantum Solutions Consultant** | 🟢 Senior (6+ yrs) | Identifies where quantum adds value and plans enterprise roadmaps. |
 
 **Industries hiring:** Quantum start-ups, IBM/Google-class labs, banks & fintech, pharma & materials, defence and National Quantum Mission projects
 
 **Top companies hiring these skills:** IBM, TCS Research, Infosys, QpiAI, BosonQ Psi, ISRO, DRDO, C-DAC, SBI, Qualcomm
 
-**Indicative salary in India (CTC):** Fresher ₹8–25 LPA · Mid (3–5 yrs) ₹25–60 LPA · Senior (6+ yrs) ₹60–150 LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹8–25 LPA · 🔵 Mid (3–5 yrs) ₹25–60 LPA · 🟢 Senior (6+ yrs) ₹60–150 LPA
 
 **Capstone for your portfolio:** Hybrid Quantum Optimisation Service
 
@@ -462,17 +464,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Embedded ML Engineer** | Fresher / Entry | Puts machine learning into firmware on microcontrollers and sensors. |
-| **TinyML Engineer** | Fresher / Entry | Builds ultra-low-power models for wearables and battery devices. |
-| **Edge AI Engineer** | 2–5 yrs | Optimises and deploys AI on gateways, cameras and edge servers. |
-| **IoT Platform Engineer** | 2–5 yrs | Runs device fleets, connectivity and edge MLOps at scale. |
-| **AIoT Solutions Architect** | Senior | Designs complete sensor-to-cloud AI solutions for industry. |
+| **Embedded ML Engineer** | 🟠 Fresher / Entry | Puts machine learning into firmware on microcontrollers and sensors. |
+| **TinyML Engineer** | 🟠 Fresher / Entry | Builds ultra-low-power models for wearables and battery devices. |
+| **Edge AI Engineer** | 🔵 Mid (3–5 yrs) | Optimises and deploys AI on gateways, cameras and edge servers. |
+| **IoT Platform Engineer** | 🔵 Mid (3–5 yrs) | Runs device fleets, connectivity and edge MLOps at scale. |
+| **AIoT Solutions Architect** | 🟢 Senior (6+ yrs) | Designs complete sensor-to-cloud AI solutions for industry. |
 
 **Industries hiring:** Semiconductors & chip firms, consumer electronics, automotive, industrial IoT, agritech, smart-city and medical-device companies
 
 **Top companies hiring these skills:** Qualcomm, Intel, NVIDIA, Bosch, Samsung, Texas Instruments, Arm, Tata Elxsi, L&T Technology Services, Ather Energy
 
-**Indicative salary in India (CTC):** Fresher ₹5–12 LPA · Mid (3–5 yrs) ₹12–28 LPA · Senior (6+ yrs) ₹28–50+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹5–12 LPA · 🔵 Mid (3–5 yrs) ₹12–28 LPA · 🟢 Senior (6+ yrs) ₹28–50+ LPA
 
 **Capstone for your portfolio:** Predictive Maintenance AIoT System
 
@@ -496,17 +498,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Robotics Software Engineer** | Fresher / Entry | Builds ROS 2 software that makes robots sense, plan and act. |
-| **Physical AI Engineer** | Fresher / Entry | Brings AI models into machines that work in the real world. |
-| **Simulation & Digital Twin Engineer** | 2–5 yrs | Creates virtual factories and robots to train and test before deployment. |
-| **Autonomy / Perception Engineer** | 2–5 yrs | Builds the perception and navigation stack for autonomous systems. |
-| **Robot Learning Engineer** | Senior | Trains robot policies with imitation, RL and foundation models. |
+| **Robotics Software Engineer** | 🟠 Fresher / Entry | Builds ROS 2 software that makes robots sense, plan and act. |
+| **Physical AI Engineer** | 🟠 Fresher / Entry | Brings AI models into machines that work in the real world. |
+| **Simulation & Digital Twin Engineer** | 🔵 Mid (3–5 yrs) | Creates virtual factories and robots to train and test before deployment. |
+| **Autonomy / Perception Engineer** | 🔵 Mid (3–5 yrs) | Builds the perception and navigation stack for autonomous systems. |
+| **Robot Learning Engineer** | 🟢 Senior (6+ yrs) | Trains robot policies with imitation, RL and foundation models. |
 
 **Industries hiring:** Warehouse & logistics automation, manufacturing, drones, automotive & autonomous vehicles, healthcare robotics, defence
 
 **Top companies hiring these skills:** Addverb, GreyOrange, Amazon Robotics, ABB, Bosch, NVIDIA, Tata Elxsi, ideaForge, CynLr, Wipro PARI
 
-**Indicative salary in India (CTC):** Fresher ₹5–15 LPA · Mid (3–5 yrs) ₹12–28 LPA · Senior (6+ yrs) ₹25–60 LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹5–15 LPA · 🔵 Mid (3–5 yrs) ₹12–28 LPA · 🟢 Senior (6+ yrs) ₹25–60 LPA
 
 **Capstone for your portfolio:** Autonomous Warehouse Assistant
 
@@ -530,17 +532,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **AI Security Analyst** | Fresher / Entry | Uses AI tools to triage alerts and investigate incidents in a SOC. |
-| **Detection Engineer** | Fresher / Entry | Writes and tunes ML and rule-based detections for real attacks. |
-| **Security Data Scientist** | 2–5 yrs | Builds models that spot fraud, intrusions and insider threats. |
-| **SOC Automation Engineer** | 2–5 yrs | Automates response playbooks with LLM agents and SOAR. |
-| **Threat Intelligence Analyst** | 2–5 yrs | Uses AI to track attackers, campaigns and emerging threats. |
+| **AI Security Analyst** | 🟠 Fresher / Entry | Uses AI tools to triage alerts and investigate incidents in a SOC. |
+| **Detection Engineer** | 🟠 Fresher / Entry | Writes and tunes ML and rule-based detections for real attacks. |
+| **Security Data Scientist** | 🔵 Mid (3–5 yrs) | Builds models that spot fraud, intrusions and insider threats. |
+| **SOC Automation Engineer** | 🔵 Mid (3–5 yrs) | Automates response playbooks with LLM agents and SOAR. |
+| **Threat Intelligence Analyst** | 🔵 Mid (3–5 yrs) | Uses AI to track attackers, campaigns and emerging threats. |
 
 **Industries hiring:** SOCs and MSSPs, banks & fintech, cybersecurity product firms, telecom, government CERTs, Big-4 cyber practices
 
 **Top companies hiring these skills:** Palo Alto Networks, CrowdStrike, Microsoft, Cisco, IBM, Quick Heal, Deloitte, PwC, EY, HDFC Bank
 
-**Indicative salary in India (CTC):** Fresher ₹4–10 LPA · Mid (3–5 yrs) ₹8–20 LPA · Senior (6+ yrs) ₹20–45+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹4–10 LPA · 🔵 Mid (3–5 yrs) ₹8–20 LPA · 🟢 Senior (6+ yrs) ₹20–45+ LPA
 
 **Capstone for your portfolio:** AI-Augmented Security Operations Centre
 
@@ -564,17 +566,17 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 | Job role | Level | What the role does |
 |:--|:--|:--|
-| **Blockchain Developer** | Fresher / Entry | Builds smart contracts and decentralised applications. |
-| **Web3 + AI Engineer** | Fresher / Entry | Combines AI services with blockchain for verifiable, decentralised products. |
-| **Smart Contract Auditor** | 2–5 yrs | Finds vulnerabilities in contracts before they hold real value. |
-| **AI Provenance Engineer** | 2–5 yrs | Records data and model lineage so any AI decision can be traced. |
-| **Decentralised Identity Architect** | Senior | Designs verifiable credential and identity systems for enterprises. |
+| **Blockchain Developer** | 🟠 Fresher / Entry | Builds smart contracts and decentralised applications. |
+| **Web3 + AI Engineer** | 🟠 Fresher / Entry | Combines AI services with blockchain for verifiable, decentralised products. |
+| **Smart Contract Auditor** | 🔵 Mid (3–5 yrs) | Finds vulnerabilities in contracts before they hold real value. |
+| **AI Provenance Engineer** | 🔵 Mid (3–5 yrs) | Records data and model lineage so any AI decision can be traced. |
+| **Decentralised Identity Architect** | 🟢 Senior (6+ yrs) | Designs verifiable credential and identity systems for enterprises. |
 
 **Industries hiring:** Fintech & banking, supply chain & traceability, Web3 start-ups, government (land, certificates), audit and consulting firms
 
 **Top companies hiring these skills:** Polygon Labs, CoinDCX, CoinSwitch, IBM, Infosys, TCS, Wipro, Accenture, Deloitte
 
-**Indicative salary in India (CTC):** Fresher ₹6–14 LPA · Mid (3–5 yrs) ₹14–24 LPA · Senior (6+ yrs) ₹24–35+ LPA
+**Indicative salary in India (CTC):** 🟠 Fresher ₹6–14 LPA · 🔵 Mid (3–5 yrs) ₹14–24 LPA · 🟢 Senior (6+ yrs) ₹24–35+ LPA
 
 **Capstone for your portfolio:** Verifiable AI Supply-Chain Ledger
 
@@ -582,9 +584,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 ## Salary Guide by Course
 
+**Colour code:** 🟠 Saffron = Fresher / Entry (0–2 yrs) · 🔵 Chakra navy = Mid-level (3–5 yrs) · 🟢 Green = Senior (6+ yrs)
+
 _Indicative annual CTC in India (₹ lakh per annum), compiled November 2026 from published 2026 salary reports. Pay varies widely by company type, city and skills: IT services sit at the lower end; product companies, GCCs, FAANG India and AI-first start-ups at the upper end. Company names are examples of employers that hire for these skill sets, not current openings or endorsements._
 
-| # | Course | Fresher / Entry | Mid (3–5 yrs) | Senior (6+ yrs) | Top companies hiring |
+| # | Course | 🟠 Fresher / Entry | Mid (3–5 yrs) | Senior (6+ yrs) | Top companies hiring |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 1 | Artificial Intelligence | ₹6–15 LPA | ₹15–30 LPA | ₹30–60+ LPA | Google, Microsoft, Amazon, Flipkart, Walmart Global Tech |
 | 2 | Machine Learning | ₹5–12 LPA | ₹18–35 LPA | ₹35–65+ LPA | Google, Amazon, Microsoft, Flipkart, PhonePe |
