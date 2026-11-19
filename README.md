@@ -60,6 +60,273 @@ Every course follows one arc: **foundations → core methods → advanced method
 | 14 | `EAI-114` | [AI-Driven Cybersecurity](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#course-14) | Machine learning and agents for threat detection, response and secure enterprises | Python, Go, Rust |
 | 15 | `EAI-115` | [Blockchain & Decentralised AI](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#course-15) | Verifiable data, model provenance and decentralised trust for AI ecosystems | Solidity, Rust, Go |
 
+## Top 10 Real-Time Enterprise Products
+
+One flagship product per industry domain. Each combines several courses into a real-time, production-grade system that student teams build as a capstone and enterprises actually run. [Explore the product blueprints on the website](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#products).
+
+| # | Domain | Enterprise product | What happens in real time | Courses |
+|:-:|:--|:--|:--|:--|
+| 1 | 🏦 Banking, Fintech & Payments | [**Real-Time Fraud & Risk Intelligence Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-1) | Each transaction is scored as it streams in, within a sub-100 ms budget; risky ones are held, challenged or blocked before money leaves the account. | 2, 9, 3, 14, 10, 6 |
+| 2 | 🏥 Healthcare & Life Sciences | [**Clinical Decision & Medical Imaging Copilot**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-2) | Scans are triaged as they are uploaded and urgent cases jump the queue; bedside vitals stream to early-warning models that alert care teams. | 5, 3, 6, 10, 12, 9 |
+| 3 | 🏭 Manufacturing & Industry 4.0 | [**Smart Factory Quality & Predictive Maintenance Suite**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-3) | Cameras inspect every part at line speed on edge devices; vibration and temperature sensors raise maintenance alerts before failure. | 5, 12, 13, 4, 2, 9 |
+| 4 | 🛒 Retail & E-commerce | [**Real-Time Personalisation & Conversational Commerce Engine**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-4) | Recommendations and offers update with every click; a shopping agent answers, compares and orders in the customer's language. | 2, 4, 6, 7, 8, 9 |
+| 5 | 🚚 Logistics & Supply Chain | [**Autonomous Supply-Chain Control Tower**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-5) | Live GPS, warehouse and order events feed forecasts and route optimisers; agents re-route, re-allocate stock and notify customers automatically. | 1, 2, 4, 7, 13, 15 |
+| 6 | 📡 Telecom & Network Operations | [**AIOps Self-Healing Network Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-6) | Telemetry streams are scanned for anomalies continuously; agents diagnose root cause and trigger approved remediation runbooks. | 9, 2, 3, 7, 14, 11 |
+| 7 | ⚡ Energy, Utilities & Climate | [**Smart Grid Forecasting & Optimisation Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-7) | Smart-meter and weather streams drive short-term forecasts; optimisers schedule storage, demand response and dispatch every few minutes. | 2, 3, 4, 12, 11, 9 |
+| 8 | 🌾 Agriculture & Food | [**Precision Agriculture Intelligence Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-8) | Drone and field-sensor data are analysed on arrival; farmers get voice advisories in their language and alerts before pest or water stress spreads. | 5, 12, 13, 6, 2, 15 |
+| 9 | 🏛️ Government, Smart Cities & Public Safety | [**Citizen Services & Urban Operations Command Centre**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-9) | Video and sensor streams flag incidents and congestion live; a multilingual citizen agent answers questions and tracks applications round the clock. | 6, 7, 5, 10, 9, 1 |
+| 10 | 🎓 Education & Skilling | [**AI Learning, Outcome & Placement Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-10) | Every quiz, lab and GitHub commit updates the learner's mastery map; the tutor adapts instantly and dashboards show CO–PO attainment live. | 6, 7, 2, 9, 10, 8 |
+
+<details>
+<summary><b>🏦 1. Real-Time Fraud & Risk Intelligence Platform</b> (Banking, Fintech & Payments)</summary>
+
+**Business problem:** Digital payments such as UPI and cards move in seconds, and fraud moves with them. Rule engines miss new patterns and flood analysts with false alarms.
+
+**Modules**
+
+1. Streaming feature pipeline on transaction events (Kafka + feature store)
+2. Gradient-boosted risk model with SHAP reason codes for every decision
+3. Graph neural network that uncovers mule accounts and fraud rings
+4. LLM analyst copilot that summarises cases and drafts suspicious-transaction reports
+5. Model governance pack: drift monitoring, fairness tests and audit trail for regulators
+
+**Courses that build it:** 2. Machine Learning, 9. Data Engineering for AI, 3. Deep Learning, 14. AI-Driven Cybersecurity, 10. Trustworthy AI, 6. Large Language Models
+
+**Technology stack:** Kafka, Spark Structured Streaming, Feast, XGBoost, PyTorch Geometric, FastAPI, MLflow, Neo4j
+
+**Business KPIs:** Fraud caught before settlement, False-positive rate, p99 scoring latency, Analyst minutes per case
+
+**Job roles it showcases:** Machine Learning Engineer, Security Data Scientist, AI Data Engineer, Responsible AI Specialist
+
+**Context:** UPI, cards, net banking, RBI and DPDP Act compliance
+
+</details>
+
+<details>
+<summary><b>🏥 2. Clinical Decision & Medical Imaging Copilot</b> (Healthcare & Life Sciences)</summary>
+
+**Business problem:** Specialists are scarce outside big cities, scans wait in queues, and patient histories are scattered across reports.
+
+**Modules**
+
+1. Deep-learning triage for retinal, chest X-ray and CT images with heat-map explanations
+2. RAG assistant over patient records and clinical guidelines with cited answers
+3. Early-warning score from streaming vitals at the edge
+4. Federated learning so hospitals train together without sharing patient data
+5. Clinician-in-the-loop review, consent and audit log
+
+**Courses that build it:** 5. Computer Vision, 3. Deep Learning, 6. Large Language Models, 10. Trustworthy AI, 12. Edge AI, TinyML & AIoT, 9. Data Engineering for AI
+
+**Technology stack:** PyTorch, MONAI, FHIR, LangGraph, pgvector, Flower (federated), NVIDIA Triton, ONNX
+
+**Business KPIs:** Time to triage urgent scans, Sensitivity on referable cases, Clinician time saved per report, Explanation acceptance rate
+
+**Job roles it showcases:** Computer Vision Engineer, LLM Engineer, Responsible AI Specialist, Edge AI Engineer
+
+**Context:** ABDM health records, tele-ophthalmology, hospital PACS
+
+</details>
+
+<details>
+<summary><b>🏭 3. Smart Factory Quality & Predictive Maintenance Suite</b> (Manufacturing & Industry 4.0)</summary>
+
+**Business problem:** Manual inspection misses defects and unplanned downtime halts production lines at great cost.
+
+**Modules**
+
+1. Edge vision inspection for surface and assembly defects
+2. TinyML anomaly detection on vibration and acoustic sensors
+3. Remaining-useful-life forecasting for critical machines
+4. Digital twin of the line for what-if simulation
+5. Reinforcement-learning scheduler that re-plans jobs around breakdowns
+
+**Courses that build it:** 5. Computer Vision, 12. Edge AI, TinyML & AIoT, 13. Physical AI & Intelligent Robotics, 4. Reinforcement Learning, 2. Machine Learning, 9. Data Engineering for AI
+
+**Technology stack:** YOLO-class detectors, NVIDIA Jetson, TensorFlow Lite Micro, MQTT, Isaac Sim, OR-Tools, Grafana, TimescaleDB
+
+**Business KPIs:** Defect escape rate, Unplanned downtime hours, Overall equipment effectiveness (OEE), Scrap and rework cost
+
+**Job roles it showcases:** Edge AI Engineer, Computer Vision Engineer, Simulation & Digital Twin Engineer, Embedded ML Engineer
+
+**Context:** Automotive, electronics, pharma and steel plants; Make in India lines
+
+</details>
+
+<details>
+<summary><b>🛒 4. Real-Time Personalisation & Conversational Commerce Engine</b> (Retail & E-commerce)</summary>
+
+**Business problem:** Generic catalogues and static prices lose shoppers; support teams cannot answer millions of questions in many languages.
+
+**Modules**
+
+1. Session-based recommender updated from live click streams
+2. Reinforcement-learning dynamic pricing and offer optimisation
+3. Generative product descriptions and images at catalogue scale
+4. Multilingual shopping agent that searches, compares and places orders
+5. A/B experimentation and guardrails against unfair pricing
+
+**Courses that build it:** 2. Machine Learning, 4. Reinforcement Learning, 6. Large Language Models, 7. Agentic AI, 8. Generative AI, 9. Data Engineering for AI
+
+**Technology stack:** Kafka, Redis, Two-tower retrieval, Ray RLlib, vLLM, Stable Diffusion-class models, LangGraph, Bhashini APIs
+
+**Business KPIs:** Conversion rate, Average order value, Search-to-purchase time, Support tickets resolved by the agent
+
+**Job roles it showcases:** Machine Learning Engineer, Generative AI Developer, Agentic AI Engineer, Decision Scientist
+
+**Context:** Marketplaces, quick commerce, ONDC sellers, D2C brands
+
+</details>
+
+<details>
+<summary><b>🚚 5. Autonomous Supply-Chain Control Tower</b> (Logistics & Supply Chain)</summary>
+
+**Business problem:** Demand swings, traffic and stock-outs break plans every day, and teams react by phone and spreadsheet.
+
+**Modules**
+
+1. Demand forecasting by SKU and location
+2. Route and fleet optimisation with live traffic
+3. Warehouse robotics coordination for picking and sorting
+4. Exception-handling agents that re-plan and inform customers
+5. Blockchain traceability for high-value and cold-chain goods
+
+**Courses that build it:** 1. Artificial Intelligence, 2. Machine Learning, 4. Reinforcement Learning, 7. Agentic AI, 13. Physical AI & Intelligent Robotics, 15. Blockchain & Decentralised AI
+
+**Technology stack:** OR-Tools, LightGBM, ROS 2, Kafka, LangGraph, Hyperledger Fabric, PostGIS, Superset
+
+**Business KPIs:** On-time-in-full delivery (OTIF), Cost per shipment, Inventory turns, Exceptions closed without human touch
+
+**Job roles it showcases:** Optimisation Engineer, Agentic AI Engineer, Robotics Software Engineer, Blockchain Developer
+
+**Context:** 3PLs, e-commerce fulfilment, ports, cold chain, PM Gati Shakti corridors
+
+</details>
+
+<details>
+<summary><b>📡 6. AIOps Self-Healing Network Platform</b> (Telecom & Network Operations)</summary>
+
+**Business problem:** 5G networks produce billions of telemetry events; outages are found late and diagnosed by hand.
+
+**Modules**
+
+1. Streaming anomaly detection on network KPIs and logs
+2. Root-cause analysis over the network topology graph
+3. Remediation agents with human approval for risky actions
+4. Churn prediction and next-best-offer for subscribers
+5. Quantum-safe cryptography readiness assessment
+
+**Courses that build it:** 9. Data Engineering for AI, 2. Machine Learning, 3. Deep Learning, 7. Agentic AI, 14. AI-Driven Cybersecurity, 11. Quantum Computing & Quantum AI
+
+**Technology stack:** Kafka, Flink, Isolation Forest / autoencoders, Graph neural networks, LangGraph, Prometheus, OpenTelemetry, Qiskit
+
+**Business KPIs:** Mean time to detect (MTTD), Mean time to repair (MTTR), Network availability, Subscriber churn
+
+**Job roles it showcases:** AI Platform Engineer, Streaming Engineer, Detection Engineer, Post-Quantum Cryptography Engineer
+
+**Context:** 5G operators, ISPs, data centres, network equipment makers
+
+</details>
+
+<details>
+<summary><b>⚡ 7. Smart Grid Forecasting & Optimisation Platform</b> (Energy, Utilities & Climate)</summary>
+
+**Business problem:** Renewables and electric vehicles make supply and demand volatile; manual dispatch wastes energy and money.
+
+**Modules**
+
+1. Load and solar/wind generation forecasting
+2. Reinforcement-learning control for batteries and demand response
+3. Edge analytics on smart meters and substations
+4. Theft and loss detection from meter data
+5. Quantum and classical optimisation pilot for unit commitment
+
+**Courses that build it:** 2. Machine Learning, 3. Deep Learning, 4. Reinforcement Learning, 12. Edge AI, TinyML & AIoT, 11. Quantum Computing & Quantum AI, 9. Data Engineering for AI
+
+**Technology stack:** Temporal Fusion Transformer, Ray RLlib, TinyML, MQTT, Pyomo, Qiskit Optimization, InfluxDB, Airflow
+
+**Business KPIs:** Forecast error (MAPE), Renewable curtailment, Peak-demand cost, Aggregate technical and commercial losses
+
+**Job roles it showcases:** Decision Scientist, Reinforcement Learning Engineer, Edge AI Engineer, Quantum Algorithm Developer
+
+**Context:** DISCOMs, solar parks, EV charging networks, smart-meter roll-outs
+
+</details>
+
+<details>
+<summary><b>🌾 8. Precision Agriculture Intelligence Platform</b> (Agriculture & Food)</summary>
+
+**Business problem:** Small farmers decide on water, fertiliser and pests with little data, and buyers cannot verify crop origin or quality.
+
+**Modules**
+
+1. Crop health and pest detection from drone and satellite imagery
+2. Soil-moisture and micro-climate sensing with TinyML nodes
+3. Voice and chat advisory assistant in Indian languages
+4. Yield and price forecasting for planning and credit
+5. Farm-to-fork traceability on a permissioned blockchain
+
+**Courses that build it:** 5. Computer Vision, 12. Edge AI, TinyML & AIoT, 13. Physical AI & Intelligent Robotics, 6. Large Language Models, 2. Machine Learning, 15. Blockchain & Decentralised AI
+
+**Technology stack:** Sentinel-2 imagery, Segmentation models, LoRaWAN, Edge Impulse, Bhashini / speech models, RAG, Hyperledger Fabric, Flutter
+
+**Business KPIs:** Yield per acre, Water and fertiliser saved, Advisory adoption rate, Traceable produce share
+
+**Job roles it showcases:** Computer Vision Engineer, TinyML Engineer, NLP Engineer, Web3 + AI Engineer
+
+**Context:** FPOs, agritech start-ups, crop insurance, AgriStack and drone programmes
+
+</details>
+
+<details>
+<summary><b>🏛️ 9. Citizen Services & Urban Operations Command Centre</b> (Government, Smart Cities & Public Safety)</summary>
+
+**Business problem:** Citizens queue for services and paperwork; city teams monitor traffic, safety and civic issues across thousands of cameras and complaints.
+
+**Modules**
+
+1. Multilingual citizen-service agent for applications and grievances
+2. Document AI that reads and verifies certificates and forms
+3. Traffic and crowd video analytics with privacy masking
+4. Grievance clustering and routing to the right department
+5. Responsible-AI controls: consent, bias audits and public transparency reports
+
+**Courses that build it:** 6. Large Language Models, 7. Agentic AI, 5. Computer Vision, 10. Trustworthy AI, 9. Data Engineering for AI, 1. Artificial Intelligence
+
+**Technology stack:** LangGraph, OCR + layout models, DeepStream, Kafka, Elasticsearch, OpenStreetMap, Bhashini APIs, DigiLocker APIs
+
+**Business KPIs:** Service turnaround time, Grievance resolution time, Incident response time, Citizen satisfaction
+
+**Job roles it showcases:** Agentic AI Engineer, Document AI Engineer, Video Analytics Engineer, AI Governance & Compliance Lead
+
+**Context:** Smart Cities Mission, e-governance portals, police and traffic control rooms
+
+</details>
+
+<details>
+<summary><b>🎓 10. AI Learning, Outcome & Placement Platform</b> (Education & Skilling)</summary>
+
+**Business problem:** Large classes leave students behind, OBE and accreditation evidence is compiled by hand, and placement matching is guesswork.
+
+**Modules**
+
+1. Adaptive AI tutor grounded in the course material, with citations
+2. Automatic CO–PO attainment analytics for NBA and NAAC
+3. Code and lab auto-grading with feedback
+4. Skills-to-jobs matching agent built on this curriculum's careers map
+5. Academic-integrity checks and fair, explainable assessment
+
+**Courses that build it:** 6. Large Language Models, 7. Agentic AI, 2. Machine Learning, 9. Data Engineering for AI, 10. Trustworthy AI, 8. Generative AI
+
+**Technology stack:** RAG, LangGraph, Knowledge tracing models, dbt, Superset, GitHub APIs, Moodle / LTI, FastAPI
+
+**Business KPIs:** Learning gain per course, Attainment of course outcomes, Time saved on accreditation evidence, Placement rate and offer quality
+
+**Job roles it showcases:** LLM Engineer, Agentic AI Engineer, Analytics Engineer, AI Product Manager
+
+**Context:** Universities, NEP 2020 outcome-based education, NBA and NAAC, skilling missions
+
+</details>
+
 ## Skills & Jobs by Course
 
 **Colour code:** 🟠 Saffron = Fresher / Entry (0–2 yrs) · 🔵 Chakra navy = Mid-level (3–5 yrs) · 🟢 Green = Senior (6+ yrs)
@@ -671,13 +938,14 @@ index.html                  the website (GitHub Pages)
 Enterprise_AI_Syllabus.pdf  the complete 55-page syllabus
 data/courses.json           structured data for all 15 courses
 data/careers.json           skills, jobs, companies, salaries and career pathways
+data/products.json          10 real-time enterprise product blueprints
 src/template.html           website template
 scripts/parse.py            extracts course data from the syllabus text
 scripts/build.py            builds index.html from the template and data
 assets/                     AlgoProfessor logo
 ```
 
-To rebuild the site after editing `data/courses.json`, `data/careers.json` or the template:
+To rebuild the site after editing any file in `data/` or the template:
 
 ```bash
 python3 scripts/build.py data/courses.json src/template.html index.html

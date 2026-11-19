@@ -83,7 +83,7 @@ h2{font-size:clamp(30px,4vw,44px);color:var(--navy);margin:6px 0 8px}
 .md{max-width:980px;margin:20px auto;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.25);animation:rise .35s cubic-bezier(.2,.8,.2,1)}
 @keyframes rise{from{transform:translateY(30px);opacity:0}}
 .mh{padding:30px 34px 22px;background:linear-gradient(135deg,var(--goldbg),#fff);border-bottom:1px solid var(--line);position:relative}
-.mh h2{margin:4px 0}.mh .x{position:absolute;right:20px;top:18px;border:0;background:#fff;border-radius:50%;width:40px;height:40px;font-size:22px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.mh h2{margin:4px 0;padding-right:44px}.mh .kick{padding-right:48px}.mh .x{position:absolute;right:20px;top:18px;border:0;background:#fff;border-radius:50%;width:40px;height:40px;font-size:22px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.1)}
 .mb{padding:26px 34px 34px}
 .mb h4{color:var(--navy);font-size:21px;margin:26px 0 10px;border-bottom:2px solid var(--goldbg);padding-bottom:6px}
 .facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
@@ -144,6 +144,27 @@ th{color:var(--navy);background:#FAFBFD}
 .legend .a{background:var(--l1bg);color:var(--l1t)}.legend .a i{background:var(--l1)}.legend .b{background:var(--l2bg);color:var(--l2t)}.legend .b i{background:var(--l2)}.legend .c{background:var(--l3bg);color:var(--l3t)}.legend .c i{background:var(--l3)}
 .stbl{width:100%;font-size:15.5px}.stbl td:first-child{font-weight:700;color:var(--navy)}.stbl td{white-space:nowrap}.stbl td:first-child{white-space:normal}
 .src{font-size:14px;color:var(--muted);columns:2;column-gap:28px;margin-top:14px}.src a{color:var(--navy2)}
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pd{position:relative;display:grid;grid-template-columns:64px 1fr;gap:16px;border:1px solid var(--line);border-radius:20px;padding:22px;background:#fff;cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden}
+.pd:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(11,31,58,.12);border-color:var(--gold)}
+.pd::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(180deg,var(--l1),#fff 50%,var(--l3))}
+.pi{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:32px;background:var(--goldbg);border:1px solid #EADFC2}
+.pd .dm{font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700}
+.pd h3{margin:4px 0 4px;font-size:22px;color:var(--navy);line-height:1.2}.pd p{margin:0 0 10px;color:var(--muted);font-size:16px}
+.pn{position:absolute;right:18px;top:14px;font-size:44px;font-weight:700;color:transparent;-webkit-text-stroke:1px #E6DCC0;line-height:1}
+.rt{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--l3t);background:var(--l3bg);border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.rt i{width:8px;height:8px;border-radius:50%;background:var(--l3);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(19,136,8,.5)}70%{box-shadow:0 0 0 8px rgba(19,136,8,0)}100%{box-shadow:0 0 0 0 rgba(19,136,8,0)}}
+.cn{display:inline-grid;place-items:center;min-width:28px;height:28px;padding:0 6px;border-radius:8px;background:var(--navy);color:#fff;font-size:13px;font-weight:700;margin:0 5px 5px 0}
+.cn.em{background:var(--l3)}
+.box{padding:16px 18px;border-radius:14px;margin:8px 0}.box.pb{background:var(--l1bg);border-left:4px solid var(--l1)}.box.rtb{background:var(--l3bg);border-left:4px solid var(--l3)}
+.box b{color:var(--navy)}
+ol.mods{padding-left:0;list-style:none;counter-reset:m;margin:0}ol.mods li{counter-increment:m;position:relative;padding:10px 12px 10px 48px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px}
+ol.mods li::before{content:counter(m);position:absolute;left:12px;top:9px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--l2);color:#fff;font-size:13px;font-weight:700}
+.chips span{display:inline-block;margin:0 6px 6px 0;padding:4px 11px;border-radius:999px;background:#F3F5F9;font-size:14.5px;color:var(--navy)}
+.chips.k span{background:var(--l2bg);color:var(--l2t)}
+.prodlink{display:inline-block;margin:0 8px 8px 0;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;font:600 15px "Times New Roman",serif;color:var(--navy)}
+.prodlink:hover{border-color:var(--gold);background:var(--goldbg)}
 /* lang */
 .lang{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .lg{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;transition:transform .25s}.lg:hover{transform:translateY(-4px)}
@@ -185,8 +206,8 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 .logo-anim{animation:float 6s ease-in-out infinite}@keyframes float{50%{transform:translateY(-4px)}}
 .top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold);color:#fff;font-size:22px;cursor:pointer;opacity:0;transition:opacity .3s;z-index:40}
 .top.on{opacity:1}
-@media(max-width:980px){.paths{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
-@media(max-width:620px){.sal{grid-template-columns:1fr}.src{columns:1}.stbl td{white-space:normal}.paths,.skills,.jobs{grid-template-columns:1fr}.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
+@media(max-width:980px){.prods{grid-template-columns:1fr}.paths{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
+@media(max-width:620px){.pd{grid-template-columns:1fr}.pn{display:none}.sal{grid-template-columns:1fr}.src{columns:1}.stbl td{white-space:normal}.paths,.skills,.jobs{grid-template-columns:1fr}.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -194,7 +215,7 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <div class="tri"></div>
 <nav><div class="wrap">
 <a class="brand" href="#top"><img class="logo-anim" src="assets/algoprofessor-logo.svg" alt="AlgoProfessor logo"></a>
-<div class="links"><a href="#message">Message</a><a href="#courses">Courses</a><a href="#careers">Careers &amp; Jobs</a><a href="#languages">Languages</a><a href="#services">Consultancy</a><a href="#assessment">Assessment</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#message">Message</a><a href="#courses">Courses</a><a href="#products">Products</a><a href="#careers">Careers &amp; Jobs</a><a href="#languages">Languages</a><a href="#services">Consultancy</a><a href="#assessment">Assessment</a><a href="#contact">Contact</a></div>
 <a class="btn p" href="Enterprise_AI_Syllabus.pdf" download>⬇ Syllabus PDF</a>
 </div></nav>
 
@@ -231,6 +252,12 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <div class="toolbar rv"><button class="tab on" data-f="all">All 15</button><button class="tab" data-f="core">Core AI Track</button><button class="tab" data-f="em">Emerging Technologies</button><input class="search" id="q" placeholder="Search a topic, tool or career…" aria-label="Search courses"></div>
 <div class="grid" id="grid"></div>
 <p id="none" style="display:none;text-align:center;color:var(--muted)">No course matches that search.</p>
+</div></section>
+
+<section class="alt" id="products"><div class="wrap">
+<div class="sh rv"><div class="kick">Where the 15 courses come together</div><h2>Top 10 Real-Time Enterprise Products</h2><p class="lead">One flagship product per industry domain. Each combines several courses into a real-time, production-grade system that student teams can build as a capstone, and that enterprises actually run.</p><div class="rule"></div></div>
+<div class="legend" style="margin-top:-8px"><span class="b"><i style="background:var(--navy)"></i>Core AI course (1–10)</span><span class="c"><i></i>Emerging technology course (11–15)</span><span class="c"><i></i>Real-time, production-grade</span></div>
+<div class="prods" id="prods"></div>
 </div></section>
 
 <section id="careers"><div class="wrap">
@@ -283,7 +310,7 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <button class="top" id="top" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
-const COURSES=__DATA__;const CAR=__CAREERS__;
+const COURSES=__DATA__;const CAR=__CAREERS__;const PROD=__PRODUCTS__;
 const LANGS=[["Python","Courses 1–14","The working language of AI: models, agents, data and evaluation. AI coding assistants make it even more productive."],["C++ / CUDA","Courses 1, 3, 4, 5, 8, 11, 12, 13","The performance layer: GPU kernels, inference engines, simulators, robots and edge devices."],["Rust","Courses 6, 10, 12, 13, 14, 15","Memory-safe systems language for AI infrastructure, security, embedded and blockchain."],["SQL","Courses 2, 9","The most durable data skill; every AI product depends on well-modelled data."],["TypeScript / JavaScript","Courses 6, 7, 8","Delivers AI to users: web apps, chat interfaces, MCP servers and agent SDKs."],["Go","Courses 7, 14, 15","Cloud-native services, agent platforms, security tools and enterprise blockchain."],["Java / Scala","Courses 1, 9","JVM backbone of enterprise systems and big-data streaming engines."],["Domain languages","R · Julia · OpenQASM 3 · Solidity · Mojo","Statistics, scientific computing, quantum circuits, smart contracts and next-generation AI performance."]];
 const TRENDS=[["AI-assisted engineering","Engineers direct coding agents; review, testing, specification and design matter more than typing code."],["Polyglot by default","Python models served by C++/Rust engines, reached through TypeScript or Go, fed by SQL pipelines."],["Memory safety by design","Security guidance increasingly favours memory-safe languages such as Rust for critical systems."],["Performance engineering","GPU, edge and quantum hardware reward engineers who optimise below the Python layer."],["Specification & verification","Formal contracts, typed interfaces and evaluation suites become how humans control AI-written code."]];
 const SVC=[["Curriculum Adoption & Customisation","Adapt the 15 courses to your regulations, credits and semester plan; BoS documents, course files and CO–PO–PSO mapping."],["Faculty Development Programmes","Hands-on FDPs and train-the-trainer bootcamps for every course, with teaching kits, slides and assessment banks."],["AI & Emerging-Tech Laboratory Set-up","GPU, edge, robotics, quantum-simulation and SOC labs; software stacks, cloud credits guidance and lab manuals."],["GitHub Course Repositories","Version-controlled repositories with notebooks, code, datasets and solutions for all units and labs."],["Industry Capstones & Live Projects","“One Student, One Project”: real enterprise problems, weekly milestones and GitHub portfolios."],["Certification Readiness","Preparation tracks mapped to AWS, Microsoft, Google Cloud, NVIDIA, Databricks, IBM, CompTIA and more."],["Centre of Excellence in AI","Research themes, industry partnerships, hackathons and incubation for student start-ups."],["Research, Patents & Q1 Publications","Research mentoring, sponsored projects, patent drafting support and Q1/SCI paper development."],["Accreditation & Ranking Support","OBE evidence, outcome attainment and documentation for NBA, NAAC, NIRF and international rankings."],["Placement & Career Readiness","Role-based training for AI Engineer, Agentic AI, Data, Cybersecurity and Physical AI careers."]];
@@ -311,10 +338,11 @@ $("#md").innerHTML=`<div class="mh"><button class="x" aria-label="Close" onclick
 <h4>Indicative Salary in India (CTC per year)</h4><div class="sal"><div class="sb"><span>Fresher / Entry (0–2 yrs)</span><b>₹${K.salary.entry} LPA</b></div><div class="sb"><span>Mid-level (3–5 yrs)</span><b>₹${K.salary.mid} LPA</b></div><div class="sb"><span>Senior (6+ yrs)</span><b>₹${K.salary.senior} LPA</b></div></div>
 <p class="snote">Based on ${esc(K.salary.basis)}. ${esc(CAR.salary_note)} <a href="#salaries" onclick="closeM()">Sources</a></p>
 <p style="font-size:15px;color:var(--muted);margin:10px 0 0"><b style="color:var(--navy)">Portfolio you graduate with:</b> five unit artefacts, eight lab projects and the capstone above, all on GitHub.</p>
+<h4>Enterprise Products That Use This Course</h4>${PROD.filter(p=>p.courses.includes(c.num)).map(p=>`<button class="prodlink" onclick="openP(${p.id-1})">${p.icon} ${esc(p.name)}</button>`).join("")}
 <div class="two"><div><h4>Top 3 Programming Languages</h4>${c.languages.map((l,k)=>`<span class="pill" style="margin:0 6px 6px 0;display:inline-block">#${k+1} ${esc(l)}</span>`).join("")}</div>
 <div><h4>Recommended Certifications</h4><table><tr><th>Certification</th><th>Level</th></tr>${c.certs.map(x=>`<tr><td>${esc(x.name)}<br><small style="color:var(--muted)">${esc(x.issuer)} · Units ${esc(x.units)}</small></td><td><span class="lv">${esc(x.level)}</span></td></tr>`).join("")}</table></div></div>
 <p style="margin-top:24px;font-size:15px;color:var(--muted)">Industry tools, text books and full detail are in the <a href="Enterprise_AI_Syllabus.pdf" download>complete syllabus PDF</a>.</p></div>`;
-$("#ov").classList.add("on");document.body.style.overflow="hidden";
+$("#ov").classList.add("on");document.body.style.overflow="hidden";$("#ov").scrollTop=0;
 setTimeout(()=>document.querySelectorAll("#md .bl i").forEach(e=>e.style.width=e.dataset.w),60);
 history.replaceState(null,"","#course-"+c.num);}
 function closeM(){$("#ov").classList.remove("on");document.body.style.overflow="";history.replaceState(null,"","#courses")}
@@ -323,6 +351,16 @@ $("#grid").addEventListener("keydown",e=>{const a=e.target.closest(".cc");if(a&&
 $("#ov").addEventListener("click",e=>{if(e.target.id==="ov")closeM()});addEventListener("keydown",e=>{if(e.key==="Escape")closeM()});
 let F="all";function filt(){const q=$("#q").value.toLowerCase().trim();let n=0;document.querySelectorAll(".cc").forEach(el=>{const c=COURSES[+el.dataset.i];const ok=(F==="all"||el.dataset.t===F)&&(!q||JSON.stringify(c).toLowerCase().includes(q));el.style.display=ok?"":"none";if(ok)n++});$("#none").style.display=n?"none":"block"}
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));b.classList.add("on");F=b.dataset.f;filt()});$("#q").oninput=filt;
+$("#prods").innerHTML=PROD.map(p=>`<article class="pd rv" tabindex="0" onclick="openP(${p.id-1})" onkeydown="if(event.key==='Enter')openP(${p.id-1})"><span class="pn">${String(p.id).padStart(2,"0")}</span><div class="pi" aria-hidden="true">${p.icon}</div><div><div class="dm">${esc(p.domain)}</div><h3>${esc(p.name)}</h3><p>${esc(p.tagline)}</p><span class="rt"><i></i>Real-time</span><div>${p.courses.map(n=>`<span class="cn ${n>10?"em":""}" title="${esc(COURSES[n-1].title)}">${n}</span>`).join("")}</div><div class="more" style="margin-top:6px;font-weight:700;color:var(--gold);font-size:15px">Product blueprint →</div></div></article>`).join("");
+function openP(i){const p=PROD[i];
+$("#md").innerHTML=`<div class="mh"><button class="x" aria-label="Close" onclick="closeM()">×</button><div class="kick">Enterprise product ${p.id} of 10 · ${esc(p.domain)}</div><h2>${p.icon} ${esc(p.name)}</h2><div style="color:var(--muted)">${esc(p.tagline)}</div><div class="facts"><span class="pill">Context: ${esc(p.context)}</span></div></div>
+<div class="mb"><div class="box pb"><b>The business problem:</b> ${esc(p.problem)}</div><div class="box rtb"><b>What happens in real time:</b> ${esc(p.realtime)}</div>
+<h4>Product Modules</h4><ol class="mods">${p.modules.map(m=>`<li>${esc(m)}</li>`).join("")}</ol>
+<h4>Courses That Build It</h4>${p.courses.map(n=>`<button class="cb" onclick="openC(${n-1})">${n}. ${esc(COURSES[n-1].title)}</button>`).join("")}
+<div class="two"><div><h4>Technology Stack</h4><div class="chips">${p.stack.map(x=>`<span>${esc(x)}</span>`).join("")}</div></div><div><h4>Business KPIs It Moves</h4><div class="chips k">${p.kpis.map(x=>`<span>${esc(x)}</span>`).join("")}</div></div></div>
+<h4>Job Roles This Product Showcases</h4><div class="chips">${p.roles.map(x=>`<span>${esc(x)}</span>`).join("")}</div>
+<p style="margin-top:22px;font-size:15px;color:var(--muted)">Built as a team capstone, this product becomes a GitHub portfolio piece that maps directly to the roles above.</p></div>`;
+$("#ov").classList.add("on");document.body.style.overflow="hidden";$("#ov").scrollTop=0;history.replaceState(null,"","#product-"+p.id);}
 $("#paths").innerHTML=CAR.pathways.map(p=>`<div class="pa rv"><h4>${esc(p.role)}</h4><p>${esc(p.note)}</p>${p.courses.map(n=>`<button class="cb" onclick="openC(${n-1})">${n}. ${esc(COURSES[n-1].title)}</button>`).join("")}${p.plus.map(n=>`<button class="cb plus" onclick="openC(${n-1})">+ ${esc(COURSES[n-1].title)}</button>`).join("")}</div>`).join("");
 $("#stb").innerHTML=COURSES.map(c=>{const k=CAR.courses[c.num];return `<tr><td><a href="#course-${c.num}" onclick="event.preventDefault();openC(${c.num-1})">${c.num}. ${esc(c.title)}</a></td><td class="e">₹${k.salary.entry}</td><td class="m">₹${k.salary.mid}</td><td class="s">₹${k.salary.senior}</td><td style="white-space:normal;font-size:14px;color:var(--muted)">${k.companies.slice(0,5).map(esc).join(", ")}</td></tr>`}).join("");
 $("#snote").textContent=CAR.salary_note;
@@ -338,6 +376,7 @@ function count(el){const n=+el.dataset.n,t0=performance.now();(function f(t){con
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add("in");el.querySelectorAll("[data-n]").forEach(count);el.querySelectorAll(".bar i").forEach(i=>i.style.width=i.dataset.w);io.unobserve(el)}),{threshold:.12});
 document.querySelectorAll(".rv").forEach((el,i)=>{el.style.transitionDelay=(i%6)*60+"ms";io.observe(el)});
 addEventListener("scroll",()=>$("#top").classList.toggle("on",scrollY>600));
+if(location.hash.startsWith("#product-")){const k=+location.hash.slice(9);if(k>=1&&k<=PROD.length)setTimeout(()=>openP(k-1),300)}
 if(location.hash.startsWith("#course-")){const k=+location.hash.slice(8);if(k>=1&&k<=COURSES.length)setTimeout(()=>openC(k-1),300)}
 /* hero network */
 (function(){const cv=$("#net"),x=cv.getContext("2d");let W,H,P=[];const cols=["#FF9933","#000080","#138808","#A8811C"];
