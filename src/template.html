@@ -184,6 +184,16 @@ ol.mods li::before{content:counter(m);position:absolute;left:12px;top:9px;width:
 .road{display:grid;grid-template-columns:1fr 1fr;gap:14px}.rd{padding:16px 18px;border-radius:14px;border:1px solid var(--line)}
 .rd.m{background:var(--l1bg);border-top:4px solid var(--l1)}.rd.s{background:var(--l3bg);border-top:4px solid var(--l3)}.rd small{font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:12px;color:var(--muted)}
 .moat li{margin:6px 0}
+.hgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center;text-align:left}
+.hgrid .sub{margin:0 0 18px}.hgrid .tracks,.hgrid .cta{justify-content:flex-start}
+.hr{position:relative;height:560px;border-radius:28px}
+#hero3d{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y}
+#hero3d:active{cursor:grabbing}
+.tip{position:absolute;pointer-events:none;transform:translate(-50%,-130%);background:var(--navy);color:#fff;padding:8px 14px;border-radius:12px;font-size:15px;white-space:nowrap;opacity:0;transition:opacity .2s;box-shadow:0 10px 24px rgba(11,31,58,.25);z-index:3}
+.tip b{color:#F2D372}.tip.on{opacity:1}
+.hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font-size:13.5px;color:var(--muted);background:rgba(255,255,255,.8);padding:4px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.hero.gl #net{display:none}
+.tilt{transform-style:preserve-3d;will-change:transform}
 /* lang */
 .lang{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .lg{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;transition:transform .25s}.lg:hover{transform:translateY(-4px)}
@@ -225,8 +235,8 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 .logo-anim{animation:float 6s ease-in-out infinite}@keyframes float{50%{transform:translateY(-4px)}}
 .top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold);color:#fff;font-size:22px;cursor:pointer;opacity:0;transition:opacity .3s;z-index:40}
 .top.on{opacity:1}
-@media(max-width:980px){.ug{grid-template-columns:1fr}.prods{grid-template-columns:1fr}.paths{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
-@media(max-width:620px){.road{grid-template-columns:1fr}.pd{grid-template-columns:1fr}.pn{display:none}.sal{grid-template-columns:1fr}.src{columns:1}.stbl td{white-space:normal}.paths,.skills,.jobs{grid-template-columns:1fr}.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
+@media(max-width:980px){.hgrid{grid-template-columns:1fr;text-align:center}.hgrid .tracks,.hgrid .cta{justify-content:center}.hgrid .sub{margin:0 auto 18px}.hr{height:420px;order:-1}.ug{grid-template-columns:1fr}.prods{grid-template-columns:1fr}.paths{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
+@media(max-width:620px){.hr{height:340px}.road{grid-template-columns:1fr}.pd{grid-template-columns:1fr}.pn{display:none}.sal{grid-template-columns:1fr}.src{columns:1}.stbl td{white-space:normal}.paths,.skills,.jobs{grid-template-columns:1fr}.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -241,12 +251,19 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <header class="hero" id="top">
 <canvas id="net" aria-hidden="true"></canvas>
 <div class="wrap">
+<div class="hgrid"><div class="hl">
 <div class="kick rv">Industry-Aligned Course Syllabus · Curriculum Edition 2026–27</div>
 <h1 class="rv">Enterprise AI <span>Product Development</span></h1>
 <p class="sub rv">Fifteen courses, five units each. Every unit ends in a working artefact, every course in a deployable enterprise product, aligned to the AI careers of 2026–2035.</p>
 <div class="author rv">Dr S Satyanarayana <b>Ph.D., PDF(AI), FARSC</b><br><span style="color:var(--muted);font-size:17px">Founder, CEO &amp; Chief Agentic AI Scientist · AlgoProfessor AI R&amp;D Solutions, Hyderabad</span></div>
 <div class="tracks rv"><span class="pill s">Core AI Track · 10 courses</span><span class="pill n">Emerging Technologies Track · 5 courses</span><span class="pill gr">NEP 2020 · OBE · NBA / NAAC ready</span></div>
 <div class="cta rv"><a class="btn p" href="#courses">Explore the 15 courses →</a><a class="btn g" href="Enterprise_AI_Syllabus.pdf" download>⬇ Download full syllabus (PDF)</a></div>
+</div>
+<div class="hr" id="stage" aria-label="Interactive 3D map of the 15 courses. Hover a node to see a course; click to open it.">
+<canvas id="hero3d" aria-hidden="true"></canvas>
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+<div class="hint" id="hint">Hover a node · click to open a course</div>
+</div></div>
 <div class="stats rv" id="stats"></div>
 </div>
 </header>
@@ -336,7 +353,7 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <button class="top" id="top" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
-const COURSES=__DATA__;const CAR=__CAREERS__;const PROD=__PRODUCTS__;const UNI=__UNICORN__;
+const COURSES=__DATA__;window.COURSES=COURSES;const CAR=__CAREERS__;const PROD=__PRODUCTS__;const UNI=__UNICORN__;
 const LANGS=[["Python","Courses 1–14","The working language of AI: models, agents, data and evaluation. AI coding assistants make it even more productive."],["C++ / CUDA","Courses 1, 3, 4, 5, 8, 11, 12, 13","The performance layer: GPU kernels, inference engines, simulators, robots and edge devices."],["Rust","Courses 6, 10, 12, 13, 14, 15","Memory-safe systems language for AI infrastructure, security, embedded and blockchain."],["SQL","Courses 2, 9","The most durable data skill; every AI product depends on well-modelled data."],["TypeScript / JavaScript","Courses 6, 7, 8","Delivers AI to users: web apps, chat interfaces, MCP servers and agent SDKs."],["Go","Courses 7, 14, 15","Cloud-native services, agent platforms, security tools and enterprise blockchain."],["Java / Scala","Courses 1, 9","JVM backbone of enterprise systems and big-data streaming engines."],["Domain languages","R · Julia · OpenQASM 3 · Solidity · Mojo","Statistics, scientific computing, quantum circuits, smart contracts and next-generation AI performance."]];
 const TRENDS=[["AI-assisted engineering","Engineers direct coding agents; review, testing, specification and design matter more than typing code."],["Polyglot by default","Python models served by C++/Rust engines, reached through TypeScript or Go, fed by SQL pipelines."],["Memory safety by design","Security guidance increasingly favours memory-safe languages such as Rust for critical systems."],["Performance engineering","GPU, edge and quantum hardware reward engineers who optimise below the Python layer."],["Specification & verification","Formal contracts, typed interfaces and evaluation suites become how humans control AI-written code."]];
 const SVC=[["Curriculum Adoption & Customisation","Adapt the 15 courses to your regulations, credits and semester plan; BoS documents, course files and CO–PO–PSO mapping."],["Faculty Development Programmes","Hands-on FDPs and train-the-trainer bootcamps for every course, with teaching kits, slides and assessment banks."],["AI & Emerging-Tech Laboratory Set-up","GPU, edge, robotics, quantum-simulation and SOC labs; software stacks, cloud credits guidance and lab manuals."],["GitHub Course Repositories","Version-controlled repositories with notebooks, code, datasets and solutions for all units and labs."],["Industry Capstones & Live Projects","“One Student, One Project”: real enterprise problems, weekly milestones and GitHub portfolios."],["Certification Readiness","Preparation tracks mapped to AWS, Microsoft, Google Cloud, NVIDIA, Databricks, IBM, CompTIA and more."],["Centre of Excellence in AI","Research themes, industry partnerships, hackathons and incubation for student start-ups."],["Research, Patents & Q1 Publications","Research mentoring, sponsored projects, patent drafting support and Q1/SCI paper development."],["Accreditation & Ranking Support","OBE evidence, outcome attainment and documentation for NBA, NAAC, NIRF and international rankings."],["Placement & Career Readiness","Role-based training for AI Engineer, Agentic AI, Data, Cybersecurity and Physical AI careers."]];
@@ -427,6 +444,104 @@ function rs(){W=cv.width=cv.offsetWidth*devicePixelRatio;H=cv.height=cv.offsetHe
 rs();addEventListener("resize",rs);
 if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
 (function d(){x.clearRect(0,0,W,H);const L=140*devicePixelRatio;for(let i=0;i<P.length;i++){const a=P[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1;for(let j=i+1;j<P.length;j++){const b=P[j],dx=a.x-b.x,dy=a.y-b.y,q=Math.hypot(dx,dy);if(q<L){x.strokeStyle=`rgba(168,129,28,${(1-q/L)*.35})`;x.lineWidth=devicePixelRatio;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}x.fillStyle=a.c;x.globalAlpha=.7;x.beginPath();x.arc(a.x,a.y,2.4*devicePixelRatio,0,7);x.fill();x.globalAlpha=1}requestAnimationFrame(d)})()})();
+</script>
+<script type="module">
+const stage=document.getElementById('stage'),cv=document.getElementById('hero3d'),tip=document.getElementById('tip');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const weak=innerWidth<768||(navigator.hardwareConcurrency||8)<=4;
+function webglOK(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}}
+if(!webglOK()){stage.style.display='none'}else{
+const THREE=await import('./assets/vendor/three-0.187.0.min.js');
+document.querySelector('.hero').classList.add('gl');
+const renderer=new THREE.WebGLRenderer({canvas:cv,antialias:!weak,alpha:true,powerPreference:'high-performance'});
+renderer.setPixelRatio(Math.min(devicePixelRatio,weak?1.5:2));
+renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
+const scene=new THREE.Scene();
+const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromScene(new THREE.RoomEnvironment(),0.04).texture;
+const camera=new THREE.PerspectiveCamera(40,1,0.1,100);camera.position.set(0,0.4,11);
+scene.add(new THREE.AmbientLight(0xffffff,.55));
+const key=new THREE.DirectionalLight(0xffe2a0,2.2);key.position.set(4,5,6);scene.add(key);
+const rim=new THREE.PointLight(0xff9933,25,22);rim.position.set(-5,-2,3);scene.add(rim);
+const rim2=new THREE.PointLight(0x138808,18,22);rim2.position.set(5,-3,-2);scene.add(rim2);
+const world=new THREE.Group();scene.add(world);
+const GOLD=0xC9A227,NAVY=0x000080,SAFF=0xFF9933,GREEN=0x138808,INK=0x0B1F3A;
+// core: AI brain
+const core=new THREE.Mesh(new THREE.IcosahedronGeometry(1.25,3),new THREE.MeshPhysicalMaterial({color:GOLD,metalness:.95,roughness:.22,clearcoat:1,clearcoatRoughness:.15,flatShading:true}));
+world.add(core);
+const shell=new THREE.LineSegments(new THREE.WireframeGeometry(new THREE.IcosahedronGeometry(1.65,1)),new THREE.LineBasicMaterial({color:INK,transparent:true,opacity:.35}));
+world.add(shell);
+const glow=new THREE.Mesh(new THREE.SphereGeometry(.6,32,32),new THREE.MeshBasicMaterial({color:0xFFF4D6}));core.add(glow);
+// Ashoka chakra (24 spokes) behind
+const chakra=new THREE.Group();
+chakra.add(new THREE.Mesh(new THREE.TorusGeometry(3.55,.035,12,160),new THREE.MeshStandardMaterial({color:NAVY,metalness:.4,roughness:.4})));
+const sp=[];for(let i=0;i<24;i++){const a=i/24*Math.PI*2;sp.push(0,0,0,Math.cos(a)*3.55,Math.sin(a)*3.55,0)}
+const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.Float32BufferAttribute(sp,3));
+chakra.add(new THREE.LineSegments(sg,new THREE.LineBasicMaterial({color:NAVY,transparent:true,opacity:.16})));
+chakra.position.z=-2.2;world.add(chakra);
+// tricolour orbit rings
+function ring(r,col,tx,tz,w=.022){const m=new THREE.Mesh(new THREE.TorusGeometry(r,w,10,200),new THREE.MeshStandardMaterial({color:col,emissive:col,emissiveIntensity:.35,metalness:.3,roughness:.4}));m.rotation.x=tx;m.rotation.z=tz;return m}
+const rings=[ring(2.6,SAFF,1.2,.35),ring(3.25,0xF4F1E8,1.35,-.25,.03),ring(3.25,GREEN,1.05,.7)];rings.forEach(r=>world.add(r));
+// 15 course nodes
+const C=window.COURSES||[];const nodes=[],lineV=[];
+const ng=new THREE.SphereGeometry(.17,32,32);
+C.forEach((c,i)=>{const em=c.num>10;const m=new THREE.Mesh(ng,new THREE.MeshPhysicalMaterial({color:em?GREEN:NAVY,metalness:.6,roughness:.25,clearcoat:1,emissive:em?GREEN:NAVY,emissiveIntensity:.15}));
+ const halo=new THREE.Mesh(new THREE.SphereGeometry(.26,24,24),new THREE.MeshBasicMaterial({color:em?GREEN:SAFF,transparent:true,opacity:0}));m.add(halo);
+ const r=em?3.25:2.6,n=em?5:10,k=em?i-10:i,ph=em?.4:0;
+ m.userData={i,r,base:k/n*Math.PI*2+ph,tilt:em?{x:1.05,z:.7}:{x:1.2,z:.35},halo,s:1};
+ world.add(m);nodes.push(m)});
+const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.BufferAttribute(new Float32Array(nodes.length*6),3));
+const links=new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:GOLD,transparent:true,opacity:.35}));world.add(links);
+// particles (tricolour dust)
+const N=weak?350:900,pos=new Float32Array(N*3),col=new Float32Array(N*3);const pal=[new THREE.Color(SAFF),new THREE.Color(GOLD),new THREE.Color(GREEN),new THREE.Color(NAVY)];
+for(let i=0;i<N;i++){const r=4.5+Math.random()*5,t=Math.random()*Math.PI*2,u=Math.acos(2*Math.random()-1);pos.set([r*Math.sin(u)*Math.cos(t),r*Math.sin(u)*Math.sin(t)*.6,r*Math.cos(u)],i*3);const c=pal[i%4];col.set([c.r,c.g,c.b],i*3)}
+const pgeo=new THREE.BufferGeometry();pgeo.setAttribute('position',new THREE.BufferAttribute(pos,3));pgeo.setAttribute('color',new THREE.BufferAttribute(col,3));
+const dust=new THREE.Points(pgeo,new THREE.PointsMaterial({size:.05,vertexColors:true,transparent:true,opacity:.75,depthWrite:false}));scene.add(dust);
+// state + interaction
+const st={mx:0,my:0,tx:0,ty:0,drag:0,dragV:0,dragging:false,lx:0,scroll:0,hover:-1,visible:true};
+const ray=new THREE.Raycaster(),ptr=new THREE.Vector2(9,9);
+cv.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();ptr.x=(e.clientX-r.left)/r.width*2-1;ptr.y=-(e.clientY-r.top)/r.height*2+1;st.tx=ptr.x;st.ty=ptr.y;
+ if(st.dragging){st.dragV=(e.clientX-st.lx)*.006;st.lx=e.clientX}});
+cv.addEventListener('pointerleave',()=>{ptr.set(9,9);st.tx=st.ty=0;st.dragging=false});
+cv.addEventListener('pointerdown',e=>{st.dragging=true;st.lx=e.clientX;st.down=[e.clientX,e.clientY]});
+addEventListener('pointerup',e=>{if(st.dragging&&st.down&&Math.hypot(e.clientX-st.down[0],e.clientY-st.down[1])<6&&st.hover>=0&&window.openC)window.openC(st.hover);st.dragging=false});
+addEventListener('scroll',()=>{st.scroll=Math.min(1,scrollY/Math.max(1,stage.offsetHeight))},{passive:true});
+new IntersectionObserver(es=>{st.visible=es[0].isIntersecting;if(st.visible)loop()}).observe(stage);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)loop()});
+function size(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.position.z=w<500?14:12.2;camera.updateProjectionMatrix()}
+size();addEventListener('resize',size);
+const timer=new THREE.Timer();timer.connect&&timer.connect(document);let running=false,spin=0;const v=new THREE.Vector3(),tmp=new THREE.Vector3();
+function loop(){if(running)return;running=true;timer.update();requestAnimationFrame(tick)}
+function tick(){if(!st.visible||document.hidden){running=false;return}
+ timer.update();const dt=Math.min(timer.getDelta(),.05),t=timer.getElapsed();
+ st.mx+=(st.tx-st.mx)*.06;st.my+=(st.ty-st.my)*.06;
+ if(!reduce){spin+=dt*.12+st.dragV;st.dragV*=.92}else spin+=st.dragV,st.dragV*=.8;
+ world.rotation.y=spin+st.mx*.35+st.scroll*1.6;world.rotation.x=-st.my*.2+st.scroll*.35;
+ core.rotation.y=t*.3;core.rotation.x=t*.17;shell.rotation.y=-t*.12;chakra.rotation.z=-t*.15;
+ glow.scale.setScalar(1+Math.sin(t*2)*.06);
+ rings.forEach((r,k)=>r.rotation.y=t*(.08+k*.03));
+ dust.rotation.y=t*.02;
+ camera.position.z+= ((innerWidth<500?14:12.2)+st.scroll*3-camera.position.z)*.08;
+ const a=lg.attributes.position.array;
+ nodes.forEach((m,k)=>{const d=m.userData,ang=d.base+(reduce?0:t*(d.r<3?.18:-.12));
+  v.set(Math.cos(ang)*d.r,0,Math.sin(ang)*d.r);v.applyEuler(new THREE.Euler(d.tilt.x-Math.PI/2,0,d.tilt.z));m.position.copy(v);
+  const target=st.hover===k?1.7:1;d.s+=(target-d.s)*.15;m.scale.setScalar(d.s);d.halo.material.opacity+=((st.hover===k?.35:0)-d.halo.material.opacity)*.15;
+  a.set([0,0,0,v.x,v.y,v.z],k*6)});
+ lg.attributes.position.needsUpdate=true;
+ // hover
+ ray.setFromCamera(ptr,camera);const hit=ray.intersectObjects(nodes,false)[0];const h=hit?hit.object.userData.i:-1;
+ if(h!==st.hover){st.hover=h;cv.style.cursor=h>=0?'pointer':'grab';
+  if(h>=0){const c=C[h];tip.innerHTML=`<b>Course ${c.num}</b> · ${c.title}`;tip.classList.add('on')}else tip.classList.remove('on')}
+ if(h>=0){nodes[h].getWorldPosition(tmp).project(camera);tip.style.left=(tmp.x*.5+.5)*stage.clientWidth+'px';tip.style.top=(-tmp.y*.5+.5)*stage.clientHeight+'px'}
+ renderer.render(scene,camera);requestAnimationFrame(tick)}
+loop();
+}
+/* 3D tilt on cards */
+if(!reduce&&matchMedia('(pointer:fine)').matches){
+ document.addEventListener('pointermove',e=>{const el=e.target.closest&&e.target.closest('.cc,.pd,.uc,.sv,.lg,.mo,.pa');
+  document.querySelectorAll('.tilt').forEach(x=>{if(x!==el){x.classList.remove('tilt');x.style.transform=''}});
+  if(!el)return;const r=el.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;
+  el.classList.add('tilt');el.style.transform=`perspective(900px) rotateX(${(-py*7).toFixed(2)}deg) rotateY(${(px*9).toFixed(2)}deg) translateY(-6px)`},{passive:true});
+}
 </script>
 </body>
 </html>

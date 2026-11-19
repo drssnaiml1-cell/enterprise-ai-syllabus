@@ -33,7 +33,7 @@ This curriculum prepares learners to **design, build, deploy and govern AI produ
 
 Every course follows one arc: **foundations → core methods → advanced methods → production engineering → enterprise deployment, governance and capstone.**
 
-**🌐 Explore it as a website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (searchable, with full unit, lab, outcome, certification, skills and jobs detail for each course, plus career pathways).
+**🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (searchable, with full unit, lab, outcome, certification, skills and jobs detail for each course, plus career pathways).
 
 ## Core AI Track
 
@@ -1296,6 +1296,7 @@ src/template.html           website template
 scripts/parse.py            extracts course data from the syllabus text
 scripts/build.py            builds index.html from the template and data
 assets/                     AlgoProfessor logo
+assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```
 
 To rebuild the site after editing any file in `data/` or the template:
