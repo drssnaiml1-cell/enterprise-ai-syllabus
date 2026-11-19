@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enterprise AI Product Development Curriculum | AlgoProfessor</title>
+<meta name="description" content="Industry-aligned syllabus: 15 Enterprise AI courses, five units each, with hands-on outcomes, industry tools, capstones and certifications. By Dr S Satyanarayana, AlgoProfessor AI R&D Solutions, Hyderabad.">
+<meta property="og:title" content="Enterprise AI Product Development Curriculum 2026–27">
+<meta property="og:description" content="15 industry-aligned AI courses · 75 units · 120 labs · enterprise capstones · AlgoProfessor AI R&D Solutions">
+<link rel="icon" href="assets/algoprofessor-logo.svg">
+<style>
+:root{--navy:#0B1F3A;--navy2:#1E3A6E;--gold:#A8811C;--gold2:#C9A227;--goldbg:#FBF6E9;--saffron:#FF9933;--green:#138808;--chakra:#000080;--ink:#1E293B;--muted:#5B6678;--line:#E6E2D6;--sky:#2FAAE1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Times New Roman",Times,Georgia,serif;color:var(--ink);background:#fff;font-size:18px;line-height:1.55}
+a{color:var(--navy2)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.tri{height:6px;background:linear-gradient(90deg,var(--saffron) 0 33.33%,#fff 33.33% 66.66%,var(--green) 66.66%);box-shadow:inset 0 -1px 0 #eee}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:66px}
+nav .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:700;font-size:19px}
+nav .brand img{height:52px}
+nav .wrap>.btn{margin-left:auto}nav .links+.btn{margin-left:0}
+nav .links{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--navy);font-size:16px;position:relative}
+nav .links a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--gold);transition:width .3s}
+nav .links a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font:700 16px "Times New Roman",serif;text-decoration:none;cursor:pointer;border:2px solid var(--navy);transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,31,58,.15)}
+.btn.p{background:var(--navy);color:#fff}.btn.g{border-color:var(--gold);color:var(--gold);background:#fff}
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#fff 0,#fff 60%,var(--goldbg));border-bottom:1px solid var(--line)}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero .wrap{position:relative;padding:70px 24px 60px;text-align:center}
+.kick{letter-spacing:5px;font-size:13px;color:var(--gold);font-weight:700;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,70px);line-height:1.05;margin:14px 0 10px;color:var(--navy)}
+h1 span{color:var(--gold)}
+.sub{font-size:21px;color:var(--muted);max-width:820px;margin:0 auto 18px}
+.author{font-size:19px;color:var(--navy)}.author b{color:var(--gold)}
+.tracks{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px 0}
+.pill{padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:15px}
+.pill.s{border-color:#FFD2A6;background:#FFF6EC}.pill.n{border-color:#BFD0FF;background:#F3F6FF}.pill.gr{border-color:#B8E2B4;background:#F1FAF0}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:44px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 10px;box-shadow:0 6px 18px rgba(11,31,58,.05)}
+.stat b{display:block;font-size:38px;color:var(--navy);line-height:1}
+.stat span{font-size:14px;color:var(--muted)}
+.stat:nth-child(3n+1) b{color:#E07B00}.stat:nth-child(3n+2) b{color:var(--chakra)}.stat:nth-child(3n) b{color:var(--green)}
+/* sections */
+section{padding:72px 0}
+section.alt{background:#FAFBFD;border-top:1px solid #EEF1F5;border-bottom:1px solid #EEF1F5}
+h2{font-size:clamp(30px,4vw,44px);color:var(--navy);margin:6px 0 8px}
+.lead{color:var(--muted);font-size:19px;max-width:820px}
+.sh{text-align:center}.sh .lead{margin:0 auto}
+.rule{width:90px;height:3px;background:var(--gold);margin:14px auto 34px;border-radius:2px}
+/* letter */
+.letter{display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:start}
+.letter .card{background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:14px;padding:28px 30px;box-shadow:0 10px 30px rgba(11,31,58,.06)}
+.roles{display:grid;gap:14px}
+.role{border-radius:14px;padding:18px 20px;border:1px solid var(--line);background:#fff}
+.role h4{margin:0 0 4px;color:var(--navy);font-size:19px}
+.role:nth-child(1){border-top:4px solid var(--saffron)}.role:nth-child(2){border-top:4px solid var(--chakra)}.role:nth-child(3){border-top:4px solid var(--green)}
+/* courses */
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:26px}
+.tab{padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;font:600 16px "Times New Roman",serif;color:var(--navy)}
+.tab.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.search{padding:10px 18px;border-radius:999px;border:1px solid var(--line);font:16px "Times New Roman",serif;min-width:260px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cc{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 22px 18px;cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden}
+.cc::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--acc)}
+.cc:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(11,31,58,.12);border-color:var(--acc)}
+.cc .no{font-size:13px;letter-spacing:2px;color:var(--gold);font-weight:700}
+.cc h3{margin:6px 0 6px;font-size:23px;color:var(--navy);line-height:1.2}
+.cc p{margin:0 0 12px;color:var(--muted);font-size:16px}
+.cc .meta{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:13px;padding:3px 9px;border-radius:999px;background:#F3F5F9;color:var(--navy)}
+.cc .more{margin-top:12px;font-weight:700;color:var(--gold);font-size:15px}
+.cc.em{--acc:var(--green)}.cc.core{--acc:var(--saffron)}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(11,31,58,.45);backdrop-filter:blur(3px);display:none;z-index:100;padding:24px;overflow:auto}
+.ov.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0}}
+.md{max-width:980px;margin:20px auto;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.25);animation:rise .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes rise{from{transform:translateY(30px);opacity:0}}
+.mh{padding:30px 34px 22px;background:linear-gradient(135deg,var(--goldbg),#fff);border-bottom:1px solid var(--line);position:relative}
+.mh h2{margin:4px 0}.mh .x{position:absolute;right:20px;top:18px;border:0;background:#fff;border-radius:50%;width:40px;height:40px;font-size:22px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.mb{padding:26px 34px 34px}
+.mb h4{color:var(--navy);font-size:21px;margin:26px 0 10px;border-bottom:2px solid var(--goldbg);padding-bottom:6px}
+.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.unit{border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.unit summary{list-style:none;cursor:pointer;padding:14px 18px;display:flex;gap:12px;align-items:center;font-weight:700;color:var(--navy)}
+.unit summary::-webkit-details-marker{display:none}
+.unit summary .r{margin-left:auto;font-weight:400;color:var(--muted);font-size:15px}
+.unit .ub{padding:0 18px 16px 62px;color:var(--ink)}
+.unit .ho{margin-top:8px;padding:10px 14px;background:#F1FAF0;border-left:4px solid var(--green);border-radius:8px}
+.un{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-size:14px;flex:none}
+.unit[open] .un{background:var(--gold)}
+ul.ck{padding:0;list-style:none;margin:0}ul.ck li{padding-left:26px;position:relative;margin:6px 0}
+ul.ck li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+.labs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.lab{padding:9px 12px;border-radius:10px;background:#F7F8FB;font-size:16px}.lab b{color:var(--gold)}
+.co{display:grid;grid-template-columns:58px 1fr 140px;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line)}
+.co b{color:var(--navy)}.bl{height:10px;border-radius:5px;background:#EEF1F5;position:relative;overflow:hidden}
+.bl i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--saffron),var(--chakra),var(--green));border-radius:5px;transition:width 1s .2s}
+.bl+small{font-size:13px;color:var(--muted)}
+.cap{padding:18px 20px;border-radius:14px;background:var(--navy);color:#fff}.cap b{color:#F2D372}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+table{width:100%;border-collapse:collapse;font-size:16px}th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--navy);background:#FAFBFD}
+.lv{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--goldbg);color:var(--gold);white-space:nowrap}
+/* lang */
+.lang{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.lg{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;transition:transform .25s}.lg:hover{transform:translateY(-4px)}
+.lg h4{margin:0 0 4px;color:var(--navy);font-size:21px}.lg small{color:var(--gold);font-weight:700}
+.lg p{margin:6px 0 0;font-size:15px;color:var(--muted)}
+.trends{margin-top:26px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.tr{padding:14px;border-radius:14px;background:#fff;border:1px solid var(--line);font-size:15px}.tr b{display:block;color:var(--navy);margin-bottom:4px}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.sv{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;position:relative;transition:transform .25s,box-shadow .25s}
+.sv:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(11,31,58,.1)}
+.sv .n{font-size:30px;font-weight:700;color:var(--goldbg);-webkit-text-stroke:1px var(--gold);line-height:1}
+.sv h4{margin:8px 0 6px;color:var(--navy);font-size:18px}.sv p{margin:0;font-size:15px;color:var(--muted)}
+.models{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.mo{border-radius:18px;padding:22px;border:1px solid var(--line);background:#fff}
+.mo:nth-child(1){border-top:5px solid var(--saffron)}.mo:nth-child(2){border-top:5px solid var(--chakra)}.mo:nth-child(3){border-top:5px solid var(--green)}
+.mo h4{margin:0 0 6px;font-size:22px;color:var(--navy)}.mo small{color:var(--gold);font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:34px;counter-reset:s}
+.st{text-align:center;padding:0 12px;position:relative}
+.st::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:52px;height:52px;margin:0 auto 10px;border-radius:50%;background:var(--navy);color:#F2D372;font-size:22px;font-weight:700;position:relative;z-index:1}
+.st::after{content:"";position:absolute;top:26px;left:50%;width:100%;height:2px;background:repeating-linear-gradient(90deg,var(--gold) 0 8px,transparent 8px 14px)}
+.st:last-child::after{display:none}.st b{color:var(--navy);font-size:19px}.st p{margin:4px 0 0;font-size:15px;color:var(--muted)}
+/* assessment */
+.assess{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.ab{margin:12px 0}.ab div{display:flex;justify-content:space-between;font-size:16px}.ab .bar{height:12px;border-radius:6px;background:#EEF1F5;overflow:hidden;margin-top:4px}
+.ab .bar i{display:block;height:100%;width:0;border-radius:6px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.arc{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center}
+.arc span{padding:10px 14px;border-radius:12px;background:#fff;border:1px solid var(--line);font-size:15px}.arc i{color:var(--gold);font-style:normal}
+/* contact */
+.contact{background:var(--navy);color:#fff;border-radius:26px;padding:50px 40px;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,var(--saffron) 0 33.33%,#fff 33.33% 66.66%,var(--green) 66.66%)}
+.contact h2{color:#fff}.contact h2 span{color:#F2D372}.contact p{color:#C9D3E3}
+.contact .btn.p{background:#F2D372;color:var(--navy);border-color:#F2D372}.contact .btn.g{background:transparent;color:#fff;border-color:#fff}
+footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:15px}
+footer img{height:54px;display:block;margin:0 auto 8px}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.logo-anim{animation:float 6s ease-in-out infinite}@keyframes float{50%{transform:translateY(-4px)}}
+.top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold);color:#fff;font-size:22px;cursor:pointer;opacity:0;transition:opacity .3s;z-index:40}
+.top.on{opacity:1}
+@media(max-width:980px){.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
+@media(max-width:620px){.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="tri"></div>
+<nav><div class="wrap">
+<a class="brand" href="#top"><img class="logo-anim" src="assets/algoprofessor-logo.svg" alt="AlgoProfessor logo"></a>
+<div class="links"><a href="#message">Message</a><a href="#courses">Courses</a><a href="#languages">Languages</a><a href="#services">Consultancy</a><a href="#assessment">Assessment</a><a href="#contact">Contact</a></div>
+<a class="btn p" href="Enterprise_AI_Syllabus.pdf" download>⬇ Syllabus PDF</a>
+</div></nav>
+
+<header class="hero" id="top">
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap">
+<div class="kick rv">Industry-Aligned Course Syllabus · Curriculum Edition 2026–27</div>
+<h1 class="rv">Enterprise AI <span>Product Development</span></h1>
+<p class="sub rv">Fifteen courses, five units each. Every unit ends in a working artefact, every course in a deployable enterprise product, aligned to the AI careers of 2026–2035.</p>
+<div class="author rv">Dr S Satyanarayana <b>Ph.D., PDF(AI), FARSC</b><br><span style="color:var(--muted);font-size:17px">Founder, CEO &amp; Chief Agentic AI Scientist · AlgoProfessor AI R&amp;D Solutions, Hyderabad</span></div>
+<div class="tracks rv"><span class="pill s">Core AI Track · 10 courses</span><span class="pill n">Emerging Technologies Track · 5 courses</span><span class="pill gr">NEP 2020 · OBE · NBA / NAAC ready</span></div>
+<div class="cta rv"><a class="btn p" href="#courses">Explore the 15 courses →</a><a class="btn g" href="Enterprise_AI_Syllabus.pdf" download>⬇ Download full syllabus (PDF)</a></div>
+<div class="stats rv" id="stats"></div>
+</div>
+</header>
+
+<section id="message"><div class="wrap">
+<div class="sh rv"><div class="kick">A message to university leaders</div><h2>Vice-Chancellors, Deans and Heads of Department</h2><div class="rule"></div></div>
+<div class="letter">
+<div class="card rv">
+<p>Between now and 2035, every graduate in engineering, science and management will work beside AI systems, and many will build them. Employers no longer ask whether a student has <i>studied</i> AI; they ask whether the student has <b>built, deployed and governed an AI product</b>. Universities that close this gap first will lead in placements, research output, accreditation outcomes and rankings.</p>
+<p>This syllabus offers <b>fifteen industry-aligned courses</b>, ten in core AI and five in emerging technologies, each with five units, a hands-on outcome for every unit, current industry tools, an enterprise capstone, recommended certifications and the programming languages that will matter through 2035. It fits NEP 2020's skill-based, outcome-based learning, and its CO–Bloom mapping supports OBE documentation for NBA and NAAC.</p>
+<p style="margin-bottom:0">I invite you to partner with us to make your institution a model of AI-ready higher education for India. Together we can prepare graduates who do not just use AI, but lead it.</p>
+<p style="margin:16px 0 0;color:var(--navy)"><b>Dr S Satyanarayana</b> Ph.D., PDF(AI), FARSC<br><span style="color:var(--muted);font-size:16px">AlgoProfessor AI R&amp;D Solutions, Hyderabad · November 2026</span></p>
+</div>
+<div class="roles">
+<div class="role rv"><h4>For Vice-Chancellors</h4>A future-ready academic brand, higher placements and rankings, research and patent output, and a centre of excellence that attracts students, industry partners and funding.</div>
+<div class="role rv"><h4>For Deans</h4>A board-of-studies-ready curriculum across departments, OBE and accreditation evidence, and a measurable plan for faculty capability.</div>
+<div class="role rv"><h4>For Heads of Department</h4>Course files, lab manuals, GitHub repositories, trained faculty, live student projects and certification-ready students from the first semester of adoption.</div>
+</div></div></div></section>
+
+<section class="alt" id="courses"><div class="wrap">
+<div class="sh rv"><div class="kick">Fifteen courses · five units each</div><h2>The Curriculum</h2><p class="lead">Each course pairs 45 lecture hours with 30 hours of tool-driven laboratory work (L–T–P–C 3–0–2–4) and follows one arc: foundations → core methods → advanced methods → production engineering → enterprise deployment, governance and capstone.</p><div class="rule"></div></div>
+<div class="toolbar rv"><button class="tab on" data-f="all">All 15</button><button class="tab" data-f="core">Core AI Track</button><button class="tab" data-f="em">Emerging Technologies</button><input class="search" id="q" placeholder="Search a topic, tool or career…" aria-label="Search courses"></div>
+<div class="grid" id="grid"></div>
+<p id="none" style="display:none;text-align:center;color:var(--muted)">No course matches that search.</p>
+</div></section>
+
+<section id="languages"><div class="wrap">
+<div class="sh rv"><div class="kick">Programming language strategy 2026–2035</div><h2>Python for intelligence. Systems languages for performance. Delivery languages for users.</h2><p class="lead">Graduates who work across all three layers can build complete AI products, not just models.</p><div class="rule"></div></div>
+<div class="lang" id="lang"></div>
+<div class="trends" id="trends"></div>
+<p style="font-size:14px;color:var(--muted);text-align:center;margin-top:18px">The 2026–2035 outlook reflects current industry direction and is a planning guide, not a forecast guarantee; review it every academic year.</p>
+</div></section>
+
+<section class="alt" id="services"><div class="wrap">
+<div class="sh rv"><div class="kick">From syllabus to industry-ready graduates</div><h2>AlgoProfessor Consultancy Services</h2><p class="lead">End-to-end support for all fifteen courses, so your institution can adopt this curriculum quickly and deliver it with industry quality.</p><div class="rule"></div></div>
+<div class="svc" id="svc"></div>
+<div class="models" id="models"></div>
+<div class="steps rv" id="steps"></div>
+</div></section>
+
+<section id="assessment"><div class="wrap">
+<div class="sh rv"><div class="kick">Outcome-based by design</div><h2>Assessment &amp; Course Arc</h2><div class="rule"></div></div>
+<div class="assess">
+<div class="rv" id="abars"></div>
+<div class="rv"><div class="arc"><span>Foundations</span><i>→</i><span>Core methods</span><i>→</i><span>Advanced methods</span><i>→</i><span>Production engineering</span><i>→</i><span>Deployment, governance &amp; capstone</span></div>
+<p style="text-align:center;color:var(--muted);margin-top:22px">Every course outcome is mapped to a Bloom level, from <b>L2 Understand</b> to <b>L6 Create</b>, ready for CO–PO–PSO attainment.<br>Git-based version control, code review and CI/CD on every lab.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<div class="contact rv">
+<div class="kick" style="color:#F2D372">Partner with AlgoProfessor</div>
+<h2>Build an <span>AI-Ready University</span> for 2026–2035</h2>
+<p>Curriculum adoption · Faculty development · AI &amp; emerging-tech labs · GitHub course repositories · Industry capstones · Certification readiness · Centre of Excellence · Research &amp; Q1 publications · Accreditation &amp; ranking support · Placement readiness</p>
+<p style="color:#fff;font-size:20px">Vice-Chancellors, Deans and HoDs: contact us to schedule a curriculum consultation.</p>
+<div class="cta"><a class="btn p" href="mailto:cto@algoprofessor.com?subject=Enterprise%20AI%20Curriculum%20Consultation">✉ cto@algoprofessor.com</a><a class="btn g" href="https://www.algoprofessor.com" target="_blank" rel="noopener">www.algoprofessor.com</a><a class="btn g" href="https://campus.algoprofessor.com" target="_blank" rel="noopener">campus.algoprofessor.com</a></div>
+<p style="margin-top:22px;font-size:15px">AlgoProfessor AI R&amp;D Solutions · Hyderabad, India · Design • Training • Research • Innovation • Consultancy</p>
+</div></div></section>
+
+<footer><img src="assets/algoprofessor-logo.svg" alt="AlgoProfessor">© 2026 Dr S Satyanarayana, AlgoProfessor AI R&amp;D Solutions, Hyderabad. All rights reserved.<br><a href="https://github.com/drssnaiml1-cell">github.com/drssnaiml1-cell</a></footer>
+<div class="tri"></div>
+
+<div class="ov" id="ov" role="dialog" aria-modal="true"><div class="md" id="md"></div></div>
+<button class="top" id="top" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const COURSES=__DATA__;
+const LANGS=[["Python","Courses 1–14","The working language of AI: models, agents, data and evaluation. AI coding assistants make it even more productive."],["C++ / CUDA","Courses 1, 3, 4, 5, 8, 11, 12, 13","The performance layer: GPU kernels, inference engines, simulators, robots and edge devices."],["Rust","Courses 6, 10, 12, 13, 14, 15","Memory-safe systems language for AI infrastructure, security, embedded and blockchain."],["SQL","Courses 2, 9","The most durable data skill; every AI product depends on well-modelled data."],["TypeScript / JavaScript","Courses 6, 7, 8","Delivers AI to users: web apps, chat interfaces, MCP servers and agent SDKs."],["Go","Courses 7, 14, 15","Cloud-native services, agent platforms, security tools and enterprise blockchain."],["Java / Scala","Courses 1, 9","JVM backbone of enterprise systems and big-data streaming engines."],["Domain languages","R · Julia · OpenQASM 3 · Solidity · Mojo","Statistics, scientific computing, quantum circuits, smart contracts and next-generation AI performance."]];
+const TRENDS=[["AI-assisted engineering","Engineers direct coding agents; review, testing, specification and design matter more than typing code."],["Polyglot by default","Python models served by C++/Rust engines, reached through TypeScript or Go, fed by SQL pipelines."],["Memory safety by design","Security guidance increasingly favours memory-safe languages such as Rust for critical systems."],["Performance engineering","GPU, edge and quantum hardware reward engineers who optimise below the Python layer."],["Specification & verification","Formal contracts, typed interfaces and evaluation suites become how humans control AI-written code."]];
+const SVC=[["Curriculum Adoption & Customisation","Adapt the 15 courses to your regulations, credits and semester plan; BoS documents, course files and CO–PO–PSO mapping."],["Faculty Development Programmes","Hands-on FDPs and train-the-trainer bootcamps for every course, with teaching kits, slides and assessment banks."],["AI & Emerging-Tech Laboratory Set-up","GPU, edge, robotics, quantum-simulation and SOC labs; software stacks, cloud credits guidance and lab manuals."],["GitHub Course Repositories","Version-controlled repositories with notebooks, code, datasets and solutions for all units and labs."],["Industry Capstones & Live Projects","“One Student, One Project”: real enterprise problems, weekly milestones and GitHub portfolios."],["Certification Readiness","Preparation tracks mapped to AWS, Microsoft, Google Cloud, NVIDIA, Databricks, IBM, CompTIA and more."],["Centre of Excellence in AI","Research themes, industry partnerships, hackathons and incubation for student start-ups."],["Research, Patents & Q1 Publications","Research mentoring, sponsored projects, patent drafting support and Q1/SCI paper development."],["Accreditation & Ranking Support","OBE evidence, outcome attainment and documentation for NBA, NAAC, NIRF and international rankings."],["Placement & Career Readiness","Role-based training for AI Engineer, Agentic AI, Data, Cybersecurity and Physical AI careers."]];
+const MODELS=[["Pilot","One or two courses, FDP, lab manual and GitHub repository for one department","Departments starting their AI journey"],["Department Programme","The full core AI track (10 courses) with labs, capstones and certification preparation","AI & DS, CSE and allied departments"],["University Transformation","All 15 courses, Centre of Excellence, research and accreditation support across schools","Universities aiming for AI leadership"]];
+const STEPS=[["Discover","Leadership meeting; gap analysis of syllabus, labs and faculty."],["Design","Customised curriculum, lab plan and faculty roadmap."],["Deliver","FDPs, lab set-up, GitHub repositories, live projects."],["Measure","Outcome attainment, certifications, placements and research, every semester."]];
+const ASSESS=[["Continuous lab work & notebooks",20,"#FF9933"],["Two mid-term evaluations",20,"#000080"],["Mini-project / sprint reviews",20,"#138808"],["Enterprise capstone (demo + report)",40,"#A8811C"]];
+const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const units=COURSES.reduce((a,c)=>a+c.units.length,0),labs=COURSES.reduce((a,c)=>a+c.labs.length,0),certs=COURSES.reduce((a,c)=>a+c.certs.length,0),cos=COURSES.reduce((a,c)=>a+c.cos.length,0);
+const careers=new Set(COURSES.flatMap(c=>c.careers)).size;
+$("#stats").innerHTML=[[COURSES.length,"Courses"],[units,"Units"],[COURSES.length*75,"Contact hours"],[labs,"Hands-on labs"],[certs,"Certifications mapped"],[careers,"Career roles"]].map(([n,l])=>`<div class="stat"><b data-n="${n}">0</b><span>${l}</span></div>`).join("");
+function card(c){const em=c.num>10;return `<article class="cc ${em?"em":"core"} rv" data-i="${c.num-1}" data-t="${em?"em":"core"}" tabindex="0"><div class="no">COURSE ${c.num} · ${c.code}</div><h3>${esc(c.title)}</h3><p>${esc(c.tagline)}</p><div class="meta">${c.languages.map(l=>`<span class="tag">${esc(l)}</span>`).join("")}</div><div class="more">View 5 units, labs &amp; capstone →</div></article>`}
+$("#grid").innerHTML=COURSES.map(card).join("");
+const bl={L1:16,L2:33,L3:50,L4:66,L5:83,L6:100};
+function open(i){const c=COURSES[i];
+$("#md").innerHTML=`<div class="mh"><button class="x" aria-label="Close" onclick="closeM()">×</button><div class="kick">Course ${c.num} · ${c.code} · ${c.num>10?"Emerging Technologies Track":"Core AI Track"}</div><h2>${esc(c.title)}</h2><div style="color:var(--muted)">${esc(c.tagline)}</div>
+<div class="facts"><span class="pill">L–T–P–C 3–0–2–4</span><span class="pill">${esc(c.hours)}</span><span class="pill">Prerequisites: ${esc(c.prereq)}</span></div></div>
+<div class="mb"><h4>Core Competencies</h4><ul class="ck">${c.competencies.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+<h4>Five-Unit Curriculum</h4>${c.units.map((u,k)=>`<details class="unit" ${k?"":"open"}><summary><span class="un">${u.n}</span>${esc(u.title)}<span class="r">${u.hours} hours</span></summary><div class="ub">${esc(u.topics)}<div class="ho"><b>Hands-on outcome:</b> ${esc(u.outcome)}</div></div></details>`).join("")}
+<h4>Hands-on Laboratory (30 hours)</h4><div class="labs">${c.labs.map((l,k)=>`<div class="lab"><b>L${k+1}</b> ${esc(l)}</div>`).join("")}</div>
+<h4>Course Outcomes &amp; Bloom Levels</h4>${c.cos.map(o=>`<div class="co"><b>${o.co}</b><span>${esc(o.text)}</span><div class="blw"><div class="bl"><i style="width:0" data-w="${bl[o.bloom.slice(0,2)]}%"></i></div><small>${esc(o.bloom)}</small></div></div>`).join("")}
+<h4>Enterprise Capstone Product</h4><div class="cap"><b>${esc(c.capstone.name)}:</b> ${esc(c.capstone.desc)}</div>
+<div class="two"><div><h4>Top 3 Programming Languages</h4>${c.languages.map((l,k)=>`<span class="pill" style="margin:0 6px 6px 0;display:inline-block">#${k+1} ${esc(l)}</span>`).join("")}<h4>Aligned Careers</h4>${c.careers.map(x=>`<span class="tag" style="display:inline-block;margin:0 6px 6px 0;font-size:15px">${esc(x)}</span>`).join("")}</div>
+<div><h4>Recommended Certifications</h4><table><tr><th>Certification</th><th>Level</th></tr>${c.certs.map(x=>`<tr><td>${esc(x.name)}<br><small style="color:var(--muted)">${esc(x.issuer)} · Units ${esc(x.units)}</small></td><td><span class="lv">${esc(x.level)}</span></td></tr>`).join("")}</table></div></div>
+<p style="margin-top:24px;font-size:15px;color:var(--muted)">Industry tools, text books and full detail are in the <a href="Enterprise_AI_Syllabus.pdf" download>complete syllabus PDF</a>.</p></div>`;
+$("#ov").classList.add("on");document.body.style.overflow="hidden";
+setTimeout(()=>document.querySelectorAll("#md .bl i").forEach(e=>e.style.width=e.dataset.w),60);
+history.replaceState(null,"","#course-"+c.num);}
+function closeM(){$("#ov").classList.remove("on");document.body.style.overflow="";history.replaceState(null,"","#courses")}
+$("#grid").addEventListener("click",e=>{const a=e.target.closest(".cc");if(a)open(+a.dataset.i)});
+$("#grid").addEventListener("keydown",e=>{const a=e.target.closest(".cc");if(a&&(e.key==="Enter"||e.key===" ")){e.preventDefault();open(+a.dataset.i)}});
+$("#ov").addEventListener("click",e=>{if(e.target.id==="ov")closeM()});addEventListener("keydown",e=>{if(e.key==="Escape")closeM()});
+let F="all";function filt(){const q=$("#q").value.toLowerCase().trim();let n=0;document.querySelectorAll(".cc").forEach(el=>{const c=COURSES[+el.dataset.i];const ok=(F==="all"||el.dataset.t===F)&&(!q||JSON.stringify(c).toLowerCase().includes(q));el.style.display=ok?"":"none";if(ok)n++});$("#none").style.display=n?"none":"block"}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));b.classList.add("on");F=b.dataset.f;filt()});$("#q").oninput=filt;
+$("#lang").innerHTML=LANGS.map(l=>`<div class="lg rv"><small>${l[1]}</small><h4>${l[0]}</h4><p>${l[2]}</p></div>`).join("");
+$("#trends").innerHTML=TRENDS.map(t=>`<div class="tr rv"><b>${t[0]}</b>${t[1]}</div>`).join("");
+$("#svc").innerHTML=SVC.map((s,i)=>`<div class="sv rv"><div class="n">${String(i+1).padStart(2,"0")}</div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div>`).join("");
+$("#models").innerHTML=MODELS.map(m=>`<div class="mo rv"><small>Engagement model</small><h4>${m[0]}</h4><p style="margin:0 0 8px">${esc(m[1])}</p><span class="tag">Best for: ${esc(m[2])}</span></div>`).join("");
+$("#steps").innerHTML=STEPS.map(s=>`<div class="st"><b>${s[0]}</b><p>${s[1]}</p></div>`).join("");
+$("#abars").innerHTML=ASSESS.map(a=>`<div class="ab"><div><span>${esc(a[0])}</span><b>${a[1]}%</b></div><div class="bar"><i data-w="${a[1]*2.5}%" style="background:${a[2]}"></i></div></div>`).join("");
+/* reveal + counters */
+function count(el){const n=+el.dataset.n,t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/1400),e=1-Math.pow(1-p,3);el.textContent=Math.round(n*e).toLocaleString("en-IN");if(p<1)requestAnimationFrame(f)})(t0)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add("in");el.querySelectorAll("[data-n]").forEach(count);el.querySelectorAll(".bar i").forEach(i=>i.style.width=i.dataset.w);io.unobserve(el)}),{threshold:.12});
+document.querySelectorAll(".rv").forEach((el,i)=>{el.style.transitionDelay=(i%6)*60+"ms";io.observe(el)});
+addEventListener("scroll",()=>$("#top").classList.toggle("on",scrollY>600));
+if(location.hash.startsWith("#course-")){const k=+location.hash.slice(8);if(k>=1&&k<=COURSES.length)setTimeout(()=>open(k-1),300)}
+/* hero network */
+(function(){const cv=$("#net"),x=cv.getContext("2d");let W,H,P=[];const cols=["#FF9933","#000080","#138808","#A8811C"];
+function rs(){W=cv.width=cv.offsetWidth*devicePixelRatio;H=cv.height=cv.offsetHeight*devicePixelRatio;P=Array.from({length:Math.min(70,Math.round(W*H/26000/devicePixelRatio))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35*devicePixelRatio,vy:(Math.random()-.5)*.35*devicePixelRatio,c:cols[Math.random()*4|0]}))}
+rs();addEventListener("resize",rs);
+if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+(function d(){x.clearRect(0,0,W,H);const L=140*devicePixelRatio;for(let i=0;i<P.length;i++){const a=P[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1;for(let j=i+1;j<P.length;j++){const b=P[j],dx=a.x-b.x,dy=a.y-b.y,q=Math.hypot(dx,dy);if(q<L){x.strokeStyle=`rgba(168,129,28,${(1-q/L)*.35})`;x.lineWidth=devicePixelRatio;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}x.fillStyle=a.c;x.globalAlpha=.7;x.beginPath();x.arc(a.x,a.y,2.4*devicePixelRatio,0,7);x.fill();x.globalAlpha=1}requestAnimationFrame(d)})()})();
+</script>
+</body>
+</html>
