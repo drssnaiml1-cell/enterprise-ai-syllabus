@@ -89,7 +89,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **AI Product Manager** | 2–5 yrs | Scopes AI use-cases, defines KPIs and ROI, and steers build-vs-buy decisions. |
 | **AI Solutions Architect** | Senior | Designs end-to-end decision-intelligence platforms for enterprise clients. |
 
-**Who hires:** Logistics & supply chain, banking & insurance, consulting, e-commerce, telecom, government tech
+**Industries hiring:** Logistics & supply chain, banking & insurance, consulting, e-commerce, telecom, government tech
+
+**Top companies hiring these skills:** Google, Microsoft, Amazon, Flipkart, Walmart Global Tech, JPMorgan Chase, Accenture, Deloitte, TCS, Infosys
+
+**Indicative salary in India (CTC):** Fresher ₹6–15 LPA · Mid (3–5 yrs) ₹15–30 LPA · Senior (6+ yrs) ₹30–60+ LPA
 
 **Capstone for your portfolio:** Enterprise Decision-Intelligence Engine
 
@@ -119,7 +123,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **MLOps Engineer** | 2–5 yrs | Automates training, deployment, monitoring and retraining of ML models. |
 | **Applied Scientist** | Senior | Invents and validates new ML methods for high-impact product problems. |
 
-**Who hires:** Fintech & banking, retail & e-commerce, healthcare, SaaS, analytics consultancies, GCCs (global capability centres)
+**Industries hiring:** Fintech & banking, retail & e-commerce, healthcare, SaaS, analytics consultancies, GCCs (global capability centres)
+
+**Top companies hiring these skills:** Google, Amazon, Microsoft, Flipkart, PhonePe, Razorpay, Swiggy, American Express, Fractal Analytics, Tiger Analytics
+
+**Indicative salary in India (CTC):** Fresher ₹5–12 LPA · Mid (3–5 yrs) ₹18–35 LPA · Senior (6+ yrs) ₹35–65+ LPA
 
 **Capstone for your portfolio:** Customer Intelligence Platform
 
@@ -149,7 +157,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **Edge AI Engineer** | 2–5 yrs | Compresses and deploys deep models onto phones, cameras and devices. |
 | **Applied Scientist** | Senior | Leads novel deep-learning solutions from experiment to product. |
 
-**Who hires:** AI product companies, semiconductor & GPU firms, healthcare imaging, autonomous systems, big-tech research labs
+**Industries hiring:** AI product companies, semiconductor & GPU firms, healthcare imaging, autonomous systems, big-tech research labs
+
+**Top companies hiring these skills:** NVIDIA, Google, Microsoft, Qualcomm, Intel, Samsung R&D, Adobe, Amazon, Siemens Healthineers, Philips
+
+**Indicative salary in India (CTC):** Fresher ₹6–15 LPA · Mid (3–5 yrs) ₹18–35 LPA · Senior (6+ yrs) ₹35–70+ LPA
 
 **Capstone for your portfolio:** Deep Learning Inference Service
 
@@ -179,7 +191,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **LLM Alignment Engineer** | 2–5 yrs | Uses RLHF and preference optimisation to make LLMs helpful and safe. |
 | **Operations Research Scientist** | Senior | Combines RL with optimisation for large-scale planning problems. |
 
-**Who hires:** Robotics, gaming, ad-tech & recommendation, energy & grids, quant finance, LLM labs
+**Industries hiring:** Robotics, gaming, ad-tech & recommendation, energy & grids, quant finance, LLM labs
+
+**Top companies hiring these skills:** Google DeepMind, Microsoft Research India, Amazon, Uber, Flipkart, Dream11, Krutrim, GreyOrange
+
+**Indicative salary in India (CTC):** Fresher ₹6–15 LPA · Mid (3–5 yrs) ₹18–40 LPA · Senior (6+ yrs) ₹40–70+ LPA
 
 **Capstone for your portfolio:** Adaptive Pricing and Inventory Optimiser
 
@@ -209,7 +225,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **Edge AI Engineer** | 2–5 yrs | Runs vision models efficiently on Jetson-class and embedded devices. |
 | **Perception Engineer (Robotics/Autonomy)** | Senior | Builds the vision stack that lets robots and vehicles understand the world. |
 
-**Who hires:** Manufacturing & quality inspection, retail analytics, smart cities, healthcare imaging, automotive, banking (document AI)
+**Industries hiring:** Manufacturing & quality inspection, retail analytics, smart cities, healthcare imaging, automotive, banking (document AI)
+
+**Top companies hiring these skills:** NVIDIA, Qualcomm, Intel, Samsung R&D, Bosch, Continental, Mobileye, Siemens Healthineers, Adobe, Flipkart
+
+**Indicative salary in India (CTC):** Fresher ₹8–16 LPA · Mid (3–5 yrs) ₹15–30 LPA · Senior (6+ yrs) ₹26–70 LPA
 
 **Capstone for your portfolio:** Smart Visual Inspection System
 
@@ -240,7 +260,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **Conversational AI Developer** | 2–5 yrs | Builds reliable customer-facing assistants and voice/chat bots. |
 | **LLMOps Engineer** | 2–5 yrs | Runs, evaluates and cost-optimises LLMs in production. |
 
-**Who hires:** Every enterprise adopting GenAI: IT services & GCCs, banking, legal, healthcare, edtech, SaaS and AI start-ups
+**Industries hiring:** Every enterprise adopting GenAI: IT services & GCCs, banking, legal, healthcare, edtech, SaaS and AI start-ups
+
+**Top companies hiring these skills:** Google, Microsoft, Amazon, Sarvam AI, Krutrim, Flipkart, Razorpay, Infosys, TCS, Accenture
+
+**Indicative salary in India (CTC):** Fresher ₹6–12 LPA · Mid (3–5 yrs) ₹20–40 LPA · Senior (6+ yrs) ₹35–80+ LPA
 
 **Capstone for your portfolio:** Enterprise Knowledge Assistant
 
@@ -271,7 +295,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **AI Product Manager** | 2–5 yrs | Defines agent products, success metrics and safe levels of autonomy. |
 | **AI Solutions Architect** | Senior | Designs enterprise-wide agentic systems integrated with existing IT. |
 
-**Who hires:** IT services & consulting, SaaS, banking operations, customer support, enterprise automation and AI-first start-ups
+**Industries hiring:** IT services & consulting, SaaS, banking operations, customer support, enterprise automation and AI-first start-ups
+
+**Top companies hiring these skills:** Microsoft, Google, Amazon (AWS), Salesforce, ServiceNow, Zoho, Freshworks, Sarvam AI, Accenture, Infosys
+
+**Indicative salary in India (CTC):** Fresher ₹8–20 LPA · Mid (3–5 yrs) ₹20–45 LPA · Senior (6+ yrs) ₹40–80+ LPA
 
 **Capstone for your portfolio:** Autonomous Operations Copilot
 
@@ -302,7 +330,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **Creative Technologist** | 2–5 yrs | Uses generative AI to prototype campaigns, designs and interactive experiences. |
 | **AI Research Engineer** | Senior | Advances generative architectures and their evaluation. |
 
-**Who hires:** Media & advertising, design and creative tools, gaming, e-commerce content, edtech, synthetic-data and AI start-ups
+**Industries hiring:** Media & advertising, design and creative tools, gaming, e-commerce content, edtech, synthetic-data and AI start-ups
+
+**Top companies hiring these skills:** Adobe, Google, Microsoft, NVIDIA, Sarvam AI, Krutrim, Glance, Infosys, Accenture, Wipro
+
+**Indicative salary in India (CTC):** Fresher ₹6–12 LPA · Mid (3–5 yrs) ₹18–40 LPA · Senior (6+ yrs) ₹35–80+ LPA
 
 **Capstone for your portfolio:** AI Creative & Synthetic-Data Studio
 
@@ -333,7 +365,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **DataOps Engineer** | 2–5 yrs | Automates testing, deployment and monitoring of data pipelines. |
 | **Data Platform Architect** | Senior | Designs the company-wide lakehouse, governance and data strategy. |
 
-**Who hires:** Every data-driven company: banks, telecom, retail, GCCs, cloud and consulting firms, product start-ups
+**Industries hiring:** Every data-driven company: banks, telecom, retail, GCCs, cloud and consulting firms, product start-ups
+
+**Top companies hiring these skills:** Databricks, Snowflake, Amazon, Microsoft, Walmart Global Tech, Flipkart, PhonePe, Swiggy, LatentView, Accenture
+
+**Indicative salary in India (CTC):** Fresher ₹5–14 LPA · Mid (3–5 yrs) ₹13–26 LPA · Senior (6+ yrs) ₹26–58+ LPA
 
 **Capstone for your portfolio:** AI-Ready Enterprise Data Platform
 
@@ -364,7 +400,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **AI Risk Manager** | Senior | Owns the AI risk register and controls across the organisation. |
 | **AI Governance & Compliance Lead** | Senior | Leads AI policy, approvals and regulatory readiness. |
 
-**Who hires:** Banks & insurers, big tech, Big-4 and consulting, healthcare, government and regulators, AI-assurance firms
+**Industries hiring:** Banks & insurers, big tech, Big-4 and consulting, healthcare, government and regulators, AI-assurance firms
+
+**Top companies hiring these skills:** Deloitte, EY, KPMG, PwC, Microsoft, Google, IBM, JPMorgan Chase, HDFC Bank, Accenture
+
+**Indicative salary in India (CTC):** Fresher ₹6–12 LPA · Mid (3–5 yrs) ₹15–30 LPA · Senior (6+ yrs) ₹30–60+ LPA
 
 **Capstone for your portfolio:** Responsible-AI Assurance Toolkit
 
@@ -394,7 +434,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **Post-Quantum Cryptography Engineer** | 2–5 yrs | Migrates systems to quantum-safe cryptography. |
 | **Quantum Solutions Consultant** | Senior | Identifies where quantum adds value and plans enterprise roadmaps. |
 
-**Who hires:** Quantum start-ups, IBM/Google-class labs, banks & fintech, pharma & materials, defence and National Quantum Mission projects
+**Industries hiring:** Quantum start-ups, IBM/Google-class labs, banks & fintech, pharma & materials, defence and National Quantum Mission projects
+
+**Top companies hiring these skills:** IBM, TCS Research, Infosys, QpiAI, BosonQ Psi, ISRO, DRDO, C-DAC, SBI, Qualcomm
+
+**Indicative salary in India (CTC):** Fresher ₹8–25 LPA · Mid (3–5 yrs) ₹25–60 LPA · Senior (6+ yrs) ₹60–150 LPA
 
 **Capstone for your portfolio:** Hybrid Quantum Optimisation Service
 
@@ -424,7 +468,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **IoT Platform Engineer** | 2–5 yrs | Runs device fleets, connectivity and edge MLOps at scale. |
 | **AIoT Solutions Architect** | Senior | Designs complete sensor-to-cloud AI solutions for industry. |
 
-**Who hires:** Semiconductors & chip firms, consumer electronics, automotive, industrial IoT, agritech, smart-city and medical-device companies
+**Industries hiring:** Semiconductors & chip firms, consumer electronics, automotive, industrial IoT, agritech, smart-city and medical-device companies
+
+**Top companies hiring these skills:** Qualcomm, Intel, NVIDIA, Bosch, Samsung, Texas Instruments, Arm, Tata Elxsi, L&T Technology Services, Ather Energy
+
+**Indicative salary in India (CTC):** Fresher ₹5–12 LPA · Mid (3–5 yrs) ₹12–28 LPA · Senior (6+ yrs) ₹28–50+ LPA
 
 **Capstone for your portfolio:** Predictive Maintenance AIoT System
 
@@ -454,7 +502,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **Autonomy / Perception Engineer** | 2–5 yrs | Builds the perception and navigation stack for autonomous systems. |
 | **Robot Learning Engineer** | Senior | Trains robot policies with imitation, RL and foundation models. |
 
-**Who hires:** Warehouse & logistics automation, manufacturing, drones, automotive & autonomous vehicles, healthcare robotics, defence
+**Industries hiring:** Warehouse & logistics automation, manufacturing, drones, automotive & autonomous vehicles, healthcare robotics, defence
+
+**Top companies hiring these skills:** Addverb, GreyOrange, Amazon Robotics, ABB, Bosch, NVIDIA, Tata Elxsi, ideaForge, CynLr, Wipro PARI
+
+**Indicative salary in India (CTC):** Fresher ₹5–15 LPA · Mid (3–5 yrs) ₹12–28 LPA · Senior (6+ yrs) ₹25–60 LPA
 
 **Capstone for your portfolio:** Autonomous Warehouse Assistant
 
@@ -484,7 +536,11 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **SOC Automation Engineer** | 2–5 yrs | Automates response playbooks with LLM agents and SOAR. |
 | **Threat Intelligence Analyst** | 2–5 yrs | Uses AI to track attackers, campaigns and emerging threats. |
 
-**Who hires:** SOCs and MSSPs, banks & fintech, cybersecurity product firms, telecom, government CERTs, Big-4 cyber practices
+**Industries hiring:** SOCs and MSSPs, banks & fintech, cybersecurity product firms, telecom, government CERTs, Big-4 cyber practices
+
+**Top companies hiring these skills:** Palo Alto Networks, CrowdStrike, Microsoft, Cisco, IBM, Quick Heal, Deloitte, PwC, EY, HDFC Bank
+
+**Indicative salary in India (CTC):** Fresher ₹4–10 LPA · Mid (3–5 yrs) ₹8–20 LPA · Senior (6+ yrs) ₹20–45+ LPA
 
 **Capstone for your portfolio:** AI-Augmented Security Operations Centre
 
@@ -514,9 +570,53 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 | **AI Provenance Engineer** | 2–5 yrs | Records data and model lineage so any AI decision can be traced. |
 | **Decentralised Identity Architect** | Senior | Designs verifiable credential and identity systems for enterprises. |
 
-**Who hires:** Fintech & banking, supply chain & traceability, Web3 start-ups, government (land, certificates), audit and consulting firms
+**Industries hiring:** Fintech & banking, supply chain & traceability, Web3 start-ups, government (land, certificates), audit and consulting firms
+
+**Top companies hiring these skills:** Polygon Labs, CoinDCX, CoinSwitch, IBM, Infosys, TCS, Wipro, Accenture, Deloitte
+
+**Indicative salary in India (CTC):** Fresher ₹6–14 LPA · Mid (3–5 yrs) ₹14–24 LPA · Senior (6+ yrs) ₹24–35+ LPA
 
 **Capstone for your portfolio:** Verifiable AI Supply-Chain Ledger
+
+</details>
+
+## Salary Guide by Course
+
+_Indicative annual CTC in India (₹ lakh per annum), compiled November 2026 from published 2026 salary reports. Pay varies widely by company type, city and skills: IT services sit at the lower end; product companies, GCCs, FAANG India and AI-first start-ups at the upper end. Company names are examples of employers that hire for these skill sets, not current openings or endorsements._
+
+| # | Course | Fresher / Entry | Mid (3–5 yrs) | Senior (6+ yrs) | Top companies hiring |
+|:-:|:--|:-:|:-:|:-:|:--|
+| 1 | Artificial Intelligence | ₹6–15 LPA | ₹15–30 LPA | ₹30–60+ LPA | Google, Microsoft, Amazon, Flipkart, Walmart Global Tech |
+| 2 | Machine Learning | ₹5–12 LPA | ₹18–35 LPA | ₹35–65+ LPA | Google, Amazon, Microsoft, Flipkart, PhonePe |
+| 3 | Deep Learning | ₹6–15 LPA | ₹18–35 LPA | ₹35–70+ LPA | NVIDIA, Google, Microsoft, Qualcomm, Intel |
+| 4 | Reinforcement Learning | ₹6–15 LPA | ₹18–40 LPA | ₹40–70+ LPA | Google DeepMind, Microsoft Research India, Amazon, Uber, Flipkart |
+| 5 | Computer Vision | ₹8–16 LPA | ₹15–30 LPA | ₹26–70 LPA | NVIDIA, Qualcomm, Intel, Samsung R&D, Bosch |
+| 6 | Large Language Models | ₹6–12 LPA | ₹20–40 LPA | ₹35–80+ LPA | Google, Microsoft, Amazon, Sarvam AI, Krutrim |
+| 7 | Agentic AI | ₹8–20 LPA | ₹20–45 LPA | ₹40–80+ LPA | Microsoft, Google, Amazon (AWS), Salesforce, ServiceNow |
+| 8 | Generative AI | ₹6–12 LPA | ₹18–40 LPA | ₹35–80+ LPA | Adobe, Google, Microsoft, NVIDIA, Sarvam AI |
+| 9 | Data Engineering for AI | ₹5–14 LPA | ₹13–26 LPA | ₹26–58+ LPA | Databricks, Snowflake, Amazon, Microsoft, Walmart Global Tech |
+| 10 | Trustworthy AI | ₹6–12 LPA | ₹15–30 LPA | ₹30–60+ LPA | Deloitte, EY, KPMG, PwC, Microsoft |
+| 11 | Quantum Computing & Quantum AI | ₹8–25 LPA | ₹25–60 LPA | ₹60–150 LPA | IBM, TCS Research, Infosys, QpiAI, BosonQ Psi |
+| 12 | Edge AI, TinyML & AIoT | ₹5–12 LPA | ₹12–28 LPA | ₹28–50+ LPA | Qualcomm, Intel, NVIDIA, Bosch, Samsung |
+| 13 | Physical AI & Intelligent Robotics | ₹5–15 LPA | ₹12–28 LPA | ₹25–60 LPA | Addverb, GreyOrange, Amazon Robotics, ABB, Bosch |
+| 14 | AI-Driven Cybersecurity | ₹4–10 LPA | ₹8–20 LPA | ₹20–45+ LPA | Palo Alto Networks, CrowdStrike, Microsoft, Cisco, IBM |
+| 15 | Blockchain & Decentralised AI | ₹6–14 LPA | ₹14–24 LPA | ₹24–35+ LPA | Polygon Labs, CoinDCX, CoinSwitch, IBM, Infosys |
+
+<details><summary><b>Salary sources</b></summary>
+
+- [Instahyre: AI/ML engineer salary in India 2026](https://resources.instahyre.com/blog/ai-engineer-salary-in-india/)
+- [Futurense: AI engineer salary in India 2026](https://futurense.com/blog/ai-engineer-salary-in-india)
+- [Futurense: Machine learning engineer salary 2026](https://futurense.com/blog/machine-learning-engineer-salary-in-india)
+- [Recrew: LLM engineer salary in India 2026](https://recrew.ai/salary-guides/llm-engineer-salary-in-india)
+- [IIT Kharagpur Online: Generative AI engineer salary 2026](https://online.iitkgp.ac.in/blog/generative-ai-engineer-salary)
+- [Recrew: Computer vision engineer salary 2026](https://www.recrew.ai/salary-guides/computer-vision-engineer)
+- [Instahyre: Data scientist salary in India 2026](https://resources.instahyre.com/?p=6963)
+- [SecondTalent: Data engineer salary India 2026](https://www.secondtalent.com/developer-rate-card/data-engineer-india/)
+- [Futurense: Cybersecurity analyst salary 2026](https://futurense.com/blog/cybersecurity-analyst-salary-in-india)
+- [NetworkersHome: Cybersecurity salary by experience 2026](https://www.networkershome.com/cybersecurity-salary-india-by-experience-2026/)
+- [Futurense: Robotics engineer salary and career path](https://futurense.com/blog/robotics-engineer-salary-and-career-path-in-india)
+- [Dheya: Quantum computing careers in India 2026](https://www.dheya.com/insights/quantum-computing-careers-india)
+- [OwnYourCareer: Blockchain developer salary India 2026](https://www.ownyourcareer.in/careers/blockchain-developer/salaries)
 
 </details>
 
@@ -566,7 +666,7 @@ AlgoProfessor supports institutions from adoption to industry-ready graduates: c
 index.html                  the website (GitHub Pages)
 Enterprise_AI_Syllabus.pdf  the complete 55-page syllabus
 data/courses.json           structured data for all 15 courses
-data/careers.json           skills, jobs, employers and career pathways
+data/careers.json           skills, jobs, companies, salaries and career pathways
 src/template.html           website template
 scripts/parse.py            extracts course data from the syllabus text
 scripts/build.py            builds index.html from the template and data

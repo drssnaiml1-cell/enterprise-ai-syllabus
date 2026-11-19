@@ -127,6 +127,19 @@ th{color:var(--navy);background:#FAFBFD}
 .cb{display:inline-block;margin:0 6px 6px 0;padding:4px 10px;border-radius:999px;font-size:14px;cursor:pointer;border:1px solid var(--navy);color:var(--navy);background:#fff;font-family:inherit}
 .cb:hover{background:var(--navy);color:#fff}.cb.plus{border-style:dashed;border-color:var(--gold);color:var(--gold)}.cb.plus:hover{background:var(--gold);color:#fff}
 .lvkey{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:-14px 0 24px;font-size:15px;color:var(--muted)}
+.sal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.sb{border-radius:14px;padding:14px 16px;text-align:center;border:1px solid var(--line);background:#fff}
+.sb b{display:block;font-size:26px;line-height:1.1}.sb span{font-size:14px;color:var(--muted)}
+.sb:nth-child(1){border-top:4px solid var(--saffron)}.sb:nth-child(1) b{color:#C25E00}
+.sb:nth-child(2){border-top:4px solid var(--chakra)}.sb:nth-child(2) b{color:var(--chakra)}
+.sb:nth-child(3){border-top:4px solid var(--green)}.sb:nth-child(3) b{color:var(--green)}
+.snote{font-size:13.5px;color:var(--muted);margin-top:8px}
+.cos{display:flex;flex-wrap:wrap;gap:8px}
+.co2{padding:7px 13px;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:15px;font-weight:700;color:var(--navy);box-shadow:0 2px 6px rgba(11,31,58,.04);transition:transform .2s,border-color .2s}
+.co2:hover{transform:translateY(-2px);border-color:var(--gold)}
+.cc .sl{font-size:14px;margin:0 0 10px;color:var(--muted)}.cc .sl b{color:#C25E00}
+.stbl{width:100%;font-size:15.5px}.stbl td:first-child{font-weight:700;color:var(--navy)}.stbl td{white-space:nowrap}.stbl td:first-child{white-space:normal}
+.src{font-size:14px;color:var(--muted);columns:2;column-gap:28px;margin-top:14px}.src a{color:var(--navy2)}
 /* lang */
 .lang{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .lg{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;transition:transform .25s}.lg:hover{transform:translateY(-4px)}
@@ -169,7 +182,7 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 .top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold);color:#fff;font-size:22px;cursor:pointer;opacity:0;transition:opacity .3s;z-index:40}
 .top.on{opacity:1}
 @media(max-width:980px){.paths{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
-@media(max-width:620px){.paths,.skills,.jobs{grid-template-columns:1fr}.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
+@media(max-width:620px){.sal{grid-template-columns:1fr}.src{columns:1}.stbl td{white-space:normal}.paths,.skills,.jobs{grid-template-columns:1fr}.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -219,6 +232,12 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <section id="careers"><div class="wrap">
 <div class="sh rv"><div class="kick">From course to career</div><h2>Careers &amp; Jobs</h2><p class="lead">Each pathway shows the courses that make a learner job-ready for a role. Solid chips are the core courses; dashed chips are recommended extras. Click any course to see its skills and jobs.</p><div class="rule"></div></div>
 <div class="paths" id="paths"></div>
+<div id="salaries" style="margin-top:56px">
+<div class="sh rv"><div class="kick">What these skills pay</div><h2>Salary Guide by Course</h2><p class="lead">Indicative annual CTC in India (₹ lakh per annum), compiled November 2026 from published salary reports.</p><div class="rule"></div></div>
+<div class="rv" style="overflow-x:auto"><table class="stbl"><thead><tr><th>Course</th><th>Fresher / Entry</th><th>Mid (3–5 yrs)</th><th>Senior (6+ yrs)</th><th>Top companies hiring</th></tr></thead><tbody id="stb"></tbody></table></div>
+<p class="snote rv" id="snote"></p>
+<div class="src rv" id="srcs"></div>
+</div>
 </div></section>
 
 <section class="alt" id="languages"><div class="wrap">
@@ -271,7 +290,7 @@ const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"]/g,c=>({"&
 const units=COURSES.reduce((a,c)=>a+c.units.length,0),labs=COURSES.reduce((a,c)=>a+c.labs.length,0),certs=COURSES.reduce((a,c)=>a+c.certs.length,0),cos=COURSES.reduce((a,c)=>a+c.cos.length,0);
 const careers=new Set(Object.values(CAR.courses).flatMap(c=>c.jobs.map(j=>j.title)).concat(COURSES.flatMap(c=>c.careers))).size;
 $("#stats").innerHTML=[[COURSES.length,"Courses"],[units,"Units"],[COURSES.length*75,"Contact hours"],[labs,"Hands-on labs"],[certs,"Certifications mapped"],[careers,"Job roles"]].map(([n,l])=>`<div class="stat"><b data-n="${n}">0</b><span>${l}</span></div>`).join("");
-function card(c){const em=c.num>10;return `<article class="cc ${em?"em":"core"} rv" data-i="${c.num-1}" data-t="${em?"em":"core"}" tabindex="0"><div class="no">COURSE ${c.num} · ${c.code}</div><h3>${esc(c.title)}</h3><p>${esc(c.tagline)}</p><p class="jl"><b>Jobs:</b> ${CAR.courses[c.num].jobs.slice(0,3).map(j=>esc(j.title)).join(" · ")}</p><div class="meta">${c.languages.map(l=>`<span class="tag">${esc(l)}</span>`).join("")}</div><div class="more">Units, skills, jobs &amp; capstone →</div></article>`}
+function card(c){const em=c.num>10;return `<article class="cc ${em?"em":"core"} rv" data-i="${c.num-1}" data-t="${em?"em":"core"}" tabindex="0"><div class="no">COURSE ${c.num} · ${c.code}</div><h3>${esc(c.title)}</h3><p>${esc(c.tagline)}</p><p class="jl"><b>Jobs:</b> ${CAR.courses[c.num].jobs.slice(0,3).map(j=>esc(j.title)).join(" · ")}</p><p class="sl">Salary (India): <b>₹${CAR.courses[c.num].salary.entry} LPA</b> fresher → <b>₹${CAR.courses[c.num].salary.senior} LPA</b> senior</p><div class="meta">${c.languages.map(l=>`<span class="tag">${esc(l)}</span>`).join("")}</div><div class="more">Units, skills, jobs &amp; capstone →</div></article>`}
 $("#grid").innerHTML=COURSES.map(card).join("");
 const bl={L1:16,L2:33,L3:50,L4:66,L5:83,L6:100};
 function openC(i){const c=COURSES[i],K=CAR.courses[c.num];
@@ -283,7 +302,10 @@ $("#md").innerHTML=`<div class="mh"><button class="x" aria-label="Close" onclick
 <h4>Course Outcomes &amp; Bloom Levels</h4>${c.cos.map(o=>`<div class="co"><b>${o.co}</b><span>${esc(o.text)}</span><div class="blw"><div class="bl"><i style="width:0" data-w="${bl[o.bloom.slice(0,2)]}%"></i></div><small>${esc(o.bloom)}</small></div></div>`).join("")}
 <h4>Enterprise Capstone Product</h4><div class="cap"><b>${esc(c.capstone.name)}:</b> ${esc(c.capstone.desc)}</div>
 <h4>Jobs You Can Apply For</h4><div class="jobs">${K.jobs.map(j=>`<div class="job"><span class="lvl ${j.level}">${j.level==="Entry"?"Fresher / Entry":j.level==="Mid"?"2–5 yrs":"Senior"}</span><b>${esc(j.title)}</b><p>${esc(j.what)}</p></div>`).join("")}</div>
-<div class="hire"><b>Who hires:</b> ${esc(K.hiring)}</div>
+<div class="hire"><b>Industries hiring:</b> ${esc(K.hiring)}</div>
+<h4>Top Companies Hiring These Skills</h4><div class="cos">${K.companies.map(x=>`<span class="co2">${esc(x)}</span>`).join("")}</div>
+<h4>Indicative Salary in India (CTC per year)</h4><div class="sal"><div class="sb"><span>Fresher / Entry (0–2 yrs)</span><b>₹${K.salary.entry} LPA</b></div><div class="sb"><span>Mid-level (3–5 yrs)</span><b>₹${K.salary.mid} LPA</b></div><div class="sb"><span>Senior (6+ yrs)</span><b>₹${K.salary.senior} LPA</b></div></div>
+<p class="snote">Based on ${esc(K.salary.basis)}. ${esc(CAR.salary_note)} <a href="#salaries" onclick="closeM()">Sources</a></p>
 <p style="font-size:15px;color:var(--muted);margin:10px 0 0"><b style="color:var(--navy)">Portfolio you graduate with:</b> five unit artefacts, eight lab projects and the capstone above, all on GitHub.</p>
 <div class="two"><div><h4>Top 3 Programming Languages</h4>${c.languages.map((l,k)=>`<span class="pill" style="margin:0 6px 6px 0;display:inline-block">#${k+1} ${esc(l)}</span>`).join("")}</div>
 <div><h4>Recommended Certifications</h4><table><tr><th>Certification</th><th>Level</th></tr>${c.certs.map(x=>`<tr><td>${esc(x.name)}<br><small style="color:var(--muted)">${esc(x.issuer)} · Units ${esc(x.units)}</small></td><td><span class="lv">${esc(x.level)}</span></td></tr>`).join("")}</table></div></div>
@@ -298,6 +320,9 @@ $("#ov").addEventListener("click",e=>{if(e.target.id==="ov")closeM()});addEventL
 let F="all";function filt(){const q=$("#q").value.toLowerCase().trim();let n=0;document.querySelectorAll(".cc").forEach(el=>{const c=COURSES[+el.dataset.i];const ok=(F==="all"||el.dataset.t===F)&&(!q||JSON.stringify(c).toLowerCase().includes(q));el.style.display=ok?"":"none";if(ok)n++});$("#none").style.display=n?"none":"block"}
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));b.classList.add("on");F=b.dataset.f;filt()});$("#q").oninput=filt;
 $("#paths").innerHTML=CAR.pathways.map(p=>`<div class="pa rv"><h4>${esc(p.role)}</h4><p>${esc(p.note)}</p>${p.courses.map(n=>`<button class="cb" onclick="openC(${n-1})">${n}. ${esc(COURSES[n-1].title)}</button>`).join("")}${p.plus.map(n=>`<button class="cb plus" onclick="openC(${n-1})">+ ${esc(COURSES[n-1].title)}</button>`).join("")}</div>`).join("");
+$("#stb").innerHTML=COURSES.map(c=>{const k=CAR.courses[c.num];return `<tr><td><a href="#course-${c.num}" onclick="event.preventDefault();openC(${c.num-1})">${c.num}. ${esc(c.title)}</a></td><td>₹${k.salary.entry}</td><td>₹${k.salary.mid}</td><td>₹${k.salary.senior}</td><td style="white-space:normal;font-size:14px;color:var(--muted)">${k.companies.slice(0,5).map(esc).join(", ")}</td></tr>`}).join("");
+$("#snote").textContent=CAR.salary_note;
+$("#srcs").innerHTML="<b style='color:var(--navy)'>Sources:</b><br>"+CAR.salary_sources.map(x=>`• <a href="${x[1]}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join("<br>");
 $("#lang").innerHTML=LANGS.map(l=>`<div class="lg rv"><small>${l[1]}</small><h4>${l[0]}</h4><p>${l[2]}</p></div>`).join("");
 $("#trends").innerHTML=TRENDS.map(t=>`<div class="tr rv"><b>${t[0]}</b>${t[1]}</div>`).join("");
 $("#svc").innerHTML=SVC.map((s,i)=>`<div class="sv rv"><div class="n">${String(i+1).padStart(2,"0")}</div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div>`).join("");

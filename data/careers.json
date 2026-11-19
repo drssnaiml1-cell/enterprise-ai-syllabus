@@ -1,189 +1,1102 @@
 {
  "courses": {
   "1": {
-   "skills": ["Framing business problems as search, optimisation, planning or inference tasks", "Pathfinding and heuristic search (A*, MCTS) for routing and games", "Scheduling and resource allocation with OR-Tools, PuLP and constraint solvers", "Building enterprise knowledge graphs in Neo4j with Cypher and SPARQL", "Rule engines and explainable, auditable reasoning", "Bayesian networks and decision-making under uncertainty", "Automated planning with PDDL and hierarchical task networks", "Shipping AI logic as tested FastAPI + Docker microservices"],
+   "skills": [
+    "Framing business problems as search, optimisation, planning or inference tasks",
+    "Pathfinding and heuristic search (A*, MCTS) for routing and games",
+    "Scheduling and resource allocation with OR-Tools, PuLP and constraint solvers",
+    "Building enterprise knowledge graphs in Neo4j with Cypher and SPARQL",
+    "Rule engines and explainable, auditable reasoning",
+    "Bayesian networks and decision-making under uncertainty",
+    "Automated planning with PDDL and hierarchical task networks",
+    "Shipping AI logic as tested FastAPI + Docker microservices"
+   ],
    "hiring": "Logistics & supply chain, banking & insurance, consulting, e-commerce, telecom, government tech",
    "jobs": [
-    {"title": "AI Engineer", "level": "Entry", "what": "Builds and integrates AI decision components into products and internal tools."},
-    {"title": "Decision Scientist", "level": "Entry", "what": "Turns business questions into optimisation and probabilistic decision models."},
-    {"title": "Optimisation Engineer", "level": "Mid", "what": "Designs schedulers, routers and allocation engines that cut cost and time."},
-    {"title": "Knowledge Graph Engineer", "level": "Mid", "what": "Models enterprise data as graphs that power search, recommendations and GraphRAG."},
-    {"title": "AI Product Manager", "level": "Mid", "what": "Scopes AI use-cases, defines KPIs and ROI, and steers build-vs-buy decisions."},
-    {"title": "AI Solutions Architect", "level": "Senior", "what": "Designs end-to-end decision-intelligence platforms for enterprise clients."}
+    {
+     "title": "AI Engineer",
+     "level": "Entry",
+     "what": "Builds and integrates AI decision components into products and internal tools."
+    },
+    {
+     "title": "Decision Scientist",
+     "level": "Entry",
+     "what": "Turns business questions into optimisation and probabilistic decision models."
+    },
+    {
+     "title": "Optimisation Engineer",
+     "level": "Mid",
+     "what": "Designs schedulers, routers and allocation engines that cut cost and time."
+    },
+    {
+     "title": "Knowledge Graph Engineer",
+     "level": "Mid",
+     "what": "Models enterprise data as graphs that power search, recommendations and GraphRAG."
+    },
+    {
+     "title": "AI Product Manager",
+     "level": "Mid",
+     "what": "Scopes AI use-cases, defines KPIs and ROI, and steers build-vs-buy decisions."
+    },
+    {
+     "title": "AI Solutions Architect",
+     "level": "Senior",
+     "what": "Designs end-to-end decision-intelligence platforms for enterprise clients."
+    }
+   ],
+   "salary": {
+    "entry": "6–15",
+    "mid": "15–30",
+    "senior": "30–60+",
+    "basis": "AI engineer bands"
+   },
+   "companies": [
+    "Google",
+    "Microsoft",
+    "Amazon",
+    "Flipkart",
+    "Walmart Global Tech",
+    "JPMorgan Chase",
+    "Accenture",
+    "Deloitte",
+    "TCS",
+    "Infosys"
    ]
   },
   "2": {
-   "skills": ["Translating business KPIs into ML targets, labels and metrics", "Feature engineering and data preparation with pandas and scikit-learn", "Gradient-boosted models (XGBoost, LightGBM) for tabular data", "Clustering, dimensionality reduction and anomaly detection", "Model evaluation, cross-validation and hyperparameter tuning", "Explaining predictions with SHAP and fairness checks", "Experiment tracking and model registry with MLflow", "Serving and monitoring models through MLOps pipelines (CI/CD, drift)"],
+   "skills": [
+    "Translating business KPIs into ML targets, labels and metrics",
+    "Feature engineering and data preparation with pandas and scikit-learn",
+    "Gradient-boosted models (XGBoost, LightGBM) for tabular data",
+    "Clustering, dimensionality reduction and anomaly detection",
+    "Model evaluation, cross-validation and hyperparameter tuning",
+    "Explaining predictions with SHAP and fairness checks",
+    "Experiment tracking and model registry with MLflow",
+    "Serving and monitoring models through MLOps pipelines (CI/CD, drift)"
+   ],
    "hiring": "Fintech & banking, retail & e-commerce, healthcare, SaaS, analytics consultancies, GCCs (global capability centres)",
    "jobs": [
-    {"title": "Data Scientist", "level": "Entry", "what": "Builds predictive models and insights that drive product and business decisions."},
-    {"title": "Machine Learning Engineer", "level": "Entry", "what": "Takes models from notebooks to reliable, scalable production services."},
-    {"title": "Analytics Engineer", "level": "Entry", "what": "Builds clean, modelled datasets and metrics layers that ML and BI depend on."},
-    {"title": "MLOps Engineer", "level": "Mid", "what": "Automates training, deployment, monitoring and retraining of ML models."},
-    {"title": "Applied Scientist", "level": "Senior", "what": "Invents and validates new ML methods for high-impact product problems."}
+    {
+     "title": "Data Scientist",
+     "level": "Entry",
+     "what": "Builds predictive models and insights that drive product and business decisions."
+    },
+    {
+     "title": "Machine Learning Engineer",
+     "level": "Entry",
+     "what": "Takes models from notebooks to reliable, scalable production services."
+    },
+    {
+     "title": "Analytics Engineer",
+     "level": "Entry",
+     "what": "Builds clean, modelled datasets and metrics layers that ML and BI depend on."
+    },
+    {
+     "title": "MLOps Engineer",
+     "level": "Mid",
+     "what": "Automates training, deployment, monitoring and retraining of ML models."
+    },
+    {
+     "title": "Applied Scientist",
+     "level": "Senior",
+     "what": "Invents and validates new ML methods for high-impact product problems."
+    }
+   ],
+   "salary": {
+    "entry": "5–12",
+    "mid": "18–35",
+    "senior": "35–65+",
+    "basis": "ML engineer and data scientist bands"
+   },
+   "companies": [
+    "Google",
+    "Amazon",
+    "Microsoft",
+    "Flipkart",
+    "PhonePe",
+    "Razorpay",
+    "Swiggy",
+    "American Express",
+    "Fractal Analytics",
+    "Tiger Analytics"
    ]
   },
   "3": {
-   "skills": ["Building and training neural networks in PyTorch from first principles", "Optimisers, regularisation and training stability", "CNNs, RNNs/LSTMs and sequence modelling", "Transformers, attention and graph neural networks", "Transfer learning and fine-tuning pre-trained models", "Mixed-precision and distributed GPU training", "Model compression: quantisation, pruning and distillation", "High-performance inference with ONNX, TensorRT and Triton"],
+   "skills": [
+    "Building and training neural networks in PyTorch from first principles",
+    "Optimisers, regularisation and training stability",
+    "CNNs, RNNs/LSTMs and sequence modelling",
+    "Transformers, attention and graph neural networks",
+    "Transfer learning and fine-tuning pre-trained models",
+    "Mixed-precision and distributed GPU training",
+    "Model compression: quantisation, pruning and distillation",
+    "High-performance inference with ONNX, TensorRT and Triton"
+   ],
    "hiring": "AI product companies, semiconductor & GPU firms, healthcare imaging, autonomous systems, big-tech research labs",
    "jobs": [
-    {"title": "Deep Learning Engineer", "level": "Entry", "what": "Designs, trains and tunes neural networks for vision, text and signals."},
-    {"title": "AI Research Engineer", "level": "Mid", "what": "Turns research papers into working, benchmarked model implementations."},
-    {"title": "ML Performance Engineer", "level": "Mid", "what": "Speeds up training and inference on GPUs through profiling and optimisation."},
-    {"title": "Edge AI Engineer", "level": "Mid", "what": "Compresses and deploys deep models onto phones, cameras and devices."},
-    {"title": "Applied Scientist", "level": "Senior", "what": "Leads novel deep-learning solutions from experiment to product."}
+    {
+     "title": "Deep Learning Engineer",
+     "level": "Entry",
+     "what": "Designs, trains and tunes neural networks for vision, text and signals."
+    },
+    {
+     "title": "AI Research Engineer",
+     "level": "Mid",
+     "what": "Turns research papers into working, benchmarked model implementations."
+    },
+    {
+     "title": "ML Performance Engineer",
+     "level": "Mid",
+     "what": "Speeds up training and inference on GPUs through profiling and optimisation."
+    },
+    {
+     "title": "Edge AI Engineer",
+     "level": "Mid",
+     "what": "Compresses and deploys deep models onto phones, cameras and devices."
+    },
+    {
+     "title": "Applied Scientist",
+     "level": "Senior",
+     "what": "Leads novel deep-learning solutions from experiment to product."
+    }
+   ],
+   "salary": {
+    "entry": "6–15",
+    "mid": "18–35",
+    "senior": "35–70+",
+    "basis": "ML / computer vision engineer bands"
+   },
+   "companies": [
+    "NVIDIA",
+    "Google",
+    "Microsoft",
+    "Qualcomm",
+    "Intel",
+    "Samsung R&D",
+    "Adobe",
+    "Amazon",
+    "Siemens Healthineers",
+    "Philips"
    ]
   },
   "4": {
-   "skills": ["Modelling sequential decisions as Markov decision processes", "Dynamic programming, Q-learning and SARSA", "Deep RL: DQN, PPO and actor-critic methods", "Reward design, exploration and training stability", "Offline RL and learning from logged business data", "Multi-agent and safe reinforcement learning", "RLHF and DPO for aligning large language models", "Simulation environments with Gymnasium and RL libraries"],
+   "skills": [
+    "Modelling sequential decisions as Markov decision processes",
+    "Dynamic programming, Q-learning and SARSA",
+    "Deep RL: DQN, PPO and actor-critic methods",
+    "Reward design, exploration and training stability",
+    "Offline RL and learning from logged business data",
+    "Multi-agent and safe reinforcement learning",
+    "RLHF and DPO for aligning large language models",
+    "Simulation environments with Gymnasium and RL libraries"
+   ],
    "hiring": "Robotics, gaming, ad-tech & recommendation, energy & grids, quant finance, LLM labs",
    "jobs": [
-    {"title": "Reinforcement Learning Engineer", "level": "Entry", "what": "Builds agents that learn policies for control, pricing or recommendation."},
-    {"title": "Decision Scientist", "level": "Entry", "what": "Optimises sequential business decisions such as inventory, bidding and pricing."},
-    {"title": "Robotics AI Engineer", "level": "Mid", "what": "Trains robot behaviours in simulation and transfers them to hardware."},
-    {"title": "LLM Alignment Engineer", "level": "Mid", "what": "Uses RLHF and preference optimisation to make LLMs helpful and safe."},
-    {"title": "Operations Research Scientist", "level": "Senior", "what": "Combines RL with optimisation for large-scale planning problems."}
+    {
+     "title": "Reinforcement Learning Engineer",
+     "level": "Entry",
+     "what": "Builds agents that learn policies for control, pricing or recommendation."
+    },
+    {
+     "title": "Decision Scientist",
+     "level": "Entry",
+     "what": "Optimises sequential business decisions such as inventory, bidding and pricing."
+    },
+    {
+     "title": "Robotics AI Engineer",
+     "level": "Mid",
+     "what": "Trains robot behaviours in simulation and transfers them to hardware."
+    },
+    {
+     "title": "LLM Alignment Engineer",
+     "level": "Mid",
+     "what": "Uses RLHF and preference optimisation to make LLMs helpful and safe."
+    },
+    {
+     "title": "Operations Research Scientist",
+     "level": "Senior",
+     "what": "Combines RL with optimisation for large-scale planning problems."
+    }
+   ],
+   "salary": {
+    "entry": "6–15",
+    "mid": "18–40",
+    "senior": "40–70+",
+    "basis": "ML engineer and research bands (RL is a niche; fewer published data points)"
+   },
+   "companies": [
+    "Google DeepMind",
+    "Microsoft Research India",
+    "Amazon",
+    "Uber",
+    "Flipkart",
+    "Dream11",
+    "Krutrim",
+    "GreyOrange"
    ]
   },
   "5": {
-   "skills": ["Image processing, camera calibration and geometric vision with OpenCV", "Image classification and transfer learning", "Object detection, segmentation and multi-object tracking (YOLO-class models)", "Document AI: OCR and layout understanding", "Video analytics and 3D vision", "Vision–language models for search and inspection", "Dataset annotation, augmentation and evaluation metrics (mAP, IoU)", "Real-time edge deployment with privacy safeguards"],
+   "skills": [
+    "Image processing, camera calibration and geometric vision with OpenCV",
+    "Image classification and transfer learning",
+    "Object detection, segmentation and multi-object tracking (YOLO-class models)",
+    "Document AI: OCR and layout understanding",
+    "Video analytics and 3D vision",
+    "Vision–language models for search and inspection",
+    "Dataset annotation, augmentation and evaluation metrics (mAP, IoU)",
+    "Real-time edge deployment with privacy safeguards"
+   ],
    "hiring": "Manufacturing & quality inspection, retail analytics, smart cities, healthcare imaging, automotive, banking (document AI)",
    "jobs": [
-    {"title": "Computer Vision Engineer", "level": "Entry", "what": "Builds detection, segmentation and recognition systems for real cameras."},
-    {"title": "Document AI Engineer", "level": "Entry", "what": "Automates reading of invoices, forms and records with OCR and layout models."},
-    {"title": "Video Analytics Engineer", "level": "Mid", "what": "Delivers real-time video understanding for safety, retail and traffic."},
-    {"title": "Edge AI Engineer", "level": "Mid", "what": "Runs vision models efficiently on Jetson-class and embedded devices."},
-    {"title": "Perception Engineer (Robotics/Autonomy)", "level": "Senior", "what": "Builds the vision stack that lets robots and vehicles understand the world."}
+    {
+     "title": "Computer Vision Engineer",
+     "level": "Entry",
+     "what": "Builds detection, segmentation and recognition systems for real cameras."
+    },
+    {
+     "title": "Document AI Engineer",
+     "level": "Entry",
+     "what": "Automates reading of invoices, forms and records with OCR and layout models."
+    },
+    {
+     "title": "Video Analytics Engineer",
+     "level": "Mid",
+     "what": "Delivers real-time video understanding for safety, retail and traffic."
+    },
+    {
+     "title": "Edge AI Engineer",
+     "level": "Mid",
+     "what": "Runs vision models efficiently on Jetson-class and embedded devices."
+    },
+    {
+     "title": "Perception Engineer (Robotics/Autonomy)",
+     "level": "Senior",
+     "what": "Builds the vision stack that lets robots and vehicles understand the world."
+    }
+   ],
+   "salary": {
+    "entry": "8–16",
+    "mid": "15–30",
+    "senior": "26–70",
+    "basis": "computer vision engineer bands"
+   },
+   "companies": [
+    "NVIDIA",
+    "Qualcomm",
+    "Intel",
+    "Samsung R&D",
+    "Bosch",
+    "Continental",
+    "Mobileye",
+    "Siemens Healthineers",
+    "Adobe",
+    "Flipkart"
    ]
   },
   "6": {
-   "skills": ["How transformers and tokenisers work inside an LLM", "Prompt engineering, reasoning patterns and structured (JSON) outputs", "Fine-tuning with LoRA/QLoRA on domain data", "Retrieval-augmented generation with embeddings and vector databases", "LLM evaluation: accuracy, faithfulness, safety and cost", "Guardrails against hallucination and prompt injection", "Serving LLMs efficiently (vLLM, quantisation, caching)", "LLMOps: tracing, versioning and production monitoring"],
+   "skills": [
+    "How transformers and tokenisers work inside an LLM",
+    "Prompt engineering, reasoning patterns and structured (JSON) outputs",
+    "Fine-tuning with LoRA/QLoRA on domain data",
+    "Retrieval-augmented generation with embeddings and vector databases",
+    "LLM evaluation: accuracy, faithfulness, safety and cost",
+    "Guardrails against hallucination and prompt injection",
+    "Serving LLMs efficiently (vLLM, quantisation, caching)",
+    "LLMOps: tracing, versioning and production monitoring"
+   ],
    "hiring": "Every enterprise adopting GenAI: IT services & GCCs, banking, legal, healthcare, edtech, SaaS and AI start-ups",
    "jobs": [
-    {"title": "LLM Engineer", "level": "Entry", "what": "Builds chat, search and summarisation features on top of large language models."},
-    {"title": "AI Engineer (GenAI)", "level": "Entry", "what": "Integrates LLM APIs and open models into company products and workflows."},
-    {"title": "NLP Engineer", "level": "Entry", "what": "Solves text classification, extraction and translation, including Indian languages."},
-    {"title": "Search & Retrieval Engineer", "level": "Mid", "what": "Designs RAG pipelines, embeddings and vector search that ground LLM answers."},
-    {"title": "Conversational AI Developer", "level": "Mid", "what": "Builds reliable customer-facing assistants and voice/chat bots."},
-    {"title": "LLMOps Engineer", "level": "Mid", "what": "Runs, evaluates and cost-optimises LLMs in production."}
+    {
+     "title": "LLM Engineer",
+     "level": "Entry",
+     "what": "Builds chat, search and summarisation features on top of large language models."
+    },
+    {
+     "title": "AI Engineer (GenAI)",
+     "level": "Entry",
+     "what": "Integrates LLM APIs and open models into company products and workflows."
+    },
+    {
+     "title": "NLP Engineer",
+     "level": "Entry",
+     "what": "Solves text classification, extraction and translation, including Indian languages."
+    },
+    {
+     "title": "Search & Retrieval Engineer",
+     "level": "Mid",
+     "what": "Designs RAG pipelines, embeddings and vector search that ground LLM answers."
+    },
+    {
+     "title": "Conversational AI Developer",
+     "level": "Mid",
+     "what": "Builds reliable customer-facing assistants and voice/chat bots."
+    },
+    {
+     "title": "LLMOps Engineer",
+     "level": "Mid",
+     "what": "Runs, evaluates and cost-optimises LLMs in production."
+    }
+   ],
+   "salary": {
+    "entry": "6–12",
+    "mid": "20–40",
+    "senior": "35–80+",
+    "basis": "LLM / GenAI engineer bands"
+   },
+   "companies": [
+    "Google",
+    "Microsoft",
+    "Amazon",
+    "Sarvam AI",
+    "Krutrim",
+    "Flipkart",
+    "Razorpay",
+    "Infosys",
+    "TCS",
+    "Accenture"
    ]
   },
   "7": {
-   "skills": ["Designing agents that plan, use tools, keep memory and recover from errors", "Choosing between workflows, single agents and multi-agent systems", "Agent frameworks (LangGraph and similar) and agent SDKs", "Tool integration through MCP servers and secure APIs", "Multi-agent orchestration and hand-offs", "Agent evaluation, tracing and observability", "Human-in-the-loop approval and sandboxing for safe autonomy", "Deploying agent platforms with cost, latency and reliability controls"],
+   "skills": [
+    "Designing agents that plan, use tools, keep memory and recover from errors",
+    "Choosing between workflows, single agents and multi-agent systems",
+    "Agent frameworks (LangGraph and similar) and agent SDKs",
+    "Tool integration through MCP servers and secure APIs",
+    "Multi-agent orchestration and hand-offs",
+    "Agent evaluation, tracing and observability",
+    "Human-in-the-loop approval and sandboxing for safe autonomy",
+    "Deploying agent platforms with cost, latency and reliability controls"
+   ],
    "hiring": "IT services & consulting, SaaS, banking operations, customer support, enterprise automation and AI-first start-ups",
    "jobs": [
-    {"title": "Agentic AI Engineer", "level": "Entry", "what": "Builds tool-using AI agents that complete real business tasks end to end."},
-    {"title": "Forward-Deployed AI Engineer", "level": "Entry", "what": "Works on-site with clients to design and ship agents for their workflows."},
-    {"title": "AI Automation Architect", "level": "Mid", "what": "Redesigns business processes around agents with approvals and audit trails."},
-    {"title": "AI Platform Engineer", "level": "Mid", "what": "Builds the shared agent infrastructure: tools, memory, evaluation and guardrails."},
-    {"title": "AI Product Manager", "level": "Mid", "what": "Defines agent products, success metrics and safe levels of autonomy."},
-    {"title": "AI Solutions Architect", "level": "Senior", "what": "Designs enterprise-wide agentic systems integrated with existing IT."}
+    {
+     "title": "Agentic AI Engineer",
+     "level": "Entry",
+     "what": "Builds tool-using AI agents that complete real business tasks end to end."
+    },
+    {
+     "title": "Forward-Deployed AI Engineer",
+     "level": "Entry",
+     "what": "Works on-site with clients to design and ship agents for their workflows."
+    },
+    {
+     "title": "AI Automation Architect",
+     "level": "Mid",
+     "what": "Redesigns business processes around agents with approvals and audit trails."
+    },
+    {
+     "title": "AI Platform Engineer",
+     "level": "Mid",
+     "what": "Builds the shared agent infrastructure: tools, memory, evaluation and guardrails."
+    },
+    {
+     "title": "AI Product Manager",
+     "level": "Mid",
+     "what": "Defines agent products, success metrics and safe levels of autonomy."
+    },
+    {
+     "title": "AI Solutions Architect",
+     "level": "Senior",
+     "what": "Designs enterprise-wide agentic systems integrated with existing IT."
+    }
+   ],
+   "salary": {
+    "entry": "8–20",
+    "mid": "20–45",
+    "senior": "40–80+",
+    "basis": "GenAI / LLM engineer bands with agent-skills premium"
+   },
+   "companies": [
+    "Microsoft",
+    "Google",
+    "Amazon (AWS)",
+    "Salesforce",
+    "ServiceNow",
+    "Zoho",
+    "Freshworks",
+    "Sarvam AI",
+    "Accenture",
+    "Infosys"
    ]
   },
   "8": {
-   "skills": ["Generative model families: VAEs, GANs, diffusion and autoregressive models", "Controllable image generation (conditioning, ControlNet, LoRA styles)", "Multimodal generation across text, image, audio and video", "Code generation and synthetic data for training and testing", "Evaluating generative quality, diversity and bias", "Watermarking, provenance and content safety", "Building GenAI product features with front-end delivery", "Responsible-use, copyright and governance practices"],
+   "skills": [
+    "Generative model families: VAEs, GANs, diffusion and autoregressive models",
+    "Controllable image generation (conditioning, ControlNet, LoRA styles)",
+    "Multimodal generation across text, image, audio and video",
+    "Code generation and synthetic data for training and testing",
+    "Evaluating generative quality, diversity and bias",
+    "Watermarking, provenance and content safety",
+    "Building GenAI product features with front-end delivery",
+    "Responsible-use, copyright and governance practices"
+   ],
    "hiring": "Media & advertising, design and creative tools, gaming, e-commerce content, edtech, synthetic-data and AI start-ups",
    "jobs": [
-    {"title": "Generative AI Developer", "level": "Entry", "what": "Builds apps that generate text, images, audio or code for users."},
-    {"title": "Generative AI Engineer", "level": "Entry", "what": "Fine-tunes and deploys generative models behind product features."},
-    {"title": "Synthetic Data Engineer", "level": "Mid", "what": "Creates privacy-safe synthetic datasets to train and test AI systems."},
-    {"title": "Multimodal AI Engineer", "level": "Mid", "what": "Combines vision, language and audio models in a single product."},
-    {"title": "Creative Technologist", "level": "Mid", "what": "Uses generative AI to prototype campaigns, designs and interactive experiences."},
-    {"title": "AI Research Engineer", "level": "Senior", "what": "Advances generative architectures and their evaluation."}
+    {
+     "title": "Generative AI Developer",
+     "level": "Entry",
+     "what": "Builds apps that generate text, images, audio or code for users."
+    },
+    {
+     "title": "Generative AI Engineer",
+     "level": "Entry",
+     "what": "Fine-tunes and deploys generative models behind product features."
+    },
+    {
+     "title": "Synthetic Data Engineer",
+     "level": "Mid",
+     "what": "Creates privacy-safe synthetic datasets to train and test AI systems."
+    },
+    {
+     "title": "Multimodal AI Engineer",
+     "level": "Mid",
+     "what": "Combines vision, language and audio models in a single product."
+    },
+    {
+     "title": "Creative Technologist",
+     "level": "Mid",
+     "what": "Uses generative AI to prototype campaigns, designs and interactive experiences."
+    },
+    {
+     "title": "AI Research Engineer",
+     "level": "Senior",
+     "what": "Advances generative architectures and their evaluation."
+    }
+   ],
+   "salary": {
+    "entry": "6–12",
+    "mid": "18–40",
+    "senior": "35–80+",
+    "basis": "GenAI engineer bands"
+   },
+   "companies": [
+    "Adobe",
+    "Google",
+    "Microsoft",
+    "NVIDIA",
+    "Sarvam AI",
+    "Krutrim",
+    "Glance",
+    "Infosys",
+    "Accenture",
+    "Wipro"
    ]
   },
   "9": {
-   "skills": ["Data modelling, SQL and warehouse design", "Batch pipelines with Apache Spark and lakehouse tables", "Streaming data with Kafka and real-time processing", "Orchestration with Airflow-class tools and dbt transformations", "Feature stores for ML training and serving", "Unstructured data pipelines and vector stores for LLMs", "Data quality testing, lineage and governance", "Cloud data platforms (Databricks, Snowflake, AWS, Azure, GCP)"],
+   "skills": [
+    "Data modelling, SQL and warehouse design",
+    "Batch pipelines with Apache Spark and lakehouse tables",
+    "Streaming data with Kafka and real-time processing",
+    "Orchestration with Airflow-class tools and dbt transformations",
+    "Feature stores for ML training and serving",
+    "Unstructured data pipelines and vector stores for LLMs",
+    "Data quality testing, lineage and governance",
+    "Cloud data platforms (Databricks, Snowflake, AWS, Azure, GCP)"
+   ],
    "hiring": "Every data-driven company: banks, telecom, retail, GCCs, cloud and consulting firms, product start-ups",
    "jobs": [
-    {"title": "Data Engineer", "level": "Entry", "what": "Builds the reliable batch and streaming pipelines every AI product depends on."},
-    {"title": "Analytics Engineer", "level": "Entry", "what": "Models raw data into trusted tables and metrics with SQL and dbt."},
-    {"title": "AI Data Engineer", "level": "Mid", "what": "Prepares features, documents and embeddings for ML and LLM systems."},
-    {"title": "Streaming Engineer", "level": "Mid", "what": "Runs real-time event pipelines for fraud, IoT and personalisation."},
-    {"title": "DataOps Engineer", "level": "Mid", "what": "Automates testing, deployment and monitoring of data pipelines."},
-    {"title": "Data Platform Architect", "level": "Senior", "what": "Designs the company-wide lakehouse, governance and data strategy."}
+    {
+     "title": "Data Engineer",
+     "level": "Entry",
+     "what": "Builds the reliable batch and streaming pipelines every AI product depends on."
+    },
+    {
+     "title": "Analytics Engineer",
+     "level": "Entry",
+     "what": "Models raw data into trusted tables and metrics with SQL and dbt."
+    },
+    {
+     "title": "AI Data Engineer",
+     "level": "Mid",
+     "what": "Prepares features, documents and embeddings for ML and LLM systems."
+    },
+    {
+     "title": "Streaming Engineer",
+     "level": "Mid",
+     "what": "Runs real-time event pipelines for fraud, IoT and personalisation."
+    },
+    {
+     "title": "DataOps Engineer",
+     "level": "Mid",
+     "what": "Automates testing, deployment and monitoring of data pipelines."
+    },
+    {
+     "title": "Data Platform Architect",
+     "level": "Senior",
+     "what": "Designs the company-wide lakehouse, governance and data strategy."
+    }
+   ],
+   "salary": {
+    "entry": "5–14",
+    "mid": "13–26",
+    "senior": "26–58+",
+    "basis": "data engineer bands"
+   },
+   "companies": [
+    "Databricks",
+    "Snowflake",
+    "Amazon",
+    "Microsoft",
+    "Walmart Global Tech",
+    "Flipkart",
+    "PhonePe",
+    "Swiggy",
+    "LatentView",
+    "Accenture"
    ]
   },
   "10": {
-   "skills": ["AI risk assessment and impact analysis", "Measuring and mitigating bias and unfairness", "Explainability methods for models and LLMs", "Robustness, privacy (differential privacy) and safety testing", "Security for AI: prompt injection, data poisoning, model theft", "Red-teaming AI systems and LLMs", "Model cards, documentation and audit evidence", "Regulation and standards: EU AI Act, ISO/IEC 42001, NIST AI RMF, DPDP Act"],
+   "skills": [
+    "AI risk assessment and impact analysis",
+    "Measuring and mitigating bias and unfairness",
+    "Explainability methods for models and LLMs",
+    "Robustness, privacy (differential privacy) and safety testing",
+    "Security for AI: prompt injection, data poisoning, model theft",
+    "Red-teaming AI systems and LLMs",
+    "Model cards, documentation and audit evidence",
+    "Regulation and standards: EU AI Act, ISO/IEC 42001, NIST AI RMF, DPDP Act"
+   ],
    "hiring": "Banks & insurers, big tech, Big-4 and consulting, healthcare, government and regulators, AI-assurance firms",
    "jobs": [
-    {"title": "Responsible AI Specialist", "level": "Entry", "what": "Tests models for fairness, explainability and safety before release."},
-    {"title": "AI Red-Team Engineer", "level": "Mid", "what": "Attacks AI systems to find jailbreaks, leaks and unsafe behaviour first."},
-    {"title": "AI Security Engineer", "level": "Mid", "what": "Secures models, data and AI pipelines against modern AI-specific threats."},
-    {"title": "AI Auditor", "level": "Mid", "what": "Assesses AI systems against regulations, standards and company policy."},
-    {"title": "AI Risk Manager", "level": "Senior", "what": "Owns the AI risk register and controls across the organisation."},
-    {"title": "AI Governance & Compliance Lead", "level": "Senior", "what": "Leads AI policy, approvals and regulatory readiness."}
+    {
+     "title": "Responsible AI Specialist",
+     "level": "Entry",
+     "what": "Tests models for fairness, explainability and safety before release."
+    },
+    {
+     "title": "AI Red-Team Engineer",
+     "level": "Mid",
+     "what": "Attacks AI systems to find jailbreaks, leaks and unsafe behaviour first."
+    },
+    {
+     "title": "AI Security Engineer",
+     "level": "Mid",
+     "what": "Secures models, data and AI pipelines against modern AI-specific threats."
+    },
+    {
+     "title": "AI Auditor",
+     "level": "Mid",
+     "what": "Assesses AI systems against regulations, standards and company policy."
+    },
+    {
+     "title": "AI Risk Manager",
+     "level": "Senior",
+     "what": "Owns the AI risk register and controls across the organisation."
+    },
+    {
+     "title": "AI Governance & Compliance Lead",
+     "level": "Senior",
+     "what": "Leads AI policy, approvals and regulatory readiness."
+    }
+   ],
+   "salary": {
+    "entry": "6–12",
+    "mid": "15–30",
+    "senior": "30–60+",
+    "basis": "AI engineer and security bands (AI governance is a new field; estimated)"
+   },
+   "companies": [
+    "Deloitte",
+    "EY",
+    "KPMG",
+    "PwC",
+    "Microsoft",
+    "Google",
+    "IBM",
+    "JPMorgan Chase",
+    "HDFC Bank",
+    "Accenture"
    ]
   },
   "11": {
-   "skills": ["Qubits, gates, circuits and measurement", "Programming quantum circuits in Qiskit and OpenQASM", "Core quantum algorithms (Grover, QFT, phase estimation)", "Variational algorithms: VQE and QAOA on NISQ hardware", "Quantum machine learning and quantum kernels", "Running jobs on real quantum hardware and simulators", "Hybrid quantum–classical optimisation for business problems", "Post-quantum cryptography and crypto-agility planning"],
+   "skills": [
+    "Qubits, gates, circuits and measurement",
+    "Programming quantum circuits in Qiskit and OpenQASM",
+    "Core quantum algorithms (Grover, QFT, phase estimation)",
+    "Variational algorithms: VQE and QAOA on NISQ hardware",
+    "Quantum machine learning and quantum kernels",
+    "Running jobs on real quantum hardware and simulators",
+    "Hybrid quantum–classical optimisation for business problems",
+    "Post-quantum cryptography and crypto-agility planning"
+   ],
    "hiring": "Quantum start-ups, IBM/Google-class labs, banks & fintech, pharma & materials, defence and National Quantum Mission projects",
    "jobs": [
-    {"title": "Quantum Software Engineer", "level": "Entry", "what": "Writes and optimises quantum circuits and hybrid quantum–classical code."},
-    {"title": "Quantum Algorithm Developer", "level": "Mid", "what": "Designs quantum algorithms for optimisation, chemistry and finance."},
-    {"title": "Quantum ML Researcher", "level": "Mid", "what": "Explores quantum-enhanced machine learning and benchmarks it honestly."},
-    {"title": "Post-Quantum Cryptography Engineer", "level": "Mid", "what": "Migrates systems to quantum-safe cryptography."},
-    {"title": "Quantum Solutions Consultant", "level": "Senior", "what": "Identifies where quantum adds value and plans enterprise roadmaps."}
+    {
+     "title": "Quantum Software Engineer",
+     "level": "Entry",
+     "what": "Writes and optimises quantum circuits and hybrid quantum–classical code."
+    },
+    {
+     "title": "Quantum Algorithm Developer",
+     "level": "Mid",
+     "what": "Designs quantum algorithms for optimisation, chemistry and finance."
+    },
+    {
+     "title": "Quantum ML Researcher",
+     "level": "Mid",
+     "what": "Explores quantum-enhanced machine learning and benchmarks it honestly."
+    },
+    {
+     "title": "Post-Quantum Cryptography Engineer",
+     "level": "Mid",
+     "what": "Migrates systems to quantum-safe cryptography."
+    },
+    {
+     "title": "Quantum Solutions Consultant",
+     "level": "Senior",
+     "what": "Identifies where quantum adds value and plans enterprise roadmaps."
+    }
+   ],
+   "salary": {
+    "entry": "8–25",
+    "mid": "25–60",
+    "senior": "60–150",
+    "basis": "quantum software and quantum-safe cryptography bands (small, research-heavy market)"
+   },
+   "companies": [
+    "IBM",
+    "TCS Research",
+    "Infosys",
+    "QpiAI",
+    "BosonQ Psi",
+    "ISRO",
+    "DRDO",
+    "C-DAC",
+    "SBI",
+    "Qualcomm"
    ]
   },
   "12": {
-   "skills": ["AIoT and edge–cloud architectures", "Sensor data acquisition and signal processing", "Embedded ML on microcontrollers (TinyML)", "Model quantisation and optimisation for constrained devices", "On-device generative AI and small language models", "Federated learning for privacy-preserving training", "Edge MLOps: OTA updates and fleet monitoring", "Securing devices, firmware and edge models"],
+   "skills": [
+    "AIoT and edge–cloud architectures",
+    "Sensor data acquisition and signal processing",
+    "Embedded ML on microcontrollers (TinyML)",
+    "Model quantisation and optimisation for constrained devices",
+    "On-device generative AI and small language models",
+    "Federated learning for privacy-preserving training",
+    "Edge MLOps: OTA updates and fleet monitoring",
+    "Securing devices, firmware and edge models"
+   ],
    "hiring": "Semiconductors & chip firms, consumer electronics, automotive, industrial IoT, agritech, smart-city and medical-device companies",
    "jobs": [
-    {"title": "Embedded ML Engineer", "level": "Entry", "what": "Puts machine learning into firmware on microcontrollers and sensors."},
-    {"title": "TinyML Engineer", "level": "Entry", "what": "Builds ultra-low-power models for wearables and battery devices."},
-    {"title": "Edge AI Engineer", "level": "Mid", "what": "Optimises and deploys AI on gateways, cameras and edge servers."},
-    {"title": "IoT Platform Engineer", "level": "Mid", "what": "Runs device fleets, connectivity and edge MLOps at scale."},
-    {"title": "AIoT Solutions Architect", "level": "Senior", "what": "Designs complete sensor-to-cloud AI solutions for industry."}
+    {
+     "title": "Embedded ML Engineer",
+     "level": "Entry",
+     "what": "Puts machine learning into firmware on microcontrollers and sensors."
+    },
+    {
+     "title": "TinyML Engineer",
+     "level": "Entry",
+     "what": "Builds ultra-low-power models for wearables and battery devices."
+    },
+    {
+     "title": "Edge AI Engineer",
+     "level": "Mid",
+     "what": "Optimises and deploys AI on gateways, cameras and edge servers."
+    },
+    {
+     "title": "IoT Platform Engineer",
+     "level": "Mid",
+     "what": "Runs device fleets, connectivity and edge MLOps at scale."
+    },
+    {
+     "title": "AIoT Solutions Architect",
+     "level": "Senior",
+     "what": "Designs complete sensor-to-cloud AI solutions for industry."
+    }
+   ],
+   "salary": {
+    "entry": "5–12",
+    "mid": "12–28",
+    "senior": "28–50+",
+    "basis": "embedded / edge AI engineer bands (estimated)"
+   },
+   "companies": [
+    "Qualcomm",
+    "Intel",
+    "NVIDIA",
+    "Bosch",
+    "Samsung",
+    "Texas Instruments",
+    "Arm",
+    "Tata Elxsi",
+    "L&T Technology Services",
+    "Ather Energy"
    ]
   },
   "13": {
-   "skills": ["Robot kinematics, dynamics and control", "Robot software engineering with ROS 2", "Perception, SLAM, localisation and navigation", "Motion planning for arms, mobile robots and drones", "Robot learning: imitation and reinforcement learning", "Simulation and digital twins (Isaac Sim, Gazebo)", "Sim-to-real transfer and safety testing", "Robot foundation models and vision–language–action policies"],
+   "skills": [
+    "Robot kinematics, dynamics and control",
+    "Robot software engineering with ROS 2",
+    "Perception, SLAM, localisation and navigation",
+    "Motion planning for arms, mobile robots and drones",
+    "Robot learning: imitation and reinforcement learning",
+    "Simulation and digital twins (Isaac Sim, Gazebo)",
+    "Sim-to-real transfer and safety testing",
+    "Robot foundation models and vision–language–action policies"
+   ],
    "hiring": "Warehouse & logistics automation, manufacturing, drones, automotive & autonomous vehicles, healthcare robotics, defence",
    "jobs": [
-    {"title": "Robotics Software Engineer", "level": "Entry", "what": "Builds ROS 2 software that makes robots sense, plan and act."},
-    {"title": "Physical AI Engineer", "level": "Entry", "what": "Brings AI models into machines that work in the real world."},
-    {"title": "Simulation & Digital Twin Engineer", "level": "Mid", "what": "Creates virtual factories and robots to train and test before deployment."},
-    {"title": "Autonomy / Perception Engineer", "level": "Mid", "what": "Builds the perception and navigation stack for autonomous systems."},
-    {"title": "Robot Learning Engineer", "level": "Senior", "what": "Trains robot policies with imitation, RL and foundation models."}
+    {
+     "title": "Robotics Software Engineer",
+     "level": "Entry",
+     "what": "Builds ROS 2 software that makes robots sense, plan and act."
+    },
+    {
+     "title": "Physical AI Engineer",
+     "level": "Entry",
+     "what": "Brings AI models into machines that work in the real world."
+    },
+    {
+     "title": "Simulation & Digital Twin Engineer",
+     "level": "Mid",
+     "what": "Creates virtual factories and robots to train and test before deployment."
+    },
+    {
+     "title": "Autonomy / Perception Engineer",
+     "level": "Mid",
+     "what": "Builds the perception and navigation stack for autonomous systems."
+    },
+    {
+     "title": "Robot Learning Engineer",
+     "level": "Senior",
+     "what": "Trains robot policies with imitation, RL and foundation models."
+    }
+   ],
+   "salary": {
+    "entry": "5–15",
+    "mid": "12–28",
+    "senior": "25–60",
+    "basis": "robotics engineer bands"
+   },
+   "companies": [
+    "Addverb",
+    "GreyOrange",
+    "Amazon Robotics",
+    "ABB",
+    "Bosch",
+    "NVIDIA",
+    "Tata Elxsi",
+    "ideaForge",
+    "CynLr",
+    "Wipro PARI"
    ]
   },
   "14": {
-   "skills": ["Security fundamentals: networks, threats and MITRE ATT&CK", "ML for intrusion, malware, phishing and fraud detection", "Graph and deep learning for attack and anomaly analysis", "Building detections on SIEM/SOC log data", "LLM copilots and agents for SOC automation", "Threat intelligence analysis with AI", "Adversarial robustness of security models", "Compliance and secure deployment of AI in security"],
+   "skills": [
+    "Security fundamentals: networks, threats and MITRE ATT&CK",
+    "ML for intrusion, malware, phishing and fraud detection",
+    "Graph and deep learning for attack and anomaly analysis",
+    "Building detections on SIEM/SOC log data",
+    "LLM copilots and agents for SOC automation",
+    "Threat intelligence analysis with AI",
+    "Adversarial robustness of security models",
+    "Compliance and secure deployment of AI in security"
+   ],
    "hiring": "SOCs and MSSPs, banks & fintech, cybersecurity product firms, telecom, government CERTs, Big-4 cyber practices",
    "jobs": [
-    {"title": "AI Security Analyst", "level": "Entry", "what": "Uses AI tools to triage alerts and investigate incidents in a SOC."},
-    {"title": "Detection Engineer", "level": "Entry", "what": "Writes and tunes ML and rule-based detections for real attacks."},
-    {"title": "Security Data Scientist", "level": "Mid", "what": "Builds models that spot fraud, intrusions and insider threats."},
-    {"title": "SOC Automation Engineer", "level": "Mid", "what": "Automates response playbooks with LLM agents and SOAR."},
-    {"title": "Threat Intelligence Analyst", "level": "Mid", "what": "Uses AI to track attackers, campaigns and emerging threats."}
+    {
+     "title": "AI Security Analyst",
+     "level": "Entry",
+     "what": "Uses AI tools to triage alerts and investigate incidents in a SOC."
+    },
+    {
+     "title": "Detection Engineer",
+     "level": "Entry",
+     "what": "Writes and tunes ML and rule-based detections for real attacks."
+    },
+    {
+     "title": "Security Data Scientist",
+     "level": "Mid",
+     "what": "Builds models that spot fraud, intrusions and insider threats."
+    },
+    {
+     "title": "SOC Automation Engineer",
+     "level": "Mid",
+     "what": "Automates response playbooks with LLM agents and SOAR."
+    },
+    {
+     "title": "Threat Intelligence Analyst",
+     "level": "Mid",
+     "what": "Uses AI to track attackers, campaigns and emerging threats."
+    }
+   ],
+   "salary": {
+    "entry": "4–10",
+    "mid": "8–20",
+    "senior": "20–45+",
+    "basis": "cybersecurity bands; AI-security skills add about 25–40%"
+   },
+   "companies": [
+    "Palo Alto Networks",
+    "CrowdStrike",
+    "Microsoft",
+    "Cisco",
+    "IBM",
+    "Quick Heal",
+    "Deloitte",
+    "PwC",
+    "EY",
+    "HDFC Bank"
    ]
   },
   "15": {
-   "skills": ["Blockchain fundamentals: consensus, cryptography and ledgers", "Smart contracts in Solidity and secure dApp development", "Smart-contract testing and security auditing", "Permissioned enterprise blockchains (Hyperledger Fabric)", "Decentralised identity and verifiable credentials", "IPFS and decentralised storage", "Dataset and model provenance on-chain for trustworthy AI", "Designing governance for decentralised AI systems"],
+   "skills": [
+    "Blockchain fundamentals: consensus, cryptography and ledgers",
+    "Smart contracts in Solidity and secure dApp development",
+    "Smart-contract testing and security auditing",
+    "Permissioned enterprise blockchains (Hyperledger Fabric)",
+    "Decentralised identity and verifiable credentials",
+    "IPFS and decentralised storage",
+    "Dataset and model provenance on-chain for trustworthy AI",
+    "Designing governance for decentralised AI systems"
+   ],
    "hiring": "Fintech & banking, supply chain & traceability, Web3 start-ups, government (land, certificates), audit and consulting firms",
    "jobs": [
-    {"title": "Blockchain Developer", "level": "Entry", "what": "Builds smart contracts and decentralised applications."},
-    {"title": "Web3 + AI Engineer", "level": "Entry", "what": "Combines AI services with blockchain for verifiable, decentralised products."},
-    {"title": "Smart Contract Auditor", "level": "Mid", "what": "Finds vulnerabilities in contracts before they hold real value."},
-    {"title": "AI Provenance Engineer", "level": "Mid", "what": "Records data and model lineage so any AI decision can be traced."},
-    {"title": "Decentralised Identity Architect", "level": "Senior", "what": "Designs verifiable credential and identity systems for enterprises."}
+    {
+     "title": "Blockchain Developer",
+     "level": "Entry",
+     "what": "Builds smart contracts and decentralised applications."
+    },
+    {
+     "title": "Web3 + AI Engineer",
+     "level": "Entry",
+     "what": "Combines AI services with blockchain for verifiable, decentralised products."
+    },
+    {
+     "title": "Smart Contract Auditor",
+     "level": "Mid",
+     "what": "Finds vulnerabilities in contracts before they hold real value."
+    },
+    {
+     "title": "AI Provenance Engineer",
+     "level": "Mid",
+     "what": "Records data and model lineage so any AI decision can be traced."
+    },
+    {
+     "title": "Decentralised Identity Architect",
+     "level": "Senior",
+     "what": "Designs verifiable credential and identity systems for enterprises."
+    }
+   ],
+   "salary": {
+    "entry": "6–14",
+    "mid": "14–24",
+    "senior": "24–35+",
+    "basis": "blockchain developer bands"
+   },
+   "companies": [
+    "Polygon Labs",
+    "CoinDCX",
+    "CoinSwitch",
+    "IBM",
+    "Infosys",
+    "TCS",
+    "Wipro",
+    "Accenture",
+    "Deloitte"
    ]
   }
  },
  "pathways": [
-  {"role": "AI / ML Engineer", "courses": [1, 2, 3, 9], "plus": [6], "note": "The most-hired AI role: builds, ships and maintains models in production."},
-  {"role": "LLM & Generative AI Engineer", "courses": [3, 6, 8], "plus": [7, 10], "note": "Builds GenAI features, RAG systems and fine-tuned models for enterprises."},
-  {"role": "Agentic AI Engineer", "courses": [6, 7, 10], "plus": [1, 9], "note": "Designs tool-using, multi-agent systems with human oversight."},
-  {"role": "Data Scientist", "courses": [2, 9], "plus": [3, 10], "note": "Turns data into predictive models and decisions the business can trust."},
-  {"role": "Data / MLOps Engineer", "courses": [9, 2], "plus": [6], "note": "Owns the pipelines, platforms and monitoring behind every AI product."},
-  {"role": "Computer Vision & Edge AI Engineer", "courses": [3, 5, 12], "plus": [13], "note": "Puts real-time vision on cameras, devices and machines."},
-  {"role": "Robotics / Physical AI Engineer", "courses": [4, 5, 13], "plus": [12], "note": "Makes robots and drones perceive, plan and learn."},
-  {"role": "AI Security Engineer", "courses": [10, 14], "plus": [6, 7], "note": "Protects AI systems and uses AI to defend the enterprise."},
-  {"role": "Responsible AI & Governance Lead", "courses": [10, 2], "plus": [15], "note": "Keeps AI fair, explainable, compliant and auditable."},
-  {"role": "Quantum Software Engineer", "courses": [11, 2], "plus": [3], "note": "Builds hybrid quantum–classical solutions and quantum-safe systems."},
-  {"role": "Blockchain + AI Engineer", "courses": [15, 10], "plus": [9], "note": "Builds verifiable data, model provenance and decentralised trust."},
-  {"role": "AI Product Manager / Solutions Architect", "courses": [1, 7, 10], "plus": [6, 9], "note": "Leads AI products and enterprise architectures from idea to ROI."}
+  {
+   "role": "AI / ML Engineer",
+   "courses": [
+    1,
+    2,
+    3,
+    9
+   ],
+   "plus": [
+    6
+   ],
+   "note": "The most-hired AI role: builds, ships and maintains models in production."
+  },
+  {
+   "role": "LLM & Generative AI Engineer",
+   "courses": [
+    3,
+    6,
+    8
+   ],
+   "plus": [
+    7,
+    10
+   ],
+   "note": "Builds GenAI features, RAG systems and fine-tuned models for enterprises."
+  },
+  {
+   "role": "Agentic AI Engineer",
+   "courses": [
+    6,
+    7,
+    10
+   ],
+   "plus": [
+    1,
+    9
+   ],
+   "note": "Designs tool-using, multi-agent systems with human oversight."
+  },
+  {
+   "role": "Data Scientist",
+   "courses": [
+    2,
+    9
+   ],
+   "plus": [
+    3,
+    10
+   ],
+   "note": "Turns data into predictive models and decisions the business can trust."
+  },
+  {
+   "role": "Data / MLOps Engineer",
+   "courses": [
+    9,
+    2
+   ],
+   "plus": [
+    6
+   ],
+   "note": "Owns the pipelines, platforms and monitoring behind every AI product."
+  },
+  {
+   "role": "Computer Vision & Edge AI Engineer",
+   "courses": [
+    3,
+    5,
+    12
+   ],
+   "plus": [
+    13
+   ],
+   "note": "Puts real-time vision on cameras, devices and machines."
+  },
+  {
+   "role": "Robotics / Physical AI Engineer",
+   "courses": [
+    4,
+    5,
+    13
+   ],
+   "plus": [
+    12
+   ],
+   "note": "Makes robots and drones perceive, plan and learn."
+  },
+  {
+   "role": "AI Security Engineer",
+   "courses": [
+    10,
+    14
+   ],
+   "plus": [
+    6,
+    7
+   ],
+   "note": "Protects AI systems and uses AI to defend the enterprise."
+  },
+  {
+   "role": "Responsible AI & Governance Lead",
+   "courses": [
+    10,
+    2
+   ],
+   "plus": [
+    15
+   ],
+   "note": "Keeps AI fair, explainable, compliant and auditable."
+  },
+  {
+   "role": "Quantum Software Engineer",
+   "courses": [
+    11,
+    2
+   ],
+   "plus": [
+    3
+   ],
+   "note": "Builds hybrid quantum–classical solutions and quantum-safe systems."
+  },
+  {
+   "role": "Blockchain + AI Engineer",
+   "courses": [
+    15,
+    10
+   ],
+   "plus": [
+    9
+   ],
+   "note": "Builds verifiable data, model provenance and decentralised trust."
+  },
+  {
+   "role": "AI Product Manager / Solutions Architect",
+   "courses": [
+    1,
+    7,
+    10
+   ],
+   "plus": [
+    6,
+    9
+   ],
+   "note": "Leads AI products and enterprise architectures from idea to ROI."
+  }
+ ],
+ "salary_note": "Indicative annual CTC in India (₹ lakh per annum), compiled November 2026 from published 2026 salary reports. Pay varies widely by company type, city and skills: IT services sit at the lower end; product companies, GCCs, FAANG India and AI-first start-ups at the upper end. Company names are examples of employers that hire for these skill sets, not current openings or endorsements.",
+ "salary_sources": [
+  [
+   "Instahyre: AI/ML engineer salary in India 2026",
+   "https://resources.instahyre.com/blog/ai-engineer-salary-in-india/"
+  ],
+  [
+   "Futurense: AI engineer salary in India 2026",
+   "https://futurense.com/blog/ai-engineer-salary-in-india"
+  ],
+  [
+   "Futurense: Machine learning engineer salary 2026",
+   "https://futurense.com/blog/machine-learning-engineer-salary-in-india"
+  ],
+  [
+   "Recrew: LLM engineer salary in India 2026",
+   "https://recrew.ai/salary-guides/llm-engineer-salary-in-india"
+  ],
+  [
+   "IIT Kharagpur Online: Generative AI engineer salary 2026",
+   "https://online.iitkgp.ac.in/blog/generative-ai-engineer-salary"
+  ],
+  [
+   "Recrew: Computer vision engineer salary 2026",
+   "https://www.recrew.ai/salary-guides/computer-vision-engineer"
+  ],
+  [
+   "Instahyre: Data scientist salary in India 2026",
+   "https://resources.instahyre.com/?p=6963"
+  ],
+  [
+   "SecondTalent: Data engineer salary India 2026",
+   "https://www.secondtalent.com/developer-rate-card/data-engineer-india/"
+  ],
+  [
+   "Futurense: Cybersecurity analyst salary 2026",
+   "https://futurense.com/blog/cybersecurity-analyst-salary-in-india"
+  ],
+  [
+   "NetworkersHome: Cybersecurity salary by experience 2026",
+   "https://www.networkershome.com/cybersecurity-salary-india-by-experience-2026/"
+  ],
+  [
+   "Futurense: Robotics engineer salary and career path",
+   "https://futurense.com/blog/robotics-engineer-salary-and-career-path-in-india"
+  ],
+  [
+   "Dheya: Quantum computing careers in India 2026",
+   "https://www.dheya.com/insights/quantum-computing-careers-india"
+  ],
+  [
+   "OwnYourCareer: Blockchain developer salary India 2026",
+   "https://www.ownyourcareer.in/careers/blockchain-developer/salaries"
+  ]
  ]
 }
