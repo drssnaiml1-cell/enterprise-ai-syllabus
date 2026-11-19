@@ -155,7 +155,7 @@
     "title": "ML Foundations and Problem Framing",
     "hours": 9,
     "topics": "Learning paradigms; the ML product life cycle; data collection, labelling and sampling; bias–variance trade-off; loss functions and empirical risk minimisation; gradient descent variants; train/validation/test design; baseline models; mapping business KPIs to ML metrics.",
-    "outcome": "Produces an EDA and data-quality report and a baseline model with a documented KPI-tometric mapping."
+    "outcome": "Produces an EDA and data-quality report and a baseline model with a documented KPI-to-metric mapping."
    },
    {
     "n": "II",
@@ -319,7 +319,7 @@
     "title": "Scalable Training and Production Inference",
     "hours": 9,
     "topics": "Mixed-precision training; distributed data parallel and FSDP; experiment management; model compression: quantisation, pruning, knowledge distillation; export to ONNX and TensorRT; inference servers; edge deployment; cost, latency and throughput benchmarking; model cards.",
-    "outcome": "Trains with DDP + mixed precision, quantises to INT8 and serves on Triton with an accuracylatency-cost report."
+    "outcome": "Trains with DDP + mixed precision, quantises to INT8 and serves on Triton with an accuracy-latency-cost report."
    }
   ],
   "labs": [
@@ -440,7 +440,7 @@
     "n": "III",
     "title": "Deep Reinforcement Learning",
     "hours": 9,
-    "topics": "Function approximation; Deep Q-Networks, experience replay and target networks; Double and Dueling DQN; policygradient theorem and REINFORCE; actor–critic, A2C/A3C; PPO and TRPO; DDPG, TD3 and SAC for continuous control.",
+    "topics": "Function approximation; Deep Q-Networks, experience replay and target networks; Double and Dueling DQN; policy-gradient theorem and REINFORCE; actor–critic, A2C/A3C; PPO and TRPO; DDPG, TD3 and SAC for continuous control.",
     "outcome": "Trains DQN and PPO agents and compares sample eﬀiciency and stability on standard benchmarks."
    },
    {
@@ -590,7 +590,7 @@
     "n": "V",
     "title": "Edge Deployment and Vision Product Engineering",
     "hours": 9,
-    "topics": "Real-time video pipelines (RTSP , GStreamer, DeepStream); model optimisation for edge (TensorRT, OpenVINO, TFLite); edge hardware (Jetson, NPUs); MLOps for vision: data versioning, labelling workflows, drift; privacypreserving vision (face blurring, on-device processing); case studies in manufacturing, retail and healthcare.",
+    "topics": "Real-time video pipelines (RTSP , GStreamer, DeepStream); model optimisation for edge (TensorRT, OpenVINO, TFLite); edge hardware (Jetson, NPUs); MLOps for vision: data versioning, labelling workflows, drift; privacy-preserving vision (face blurring, on-device processing); case studies in manufacturing, retail and healthcare.",
     "outcome": "Deploys a real-time RTSP vision pipeline on Jetson with TensorRT, face blurring and an events dashboard."
    }
   ],
@@ -698,7 +698,7 @@
     "n": "I",
     "title": "Language Modelling Foundations",
     "hours": 9,
-    "topics": "From n-grams to neural language models; tokenisation (BPE, WordPiece, SentencePiece); embeddings; the decoderonly Transformer; causal attention and KV cache; pre-training objectives and data pipelines; scaling laws; mixtureof-experts; the open vs closed model landscape and licensing.",
+    "topics": "From n-grams to neural language models; tokenisation (BPE, WordPiece, SentencePiece); embeddings; the decoder-only Transformer; causal attention and KV cache; pre-training objectives and data pipelines; scaling laws; mixture-of-experts; the open vs closed model landscape and licensing.",
     "outcome": "Trains a BPE tokeniser and a mini-GPT from scratch and measures perplexity and KV-cache speed-up."
    },
    {
@@ -769,7 +769,7 @@
   ],
   "capstone": {
    "name": "Enterprise Knowledge Assistant",
-   "desc": "a permission-aware RAG assistant over company documents using a fine-tuned open model served on vLLM behind an LLM gateway, with citations, evaluation dashboards, cost tracking and promptinjection defences."
+   "desc": "a permission-aware RAG assistant over company documents using a fine-tuned open model served on vLLM behind an LLM gateway, with citations, evaluation dashboards, cost tracking and prompt-injection defences."
   },
   "careers": [
    "LLM Engineer",
@@ -842,7 +842,7 @@
     "n": "II",
     "title": "Tools, Planning and Memory",
     "hours": 9,
-    "topics": "Function/tool calling and tool schema design; the Model Context Protocol (MCP) for connecting tools and data; codeexecution and browser/computer-use tools; planning and task decomposition; self-correction and retries; short-term, long-term and episodic memory; state management and checkpoints.",
+    "topics": "Function/tool calling and tool schema design; the Model Context Protocol (MCP) for connecting tools and data; code-execution and browser/computer-use tools; planning and task decomposition; self-correction and retries; short-term, long-term and episodic memory; state management and checkpoints.",
     "outcome": "Builds and consumes an MCP server for a CRM and an agent with long-term memory and checkpoints."
    },
    {
@@ -1317,7 +1317,7 @@
   ],
   "capstone": {
    "name": "Responsible-AI Assurance Toolkit",
-   "desc": "an audit pipeline that takes a model or LLM application and produces fairness, explainability, robustness, privacy and red-team results, plus a model card, impact assessment and regulatoryreadiness report for an AI review board."
+   "desc": "an audit pipeline that takes a model or LLM application and produces fairness, explainability, robustness, privacy and red-team results, plus a model card, impact assessment and regulatory-readiness report for an AI review board."
   },
   "careers": [
    "Responsible AI Specialist",
@@ -1800,7 +1800,7 @@
     "n": "IV",
     "title": "LLMs and Agents for Security Operations",
     "hours": 9,
-    "topics": "LLM security copilots for alert triage and incident summaries; threat-intelligence extraction from reports; naturallanguage querying of SIEM data; AI agents for SOAR playbooks with human approval; AI-assisted code review and vulnerability discovery; risks of AI-generated attacks (deepfake phishing, malware generation) and countermeasures.",
+    "topics": "LLM security copilots for alert triage and incident summaries; threat-intelligence extraction from reports; natural-language querying of SIEM data; AI agents for SOAR playbooks with human approval; AI-assisted code review and vulnerability discovery; risks of AI-generated attacks (deepfake phishing, malware generation) and countermeasures.",
     "outcome": "Builds an LLM triage copilot over SIEM alerts and an agent-driven SOAR playbook with human approval."
    },
    {

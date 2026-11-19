@@ -5,8 +5,12 @@ T=T.replace('A WS','AWS').replace('T ypeScript','TypeScript').replace('SW AYAM',
 starts=[m.start() for m in re.finditer(r'^COURSE \d+ \| EAI-1\d\d$',T,re.M)]
 end=T.index('Course-to-Career Alignment Matrix: Core AI Track')
 starts.append(end)
+VOC=set(w.lower() for w in re.findall(r"(?<![\w-])[A-Za-z]+(?![\w-])",T))
+def _hy(m):
+    l,r=m.group(1),m.group(2)
+    return f"{l}-{r}" if len(l)>=3 and l.lower() in VOC and r.lower() in VOC and (l+r).lower() not in VOC else l+r
 def join(s):
-    s=re.sub(r'(\w)-\n(\w)',r'\1\2',s)
+    s=re.sub(r'([A-Za-z]+)-\n([A-Za-z]+)',_hy,s)
     return re.sub(r'\s*\n\s*',' ',s).strip()
 courses=[]
 for a,b in zip(starts,starts[1:]):
@@ -50,4 +54,6 @@ for a,b in zip(starts,starts[1:]):
         certnames.append(dict(name=raw.replace('(RLH- F/DPO) ',''),issuer=iss,level=lv.replace('Core / Intermediate','Intermediate'),units=u))
     courses.append(dict(num=num,code=code,title=title,tagline=tag,prereq=prereq,hours=hrs,competencies=comps,units=units,labs=labl,cos=cos,capstone=dict(name=capname.strip(),desc=capdesc.strip()),careers=[x.strip() for x in re.findall(r'.*?(?:Engineer|Scientist|Architect|Manager|Analyst|Developer|Auditor|Specialist|Lead|Researcher|Officer|Consultant|Designer|Technologist|Hunter|Responder)(?: \([^)]*\))?(?=\s|$)',car)],languages=[l[1] for l in langs],certs=certnames))
 for c in courses: print(c['num'],c['code'],c['title'],len(c['units']),len(c['labs']),len(c['cos']),c['languages'],len(c['certs']),file=sys.stderr)
-json.dump(courses,open(sys.argv[2],'w'),indent=1,ensure_ascii=False)
+out=json.dumps(courses,indent=1,ensure_ascii=False)
+for a,b in [('T win','Twin'),('"OpenQASM"','"OpenQASM 3"'),('OpenCV .org','OpenCV.org'),('KPI-tometric','KPI-to-metric'),('mixtureof-experts','mixture-of-experts')]: out=out.replace(a,b)
+open(sys.argv[2],'w').write(out)

@@ -108,6 +108,25 @@ ul.ck li::before{content:"✓";position:absolute;left:0;color:var(--green);font-
 table{width:100%;border-collapse:collapse;font-size:16px}th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 th{color:var(--navy);background:#FAFBFD}
 .lv{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--goldbg);color:var(--gold);white-space:nowrap}
+.skills{padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+.skills li{list-style:none;padding:8px 12px 8px 36px;position:relative;background:#FFF8EE;border-radius:10px;font-size:16px}
+.skills li::before{content:"★";position:absolute;left:12px;color:var(--saffron)}
+.jobs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.job{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;transition:transform .2s,box-shadow .2s}
+.job:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(11,31,58,.08)}
+.job b{color:var(--navy);font-size:18px}.job p{margin:4px 0 0;font-size:15px;color:var(--muted)}
+.lvl{float:right;font-size:12px;padding:2px 9px;border-radius:999px;font-weight:700}
+.lvl.Entry{background:#F1FAF0;color:var(--green)}.lvl.Mid{background:#F3F6FF;color:var(--chakra)}.lvl.Senior{background:#FFF6EC;color:#C25E00}
+.hire{margin-top:12px;padding:12px 16px;border-radius:12px;background:#F7F8FB;font-size:16px}.hire b{color:var(--navy)}
+.cc .jl{font-size:14px;color:var(--navy);margin:0 0 10px}.cc .jl b{color:var(--green)}
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pa{border:1px solid var(--line);border-radius:18px;padding:20px;background:#fff;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.pa:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(11,31,58,.1)}
+.pa::after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;border-radius:50%;background:var(--goldbg)}
+.pa h4{margin:0 0 6px;font-size:21px;color:var(--navy);position:relative;z-index:1}.pa p{margin:0 0 12px;font-size:15px;color:var(--muted)}
+.cb{display:inline-block;margin:0 6px 6px 0;padding:4px 10px;border-radius:999px;font-size:14px;cursor:pointer;border:1px solid var(--navy);color:var(--navy);background:#fff;font-family:inherit}
+.cb:hover{background:var(--navy);color:#fff}.cb.plus{border-style:dashed;border-color:var(--gold);color:var(--gold)}.cb.plus:hover{background:var(--gold);color:#fff}
+.lvkey{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:-14px 0 24px;font-size:15px;color:var(--muted)}
 /* lang */
 .lang{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .lg{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;transition:transform .25s}.lg:hover{transform:translateY(-4px)}
@@ -149,8 +168,8 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 .logo-anim{animation:float 6s ease-in-out infinite}@keyframes float{50%{transform:translateY(-4px)}}
 .top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold);color:#fff;font-size:22px;cursor:pointer;opacity:0;transition:opacity .3s;z-index:40}
 .top.on{opacity:1}
-@media(max-width:980px){.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
-@media(max-width:620px){.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
+@media(max-width:980px){.paths{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.svc{grid-template-columns:1fr 1fr}.lang{grid-template-columns:1fr 1fr}.trends{grid-template-columns:1fr 1fr}.letter,.assess,.two{grid-template-columns:1fr}.models{grid-template-columns:1fr}nav .links{display:none}}
+@media(max-width:620px){.paths,.skills,.jobs{grid-template-columns:1fr}.kick{letter-spacing:2.5px}nav .wrap>.btn{padding:9px 16px;font-size:15px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.labs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;row-gap:24px}.st::after{display:none}.co{grid-template-columns:48px 1fr}.co .blw{grid-column:2}.mb,.mh{padding-left:20px;padding-right:20px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -158,7 +177,7 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <div class="tri"></div>
 <nav><div class="wrap">
 <a class="brand" href="#top"><img class="logo-anim" src="assets/algoprofessor-logo.svg" alt="AlgoProfessor logo"></a>
-<div class="links"><a href="#message">Message</a><a href="#courses">Courses</a><a href="#languages">Languages</a><a href="#services">Consultancy</a><a href="#assessment">Assessment</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#message">Message</a><a href="#courses">Courses</a><a href="#careers">Careers &amp; Jobs</a><a href="#languages">Languages</a><a href="#services">Consultancy</a><a href="#assessment">Assessment</a><a href="#contact">Contact</a></div>
 <a class="btn p" href="Enterprise_AI_Syllabus.pdf" download>⬇ Syllabus PDF</a>
 </div></nav>
 
@@ -197,21 +216,26 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <p id="none" style="display:none;text-align:center;color:var(--muted)">No course matches that search.</p>
 </div></section>
 
-<section id="languages"><div class="wrap">
+<section id="careers"><div class="wrap">
+<div class="sh rv"><div class="kick">From course to career</div><h2>Careers &amp; Jobs</h2><p class="lead">Each pathway shows the courses that make a learner job-ready for a role. Solid chips are the core courses; dashed chips are recommended extras. Click any course to see its skills and jobs.</p><div class="rule"></div></div>
+<div class="paths" id="paths"></div>
+</div></section>
+
+<section class="alt" id="languages"><div class="wrap">
 <div class="sh rv"><div class="kick">Programming language strategy 2026–2035</div><h2>Python for intelligence. Systems languages for performance. Delivery languages for users.</h2><p class="lead">Graduates who work across all three layers can build complete AI products, not just models.</p><div class="rule"></div></div>
 <div class="lang" id="lang"></div>
 <div class="trends" id="trends"></div>
 <p style="font-size:14px;color:var(--muted);text-align:center;margin-top:18px">The 2026–2035 outlook reflects current industry direction and is a planning guide, not a forecast guarantee; review it every academic year.</p>
 </div></section>
 
-<section class="alt" id="services"><div class="wrap">
+<section id="services"><div class="wrap">
 <div class="sh rv"><div class="kick">From syllabus to industry-ready graduates</div><h2>AlgoProfessor Consultancy Services</h2><p class="lead">End-to-end support for all fifteen courses, so your institution can adopt this curriculum quickly and deliver it with industry quality.</p><div class="rule"></div></div>
 <div class="svc" id="svc"></div>
 <div class="models" id="models"></div>
 <div class="steps rv" id="steps"></div>
 </div></section>
 
-<section id="assessment"><div class="wrap">
+<section class="alt" id="assessment"><div class="wrap">
 <div class="sh rv"><div class="kick">Outcome-based by design</div><h2>Assessment &amp; Course Arc</h2><div class="rule"></div></div>
 <div class="assess">
 <div class="rv" id="abars"></div>
@@ -236,7 +260,7 @@ footer img{height:54px;display:block;margin:0 auto 8px}
 <button class="top" id="top" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
-const COURSES=__DATA__;
+const COURSES=__DATA__;const CAR=__CAREERS__;
 const LANGS=[["Python","Courses 1–14","The working language of AI: models, agents, data and evaluation. AI coding assistants make it even more productive."],["C++ / CUDA","Courses 1, 3, 4, 5, 8, 11, 12, 13","The performance layer: GPU kernels, inference engines, simulators, robots and edge devices."],["Rust","Courses 6, 10, 12, 13, 14, 15","Memory-safe systems language for AI infrastructure, security, embedded and blockchain."],["SQL","Courses 2, 9","The most durable data skill; every AI product depends on well-modelled data."],["TypeScript / JavaScript","Courses 6, 7, 8","Delivers AI to users: web apps, chat interfaces, MCP servers and agent SDKs."],["Go","Courses 7, 14, 15","Cloud-native services, agent platforms, security tools and enterprise blockchain."],["Java / Scala","Courses 1, 9","JVM backbone of enterprise systems and big-data streaming engines."],["Domain languages","R · Julia · OpenQASM 3 · Solidity · Mojo","Statistics, scientific computing, quantum circuits, smart contracts and next-generation AI performance."]];
 const TRENDS=[["AI-assisted engineering","Engineers direct coding agents; review, testing, specification and design matter more than typing code."],["Polyglot by default","Python models served by C++/Rust engines, reached through TypeScript or Go, fed by SQL pipelines."],["Memory safety by design","Security guidance increasingly favours memory-safe languages such as Rust for critical systems."],["Performance engineering","GPU, edge and quantum hardware reward engineers who optimise below the Python layer."],["Specification & verification","Formal contracts, typed interfaces and evaluation suites become how humans control AI-written code."]];
 const SVC=[["Curriculum Adoption & Customisation","Adapt the 15 courses to your regulations, credits and semester plan; BoS documents, course files and CO–PO–PSO mapping."],["Faculty Development Programmes","Hands-on FDPs and train-the-trainer bootcamps for every course, with teaching kits, slides and assessment banks."],["AI & Emerging-Tech Laboratory Set-up","GPU, edge, robotics, quantum-simulation and SOC labs; software stacks, cloud credits guidance and lab manuals."],["GitHub Course Repositories","Version-controlled repositories with notebooks, code, datasets and solutions for all units and labs."],["Industry Capstones & Live Projects","“One Student, One Project”: real enterprise problems, weekly milestones and GitHub portfolios."],["Certification Readiness","Preparation tracks mapped to AWS, Microsoft, Google Cloud, NVIDIA, Databricks, IBM, CompTIA and more."],["Centre of Excellence in AI","Research themes, industry partnerships, hackathons and incubation for student start-ups."],["Research, Patents & Q1 Publications","Research mentoring, sponsored projects, patent drafting support and Q1/SCI paper development."],["Accreditation & Ranking Support","OBE evidence, outcome attainment and documentation for NBA, NAAC, NIRF and international rankings."],["Placement & Career Readiness","Role-based training for AI Engineer, Agentic AI, Data, Cybersecurity and Physical AI careers."]];
@@ -245,31 +269,35 @@ const STEPS=[["Discover","Leadership meeting; gap analysis of syllabus, labs and
 const ASSESS=[["Continuous lab work & notebooks",20,"#FF9933"],["Two mid-term evaluations",20,"#000080"],["Mini-project / sprint reviews",20,"#138808"],["Enterprise capstone (demo + report)",40,"#A8811C"]];
 const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const units=COURSES.reduce((a,c)=>a+c.units.length,0),labs=COURSES.reduce((a,c)=>a+c.labs.length,0),certs=COURSES.reduce((a,c)=>a+c.certs.length,0),cos=COURSES.reduce((a,c)=>a+c.cos.length,0);
-const careers=new Set(COURSES.flatMap(c=>c.careers)).size;
-$("#stats").innerHTML=[[COURSES.length,"Courses"],[units,"Units"],[COURSES.length*75,"Contact hours"],[labs,"Hands-on labs"],[certs,"Certifications mapped"],[careers,"Career roles"]].map(([n,l])=>`<div class="stat"><b data-n="${n}">0</b><span>${l}</span></div>`).join("");
-function card(c){const em=c.num>10;return `<article class="cc ${em?"em":"core"} rv" data-i="${c.num-1}" data-t="${em?"em":"core"}" tabindex="0"><div class="no">COURSE ${c.num} · ${c.code}</div><h3>${esc(c.title)}</h3><p>${esc(c.tagline)}</p><div class="meta">${c.languages.map(l=>`<span class="tag">${esc(l)}</span>`).join("")}</div><div class="more">View 5 units, labs &amp; capstone →</div></article>`}
+const careers=new Set(Object.values(CAR.courses).flatMap(c=>c.jobs.map(j=>j.title)).concat(COURSES.flatMap(c=>c.careers))).size;
+$("#stats").innerHTML=[[COURSES.length,"Courses"],[units,"Units"],[COURSES.length*75,"Contact hours"],[labs,"Hands-on labs"],[certs,"Certifications mapped"],[careers,"Job roles"]].map(([n,l])=>`<div class="stat"><b data-n="${n}">0</b><span>${l}</span></div>`).join("");
+function card(c){const em=c.num>10;return `<article class="cc ${em?"em":"core"} rv" data-i="${c.num-1}" data-t="${em?"em":"core"}" tabindex="0"><div class="no">COURSE ${c.num} · ${c.code}</div><h3>${esc(c.title)}</h3><p>${esc(c.tagline)}</p><p class="jl"><b>Jobs:</b> ${CAR.courses[c.num].jobs.slice(0,3).map(j=>esc(j.title)).join(" · ")}</p><div class="meta">${c.languages.map(l=>`<span class="tag">${esc(l)}</span>`).join("")}</div><div class="more">Units, skills, jobs &amp; capstone →</div></article>`}
 $("#grid").innerHTML=COURSES.map(card).join("");
 const bl={L1:16,L2:33,L3:50,L4:66,L5:83,L6:100};
-function open(i){const c=COURSES[i];
+function openC(i){const c=COURSES[i],K=CAR.courses[c.num];
 $("#md").innerHTML=`<div class="mh"><button class="x" aria-label="Close" onclick="closeM()">×</button><div class="kick">Course ${c.num} · ${c.code} · ${c.num>10?"Emerging Technologies Track":"Core AI Track"}</div><h2>${esc(c.title)}</h2><div style="color:var(--muted)">${esc(c.tagline)}</div>
 <div class="facts"><span class="pill">L–T–P–C 3–0–2–4</span><span class="pill">${esc(c.hours)}</span><span class="pill">Prerequisites: ${esc(c.prereq)}</span></div></div>
 <div class="mb"><h4>Core Competencies</h4><ul class="ck">${c.competencies.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
-<h4>Five-Unit Curriculum</h4>${c.units.map((u,k)=>`<details class="unit" ${k?"":"open"}><summary><span class="un">${u.n}</span>${esc(u.title)}<span class="r">${u.hours} hours</span></summary><div class="ub">${esc(u.topics)}<div class="ho"><b>Hands-on outcome:</b> ${esc(u.outcome)}</div></div></details>`).join("")}
+<h4>Skills You Will Gain</h4><ul class="skills">${K.skills.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h4>Five-Unit Curriculum</h4>${c.units.map((u,k)=>`<details class="unit" ${k?"":"open"}><summary><span class="un">${u.n}</span>${esc(u.title)}<span class="r">${u.hours} hours</span></summary><div class="ub">${esc(u.topics)}<div class="ho"><b>Hands-on outcome:</b> ${esc(u.outcome)}</div></div></details>`).join("")}
 <h4>Hands-on Laboratory (30 hours)</h4><div class="labs">${c.labs.map((l,k)=>`<div class="lab"><b>L${k+1}</b> ${esc(l)}</div>`).join("")}</div>
 <h4>Course Outcomes &amp; Bloom Levels</h4>${c.cos.map(o=>`<div class="co"><b>${o.co}</b><span>${esc(o.text)}</span><div class="blw"><div class="bl"><i style="width:0" data-w="${bl[o.bloom.slice(0,2)]}%"></i></div><small>${esc(o.bloom)}</small></div></div>`).join("")}
 <h4>Enterprise Capstone Product</h4><div class="cap"><b>${esc(c.capstone.name)}:</b> ${esc(c.capstone.desc)}</div>
-<div class="two"><div><h4>Top 3 Programming Languages</h4>${c.languages.map((l,k)=>`<span class="pill" style="margin:0 6px 6px 0;display:inline-block">#${k+1} ${esc(l)}</span>`).join("")}<h4>Aligned Careers</h4>${c.careers.map(x=>`<span class="tag" style="display:inline-block;margin:0 6px 6px 0;font-size:15px">${esc(x)}</span>`).join("")}</div>
+<h4>Jobs You Can Apply For</h4><div class="jobs">${K.jobs.map(j=>`<div class="job"><span class="lvl ${j.level}">${j.level==="Entry"?"Fresher / Entry":j.level==="Mid"?"2–5 yrs":"Senior"}</span><b>${esc(j.title)}</b><p>${esc(j.what)}</p></div>`).join("")}</div>
+<div class="hire"><b>Who hires:</b> ${esc(K.hiring)}</div>
+<p style="font-size:15px;color:var(--muted);margin:10px 0 0"><b style="color:var(--navy)">Portfolio you graduate with:</b> five unit artefacts, eight lab projects and the capstone above, all on GitHub.</p>
+<div class="two"><div><h4>Top 3 Programming Languages</h4>${c.languages.map((l,k)=>`<span class="pill" style="margin:0 6px 6px 0;display:inline-block">#${k+1} ${esc(l)}</span>`).join("")}</div>
 <div><h4>Recommended Certifications</h4><table><tr><th>Certification</th><th>Level</th></tr>${c.certs.map(x=>`<tr><td>${esc(x.name)}<br><small style="color:var(--muted)">${esc(x.issuer)} · Units ${esc(x.units)}</small></td><td><span class="lv">${esc(x.level)}</span></td></tr>`).join("")}</table></div></div>
 <p style="margin-top:24px;font-size:15px;color:var(--muted)">Industry tools, text books and full detail are in the <a href="Enterprise_AI_Syllabus.pdf" download>complete syllabus PDF</a>.</p></div>`;
 $("#ov").classList.add("on");document.body.style.overflow="hidden";
 setTimeout(()=>document.querySelectorAll("#md .bl i").forEach(e=>e.style.width=e.dataset.w),60);
 history.replaceState(null,"","#course-"+c.num);}
 function closeM(){$("#ov").classList.remove("on");document.body.style.overflow="";history.replaceState(null,"","#courses")}
-$("#grid").addEventListener("click",e=>{const a=e.target.closest(".cc");if(a)open(+a.dataset.i)});
-$("#grid").addEventListener("keydown",e=>{const a=e.target.closest(".cc");if(a&&(e.key==="Enter"||e.key===" ")){e.preventDefault();open(+a.dataset.i)}});
+$("#grid").addEventListener("click",e=>{const a=e.target.closest(".cc");if(a)openC(+a.dataset.i)});
+$("#grid").addEventListener("keydown",e=>{const a=e.target.closest(".cc");if(a&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openC(+a.dataset.i)}});
 $("#ov").addEventListener("click",e=>{if(e.target.id==="ov")closeM()});addEventListener("keydown",e=>{if(e.key==="Escape")closeM()});
 let F="all";function filt(){const q=$("#q").value.toLowerCase().trim();let n=0;document.querySelectorAll(".cc").forEach(el=>{const c=COURSES[+el.dataset.i];const ok=(F==="all"||el.dataset.t===F)&&(!q||JSON.stringify(c).toLowerCase().includes(q));el.style.display=ok?"":"none";if(ok)n++});$("#none").style.display=n?"none":"block"}
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));b.classList.add("on");F=b.dataset.f;filt()});$("#q").oninput=filt;
+$("#paths").innerHTML=CAR.pathways.map(p=>`<div class="pa rv"><h4>${esc(p.role)}</h4><p>${esc(p.note)}</p>${p.courses.map(n=>`<button class="cb" onclick="openC(${n-1})">${n}. ${esc(COURSES[n-1].title)}</button>`).join("")}${p.plus.map(n=>`<button class="cb plus" onclick="openC(${n-1})">+ ${esc(COURSES[n-1].title)}</button>`).join("")}</div>`).join("");
 $("#lang").innerHTML=LANGS.map(l=>`<div class="lg rv"><small>${l[1]}</small><h4>${l[0]}</h4><p>${l[2]}</p></div>`).join("");
 $("#trends").innerHTML=TRENDS.map(t=>`<div class="tr rv"><b>${t[0]}</b>${t[1]}</div>`).join("");
 $("#svc").innerHTML=SVC.map((s,i)=>`<div class="sv rv"><div class="n">${String(i+1).padStart(2,"0")}</div><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div>`).join("");
@@ -281,7 +309,7 @@ function count(el){const n=+el.dataset.n,t0=performance.now();(function f(t){con
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add("in");el.querySelectorAll("[data-n]").forEach(count);el.querySelectorAll(".bar i").forEach(i=>i.style.width=i.dataset.w);io.unobserve(el)}),{threshold:.12});
 document.querySelectorAll(".rv").forEach((el,i)=>{el.style.transitionDelay=(i%6)*60+"ms";io.observe(el)});
 addEventListener("scroll",()=>$("#top").classList.toggle("on",scrollY>600));
-if(location.hash.startsWith("#course-")){const k=+location.hash.slice(8);if(k>=1&&k<=COURSES.length)setTimeout(()=>open(k-1),300)}
+if(location.hash.startsWith("#course-")){const k=+location.hash.slice(8);if(k>=1&&k<=COURSES.length)setTimeout(()=>openC(k-1),300)}
 /* hero network */
 (function(){const cv=$("#net"),x=cv.getContext("2d");let W,H,P=[];const cols=["#FF9933","#000080","#138808","#A8811C"];
 function rs(){W=cv.width=cv.offsetWidth*devicePixelRatio;H=cv.height=cv.offsetHeight*devicePixelRatio;P=Array.from({length:Math.min(70,Math.round(W*H/26000/devicePixelRatio))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35*devicePixelRatio,vy:(Math.random()-.5)*.35*devicePixelRatio,c:cols[Math.random()*4|0]}))}
