@@ -1,0 +1,64 @@
+[
+ {
+  "num": 16,
+  "code": "EAI-116",
+  "track": "fde",
+  "title": "Forward Deployed Engineering (FDE)",
+  "tagline": "Embedding with enterprise clients to discover, build, deploy and scale AI solutions that deliver measurable business value",
+  "prereq": "EAI-106 Large Language Models, EAI-107 Agentic AI, EAI-109 Data Engineering for AI; cloud and Git fundamentals",
+  "hours": "45 L + 30 P",
+  "competencies": [
+   "Translate a client's business problem into a scoped AI use case with clear KPIs, ROI and success criteria.",
+   "Prototype quickly on real customer data and prove value with an evaluation set built from the client's own examples.",
+   "Integrate and deploy AI securely inside customer environments: SSO, private networks, enterprise systems and compliance controls.",
+   "Run production systems, drive user adoption and feed field insights back to the product team as a trusted client partner."
+  ],
+  "units": [
+   {"n": "I", "title": "The FDE Model and Customer Discovery", "hours": 9,
+    "topics": "Origins of forward deployed engineering and how AI companies use it today; FDE vs software, solutions and ML engineers; stakeholder mapping; discovery interviews and process mapping; data and systems audit; framing use cases, KPIs, ROI and success criteria; scoping statements of work; build vs buy vs configure; consulting communication and trust-building.",
+    "outcome": "Produces a discovery report for a client: process map, data audit, prioritised AI use cases and a scoped problem statement with measurable KPIs."},
+   {"n": "II", "title": "Rapid Prototyping on Customer Data", "hours": 9,
+    "topics": "Getting safe access to data in restricted environments; connectors for SQL, REST APIs, document stores and SaaS tools; building RAG and agent prototypes in days; demo-driven development; from notebook to usable app (Streamlit, Next.js); building evaluation sets from customer examples; handling messy, partial and sensitive data.",
+    "outcome": "Delivers a working prototype on a client's sample data within one week, with an evaluation set and a live demo to stakeholders."},
+   {"n": "III", "title": "Integration and Deployment in Customer Environments", "hours": 9,
+    "topics": "Enterprise integration patterns; SSO with SAML/OIDC and role-based access; MCP servers and APIs to CRM, ERP and ticketing systems; deployment to customer VPC, on-premises and air-gapped environments; containers, Kubernetes and infrastructure as code; CI/CD; data residency, DPDP Act and security reviews.",
+    "outcome": "Deploys the prototype into a simulated client VPC with SSO, infrastructure as code, CI/CD and a passed security checklist."},
+   {"n": "IV", "title": "Production Reliability, Evaluation and Adoption", "hours": 9,
+    "topics": "Observability, tracing and alerting; online evaluation and regression gates; guardrails and human-in-the-loop controls; incident response and SLAs; cost and latency management; user training and change management; adoption analytics; structured product feedback from the field to the core product team.",
+    "outcome": "Publishes a runbook, a live dashboard of quality, adoption and cost, and a field-feedback memo with product recommendations."},
+   {"n": "V", "title": "Enterprise Delivery, Value Realisation and Capstone", "hours": 9,
+    "topics": "Measuring business impact against baseline; executive readouts and storytelling with data; expansion to new teams and use cases; handover, documentation and enablement; professional ethics, confidentiality and responsible AI in client work; career paths in FDE and solutions engineering.",
+    "outcome": "Completes an end-to-end client engagement and presents an executive readout of measured business impact."}
+  ],
+  "labs": [
+   "Customer discovery role-play and as-is process map",
+   "Data audit and secure access plan for a messy enterprise dataset",
+   "48-hour RAG prototype on client documents with an evaluation set",
+   "Agent with MCP connectors to a CRM and ticketing sandbox",
+   "SSO and containerised deployment to a cloud VPC with Terraform",
+   "Guardrails, evaluation gates and human approval for risky actions",
+   "Observability, cost tracking and an incident-response drill",
+   "Executive demo and ROI readout to a stakeholder panel"
+  ],
+  "cos": [
+   {"co": "CO1", "text": "Explain the forward deployed engineering model and translate business problems into scoped, measurable AI use cases.", "bloom": "L2 Understand"},
+   {"co": "CO2", "text": "Build rapid AI prototypes on customer data with evaluation sets drawn from real client examples.", "bloom": "L3 Apply"},
+   {"co": "CO3", "text": "Integrate and deploy AI solutions securely into customer environments with enterprise authentication and controls.", "bloom": "L3 Apply"},
+   {"co": "CO4", "text": "Analyse production quality, adoption and cost data to diagnose issues and prioritise improvements.", "bloom": "L4 Analyse"},
+   {"co": "CO5", "text": "Design and deliver an end-to-end enterprise AI engagement that demonstrates measured business impact.", "bloom": "L6 Create"}
+  ],
+  "capstone": {
+   "name": "Client-Embedded AI Deployment",
+   "desc": "student teams embed with a real or simulated client (an industry partner or a university office), discover a high-value problem, prototype on the client's data, deploy into the client's environment with SSO, guardrails and monitoring, drive adoption with real users, and present an executive readout of measured impact."
+  },
+  "careers": ["Forward Deployed Engineer", "Forward Deployed AI Engineer", "AI Solutions Engineer", "Customer / Implementation Engineer", "AI Deployment Strategist", "Head of Forward Deployed Engineering"],
+  "languages": ["Python", "TypeScript", "SQL"],
+  "certs": [
+   {"name": "AWS Certified Solutions Architect – Associate", "issuer": "AWS", "level": "Associate", "units": "III, IV"},
+   {"name": "Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103)", "issuer": "Microsoft", "level": "Associate", "units": "II, III"},
+   {"name": "Google Cloud Professional Cloud Architect", "issuer": "Google Cloud", "level": "Professional", "units": "III, IV"},
+   {"name": "Certified Kubernetes Application Developer (CKAD)", "issuer": "Linux Foundation", "level": "Professional", "units": "III"},
+   {"name": "NVIDIA-Certified Professional: Agentic AI (NCP-AAI)", "issuer": "NVIDIA", "level": "Professional", "units": "II, IV"}
+  ]
+ }
+]

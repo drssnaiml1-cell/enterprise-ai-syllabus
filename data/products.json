@@ -1,112 +1,477 @@
 [
- {"id": 1, "domain": "Banking, Fintech & Payments", "icon": "🏦",
+ {
+  "id": 1,
+  "domain": "Banking, Fintech & Payments",
+  "icon": "🏦",
   "name": "Real-Time Fraud & Risk Intelligence Platform",
   "tagline": "Scores every payment in milliseconds and explains every block.",
   "problem": "Digital payments such as UPI and cards move in seconds, and fraud moves with them. Rule engines miss new patterns and flood analysts with false alarms.",
   "realtime": "Each transaction is scored as it streams in, within a sub-100 ms budget; risky ones are held, challenged or blocked before money leaves the account.",
-  "modules": ["Streaming feature pipeline on transaction events (Kafka + feature store)", "Gradient-boosted risk model with SHAP reason codes for every decision", "Graph neural network that uncovers mule accounts and fraud rings", "LLM analyst copilot that summarises cases and drafts suspicious-transaction reports", "Model governance pack: drift monitoring, fairness tests and audit trail for regulators"],
-  "courses": [2, 9, 3, 14, 10, 6],
-  "stack": ["Kafka", "Spark Structured Streaming", "Feast", "XGBoost", "PyTorch Geometric", "FastAPI", "MLflow", "Neo4j"],
-  "kpis": ["Fraud caught before settlement", "False-positive rate", "p99 scoring latency", "Analyst minutes per case"],
-  "roles": ["Machine Learning Engineer", "Security Data Scientist", "AI Data Engineer", "Responsible AI Specialist"],
-  "context": "UPI, cards, net banking, RBI and DPDP Act compliance"},
- {"id": 2, "domain": "Healthcare & Life Sciences", "icon": "🏥",
+  "modules": [
+   "Streaming feature pipeline on transaction events (Kafka + feature store)",
+   "Gradient-boosted risk model with SHAP reason codes for every decision",
+   "Graph neural network that uncovers mule accounts and fraud rings",
+   "LLM analyst copilot that summarises cases and drafts suspicious-transaction reports",
+   "Model governance pack: drift monitoring, fairness tests and audit trail for regulators"
+  ],
+  "courses": [
+   2,
+   9,
+   3,
+   14,
+   10,
+   6,
+   16
+  ],
+  "stack": [
+   "Kafka",
+   "Spark Structured Streaming",
+   "Feast",
+   "XGBoost",
+   "PyTorch Geometric",
+   "FastAPI",
+   "MLflow",
+   "Neo4j"
+  ],
+  "kpis": [
+   "Fraud caught before settlement",
+   "False-positive rate",
+   "p99 scoring latency",
+   "Analyst minutes per case"
+  ],
+  "roles": [
+   "Machine Learning Engineer",
+   "Security Data Scientist",
+   "AI Data Engineer",
+   "Responsible AI Specialist",
+   "Forward Deployed Engineer"
+  ],
+  "context": "UPI, cards, net banking, RBI and DPDP Act compliance"
+ },
+ {
+  "id": 2,
+  "domain": "Healthcare & Life Sciences",
+  "icon": "🏥",
   "name": "Clinical Decision & Medical Imaging Copilot",
   "tagline": "Triage scans, summarise records and flag risk, with the doctor in control.",
   "problem": "Specialists are scarce outside big cities, scans wait in queues, and patient histories are scattered across reports.",
   "realtime": "Scans are triaged as they are uploaded and urgent cases jump the queue; bedside vitals stream to early-warning models that alert care teams.",
-  "modules": ["Deep-learning triage for retinal, chest X-ray and CT images with heat-map explanations", "RAG assistant over patient records and clinical guidelines with cited answers", "Early-warning score from streaming vitals at the edge", "Federated learning so hospitals train together without sharing patient data", "Clinician-in-the-loop review, consent and audit log"],
-  "courses": [5, 3, 6, 10, 12, 9],
-  "stack": ["PyTorch", "MONAI", "FHIR", "LangGraph", "pgvector", "Flower (federated)", "NVIDIA Triton", "ONNX"],
-  "kpis": ["Time to triage urgent scans", "Sensitivity on referable cases", "Clinician time saved per report", "Explanation acceptance rate"],
-  "roles": ["Computer Vision Engineer", "LLM Engineer", "Responsible AI Specialist", "Edge AI Engineer"],
-  "context": "ABDM health records, tele-ophthalmology, hospital PACS"},
- {"id": 3, "domain": "Manufacturing & Industry 4.0", "icon": "🏭",
+  "modules": [
+   "Deep-learning triage for retinal, chest X-ray and CT images with heat-map explanations",
+   "RAG assistant over patient records and clinical guidelines with cited answers",
+   "Early-warning score from streaming vitals at the edge",
+   "Federated learning so hospitals train together without sharing patient data",
+   "Clinician-in-the-loop review, consent and audit log"
+  ],
+  "courses": [
+   5,
+   3,
+   6,
+   10,
+   12,
+   9,
+   16
+  ],
+  "stack": [
+   "PyTorch",
+   "MONAI",
+   "FHIR",
+   "LangGraph",
+   "pgvector",
+   "Flower (federated)",
+   "NVIDIA Triton",
+   "ONNX"
+  ],
+  "kpis": [
+   "Time to triage urgent scans",
+   "Sensitivity on referable cases",
+   "Clinician time saved per report",
+   "Explanation acceptance rate"
+  ],
+  "roles": [
+   "Computer Vision Engineer",
+   "LLM Engineer",
+   "Responsible AI Specialist",
+   "Edge AI Engineer"
+  ],
+  "context": "ABDM health records, tele-ophthalmology, hospital PACS"
+ },
+ {
+  "id": 3,
+  "domain": "Manufacturing & Industry 4.0",
+  "icon": "🏭",
   "name": "Smart Factory Quality & Predictive Maintenance Suite",
   "tagline": "Catch every defect on the line and fix machines before they fail.",
   "problem": "Manual inspection misses defects and unplanned downtime halts production lines at great cost.",
   "realtime": "Cameras inspect every part at line speed on edge devices; vibration and temperature sensors raise maintenance alerts before failure.",
-  "modules": ["Edge vision inspection for surface and assembly defects", "TinyML anomaly detection on vibration and acoustic sensors", "Remaining-useful-life forecasting for critical machines", "Digital twin of the line for what-if simulation", "Reinforcement-learning scheduler that re-plans jobs around breakdowns"],
-  "courses": [5, 12, 13, 4, 2, 9],
-  "stack": ["YOLO-class detectors", "NVIDIA Jetson", "TensorFlow Lite Micro", "MQTT", "Isaac Sim", "OR-Tools", "Grafana", "TimescaleDB"],
-  "kpis": ["Defect escape rate", "Unplanned downtime hours", "Overall equipment effectiveness (OEE)", "Scrap and rework cost"],
-  "roles": ["Edge AI Engineer", "Computer Vision Engineer", "Simulation & Digital Twin Engineer", "Embedded ML Engineer"],
-  "context": "Automotive, electronics, pharma and steel plants; Make in India lines"},
- {"id": 4, "domain": "Retail & E-commerce", "icon": "🛒",
+  "modules": [
+   "Edge vision inspection for surface and assembly defects",
+   "TinyML anomaly detection on vibration and acoustic sensors",
+   "Remaining-useful-life forecasting for critical machines",
+   "Digital twin of the line for what-if simulation",
+   "Reinforcement-learning scheduler that re-plans jobs around breakdowns"
+  ],
+  "courses": [
+   5,
+   12,
+   13,
+   4,
+   2,
+   9
+  ],
+  "stack": [
+   "YOLO-class detectors",
+   "NVIDIA Jetson",
+   "TensorFlow Lite Micro",
+   "MQTT",
+   "Isaac Sim",
+   "OR-Tools",
+   "Grafana",
+   "TimescaleDB"
+  ],
+  "kpis": [
+   "Defect escape rate",
+   "Unplanned downtime hours",
+   "Overall equipment effectiveness (OEE)",
+   "Scrap and rework cost"
+  ],
+  "roles": [
+   "Edge AI Engineer",
+   "Computer Vision Engineer",
+   "Simulation & Digital Twin Engineer",
+   "Embedded ML Engineer"
+  ],
+  "context": "Automotive, electronics, pharma and steel plants; Make in India lines"
+ },
+ {
+  "id": 4,
+  "domain": "Retail & E-commerce",
+  "icon": "🛒",
   "name": "Real-Time Personalisation & Conversational Commerce Engine",
   "tagline": "The right product, price and answer for every shopper, in the moment.",
   "problem": "Generic catalogues and static prices lose shoppers; support teams cannot answer millions of questions in many languages.",
   "realtime": "Recommendations and offers update with every click; a shopping agent answers, compares and orders in the customer's language.",
-  "modules": ["Session-based recommender updated from live click streams", "Reinforcement-learning dynamic pricing and offer optimisation", "Generative product descriptions and images at catalogue scale", "Multilingual shopping agent that searches, compares and places orders", "A/B experimentation and guardrails against unfair pricing"],
-  "courses": [2, 4, 6, 7, 8, 9],
-  "stack": ["Kafka", "Redis", "Two-tower retrieval", "Ray RLlib", "vLLM", "Stable Diffusion-class models", "LangGraph", "Bhashini APIs"],
-  "kpis": ["Conversion rate", "Average order value", "Search-to-purchase time", "Support tickets resolved by the agent"],
-  "roles": ["Machine Learning Engineer", "Generative AI Developer", "Agentic AI Engineer", "Decision Scientist"],
-  "context": "Marketplaces, quick commerce, ONDC sellers, D2C brands"},
- {"id": 5, "domain": "Logistics & Supply Chain", "icon": "🚚",
+  "modules": [
+   "Session-based recommender updated from live click streams",
+   "Reinforcement-learning dynamic pricing and offer optimisation",
+   "Generative product descriptions and images at catalogue scale",
+   "Multilingual shopping agent that searches, compares and places orders",
+   "A/B experimentation and guardrails against unfair pricing"
+  ],
+  "courses": [
+   2,
+   4,
+   6,
+   7,
+   8,
+   9
+  ],
+  "stack": [
+   "Kafka",
+   "Redis",
+   "Two-tower retrieval",
+   "Ray RLlib",
+   "vLLM",
+   "Stable Diffusion-class models",
+   "LangGraph",
+   "Bhashini APIs"
+  ],
+  "kpis": [
+   "Conversion rate",
+   "Average order value",
+   "Search-to-purchase time",
+   "Support tickets resolved by the agent"
+  ],
+  "roles": [
+   "Machine Learning Engineer",
+   "Generative AI Developer",
+   "Agentic AI Engineer",
+   "Decision Scientist"
+  ],
+  "context": "Marketplaces, quick commerce, ONDC sellers, D2C brands"
+ },
+ {
+  "id": 5,
+  "domain": "Logistics & Supply Chain",
+  "icon": "🚚",
   "name": "Autonomous Supply-Chain Control Tower",
   "tagline": "See every shipment, predict every delay, act before customers notice.",
   "problem": "Demand swings, traffic and stock-outs break plans every day, and teams react by phone and spreadsheet.",
   "realtime": "Live GPS, warehouse and order events feed forecasts and route optimisers; agents re-route, re-allocate stock and notify customers automatically.",
-  "modules": ["Demand forecasting by SKU and location", "Route and fleet optimisation with live traffic", "Warehouse robotics coordination for picking and sorting", "Exception-handling agents that re-plan and inform customers", "Blockchain traceability for high-value and cold-chain goods"],
-  "courses": [1, 2, 4, 7, 13, 15],
-  "stack": ["OR-Tools", "LightGBM", "ROS 2", "Kafka", "LangGraph", "Hyperledger Fabric", "PostGIS", "Superset"],
-  "kpis": ["On-time-in-full delivery (OTIF)", "Cost per shipment", "Inventory turns", "Exceptions closed without human touch"],
-  "roles": ["Optimisation Engineer", "Agentic AI Engineer", "Robotics Software Engineer", "Blockchain Developer"],
-  "context": "3PLs, e-commerce fulfilment, ports, cold chain, PM Gati Shakti corridors"},
- {"id": 6, "domain": "Telecom & Network Operations", "icon": "📡",
+  "modules": [
+   "Demand forecasting by SKU and location",
+   "Route and fleet optimisation with live traffic",
+   "Warehouse robotics coordination for picking and sorting",
+   "Exception-handling agents that re-plan and inform customers",
+   "Blockchain traceability for high-value and cold-chain goods"
+  ],
+  "courses": [
+   1,
+   2,
+   4,
+   7,
+   13,
+   15
+  ],
+  "stack": [
+   "OR-Tools",
+   "LightGBM",
+   "ROS 2",
+   "Kafka",
+   "LangGraph",
+   "Hyperledger Fabric",
+   "PostGIS",
+   "Superset"
+  ],
+  "kpis": [
+   "On-time-in-full delivery (OTIF)",
+   "Cost per shipment",
+   "Inventory turns",
+   "Exceptions closed without human touch"
+  ],
+  "roles": [
+   "Optimisation Engineer",
+   "Agentic AI Engineer",
+   "Robotics Software Engineer",
+   "Blockchain Developer"
+  ],
+  "context": "3PLs, e-commerce fulfilment, ports, cold chain, PM Gati Shakti corridors"
+ },
+ {
+  "id": 6,
+  "domain": "Telecom & Network Operations",
+  "icon": "📡",
   "name": "AIOps Self-Healing Network Platform",
   "tagline": "Detect, diagnose and fix network faults before subscribers call.",
   "problem": "5G networks produce billions of telemetry events; outages are found late and diagnosed by hand.",
   "realtime": "Telemetry streams are scanned for anomalies continuously; agents diagnose root cause and trigger approved remediation runbooks.",
-  "modules": ["Streaming anomaly detection on network KPIs and logs", "Root-cause analysis over the network topology graph", "Remediation agents with human approval for risky actions", "Churn prediction and next-best-offer for subscribers", "Quantum-safe cryptography readiness assessment"],
-  "courses": [9, 2, 3, 7, 14, 11],
-  "stack": ["Kafka", "Flink", "Isolation Forest / autoencoders", "Graph neural networks", "LangGraph", "Prometheus", "OpenTelemetry", "Qiskit"],
-  "kpis": ["Mean time to detect (MTTD)", "Mean time to repair (MTTR)", "Network availability", "Subscriber churn"],
-  "roles": ["AI Platform Engineer", "Streaming Engineer", "Detection Engineer", "Post-Quantum Cryptography Engineer"],
-  "context": "5G operators, ISPs, data centres, network equipment makers"},
- {"id": 7, "domain": "Energy, Utilities & Climate", "icon": "⚡",
+  "modules": [
+   "Streaming anomaly detection on network KPIs and logs",
+   "Root-cause analysis over the network topology graph",
+   "Remediation agents with human approval for risky actions",
+   "Churn prediction and next-best-offer for subscribers",
+   "Quantum-safe cryptography readiness assessment"
+  ],
+  "courses": [
+   9,
+   2,
+   3,
+   7,
+   14,
+   11
+  ],
+  "stack": [
+   "Kafka",
+   "Flink",
+   "Isolation Forest / autoencoders",
+   "Graph neural networks",
+   "LangGraph",
+   "Prometheus",
+   "OpenTelemetry",
+   "Qiskit"
+  ],
+  "kpis": [
+   "Mean time to detect (MTTD)",
+   "Mean time to repair (MTTR)",
+   "Network availability",
+   "Subscriber churn"
+  ],
+  "roles": [
+   "AI Platform Engineer",
+   "Streaming Engineer",
+   "Detection Engineer",
+   "Post-Quantum Cryptography Engineer"
+  ],
+  "context": "5G operators, ISPs, data centres, network equipment makers"
+ },
+ {
+  "id": 7,
+  "domain": "Energy, Utilities & Climate",
+  "icon": "⚡",
   "name": "Smart Grid Forecasting & Optimisation Platform",
   "tagline": "Balance a grid full of solar, wind and EVs, minute by minute.",
   "problem": "Renewables and electric vehicles make supply and demand volatile; manual dispatch wastes energy and money.",
   "realtime": "Smart-meter and weather streams drive short-term forecasts; optimisers schedule storage, demand response and dispatch every few minutes.",
-  "modules": ["Load and solar/wind generation forecasting", "Reinforcement-learning control for batteries and demand response", "Edge analytics on smart meters and substations", "Theft and loss detection from meter data", "Quantum and classical optimisation pilot for unit commitment"],
-  "courses": [2, 3, 4, 12, 11, 9],
-  "stack": ["Temporal Fusion Transformer", "Ray RLlib", "TinyML", "MQTT", "Pyomo", "Qiskit Optimization", "InfluxDB", "Airflow"],
-  "kpis": ["Forecast error (MAPE)", "Renewable curtailment", "Peak-demand cost", "Aggregate technical and commercial losses"],
-  "roles": ["Decision Scientist", "Reinforcement Learning Engineer", "Edge AI Engineer", "Quantum Algorithm Developer"],
-  "context": "DISCOMs, solar parks, EV charging networks, smart-meter roll-outs"},
- {"id": 8, "domain": "Agriculture & Food", "icon": "🌾",
+  "modules": [
+   "Load and solar/wind generation forecasting",
+   "Reinforcement-learning control for batteries and demand response",
+   "Edge analytics on smart meters and substations",
+   "Theft and loss detection from meter data",
+   "Quantum and classical optimisation pilot for unit commitment"
+  ],
+  "courses": [
+   2,
+   3,
+   4,
+   12,
+   11,
+   9
+  ],
+  "stack": [
+   "Temporal Fusion Transformer",
+   "Ray RLlib",
+   "TinyML",
+   "MQTT",
+   "Pyomo",
+   "Qiskit Optimization",
+   "InfluxDB",
+   "Airflow"
+  ],
+  "kpis": [
+   "Forecast error (MAPE)",
+   "Renewable curtailment",
+   "Peak-demand cost",
+   "Aggregate technical and commercial losses"
+  ],
+  "roles": [
+   "Decision Scientist",
+   "Reinforcement Learning Engineer",
+   "Edge AI Engineer",
+   "Quantum Algorithm Developer"
+  ],
+  "context": "DISCOMs, solar parks, EV charging networks, smart-meter roll-outs"
+ },
+ {
+  "id": 8,
+  "domain": "Agriculture & Food",
+  "icon": "🌾",
   "name": "Precision Agriculture Intelligence Platform",
   "tagline": "From satellite and drone to a farmer's phone, in their own language.",
   "problem": "Small farmers decide on water, fertiliser and pests with little data, and buyers cannot verify crop origin or quality.",
   "realtime": "Drone and field-sensor data are analysed on arrival; farmers get voice advisories in their language and alerts before pest or water stress spreads.",
-  "modules": ["Crop health and pest detection from drone and satellite imagery", "Soil-moisture and micro-climate sensing with TinyML nodes", "Voice and chat advisory assistant in Indian languages", "Yield and price forecasting for planning and credit", "Farm-to-fork traceability on a permissioned blockchain"],
-  "courses": [5, 12, 13, 6, 2, 15],
-  "stack": ["Sentinel-2 imagery", "Segmentation models", "LoRaWAN", "Edge Impulse", "Bhashini / speech models", "RAG", "Hyperledger Fabric", "Flutter"],
-  "kpis": ["Yield per acre", "Water and fertiliser saved", "Advisory adoption rate", "Traceable produce share"],
-  "roles": ["Computer Vision Engineer", "TinyML Engineer", "NLP Engineer", "Web3 + AI Engineer"],
-  "context": "FPOs, agritech start-ups, crop insurance, AgriStack and drone programmes"},
- {"id": 9, "domain": "Government, Smart Cities & Public Safety", "icon": "🏛️",
+  "modules": [
+   "Crop health and pest detection from drone and satellite imagery",
+   "Soil-moisture and micro-climate sensing with TinyML nodes",
+   "Voice and chat advisory assistant in Indian languages",
+   "Yield and price forecasting for planning and credit",
+   "Farm-to-fork traceability on a permissioned blockchain"
+  ],
+  "courses": [
+   5,
+   12,
+   13,
+   6,
+   2,
+   15
+  ],
+  "stack": [
+   "Sentinel-2 imagery",
+   "Segmentation models",
+   "LoRaWAN",
+   "Edge Impulse",
+   "Bhashini / speech models",
+   "RAG",
+   "Hyperledger Fabric",
+   "Flutter"
+  ],
+  "kpis": [
+   "Yield per acre",
+   "Water and fertiliser saved",
+   "Advisory adoption rate",
+   "Traceable produce share"
+  ],
+  "roles": [
+   "Computer Vision Engineer",
+   "TinyML Engineer",
+   "NLP Engineer",
+   "Web3 + AI Engineer"
+  ],
+  "context": "FPOs, agritech start-ups, crop insurance, AgriStack and drone programmes"
+ },
+ {
+  "id": 9,
+  "domain": "Government, Smart Cities & Public Safety",
+  "icon": "🏛️",
   "name": "Citizen Services & Urban Operations Command Centre",
   "tagline": "Faster public services and safer cities, with privacy by design.",
   "problem": "Citizens queue for services and paperwork; city teams monitor traffic, safety and civic issues across thousands of cameras and complaints.",
   "realtime": "Video and sensor streams flag incidents and congestion live; a multilingual citizen agent answers questions and tracks applications round the clock.",
-  "modules": ["Multilingual citizen-service agent for applications and grievances", "Document AI that reads and verifies certificates and forms", "Traffic and crowd video analytics with privacy masking", "Grievance clustering and routing to the right department", "Responsible-AI controls: consent, bias audits and public transparency reports"],
-  "courses": [6, 7, 5, 10, 9, 1],
-  "stack": ["LangGraph", "OCR + layout models", "DeepStream", "Kafka", "Elasticsearch", "OpenStreetMap", "Bhashini APIs", "DigiLocker APIs"],
-  "kpis": ["Service turnaround time", "Grievance resolution time", "Incident response time", "Citizen satisfaction"],
-  "roles": ["Agentic AI Engineer", "Document AI Engineer", "Video Analytics Engineer", "AI Governance & Compliance Lead"],
-  "context": "Smart Cities Mission, e-governance portals, police and traffic control rooms"},
- {"id": 10, "domain": "Education & Skilling", "icon": "🎓",
+  "modules": [
+   "Multilingual citizen-service agent for applications and grievances",
+   "Document AI that reads and verifies certificates and forms",
+   "Traffic and crowd video analytics with privacy masking",
+   "Grievance clustering and routing to the right department",
+   "Responsible-AI controls: consent, bias audits and public transparency reports"
+  ],
+  "courses": [
+   6,
+   7,
+   5,
+   10,
+   9,
+   1,
+   16
+  ],
+  "stack": [
+   "LangGraph",
+   "OCR + layout models",
+   "DeepStream",
+   "Kafka",
+   "Elasticsearch",
+   "OpenStreetMap",
+   "Bhashini APIs",
+   "DigiLocker APIs"
+  ],
+  "kpis": [
+   "Service turnaround time",
+   "Grievance resolution time",
+   "Incident response time",
+   "Citizen satisfaction"
+  ],
+  "roles": [
+   "Agentic AI Engineer",
+   "Document AI Engineer",
+   "Video Analytics Engineer",
+   "AI Governance & Compliance Lead"
+  ],
+  "context": "Smart Cities Mission, e-governance portals, police and traffic control rooms"
+ },
+ {
+  "id": 10,
+  "domain": "Education & Skilling",
+  "icon": "🎓",
   "name": "AI Learning, Outcome & Placement Platform",
   "tagline": "A personal tutor for every student and live outcome data for every institution.",
   "problem": "Large classes leave students behind, OBE and accreditation evidence is compiled by hand, and placement matching is guesswork.",
   "realtime": "Every quiz, lab and GitHub commit updates the learner's mastery map; the tutor adapts instantly and dashboards show CO–PO attainment live.",
-  "modules": ["Adaptive AI tutor grounded in the course material, with citations", "Automatic CO–PO attainment analytics for NBA and NAAC", "Code and lab auto-grading with feedback", "Skills-to-jobs matching agent built on this curriculum's careers map", "Academic-integrity checks and fair, explainable assessment"],
-  "courses": [6, 7, 2, 9, 10, 8],
-  "stack": ["RAG", "LangGraph", "Knowledge tracing models", "dbt", "Superset", "GitHub APIs", "Moodle / LTI", "FastAPI"],
-  "kpis": ["Learning gain per course", "Attainment of course outcomes", "Time saved on accreditation evidence", "Placement rate and offer quality"],
-  "roles": ["LLM Engineer", "Agentic AI Engineer", "Analytics Engineer", "AI Product Manager"],
-  "context": "Universities, NEP 2020 outcome-based education, NBA and NAAC, skilling missions"}
+  "modules": [
+   "Adaptive AI tutor grounded in the course material, with citations",
+   "Automatic CO–PO attainment analytics for NBA and NAAC",
+   "Code and lab auto-grading with feedback",
+   "Skills-to-jobs matching agent built on this curriculum's careers map",
+   "Academic-integrity checks and fair, explainable assessment"
+  ],
+  "courses": [
+   6,
+   7,
+   2,
+   9,
+   10,
+   8,
+   16
+  ],
+  "stack": [
+   "RAG",
+   "LangGraph",
+   "Knowledge tracing models",
+   "dbt",
+   "Superset",
+   "GitHub APIs",
+   "Moodle / LTI",
+   "FastAPI"
+  ],
+  "kpis": [
+   "Learning gain per course",
+   "Attainment of course outcomes",
+   "Time saved on accreditation evidence",
+   "Placement rate and offer quality"
+  ],
+  "roles": [
+   "LLM Engineer",
+   "Agentic AI Engineer",
+   "Analytics Engineer",
+   "AI Product Manager"
+  ],
+  "context": "Universities, NEP 2020 outcome-based education, NBA and NAAC, skilling missions"
+ }
 ]

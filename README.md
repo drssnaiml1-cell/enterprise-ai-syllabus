@@ -4,19 +4,20 @@
 
 <h1 align="center">Enterprise AI Product Development Curriculum</h1>
 
-<p align="center"><b>Industry-aligned syllabus · Fifteen courses · Five units each · Curriculum Edition 2026–27</b></p>
+<p align="center"><b>Industry-aligned syllabus · Sixteen courses · Five units each · Curriculum Edition 2026–27</b></p>
 
 <p align="center">
-  <a href="https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/"><img src="https://img.shields.io/badge/Website-Live%20Syllabus-0B1F3A?style=for-the-badge&logo=googlechrome&logoColor=C9A227" alt="Live website"></a>
+  <a href="https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/"><img src="https://img.shields.io/badge/Website-3D%20Live%20Syllabus-0B1F3A?style=for-the-badge&logo=googlechrome&logoColor=C9A227" alt="Live website"></a>
   <a href="Enterprise_AI_Syllabus.pdf"><img src="https://img.shields.io/badge/Download-Syllabus%20PDF-A8811C?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Syllabus PDF"></a>
   <a href="mailto:cto@algoprofessor.com"><img src="https://img.shields.io/badge/Partner-cto%40algoprofessor.com-138808?style=for-the-badge&logo=maildotru&logoColor=white" alt="Partnership email"></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Courses-15-FF9933?style=flat-square" alt="15 courses">
-  <img src="https://img.shields.io/badge/Units-75-000080?style=flat-square" alt="75 units">
-  <img src="https://img.shields.io/badge/Labs-120-138808?style=flat-square" alt="120 labs">
-  <img src="https://img.shields.io/badge/Contact%20hours-1%2C125-A8811C?style=flat-square" alt="1,125 contact hours">
+  <img src="https://img.shields.io/badge/Courses-16-FF9933?style=flat-square" alt="16 courses">
+  <img src="https://img.shields.io/badge/Units-80-000080?style=flat-square" alt="80 units">
+  <img src="https://img.shields.io/badge/Labs-128-138808?style=flat-square" alt="128 labs">
+  <img src="https://img.shields.io/badge/Contact%20hours-1%2C200-A8811C?style=flat-square" alt="1,200 contact hours">
+  <img src="https://img.shields.io/badge/Certifications-77-FF9933?style=flat-square" alt="77 certifications">
   <img src="https://img.shields.io/badge/NEP%202020-OBE%20%C2%B7%20NBA%20%C2%B7%20NAAC-0B1F3A?style=flat-square" alt="NEP 2020, OBE, NBA, NAAC">
 </p>
 
@@ -24,16 +25,16 @@
 
 ## About
 
-This curriculum prepares learners to **design, build, deploy and govern AI products at enterprise scale**. Ten core AI courses are complemented by a five-course **Emerging Technologies Track**. Every course:
+This curriculum prepares learners to **design, build, deploy and govern AI products at enterprise scale**. Ten core AI courses are complemented by a five-course **Emerging Technologies Track** and an **Industry Practice Track** in **Forward Deployed Engineering (FDE)**, where learners embed with real clients to deploy AI that delivers measured business value. Every course:
 
 - has **five units**, each ending in a concrete **hands-on outcome** (a working artefact the learner builds);
 - pairs **45 lecture hours with 30 hours of tool-driven lab work** (L–T–P–C 3–0–2–4) and **8 labs**;
 - maps **five course outcomes to Bloom levels** for OBE, NBA and NAAC documentation;
-- ends in an **enterprise capstone product**, with **recommended industry certifications**, aligned careers and the **top three programming languages** for 2026–2035.
+- ends in an **enterprise capstone product**, with **recommended industry certifications**, skills, jobs, salary bands and the **top three programming languages** for 2026–2035.
 
 Every course follows one arc: **foundations → core methods → advanced methods → production engineering → enterprise deployment, governance and capstone.**
 
-**🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (searchable, with full unit, lab, outcome, certification, skills and jobs detail for each course, plus career pathways).
+**🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).
 
 ## Core AI Track
 
@@ -60,22 +61,48 @@ Every course follows one arc: **foundations → core methods → advanced method
 | 14 | `EAI-114` | [AI-Driven Cybersecurity](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#course-14) | Machine learning and agents for threat detection, response and secure enterprises | Python, Go, Rust |
 | 15 | `EAI-115` | [Blockchain & Decentralised AI](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#course-15) | Verifiable data, model provenance and decentralised trust for AI ecosystems | Solidity, Rust, Go |
 
+## Industry Practice Track: Forward Deployed Engineering
+
+Forward Deployed Engineering is the delivery layer of enterprise AI: engineers embed with a client, find the problem worth solving, build on the client's own data and systems, and stay until the solution is adopted and its value is measured. This course turns the rest of the curriculum into client-ready practice.
+
+| # | Code | Course | Product focus | Top 3 languages |
+|:-:|:--|:--|:--|:--|
+| 16 | `EAI-116` | [Forward Deployed Engineering (FDE)](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#course-16) | Embedding with enterprise clients to discover, build, deploy and scale AI solutions that deliver measurable business value | Python, TypeScript, SQL |
+
+**Prerequisites:** EAI-106 Large Language Models, EAI-107 Agentic AI, EAI-109 Data Engineering for AI; cloud and Git fundamentals · **Hours:** 45 L + 30 P
+
+| Unit | Title | Hands-on outcome |
+|:-:|:--|:--|
+| I | **The FDE Model and Customer Discovery** | Produces a discovery report for a client: process map, data audit, prioritised AI use cases and a scoped problem statement with measurable KPIs. |
+| II | **Rapid Prototyping on Customer Data** | Delivers a working prototype on a client's sample data within one week, with an evaluation set and a live demo to stakeholders. |
+| III | **Integration and Deployment in Customer Environments** | Deploys the prototype into a simulated client VPC with SSO, infrastructure as code, CI/CD and a passed security checklist. |
+| IV | **Production Reliability, Evaluation and Adoption** | Publishes a runbook, a live dashboard of quality, adoption and cost, and a field-feedback memo with product recommendations. |
+| V | **Enterprise Delivery, Value Realisation and Capstone** | Completes an end-to-end client engagement and presents an executive readout of measured business impact. |
+
+**Capstone, Client-Embedded AI Deployment:** Student teams embed with a real or simulated client (an industry partner or a university office), discover a high-value problem, prototype on the client's data, deploy into the client's environment with SSO, guardrails and monitoring, drive adoption with real users, and present an executive readout of measured impact.
+
+**Course outcomes:** CO1 (L2 Understand) Explain the forward deployed engineering model and translate business problems into scoped, measurable AI use cases. · CO2 (L3 Apply) Build rapid AI prototypes on customer data with evaluation sets drawn from real client examples. · CO3 (L3 Apply) Integrate and deploy AI solutions securely into customer environments with enterprise authentication and controls. · CO4 (L4 Analyse) Analyse production quality, adoption and cost data to diagnose issues and prioritise improvements. · CO5 (L6 Create) Design and deliver an end-to-end enterprise AI engagement that demonstrates measured business impact.
+
+**Recommended certifications:** AWS Certified Solutions Architect – Associate (AWS, Associate); Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103) (Microsoft, Associate); Google Cloud Professional Cloud Architect (Google Cloud, Professional); Certified Kubernetes Application Developer (CKAD) (Linux Foundation, Professional); NVIDIA-Certified Professional: Agentic AI (NCP-AAI) (NVIDIA, Professional)
+
+_Course 16 is an addition to the 15 courses in the syllabus PDF; its full detail is on the website and in `data/extra_courses.json`._
+
 ## Top 10 Real-Time Enterprise Products
 
 One flagship product per industry domain. Each combines several courses into a real-time, production-grade system that student teams build as a capstone and enterprises actually run. [Explore the product blueprints on the website](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#products).
 
 | # | Domain | Enterprise product | What happens in real time | Courses |
 |:-:|:--|:--|:--|:--|
-| 1 | 🏦 Banking, Fintech & Payments | [**Real-Time Fraud & Risk Intelligence Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-1) | Each transaction is scored as it streams in, within a sub-100 ms budget; risky ones are held, challenged or blocked before money leaves the account. | 2, 9, 3, 14, 10, 6 |
-| 2 | 🏥 Healthcare & Life Sciences | [**Clinical Decision & Medical Imaging Copilot**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-2) | Scans are triaged as they are uploaded and urgent cases jump the queue; bedside vitals stream to early-warning models that alert care teams. | 5, 3, 6, 10, 12, 9 |
+| 1 | 🏦 Banking, Fintech & Payments | [**Real-Time Fraud & Risk Intelligence Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-1) | Each transaction is scored as it streams in, within a sub-100 ms budget; risky ones are held, challenged or blocked before money leaves the account. | 2, 9, 3, 14, 10, 6, 16 |
+| 2 | 🏥 Healthcare & Life Sciences | [**Clinical Decision & Medical Imaging Copilot**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-2) | Scans are triaged as they are uploaded and urgent cases jump the queue; bedside vitals stream to early-warning models that alert care teams. | 5, 3, 6, 10, 12, 9, 16 |
 | 3 | 🏭 Manufacturing & Industry 4.0 | [**Smart Factory Quality & Predictive Maintenance Suite**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-3) | Cameras inspect every part at line speed on edge devices; vibration and temperature sensors raise maintenance alerts before failure. | 5, 12, 13, 4, 2, 9 |
 | 4 | 🛒 Retail & E-commerce | [**Real-Time Personalisation & Conversational Commerce Engine**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-4) | Recommendations and offers update with every click; a shopping agent answers, compares and orders in the customer's language. | 2, 4, 6, 7, 8, 9 |
 | 5 | 🚚 Logistics & Supply Chain | [**Autonomous Supply-Chain Control Tower**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-5) | Live GPS, warehouse and order events feed forecasts and route optimisers; agents re-route, re-allocate stock and notify customers automatically. | 1, 2, 4, 7, 13, 15 |
 | 6 | 📡 Telecom & Network Operations | [**AIOps Self-Healing Network Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-6) | Telemetry streams are scanned for anomalies continuously; agents diagnose root cause and trigger approved remediation runbooks. | 9, 2, 3, 7, 14, 11 |
 | 7 | ⚡ Energy, Utilities & Climate | [**Smart Grid Forecasting & Optimisation Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-7) | Smart-meter and weather streams drive short-term forecasts; optimisers schedule storage, demand response and dispatch every few minutes. | 2, 3, 4, 12, 11, 9 |
 | 8 | 🌾 Agriculture & Food | [**Precision Agriculture Intelligence Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-8) | Drone and field-sensor data are analysed on arrival; farmers get voice advisories in their language and alerts before pest or water stress spreads. | 5, 12, 13, 6, 2, 15 |
-| 9 | 🏛️ Government, Smart Cities & Public Safety | [**Citizen Services & Urban Operations Command Centre**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-9) | Video and sensor streams flag incidents and congestion live; a multilingual citizen agent answers questions and tracks applications round the clock. | 6, 7, 5, 10, 9, 1 |
-| 10 | 🎓 Education & Skilling | [**AI Learning, Outcome & Placement Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-10) | Every quiz, lab and GitHub commit updates the learner's mastery map; the tutor adapts instantly and dashboards show CO–PO attainment live. | 6, 7, 2, 9, 10, 8 |
+| 9 | 🏛️ Government, Smart Cities & Public Safety | [**Citizen Services & Urban Operations Command Centre**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-9) | Video and sensor streams flag incidents and congestion live; a multilingual citizen agent answers questions and tracks applications round the clock. | 6, 7, 5, 10, 9, 1, 16 |
+| 10 | 🎓 Education & Skilling | [**AI Learning, Outcome & Placement Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#product-10) | Every quiz, lab and GitHub commit updates the learner's mastery map; the tutor adapts instantly and dashboards show CO–PO attainment live. | 6, 7, 2, 9, 10, 8, 16 |
 
 <details>
 <summary><b>🏦 1. Real-Time Fraud & Risk Intelligence Platform</b> (Banking, Fintech & Payments)</summary>
@@ -90,13 +117,13 @@ One flagship product per industry domain. Each combines several courses into a r
 4. LLM analyst copilot that summarises cases and drafts suspicious-transaction reports
 5. Model governance pack: drift monitoring, fairness tests and audit trail for regulators
 
-**Courses that build it:** 2. Machine Learning, 9. Data Engineering for AI, 3. Deep Learning, 14. AI-Driven Cybersecurity, 10. Trustworthy AI, 6. Large Language Models
+**Courses that build it:** 2. Machine Learning, 9. Data Engineering for AI, 3. Deep Learning, 14. AI-Driven Cybersecurity, 10. Trustworthy AI, 6. Large Language Models, 16. Forward Deployed Engineering (FDE)
 
 **Technology stack:** Kafka, Spark Structured Streaming, Feast, XGBoost, PyTorch Geometric, FastAPI, MLflow, Neo4j
 
 **Business KPIs:** Fraud caught before settlement, False-positive rate, p99 scoring latency, Analyst minutes per case
 
-**Job roles it showcases:** Machine Learning Engineer, Security Data Scientist, AI Data Engineer, Responsible AI Specialist
+**Job roles it showcases:** Machine Learning Engineer, Security Data Scientist, AI Data Engineer, Responsible AI Specialist, Forward Deployed Engineer
 
 **Context:** UPI, cards, net banking, RBI and DPDP Act compliance
 
@@ -115,7 +142,7 @@ One flagship product per industry domain. Each combines several courses into a r
 4. Federated learning so hospitals train together without sharing patient data
 5. Clinician-in-the-loop review, consent and audit log
 
-**Courses that build it:** 5. Computer Vision, 3. Deep Learning, 6. Large Language Models, 10. Trustworthy AI, 12. Edge AI, TinyML & AIoT, 9. Data Engineering for AI
+**Courses that build it:** 5. Computer Vision, 3. Deep Learning, 6. Large Language Models, 10. Trustworthy AI, 12. Edge AI, TinyML & AIoT, 9. Data Engineering for AI, 16. Forward Deployed Engineering (FDE)
 
 **Technology stack:** PyTorch, MONAI, FHIR, LangGraph, pgvector, Flower (federated), NVIDIA Triton, ONNX
 
@@ -290,7 +317,7 @@ One flagship product per industry domain. Each combines several courses into a r
 4. Grievance clustering and routing to the right department
 5. Responsible-AI controls: consent, bias audits and public transparency reports
 
-**Courses that build it:** 6. Large Language Models, 7. Agentic AI, 5. Computer Vision, 10. Trustworthy AI, 9. Data Engineering for AI, 1. Artificial Intelligence
+**Courses that build it:** 6. Large Language Models, 7. Agentic AI, 5. Computer Vision, 10. Trustworthy AI, 9. Data Engineering for AI, 1. Artificial Intelligence, 16. Forward Deployed Engineering (FDE)
 
 **Technology stack:** LangGraph, OCR + layout models, DeepStream, Kafka, Elasticsearch, OpenStreetMap, Bhashini APIs, DigiLocker APIs
 
@@ -315,7 +342,7 @@ One flagship product per industry domain. Each combines several courses into a r
 4. Skills-to-jobs matching agent built on this curriculum's careers map
 5. Academic-integrity checks and fair, explainable assessment
 
-**Courses that build it:** 6. Large Language Models, 7. Agentic AI, 2. Machine Learning, 9. Data Engineering for AI, 10. Trustworthy AI, 8. Generative AI
+**Courses that build it:** 6. Large Language Models, 7. Agentic AI, 2. Machine Learning, 9. Data Engineering for AI, 10. Trustworthy AI, 8. Generative AI, 16. Forward Deployed Engineering (FDE)
 
 **Technology stack:** RAG, LangGraph, Knowledge tracing models, dbt, Superset, GitHub APIs, Moodle / LTI, FastAPI
 
@@ -333,13 +360,13 @@ Ten frontier product ideas modelled on the categories that are producing AI unic
 
 | # | Unicorn category | Frontier product | Complexity | Courses |
 |:-:|:--|:--|:-:|:--|
-| 1 | 🧑‍💻 AI coding & app-building agents | [**Autonomous Software Engineer Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-1) | ★★★★★ | 7, 6, 10, 9, 1, 14, 3 |
-| 2 | 🎧 AI customer-experience agents | [**Multilingual Voice-First Customer Operations Agent**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-2) | ★★★★☆ | 6, 7, 2, 9, 10, 8 |
+| 1 | 🧑‍💻 AI coding & app-building agents | [**Autonomous Software Engineer Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-1) | ★★★★★ | 7, 6, 10, 9, 1, 14, 3, 16 |
+| 2 | 🎧 AI customer-experience agents | [**Multilingual Voice-First Customer Operations Agent**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-2) | ★★★★☆ | 6, 7, 2, 9, 10, 8, 16 |
 | 3 | 🇮🇳 Sovereign Indic AI | [**Sovereign Indic Foundation Model & Inference Stack**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-3) | ★★★★★ | 3, 6, 4, 8, 9, 10, 12 |
 | 4 | 🖥️ AI infrastructure & sovereign compute | [**Energy-Aware GPU Inference Cloud**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-4) | ★★★★★ | 3, 9, 4, 12, 10, 6, 7 |
-| 5 | 🩺 Vertical AI agents: healthcare | [**Clinical AI Agent Workforce**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-5) | ★★★★★ | 6, 7, 10, 5, 9, 2, 12 |
+| 5 | 🩺 Vertical AI agents: healthcare | [**Clinical AI Agent Workforce**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-5) | ★★★★★ | 6, 7, 10, 5, 9, 2, 12, 16 |
 | 6 | 🤖 Humanoid & embodied AI | [**General-Purpose Robot Brain & Fleet Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-6) | ★★★★★ | 13, 4, 5, 3, 12, 7, 10 |
-| 7 | 💳 Fintech infrastructure | [**Agentic Payments, Risk & Compliance OS**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-7) | ★★★★★ | 2, 9, 14, 7, 15, 10, 3 |
+| 7 | 💳 Fintech infrastructure | [**Agentic Payments, Risk & Compliance OS**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-7) | ★★★★★ | 2, 9, 14, 7, 15, 10, 3, 16 |
 | 8 | 🛡️ AI security | [**AI Agent Firewall & Model Supply-Chain Assurance**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-8) | ★★★★☆ | 10, 14, 6, 7, 15, 9, 2 |
 | 9 | 🛰️ Space tech & geospatial AI | [**Space-to-Earth Geospatial Intelligence Platform**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-9) | ★★★★☆ | 5, 3, 9, 2, 12, 11, 8 |
 | 10 | 🧪 AI for science: drugs & materials | [**Autonomous Discovery Lab for Drugs & Materials**](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#unicorn-10) | ★★★★★ | 8, 3, 11, 13, 4, 9, 6 |
@@ -368,7 +395,7 @@ Ten frontier product ideas modelled on the categories that are producing AI unic
 
 **Business model:** Seat-based SaaS for developers plus usage-based pricing per agent task; enterprise licences for on-prem deployment.
 
-**Courses:** 7. Agentic AI, 6. Large Language Models, 10. Trustworthy AI, 9. Data Engineering for AI, 1. Artificial Intelligence, 14. AI-Driven Cybersecurity, 3. Deep Learning
+**Courses:** 7. Agentic AI, 6. Large Language Models, 10. Trustworthy AI, 9. Data Engineering for AI, 1. Artificial Intelligence, 14. AI-Driven Cybersecurity, 3. Deep Learning, 16. Forward Deployed Engineering (FDE)
 
 **Stack:** LangGraph, Model Context Protocol, Tree-sitter, pgvector, Docker / Firecracker sandboxes, vLLM, GitHub Actions, OpenTelemetry
 
@@ -400,11 +427,11 @@ Ten frontier product ideas modelled on the categories that are producing AI unic
 
 **Business model:** Outcome-based pricing per resolved conversation, plus platform fees for large contact centres.
 
-**Courses:** 6. Large Language Models, 7. Agentic AI, 2. Machine Learning, 9. Data Engineering for AI, 10. Trustworthy AI, 8. Generative AI
+**Courses:** 6. Large Language Models, 7. Agentic AI, 2. Machine Learning, 9. Data Engineering for AI, 10. Trustworthy AI, 8. Generative AI, 16. Forward Deployed Engineering (FDE)
 
 **Stack:** Streaming ASR/TTS models, Bhashini APIs, LiveKit / SIP, LangGraph, RAG + reranking, Kafka, ClickHouse, Presidio (PII)
 
-**Roles:** Conversational AI Developer, LLM Engineer, Agentic AI Engineer, Data Engineer
+**Roles:** Conversational AI Developer, LLM Engineer, Agentic AI Engineer, Data Engineer, Forward Deployed AI Engineer
 
 </details>
 
@@ -496,7 +523,7 @@ Ten frontier product ideas modelled on the categories that are producing AI unic
 
 **Business model:** Per-agent-hour or per-encounter pricing for hospitals and telehealth providers.
 
-**Courses:** 6. Large Language Models, 7. Agentic AI, 10. Trustworthy AI, 5. Computer Vision, 9. Data Engineering for AI, 2. Machine Learning, 12. Edge AI, TinyML & AIoT
+**Courses:** 6. Large Language Models, 7. Agentic AI, 10. Trustworthy AI, 5. Computer Vision, 9. Data Engineering for AI, 2. Machine Learning, 12. Edge AI, TinyML & AIoT, 16. Forward Deployed Engineering (FDE)
 
 **Stack:** Whisper-class ASR, pyannote, Clinical LLMs + RAG, FHIR, LangGraph, Guardrails, Postgres, Azure / on-prem GPUs
 
@@ -560,7 +587,7 @@ Ten frontier product ideas modelled on the categories that are producing AI unic
 
 **Business model:** Per-transaction fees plus SaaS for risk and compliance modules.
 
-**Courses:** 2. Machine Learning, 9. Data Engineering for AI, 14. AI-Driven Cybersecurity, 7. Agentic AI, 15. Blockchain & Decentralised AI, 10. Trustworthy AI, 3. Deep Learning
+**Courses:** 2. Machine Learning, 9. Data Engineering for AI, 14. AI-Driven Cybersecurity, 7. Agentic AI, 15. Blockchain & Decentralised AI, 10. Trustworthy AI, 3. Deep Learning, 16. Forward Deployed Engineering (FDE)
 
 **Stack:** Kafka, Flink, XGBoost, PyTorch Geometric, Postgres + event sourcing, LangGraph, Go services, Hyperledger Fabric (audit)
 
@@ -683,7 +710,7 @@ Company names show the market category each idea comes from; they are not partne
 
 **Colour code:** 🟠 Saffron = Fresher / Entry (0–2 yrs) · 🔵 Chakra navy = Mid-level (3–5 yrs) · 🟢 Green = Senior (6+ yrs)
 
-Every course ends with job-ready skills and a GitHub portfolio (five unit artefacts, eight lab projects and an enterprise capstone). Click a course to see its full skills list and the jobs it prepares learners for.
+Every course ends with job-ready skills and a GitHub portfolio (five unit artefacts, eight lab projects and an enterprise capstone).
 
 <details>
 <summary><b>1. Artificial Intelligence</b> (EAI-101): AI Engineer, Decision Scientist, Optimisation Engineer …</summary>
@@ -1201,13 +1228,48 @@ Every course ends with job-ready skills and a GitHub portfolio (five unit artefa
 
 </details>
 
+<details>
+<summary><b>16. Forward Deployed Engineering (FDE)</b> (EAI-116): Forward Deployed Engineer, AI Solutions Engineer, Customer / Implementation Engineer …</summary>
+
+**Skills you will gain**
+
+- Running customer discovery and turning business problems into scoped AI use cases with KPIs and ROI
+- Rapid prototyping of RAG and agent solutions on real, messy customer data
+- Building evaluation sets from customer examples to prove a solution works
+- Enterprise integration: SSO (SAML/OIDC), APIs, MCP servers, CRM and ERP connectors
+- Deploying into customer VPC, on-premises and air-gapped environments with Kubernetes and IaC
+- Production operations: observability, guardrails, incident response and cost control
+- Driving user adoption, training and change management inside client teams
+- Executive communication: demos, ROI readouts and turning field insights into product feedback
+
+**Jobs you can apply for**
+
+| Job role | Level | What the role does |
+|:--|:--|:--|
+| **Forward Deployed Engineer** | 🟠 Fresher / Entry | Embeds with a client to build and ship AI solutions on their data and systems. |
+| **AI Solutions Engineer** | 🟠 Fresher / Entry | Designs and demos AI solutions that win and launch enterprise deals. |
+| **Customer / Implementation Engineer** | 🟠 Fresher / Entry | Configures, integrates and rolls out AI products inside customer environments. |
+| **Forward Deployed AI Engineer (Agentic)** | 🔵 Mid (3–5 yrs) | Deploys LLM agents into regulated enterprises with security, evaluation and guardrails. |
+| **AI Deployment Strategist** | 🔵 Mid (3–5 yrs) | Owns the client relationship, use-case roadmap and measured business outcomes. |
+| **Head of Forward Deployed Engineering** | 🟢 Senior (6+ yrs) | Builds and leads FDE teams that turn AI products into enterprise revenue. |
+
+**Industries hiring:** Frontier AI labs, enterprise AI and data platforms, cloud providers, AI-first start-ups, IT services and GCCs building client AI delivery teams
+
+**Top companies hiring these skills:** Palantir, OpenAI, Anthropic, Google Cloud, Databricks, Cohere, Scale AI, Salesforce, Decagon, Box
+
+**Indicative salary in India (CTC):** 🟠 Fresher ₹8–20 LPA · 🔵 Mid (3–5 yrs) ₹18–40 LPA · 🟢 Senior (6+ yrs) ₹40–90+ LPA
+
+**Capstone for your portfolio:** Client-Embedded AI Deployment
+
+</details>
+
 ## Salary Guide by Course
 
 **Colour code:** 🟠 Saffron = Fresher / Entry (0–2 yrs) · 🔵 Chakra navy = Mid-level (3–5 yrs) · 🟢 Green = Senior (6+ yrs)
 
 _Indicative annual CTC in India (₹ lakh per annum), compiled November 2026 from published 2026 salary reports. Pay varies widely by company type, city and skills: IT services sit at the lower end; product companies, GCCs, FAANG India and AI-first start-ups at the upper end. Company names are examples of employers that hire for these skill sets, not current openings or endorsements._
 
-| # | Course | 🟠 Fresher / Entry | Mid (3–5 yrs) | Senior (6+ yrs) | Top companies hiring |
+| # | Course | 🟠 Fresher / Entry | 🔵 Mid (3–5 yrs) | 🟢 Senior (6+ yrs) | Top companies hiring |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 1 | Artificial Intelligence | ₹6–15 LPA | ₹15–30 LPA | ₹30–60+ LPA | Google, Microsoft, Amazon, Flipkart, Walmart Global Tech |
 | 2 | Machine Learning | ₹5–12 LPA | ₹18–35 LPA | ₹35–65+ LPA | Google, Amazon, Microsoft, Flipkart, PhonePe |
@@ -1224,6 +1286,7 @@ _Indicative annual CTC in India (₹ lakh per annum), compiled November 2026 fro
 | 13 | Physical AI & Intelligent Robotics | ₹5–15 LPA | ₹12–28 LPA | ₹25–60 LPA | Addverb, GreyOrange, Amazon Robotics, ABB, Bosch |
 | 14 | AI-Driven Cybersecurity | ₹4–10 LPA | ₹8–20 LPA | ₹20–45+ LPA | Palo Alto Networks, CrowdStrike, Microsoft, Cisco, IBM |
 | 15 | Blockchain & Decentralised AI | ₹6–14 LPA | ₹14–24 LPA | ₹24–35+ LPA | Polygon Labs, CoinDCX, CoinSwitch, IBM, Infosys |
+| 16 | Forward Deployed Engineering (FDE) | ₹8–20 LPA | ₹18–40 LPA | ₹40–90+ LPA | Palantir, OpenAI, Anthropic, Google Cloud, Databricks |
 
 <details><summary><b>Salary sources</b></summary>
 
@@ -1240,6 +1303,9 @@ _Indicative annual CTC in India (₹ lakh per annum), compiled November 2026 fro
 - [Futurense: Robotics engineer salary and career path](https://futurense.com/blog/robotics-engineer-salary-and-career-path-in-india)
 - [Dheya: Quantum computing careers in India 2026](https://www.dheya.com/insights/quantum-computing-careers-india)
 - [OwnYourCareer: Blockchain developer salary India 2026](https://www.ownyourcareer.in/careers/blockchain-developer/salaries)
+- [Glassdoor India: Forward Deployed Engineer salaries 2026](https://www.glassdoor.co.in/Salaries/forward-deployed-engineer-software-development-engineer-salary-SRCH_KO0,55.htm)
+- [SecondTalent: Forward Deployed Engineer salary India 2026](https://www.secondtalent.com/developer-rate-card/forward-deployed-engineer-india/)
+- [Build Fast with AI: Forward Deployed Engineer salary India 2026](https://www.buildfastwithai.com/blogs/forward-deployed-engineer-salary-india)
 
 </details>
 
@@ -1251,7 +1317,8 @@ Which courses make a learner job-ready for each role (core courses, plus recomme
 |:--|:--|:--|:--|
 | **AI / ML Engineer** | 1. Artificial Intelligence, 2. Machine Learning, 3. Deep Learning, 9. Data Engineering for AI | Large Language Models | The most-hired AI role: builds, ships and maintains models in production. |
 | **LLM & Generative AI Engineer** | 3. Deep Learning, 6. Large Language Models, 8. Generative AI | Agentic AI, Trustworthy AI | Builds GenAI features, RAG systems and fine-tuned models for enterprises. |
-| **Agentic AI Engineer** | 6. Large Language Models, 7. Agentic AI, 10. Trustworthy AI | Artificial Intelligence, Data Engineering for AI | Designs tool-using, multi-agent systems with human oversight. |
+| **Agentic AI Engineer** | 6. Large Language Models, 7. Agentic AI, 10. Trustworthy AI | Artificial Intelligence, Data Engineering for AI, Forward Deployed Engineering (FDE) | Designs tool-using, multi-agent systems with human oversight. |
+| **Forward Deployed Engineer** | 16. Forward Deployed Engineering (FDE), 7. Agentic AI, 6. Large Language Models, 9. Data Engineering for AI | Trustworthy AI, Artificial Intelligence | The fastest-growing AI role of 2026: embeds with clients to turn AI products into working, measured deployments. |
 | **Data Scientist** | 2. Machine Learning, 9. Data Engineering for AI | Deep Learning, Trustworthy AI | Turns data into predictive models and decisions the business can trust. |
 | **Data / MLOps Engineer** | 9. Data Engineering for AI, 2. Machine Learning | Large Language Models | Owns the pipelines, platforms and monitoring behind every AI product. |
 | **Computer Vision & Edge AI Engineer** | 3. Deep Learning, 5. Computer Vision, 12. Edge AI, TinyML & AIoT | Physical AI & Intelligent Robotics | Puts real-time vision on cameras, devices and machines. |
@@ -1260,7 +1327,7 @@ Which courses make a learner job-ready for each role (core courses, plus recomme
 | **Responsible AI & Governance Lead** | 10. Trustworthy AI, 2. Machine Learning | Blockchain & Decentralised AI | Keeps AI fair, explainable, compliant and auditable. |
 | **Quantum Software Engineer** | 11. Quantum Computing & Quantum AI, 2. Machine Learning | Deep Learning | Builds hybrid quantum–classical solutions and quantum-safe systems. |
 | **Blockchain + AI Engineer** | 15. Blockchain & Decentralised AI, 10. Trustworthy AI | Data Engineering for AI | Builds verifiable data, model provenance and decentralised trust. |
-| **AI Product Manager / Solutions Architect** | 1. Artificial Intelligence, 7. Agentic AI, 10. Trustworthy AI | Large Language Models, Data Engineering for AI | Leads AI products and enterprise architectures from idea to ROI. |
+| **AI Product Manager / Solutions Architect** | 1. Artificial Intelligence, 7. Agentic AI, 10. Trustworthy AI | Large Language Models, Data Engineering for AI, Forward Deployed Engineering (FDE) | Leads AI products and enterprise architectures from idea to ROI. |
 
 ## Assessment Scheme (per course)
 
@@ -1273,43 +1340,46 @@ Which courses make a learner job-ready for each role (core courses, plus recomme
 
 ## For Universities: AlgoProfessor Consultancy
 
-AlgoProfessor supports institutions from adoption to industry-ready graduates: curriculum customisation, faculty development programmes, AI and emerging-tech lab set-up, GitHub course repositories, industry capstones, certification readiness, a Centre of Excellence in AI, research and Q1 publications, accreditation and ranking support, and placement readiness.
+AlgoProfessor supports institutions from adoption to industry-ready graduates: curriculum customisation, faculty development programmes, AI and emerging-tech lab set-up, GitHub course repositories, industry capstones and forward-deployed client projects, certification readiness, a Centre of Excellence in AI, research and Q1 publications, accreditation and ranking support, and placement readiness.
 
 | Engagement model | Scope | Best suited for |
 |:--|:--|:--|
 | **Pilot** | One or two courses, FDP, lab manual and GitHub repository for one department | Departments starting their AI journey |
-| **Department Programme** | Full core AI track (10 courses) with labs, capstones and certification preparation | AI & DS, CSE and allied departments |
-| **University Transformation** | All 15 courses, Centre of Excellence, research and accreditation support across schools | Universities aiming for AI leadership |
+| **Department Programme** | Full core AI track (10 courses) plus Forward Deployed Engineering, with labs, capstones and certification preparation | AI & DS, CSE and allied departments |
+| **University Transformation** | All 16 courses, Centre of Excellence, research and accreditation support across schools | Universities aiming for AI leadership |
 
 **Vice-Chancellors, Deans and HoDs:** contact **[cto@algoprofessor.com](mailto:cto@algoprofessor.com)** to schedule a curriculum consultation · [www.algoprofessor.com](https://www.algoprofessor.com) · [campus.algoprofessor.com](https://campus.algoprofessor.com)
 
 ## Repository Layout
 
 ```
-index.html                  the website (GitHub Pages)
-Enterprise_AI_Syllabus.pdf  the complete 55-page syllabus
-data/courses.json           structured data for all 15 courses
+index.html                  the 3D website (GitHub Pages)
+Enterprise_AI_Syllabus.pdf  the syllabus PDF (courses 1–15)
+data/courses.json           structured data for courses 1–15 (extracted from the PDF)
+data/extra_courses.json     course 16: Forward Deployed Engineering
 data/careers.json           skills, jobs, companies, salaries and career pathways
 data/products.json          10 real-time enterprise product blueprints
 data/unicorn.json           10 unicorn-track frontier product blueprints
 src/template.html           website template
 scripts/parse.py            extracts course data from the syllabus text
 scripts/build.py            builds index.html from the template and data
+scripts/make_readme.py      builds this README from the data
 assets/                     AlgoProfessor logo
 assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```
 
-To rebuild the site after editing any file in `data/` or the template:
+To rebuild the website and this README after editing any file in `data/` or the template:
 
 ```bash
 python3 scripts/build.py data/courses.json src/template.html index.html
+python3 scripts/make_readme.py
 ```
 
 ## Author
 
-**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC
-Founder, CEO & Chief Agentic AI Scientist, AlgoProfessor AI R&D Solutions, Hyderabad
-International Postdoctoral Research Co-Supervisor, NYUST (YunTech) & NKUST, Taiwan
+**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC  
+Founder, CEO & Chief Agentic AI Scientist, AlgoProfessor AI R&D Solutions, Hyderabad  
+International Postdoctoral Research Co-Supervisor, NYUST (YunTech) & NKUST, Taiwan  
 [GitHub](https://github.com/drssnaiml1-cell) · [ceo@algoprofessor.com](mailto:ceo@algoprofessor.com)
 
 ---

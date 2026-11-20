@@ -896,6 +896,69 @@
     "Accenture",
     "Deloitte"
    ]
+  },
+  "16": {
+   "skills": [
+    "Running customer discovery and turning business problems into scoped AI use cases with KPIs and ROI",
+    "Rapid prototyping of RAG and agent solutions on real, messy customer data",
+    "Building evaluation sets from customer examples to prove a solution works",
+    "Enterprise integration: SSO (SAML/OIDC), APIs, MCP servers, CRM and ERP connectors",
+    "Deploying into customer VPC, on-premises and air-gapped environments with Kubernetes and IaC",
+    "Production operations: observability, guardrails, incident response and cost control",
+    "Driving user adoption, training and change management inside client teams",
+    "Executive communication: demos, ROI readouts and turning field insights into product feedback"
+   ],
+   "hiring": "Frontier AI labs, enterprise AI and data platforms, cloud providers, AI-first start-ups, IT services and GCCs building client AI delivery teams",
+   "jobs": [
+    {
+     "title": "Forward Deployed Engineer",
+     "level": "Entry",
+     "what": "Embeds with a client to build and ship AI solutions on their data and systems."
+    },
+    {
+     "title": "AI Solutions Engineer",
+     "level": "Entry",
+     "what": "Designs and demos AI solutions that win and launch enterprise deals."
+    },
+    {
+     "title": "Customer / Implementation Engineer",
+     "level": "Entry",
+     "what": "Configures, integrates and rolls out AI products inside customer environments."
+    },
+    {
+     "title": "Forward Deployed AI Engineer (Agentic)",
+     "level": "Mid",
+     "what": "Deploys LLM agents into regulated enterprises with security, evaluation and guardrails."
+    },
+    {
+     "title": "AI Deployment Strategist",
+     "level": "Mid",
+     "what": "Owns the client relationship, use-case roadmap and measured business outcomes."
+    },
+    {
+     "title": "Head of Forward Deployed Engineering",
+     "level": "Senior",
+     "what": "Builds and leads FDE teams that turn AI products into enterprise revenue."
+    }
+   ],
+   "salary": {
+    "entry": "8–20",
+    "mid": "18–40",
+    "senior": "40–90+",
+    "basis": "forward deployed engineer bands, which vary unusually widely because the title is new and samples are small"
+   },
+   "companies": [
+    "Palantir",
+    "OpenAI",
+    "Anthropic",
+    "Google Cloud",
+    "Databricks",
+    "Cohere",
+    "Scale AI",
+    "Salesforce",
+    "Decagon",
+    "Box"
+   ]
   }
  },
  "pathways": [
@@ -934,9 +997,24 @@
    ],
    "plus": [
     1,
-    9
+    9,
+    16
    ],
    "note": "Designs tool-using, multi-agent systems with human oversight."
+  },
+  {
+   "role": "Forward Deployed Engineer",
+   "courses": [
+    16,
+    7,
+    6,
+    9
+   ],
+   "plus": [
+    10,
+    1
+   ],
+   "note": "The fastest-growing AI role of 2026: embeds with clients to turn AI products into working, measured deployments."
   },
   {
    "role": "Data Scientist",
@@ -1039,7 +1117,8 @@
    ],
    "plus": [
     6,
-    9
+    9,
+    16
    ],
    "note": "Leads AI products and enterprise architectures from idea to ROI."
   }
@@ -1097,6 +1176,18 @@
   [
    "OwnYourCareer: Blockchain developer salary India 2026",
    "https://www.ownyourcareer.in/careers/blockchain-developer/salaries"
+  ],
+  [
+   "Glassdoor India: Forward Deployed Engineer salaries 2026",
+   "https://www.glassdoor.co.in/Salaries/forward-deployed-engineer-software-development-engineer-salary-SRCH_KO0,55.htm"
+  ],
+  [
+   "SecondTalent: Forward Deployed Engineer salary India 2026",
+   "https://www.secondtalent.com/developer-rate-card/forward-deployed-engineer-india/"
+  ],
+  [
+   "Build Fast with AI: Forward Deployed Engineer salary India 2026",
+   "https://www.buildfastwithai.com/blogs/forward-deployed-engineer-salary-india"
   ]
  ]
 }
