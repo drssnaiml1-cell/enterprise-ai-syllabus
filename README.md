@@ -34,6 +34,8 @@ This curriculum prepares learners to **design, build, deploy and govern AI produ
 
 Every course follows one arc: **foundations → core methods → advanced methods → production engineering → enterprise deployment, governance and capstone.**
 
+**📘 Syllabus book:** [Enterprise_AI_Syllabus.pdf](Enterprise_AI_Syllabus.pdf) (updated edition, November 2026: all 16 courses plus skills, jobs, salaries, career pathways, 10 enterprise products and 10 unicorn-track products), with its LaTeX source in [`latex/`](latex/).
+
 **🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).
 
 ## Core AI Track
@@ -84,8 +86,6 @@ Forward Deployed Engineering is the delivery layer of enterprise AI: engineers e
 **Course outcomes:** CO1 (L2 Understand) Explain the forward deployed engineering model and translate business problems into scoped, measurable AI use cases. · CO2 (L3 Apply) Build rapid AI prototypes on customer data with evaluation sets drawn from real client examples. · CO3 (L3 Apply) Integrate and deploy AI solutions securely into customer environments with enterprise authentication and controls. · CO4 (L4 Analyse) Analyse production quality, adoption and cost data to diagnose issues and prioritise improvements. · CO5 (L6 Create) Design and deliver an end-to-end enterprise AI engagement that demonstrates measured business impact.
 
 **Recommended certifications:** AWS Certified Solutions Architect – Associate (AWS, Associate); Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103) (Microsoft, Associate); Google Cloud Professional Cloud Architect (Google Cloud, Professional); Certified Kubernetes Application Developer (CKAD) (Linux Foundation, Professional); NVIDIA-Certified Professional: Agentic AI (NCP-AAI) (NVIDIA, Professional)
-
-_Course 16 is an addition to the 15 courses in the syllabus PDF; its full detail is on the website and in `data/extra_courses.json`._
 
 ## Top 10 Real-Time Enterprise Products
 
@@ -1354,8 +1354,9 @@ AlgoProfessor supports institutions from adoption to industry-ready graduates: c
 
 ```
 index.html                  the 3D website (GitHub Pages)
-Enterprise_AI_Syllabus.pdf  the syllabus PDF (courses 1–15)
-data/courses.json           structured data for courses 1–15 (extracted from the PDF)
+Enterprise_AI_Syllabus.pdf  the full syllabus PDF, updated edition (16 courses, 75 pages)
+data/courses.json           structured data for courses 1–15 (extracted from the first edition)
+data/course_details.json    industry tools, language tables and references for courses 1–15
 data/extra_courses.json     course 16: Forward Deployed Engineering
 data/careers.json           skills, jobs, companies, salaries and career pathways
 data/products.json          10 real-time enterprise product blueprints
@@ -1364,6 +1365,8 @@ src/template.html           website template
 scripts/parse.py            extracts course data from the syllabus text
 scripts/build.py            builds index.html from the template and data
 scripts/make_readme.py      builds this README from the data
+scripts/make_latex.py       builds the LaTeX source of the syllabus from the data
+latex/                      LaTeX source (XeLaTeX) and compiled PDF of the syllabus
 assets/                     AlgoProfessor logo
 assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```
@@ -1373,6 +1376,9 @@ To rebuild the website and this README after editing any file in `data/` or the 
 ```bash
 python3 scripts/build.py data/courses.json src/template.html index.html
 python3 scripts/make_readme.py
+python3 scripts/make_latex.py
+cd latex && xelatex Enterprise_AI_Syllabus.tex && xelatex Enterprise_AI_Syllabus.tex
+cp Enterprise_AI_Syllabus.pdf ../Enterprise_AI_Syllabus.pdf
 ```
 
 ## Author

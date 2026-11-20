@@ -1,0 +1,817 @@
+{
+ "1": {
+  "tools": [
+   [
+    "Languages & libraries",
+    "Python 3.12, NumPy, NetworkX, SimPy, python-constraint"
+   ],
+   [
+    "Optimisation",
+    "Google OR-Tools, PuLP, Pyomo, Gurobi (academic licence)"
+   ],
+   [
+    "Knowledge graphs",
+    "Neo4j, RDFLib, Protégé, Apache Jena, GraphRAG toolkits"
+   ],
+   [
+    "Probabilistic AI",
+    "pgmpy, PyMC, Pomegranate"
+   ],
+   [
+    "Planning",
+    "Unified Planning Framework, Fast Downward (PDDL)"
+   ],
+   [
+    "Deployment",
+    "FastAPI, Docker, GitHub Actions, Postman"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Search, planning, knowledge graphs, probabilistic models and FastAPI decision services.",
+    "Default language for AI work; stays dominant as the glue between models, agents and tools."
+   ],
+   [
+    "#2",
+    "Java",
+    "Rule engines, enterprise integration and decision services in banking, telecom and ERP systems.",
+    "Long-term enterprise backbone; AI features increasingly embedded in JVM systems."
+   ],
+   [
+    "#3",
+    "C++",
+    "Fast solvers, game-tree search and optimisation engines (OR-Tools, planners).",
+    "Remains the performance layer under every AI framework and solver."
+   ]
+  ],
+  "refs": [
+   "S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2021.",
+   "D. Poole and A. Mackworth, Artificial Intelligence: Foundations of Computational Agents, 3rd ed., Cambridge University Press, 2023.",
+   "A. Hogan et al., “Knowledge Graphs,” ACM Computing Surveys, vol. 54, no. 4, 2021.",
+   "C. Huyen, Designing Machine Learning Systems, O’Reilly, 2022."
+  ]
+ },
+ "2": {
+  "tools": [
+   [
+    "Core libraries",
+    "scikit-learn, pandas, Polars, XGBoost, LightGBM, CatBoost, statsmodels"
+   ],
+   [
+    "Tuning & explainability",
+    "Optuna, SHAP, Yellowbrick"
+   ],
+   [
+    "MLOps",
+    "MLflow, DVC, Feast, BentoML, Evidently AI, Great Expectations"
+   ],
+   [
+    "Orchestration",
+    "Apache Airflow, Kubeflow Pipelines, Prefect"
+   ],
+   [
+    "Cloud ML",
+    "AWS SageMaker, Azure Machine Learning, Google Vertex AI"
+   ],
+   [
+    "Delivery",
+    "Docker, Kubernetes, GitHub Actions, FastAPI"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Modelling with scikit-learn, XGBoost, pandas/Polars and MLOps pipelines.",
+    "Core ML language; expected to hold first place through 2035."
+   ],
+   [
+    "#2",
+    "SQL",
+    "Feature extraction, label building and in-database ML on warehouses and lakehouses.",
+    "Most durable data skill; AI-assisted SQL raises, not lowers, its value."
+   ],
+   [
+    "#3",
+    "R",
+    "Statistical modelling, experiment analysis and reporting in pharma, finance and research.",
+    "Stable niche for statistics-heavy, regulated analytics."
+   ]
+  ],
+  "refs": [
+   "A. Géron, Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 3rd ed., O’Reilly, 2022.",
+   "C. M. Bishop, Pattern Recognition and Machine Learning, Springer, 2006.",
+   "T. Hastie, R. Tibshirani and J. Friedman, The Elements of Statistical Learning, 2nd ed., Springer, 2009.",
+   "D. Kreuzberger, N. Kühl and S. Hirschl, “Machine Learning Operations (MLOps): Overview, Definition, and Architecture,” IEEE Access, vol. 11, 2023."
+  ]
+ },
+ "3": {
+  "tools": [
+   [
+    "Frameworks",
+    "PyTorch, PyTorch Lightning, TensorFlow/Keras, JAX"
+   ],
+   [
+    "Model hubs",
+    "Hugging Face Transformers, timm, PyTorch Geometric"
+   ],
+   [
+    "Experiment tracking",
+    "Weights & Biases, TensorBoard, MLflow"
+   ],
+   [
+    "Scaling",
+    "PyTorch DDP/FSDP, DeepSpeed, Hugging Face Accelerate"
+   ],
+   [
+    "Inference optimisation",
+    "ONNX Runtime, NVIDIA TensorRT, Triton Inference Server, OpenVINO"
+   ],
+   [
+    "Compute",
+    "NVIDIA GPUs (CUDA), Google Colab Pro, cloud GPU instances"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Model design and training in PyTorch, JAX and Hugging Face.",
+    "The interface to every deep learning framework."
+   ],
+   [
+    "#2",
+    "C++ / CUDA",
+    "Custom GPU kernels, inference runtimes (TensorRT, ONNX Runtime) and performance tuning.",
+    "Rising demand as compute cost drives kernel- and systems-level optimisation."
+   ],
+   [
+    "#3",
+    "Mojo (emerging)",
+    "Python-like syntax compiled for CPU/GPU speed; used for experimental high-performance kernels.",
+    "Worth watching: aims to unite Python ease with C++ speed for AI systems."
+   ]
+  ],
+  "refs": [
+   "I. Goodfellow, Y. Bengio and A. Courville, Deep Learning, MIT Press, 2016.",
+   "S. J. D. Prince, Understanding Deep Learning, MIT Press, 2023.",
+   "A. Zhang, Z. C. Lipton, M. Li and A. J. Smola, Dive into Deep Learning, Cambridge University Press, 2023. Advances in Neural Information Processing Systems,",
+   "A. Vaswani et al., “Attention Is All You Need,” 2017."
+  ]
+ },
+ "4": {
+  "tools": [
+   [
+    "Environments",
+    "Gymnasium, PettingZoo, MuJoCo, Unity ML-Agents, Isaac Lab"
+   ],
+   [
+    "Algorithms",
+    "Stable-Baselines3, Ray RLlib, CleanRL, d3rlpy (offline RL)"
+   ],
+   [
+    "Bandits & experimentation",
+    "Vowpal Wabbit, MABWiser"
+   ],
+   [
+    "LLM alignment",
+    "Hugging Face TRL, OpenRLHF"
+   ],
+   [
+    "Tracking & scaling",
+    "Weights & Biases, Ray, TensorBoard"
+   ],
+   [
+    "Deployment",
+    "Docker, FastAPI, ONNX Runtime"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Agents and training with Gymnasium, Stable-Baselines3, Ray RLlib and TRL.",
+    "Standard for RL research and production experimentation."
+   ],
+   [
+    "#2",
+    "C++",
+    "High-speed simulators, real-time control loops and robotics deployment.",
+    "Needed wherever policies run on physical systems with latency limits."
+   ],
+   [
+    "#3",
+    "Julia",
+    "Fast scientific simulation, optimal control and differentiable physics.",
+    "Growing in scientific ML and operations research where speed matters."
+   ]
+  ],
+  "refs": [
+   "R. S. Sutton and A. G. Barto, Reinforcement Learning: An Introduction, 2nd ed., MIT Press, 2018.",
+   "M. Morales, Grokking Deep Reinforcement Learning, Manning, 2020.",
+   "L. Ouyang et al., “Training Language Models to Follow Instructions with Human Feedback,” NeurIPS, 2022.",
+   "R. Rafailov et al., “Direct Preference Optimization: Your Language Model Is Secretly a Reward Model,” NeurIPS, 2023."
+  ]
+ },
+ "5": {
+  "tools": [
+   [
+    "Classical vision",
+    "OpenCV, scikit-image, Kornia"
+   ],
+   [
+    "Deep vision",
+    "PyTorch, torchvision, Ultralytics YOLO, Detectron2, MMDetection, Segment Anything"
+   ],
+   [
+    "Document & VLM",
+    "PaddleOCR, Tesseract, LayoutLM, CLIP, open-source VLMs via Hugging Face"
+   ],
+   [
+    "Labelling & data",
+    "CVAT, Label Studio, Roboflow, FiftyOne"
+   ],
+   [
+    "Edge & video",
+    "NVIDIA Jetson, DeepStream, TensorRT, OpenVINO, TensorFlow Lite, GStreamer"
+   ],
+   [
+    "3D",
+    "Open3D, COLMAP"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Training detectors and segmenters; data pipelines with OpenCV, PyTorch and Ultralytics.",
+    "Main language for vision model development."
+   ],
+   [
+    "#2",
+    "C++",
+    "Real-time video pipelines, OpenCV core, DeepStream and embedded vision.",
+    "Essential for production vision on cameras, vehicles and factory lines."
+   ],
+   [
+    "#3",
+    "CUDA",
+    "GPU pre/post-processing and custom operators for high-throughput video analytics.",
+    "Grows with large-scale video and multimodal inference workloads."
+   ]
+  ],
+  "refs": [
+   "R. Szeliski, Computer Vision: Algorithms and Applications, 2nd ed., Springer, 2022.",
+   "A. Dosovitskiy et al., “An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale,” ICLR, 2021.",
+   "A. Kirillov et al., “Segment Anything,” IEEE/CVF ICCV, 2023. ICML,",
+   "A. Radford et al., “Learning Transferable Visual Models from Natural Language Supervision,” 2021."
+  ]
+ },
+ "6": {
+  "tools": [
+   [
+    "Model ecosystem",
+    "Hugging Face Transformers, PEFT, TRL, Unsloth, Llama, Mistral, Qwen, Gemma families"
+   ],
+   [
+    "Model APIs",
+    "Anthropic Claude, OpenAI, Google Gemini, Azure OpenAI, AWS Bedrock"
+   ],
+   [
+    "RAG frameworks",
+    "LlamaIndex, LangChain, Haystack"
+   ],
+   [
+    "Vector stores",
+    "FAISS, Milvus, Qdrant, Weaviate, pgvector, Elasticsearch"
+   ],
+   [
+    "Serving",
+    "vLLM, Hugging Face TGI, Ollama, llama.cpp, NVIDIA NIM"
+   ],
+   [
+    "Evaluation & observability",
+    "RAGAS, DeepEval, promptfoo, LangSmith, Langfuse, Arize Phoenix"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Fine-tuning, RAG pipelines, evaluation and serving with Transformers, vLLM and LlamaIndex.",
+    "Primary language for LLM engineering."
+   ],
+   [
+    "#2",
+    "TypeScript",
+    "LLM-powered web apps, chat interfaces, streaming APIs and SDK integrations.",
+    "Leading language for shipping AI features to users on the web."
+   ],
+   [
+    "#3",
+    "Rust",
+    "Tokenisers, inference routers, vector databases and high-performance serving components.",
+    "Rapid growth in AI infrastructure thanks to speed and memory safety."
+   ]
+  ],
+  "refs": [
+   "J. Alammar and M. Grootendorst, Hands-On Large Language Models, O’Reilly, 2024.",
+   "C. Huyen, AI Engineering: Building Applications with Foundation Models, O’Reilly, 2025.",
+   "D. Jurafsky and J. H. Martin, Speech and Language Processing, 3rd ed. (online draft), Stanford University.",
+   "P. Lewis et al., “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,” NeurIPS, 2020.",
+   "E. J. Hu et al., “LoRA: Low-Rank Adaptation of Large Language Models,” ICLR, 2022."
+  ]
+ },
+ "7": {
+  "tools": [
+   [
+    "Agent frameworks",
+    "LangGraph, CrewAI, Microsoft AutoGen / Agent Framework, LlamaIndex Agents, Pydan- tic AI"
+   ],
+   [
+    "Vendor SDKs",
+    "Claude Agent SDK, OpenAI Agents SDK, Google Agent Development Kit (ADK)"
+   ],
+   [
+    "Protocols",
+    "Model Context Protocol (MCP), Agent2Agent (A2A)"
+   ],
+   [
+    "Durable execution",
+    "Temporal, Celery, Redis, PostgreSQL"
+   ],
+   [
+    "Evaluation & tracing",
+    "LangSmith, Langfuse, Arize Phoenix, OpenTelemetry, promptfoo"
+   ],
+   [
+    "Sandboxing & safety",
+    "Docker sandboxes, E2B, NeMo Guardrails, Guardrails AI"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Agent frameworks (LangGraph, CrewAI, Agent SDKs), tools and evaluation suites.",
+    "Main language for agent logic and orchestration."
+   ],
+   [
+    "#2",
+    "TypeScript",
+    "MCP servers and clients, agent SDKs, browser and front-end agents.",
+    "Expected to be the second core language of the agent ecosystem."
+   ],
+   [
+    "#3",
+    "Go",
+    "Cloud-native agent platforms, gateways, queues and scalable tool back-ends.",
+    "Strong for the reliable, concurrent services that host agents at scale."
+   ]
+  ],
+  "refs": [
+   "S. Yao et al., “ReAct: Synergizing Reasoning and Acting in Language Models,” ICLR, 2023.",
+   "L. Wang et al., “A Survey on Large Language Model Based Autonomous Agents,” Frontiers of Computer Science, vol. 18, 2024.",
+   "Anthropic, “Building Effective Agents,” engineering guide, 2024; and Model Context Protocol Specification, modelcontextproto- col.io.",
+   "C. Huyen, AI Engineering: Building Applications with Foundation Models, O’Reilly, 2025 (Ch. on agents).",
+   "OWASP GenAI Security Project, Agentic AI – Threats and Mitigations, 2025."
+  ]
+ },
+ "8": {
+  "tools": [
+   [
+    "Frameworks",
+    "PyTorch, Hugging Face Diffusers, Transformers, Keras"
+   ],
+   [
+    "Image & video",
+    "Stable Diffusion family, FLUX, ComfyUI, ControlNet, open video-generation models"
+   ],
+   [
+    "Audio & speech",
+    "Whisper, Coqui TTS, Bark, AudioCraft"
+   ],
+   [
+    "Synthetic data",
+    "SDV (CTGAN, Gaussian Copula), Gretel, YData, Opacus"
+   ],
+   [
+    "Commercial APIs",
+    "Claude, Gemini, OpenAI image & audio APIs, Amazon Bedrock, Azure AI Foundry"
+   ],
+   [
+    "Provenance & safety",
+    "C2PA tools, invisible watermarking libraries, safety classifiers"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Diffusion, GAN and VAE training; generation pipelines with Diffusers and ComfyUI.",
+    "Core language for generative model work."
+   ],
+   [
+    "#2",
+    "TypeScript / JavaScript",
+    "Creative web studios, real-time generation front-ends and content APIs.",
+    "Delivery layer for consumer and enterprise GenAI products."
+   ],
+   [
+    "#3",
+    "C++ / CUDA",
+    "Optimised inference, few-step samplers and on-device generation.",
+    "Key for cutting generation cost and latency at scale."
+   ]
+  ],
+  "refs": [
+   "D. Foster, Generative Deep Learning, 2nd ed., O’Reilly, 2023.",
+   "J. Ho, A. Jain and P. Abbeel, “Denoising Diffusion Probabilistic Models,” NeurIPS, 2020.",
+   "R. Rombach et al., “High-Resolution Image Synthesis with Latent Diffusion Models,” IEEE/CVF CVPR, 2022.",
+   "I. Goodfellow et al., “Generative Adversarial Nets,” NeurIPS, 2014.",
+   "D. P. Kingma and M. Welling, “Auto-Encoding Variational Bayes,” ICLR, 2014."
+  ]
+ },
+ "9": {
+  "tools": [
+   [
+    "Processing",
+    "Apache Spark, Apache Flink, Polars, DuckDB"
+   ],
+   [
+    "Streaming",
+    "Apache Kafka, Confluent, AWS Kinesis, Debezium (CDC)"
+   ],
+   [
+    "Lakehouse & warehouse",
+    "Databricks, Snowflake, Google BigQuery, Delta Lake, Apache Iceberg"
+   ],
+   [
+    "Transformation & orchestration",
+    "dbt, Apache Airflow, Dagster, Prefect"
+   ],
+   [
+    "Quality, lineage & catalogue",
+    "Great Expectations, Soda, OpenLineage, DataHub, Unity Catalog"
+   ],
+   [
+    "AI data",
+    "Feast, LanceDB, Unstructured.io, Apache Tika, Terraform"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "SQL",
+    "Modelling, transformation (dbt), analytics and data-quality tests.",
+    "The universal data language; remains essential through 2035."
+   ],
+   [
+    "#2",
+    "Python",
+    "Pipelines, orchestration (Airflow, Dagster), PySpark and document/vector ingestion.",
+    "Main language for data pipelines and AI data preparation."
+   ],
+   [
+    "#3",
+    "Scala / Java",
+    "Spark internals, Kafka and Flink streaming applications on the JVM.",
+    "JVM stays the core of large-scale streaming and processing engines."
+   ]
+  ],
+  "refs": [
+   "J. Reis and M. Housley, Fundamentals of Data Engineering, O’Reilly, 2022.",
+   "M. Kleppmann, Designing Data-Intensive Applications, O’Reilly, 2017.",
+   "M. Armbrust, A. Ghodsi, R. Xin and M. Zaharia, “Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics,” CIDR, 2021.",
+   "R. Kimball and M. Ross, The Data Warehouse Toolkit, 3rd ed., Wiley, 2013."
+  ]
+ },
+ "10": {
+  "tools": [
+   [
+    "Fairness",
+    "Fairlearn, IBM AI Fairness 360, Aequitas"
+   ],
+   [
+    "Explainability",
+    "SHAP, LIME, Captum, Alibi Explain, InterpretML"
+   ],
+   [
+    "Robustness & uncertainty",
+    "IBM Adversarial Robustness Toolbox, TextAttack, MAPIE (conformal prediction)"
+   ],
+   [
+    "Privacy",
+    "Opacus, TensorFlow Privacy, Flower (federated learning), Microsoft Presidio"
+   ],
+   [
+    "LLM security & safety",
+    "garak, PyRIT, promptfoo red-teaming, NeMo Guardrails, Llama Guard"
+   ],
+   [
+    "Governance",
+    "Model Card Toolkit, Credo AI / open governance templates, MLflow model registry"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Fairness, explainability, robustness and red-team tooling (Fairlearn, SHAP, garak).",
+    "Main language for AI assurance and audit pipelines."
+   ],
+   [
+    "#2",
+    "R",
+    "Statistical bias testing, causal analysis and regulatory reporting.",
+    "Valued in audit, public-policy and clinical settings."
+   ],
+   [
+    "#3",
+    "Rust",
+    "Memory-safe, secure AI infrastructure and guardrail components.",
+    "Memory-safe languages are increasingly expected in secure-by-design guidance."
+   ]
+  ],
+  "refs": [
+   "S. Barocas, M. Hardt and A. Narayanan, Fairness and Machine Learning: Limitations and Opportunities, MIT Press, 2023.",
+   "C. Molnar, Interpretable Machine Learning, 2nd ed., 2022 (christophm.github.io/interpretable-ml-book).",
+   "NIST, Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1, 2023.",
+   "European Union, Regulation (EU) 2024/1689 (Artificial Intelligence Act), Oﬀicial Journal of the EU, 2024.",
+   "ISO/IEC 42001:2023, Information Technology – Artificial Intelligence – Management System.",
+   "OWASP, Top 10 for Large Language Model Applications, 2025 edition. Emerging Technologies Track Courses 11–15: frontier technologies that combine with AI to create the next generation of enterprise products No. Course Code Why it is emerging 11 Quantum Computing & Quan- EAI-111 Quantum hardware and hybrid quantum–classical al- tum AI gorithms are reaching cloud access; post-quantum cryptography is now standardised 12 Edge AI, TinyML & AIoT EAI-112 AI is moving onto devices, sensors and NPUs for la- tency, privacy and cost 13 Physical AI & Intelligent Robotics EAI-113 Foundation models now drive robots, drones and au- tonomous machines 14 AI-Driven Cybersecurity EAI-114 AI both defends and attacks systems; security opera- tions are being automated 15 Blockchain & Decentralised AI EAI-115 Verifiable data, model provenance and tokenised trust for AI ecosystems Track Design Principles ▶ Each emerging course is built on the core AI track and shows how the new technology combines with AI in a real product. ▶ Labs run on simulators and low-cost hardware first (quantum simulators, microcontrollers, ROS 2 simulation, isolated security labs, local blockchains), then on cloud or real devices. ▶ Every capstone is scoped as a proof-of-concept an enterprise could pilot, with a business case, risk register and cost estimate. ▶ Content is aligned with national priorities such as the National Quantum Mission, IndiaAI Mission, Digital India and CERT-In guidance."
+  ]
+ },
+ "11": {
+  "tools": [
+   [
+    "SDKs",
+    "IBM Qiskit, Google Cirq, Xanadu PennyLane, Quantinuum TKET"
+   ],
+   [
+    "Quantum cloud",
+    "IBM Quantum Platform, Amazon Braket, Azure Quantum"
+   ],
+   [
+    "Quantum ML",
+    "PennyLane + PyTorch, TensorFlow Quantum, Qiskit Machine Learning"
+   ],
+   [
+    "Simulation (GPU)",
+    "NVIDIA CUDA-Q, cuQuantum, Qiskit Aer"
+   ],
+   [
+    "Optimisation",
+    "D-Wave Ocean SDK (annealing), Qiskit Optimization"
+   ],
+   [
+    "Post-quantum crypto",
+    "Open Quantum Safe (liboqs), OpenSSL 3.x with PQC providers"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Qiskit, PennyLane and Cirq programming; hybrid quantum-classical training.",
+    "Main language for quantum software through the NISQ-to-fault-tolerant transition."
+   ],
+   [
+    "#2",
+    "OpenQASM 3",
+    "Writing and inspecting quantum circuits at the assembly/IR level across hardware.",
+    "Common circuit language across vendors and compilers."
+   ],
+   [
+    "#3",
+    "C++",
+    "CUDA-Q kernels, GPU simulation and quantum control software.",
+    "Grows as quantum-classical supercomputing integrates with HPC."
+   ]
+  ],
+  "refs": [
+   "M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, 10th anniv. ed., Cambridge University Press, 2010.",
+   "M. Schuld and F. Petruccione, Machine Learning with Quantum Computers, 2nd ed., Springer, 2021.",
+   "J. Preskill, “Quantum Computing in the NISQ Era and Beyond,” Quantum, vol. 2, p. 79, 2018.",
+   "NIST, FIPS 203, 204 and 205: Post-Quantum Cryptography Standards, 2024."
+  ]
+ },
+ "12": {
+  "tools": [
+   [
+    "TinyML",
+    "TensorFlow Lite Micro / LiteRT, Edge Impulse, Arm CMSIS-NN, ExecuTorch"
+   ],
+   [
+    "Edge inference",
+    "NVIDIA Jetson + TensorRT, Intel OpenVINO, ONNX Runtime, Qualcomm AI Hub"
+   ],
+   [
+    "On-device LLM",
+    "llama.cpp, MLC LLM, Ollama, Apple Core ML / MLX"
+   ],
+   [
+    "Hardware",
+    "Arduino Nano 33 BLE Sense, ESP32-S3, Raspberry Pi 5, Google Coral"
+   ],
+   [
+    "IoT platforms",
+    "AWS IoT Greengrass, Azure IoT Edge, Eclipse Mosquitto (MQTT), Node-RED"
+   ],
+   [
+    "Federated learning",
+    "Flower, TensorFlow Federated"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "C++",
+    "TensorFlow Lite Micro, ExecuTorch and TensorRT inference on devices.",
+    "The main deployment language for edge AI."
+   ],
+   [
+    "#2",
+    "Python",
+    "Training, quantisation and model conversion before deployment; MicroPython prototyping.",
+    "The model-preparation side of every edge workflow."
+   ],
+   [
+    "#3",
+    "Rust",
+    "Safe, eﬀicient firmware and edge services on microcontrollers and gateways.",
+    "Strong growth in embedded systems where safety and security matter."
+   ]
+  ],
+  "refs": [
+   "P. Warden and D. Situnayake, TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcon- trollers, O’Reilly, 2019.",
+   "D. Situnayake and J. Plunkett, AI at the Edge, O’Reilly, 2023.",
+   "J. Lin et al., “MCUNet: Tiny Deep Learning on IoT Devices,” NeurIPS, 2020.",
+   "B. McMahan et al., “Communication-Eﬀicient Learning of Deep Networks from Decentralized Data,” AISTATS, 2017."
+  ]
+ },
+ "13": {
+  "tools": [
+   [
+    "Middleware",
+    "ROS 2 (Jazzy/Humble), Nav2, MoveIt 2, RViz"
+   ],
+   [
+    "Simulation",
+    "NVIDIA Isaac Sim / Isaac Lab, Gazebo, MuJoCo, PyBullet, Webots"
+   ],
+   [
+    "Robot learning",
+    "LeRobot (Hugging Face), Stable-Baselines3, robomimic"
+   ],
+   [
+    "Perception",
+    "OpenCV, Open3D, PCL, Ultralytics YOLO"
+   ],
+   [
+    "Hardware",
+    "TurtleBot 4, low-cost robot arms (SO-100 class), NVIDIA Jetson, PX4 drones"
+   ],
+   [
+    "Foundation models",
+    "Open VLA models, LLM APIs for task planning"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "C++",
+    "ROS 2 (rclcpp) nodes, real-time control, motion planning and drivers.",
+    "Core language of production robotics."
+   ],
+   [
+    "#2",
+    "Python",
+    "ROS 2 (rclpy), robot learning (LeRobot, Isaac Lab) and perception prototyping.",
+    "Main language for robot learning and foundation-model integration."
+   ],
+   [
+    "#3",
+    "Rust",
+    "Safety-critical robot components and memory-safe middleware.",
+    "Expected to grow in robotics and autonomous systems for its safety guarantees."
+   ]
+  ],
+  "refs": [
+   "K. M. Lynch and F. C. Park, Modern Robotics: Mechanics, Planning, and Control, Cambridge University Press, 2017.",
+   "S. Thrun, W. Burgard and D. Fox, Probabilistic Robotics, MIT Press, 2005.",
+   "B. Siciliano and O. Khatib (eds.), Springer Handbook of Robotics, 2nd ed., Springer, 2016.",
+   "A. Brohan et al., “RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control,” CoRL, 2023."
+  ]
+ },
+ "14": {
+  "tools": [
+   [
+    "SIEM & logs",
+    "Elastic Security, Splunk, Wazuh, Microsoft Sentinel"
+   ],
+   [
+    "Network & endpoint",
+    "Zeek, Suricata, Wireshark, osquery, Velociraptor"
+   ],
+   [
+    "Threat intel",
+    "MITRE ATT&CK Navigator, MISP, OpenCTI, YARA, Sigma rules"
+   ],
+   [
+    "ML & graphs",
+    "scikit-learn, PyTorch, PyTorch Geometric, Neo4j"
+   ],
+   [
+    "SOAR & agents",
+    "Shuffle, TheHive, LangGraph-based SOC agents"
+   ],
+   [
+    "Offensive testing",
+    "Kali Linux, Atomic Red Team, MITRE Caldera (in isolated labs only)"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Python",
+    "Detection models, log analytics, threat-intel automation and SOC agents.",
+    "Main language for security data science and automation."
+   ],
+   [
+    "#2",
+    "Go",
+    "Security tooling, network sensors, cloud-native agents and scanners.",
+    "Widely used for modern security and infrastructure tools."
+   ],
+   [
+    "#3",
+    "Rust",
+    "Memory-safe security agents, parsers and endpoint components.",
+    "Strong push toward memory-safe languages in security-critical code."
+   ]
+  ],
+  "refs": [
+   "C. Chio and D. Freeman, Machine Learning and Security, O’Reilly, 2018.",
+   "MITRE, ATT&CK: Adversarial Tactics, Techniques and Common Knowledge, attack.mitre.org.",
+   "NIST, The NIST Cybersecurity Framework (CSF) 2.0, NIST CSWP 29, 2024.",
+   "I. Sharafaldin, A. H. Lashkari and A. A. Ghorbani, “Toward Generating a New Intrusion Detection Dataset and Intrusion Traﬀic Characterization,” ICISSP, 2018."
+  ]
+ },
+ "15": {
+  "tools": [
+   [
+    "Smart contracts",
+    "Solidity, Hardhat, Foundry, OpenZeppelin, Remix IDE"
+   ],
+   [
+    "Enterprise ledgers",
+    "Hyperledger Fabric, Hyperledger Besu"
+   ],
+   [
+    "Clients & storage",
+    "ethers.js, web3.py, MetaMask, IPFS"
+   ],
+   [
+    "Security analysis",
+    "Slither, Mythril, Echidna"
+   ],
+   [
+    "Identity",
+    "W3C DIDs and Verifiable Credentials, Hyperledger Aries"
+   ],
+   [
+    "Zero-knowledge",
+    "Circom, snarkjs, EZKL (zkML)"
+   ]
+  ],
+  "langs": [
+   [
+    "#1",
+    "Solidity",
+    "Smart contracts and tokens on Ethereum and EVM-compatible chains.",
+    "Leading smart-contract language for the EVM ecosystem."
+   ],
+   [
+    "#2",
+    "Rust",
+    "Smart contracts and clients on Solana, Polkadot/Substrate; zero-knowledge tooling.",
+    "Rising language for high-performance chains and ZK systems."
+   ],
+   [
+    "#3",
+    "Go",
+    "Hyperledger Fabric chaincode, Ethereum clients (Geth) and enterprise ledger services.",
+    "Core language for permissioned enterprise blockchain."
+   ]
+  ],
+  "refs": [
+   "A. Narayanan, J. Bonneau, E. Felten, A. Miller and S. Goldfeder, Bitcoin and Cryptocurrency Technologies, Princeton University Press, 2016.",
+   "A. M. Antonopoulos and G. Wood, Mastering Ethereum, O’Reilly, 2018.",
+   "E. Androulaki et al., “Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains,” EuroSys, 2018.",
+   "K. Salah, M. H. U. Rehman, N. Nizamuddin and A. Al-Fuqaha, “Blockchain for AI: Review and Open Research Challenges,” IEEE Access, vol. 7, 2019."
+  ]
+ }
+}

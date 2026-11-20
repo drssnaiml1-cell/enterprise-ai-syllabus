@@ -51,6 +51,7 @@ w("- pairs **45 lecture hours with 30 hours of tool-driven lab work** (L–T–P
 w("- maps **five course outcomes to Bloom levels** for OBE, NBA and NAAC documentation;")
 w("- ends in an **enterprise capstone product**, with **recommended industry certifications**, skills, jobs, salary bands and the **top three programming languages** for 2026–2035.\n")
 w("Every course follows one arc: **foundations → core methods → advanced methods → production engineering → enterprise deployment, governance and capstone.**\n")
+w("**📘 Syllabus book:** [Enterprise_AI_Syllabus.pdf](Enterprise_AI_Syllabus.pdf) (updated edition, November 2026: all 16 courses plus skills, jobs, salaries, career pathways, 10 enterprise products and 10 unicorn-track products), with its LaTeX source in [`latex/`](latex/).\n")
 w(f"**🌐 Explore it as a 3D interactive website:** **{SITE}** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).\n")
 
 
@@ -75,7 +76,6 @@ for c in [c for c in C if c["track"] == "fde"]:
     w(f"\n**Capstone, {c['capstone']['name']}:** {c['capstone']['desc'][0].upper() + c['capstone']['desc'][1:]}\n")
     w("**Course outcomes:** " + " · ".join(f"{x['co']} ({x['bloom']}) {x['text']}" for x in c["cos"]) + "\n")
     w("**Recommended certifications:** " + "; ".join(f"{x['name']} ({x['issuer']}, {x['level']})" for x in c["certs"]) + "\n")
-    w("_Course 16 is an addition to the 15 courses in the syllabus PDF; its full detail is on the website and in `data/extra_courses.json`._\n")
 
 w("## Top 10 Real-Time Enterprise Products\n")
 w(f"One flagship product per industry domain. Each combines several courses into a real-time, production-grade system that student teams build as a capstone and enterprises actually run. [Explore the product blueprints on the website]({SITE}#products).\n")
@@ -146,8 +146,9 @@ w("**Vice-Chancellors, Deans and HoDs:** contact **[cto@algoprofessor.com](mailt
 
 w("## Repository Layout\n\n```")
 w("index.html                  the 3D website (GitHub Pages)")
-w("Enterprise_AI_Syllabus.pdf  the syllabus PDF (courses 1–15)")
-w("data/courses.json           structured data for courses 1–15 (extracted from the PDF)")
+w("Enterprise_AI_Syllabus.pdf  the full syllabus PDF, updated edition (16 courses, 75 pages)")
+w("data/courses.json           structured data for courses 1–15 (extracted from the first edition)")
+w("data/course_details.json    industry tools, language tables and references for courses 1–15")
 w("data/extra_courses.json     course 16: Forward Deployed Engineering")
 w("data/careers.json           skills, jobs, companies, salaries and career pathways")
 w("data/products.json          10 real-time enterprise product blueprints")
@@ -156,10 +157,12 @@ w("src/template.html           website template")
 w("scripts/parse.py            extracts course data from the syllabus text")
 w("scripts/build.py            builds index.html from the template and data")
 w("scripts/make_readme.py      builds this README from the data")
+w("scripts/make_latex.py       builds the LaTeX source of the syllabus from the data")
+w("latex/                      LaTeX source (XeLaTeX) and compiled PDF of the syllabus")
 w("assets/                     AlgoProfessor logo")
 w("assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN")
 w("```\n\nTo rebuild the website and this README after editing any file in `data/` or the template:\n")
-w("```bash\npython3 scripts/build.py data/courses.json src/template.html index.html\npython3 scripts/make_readme.py\n```\n")
+w("```bash\npython3 scripts/build.py data/courses.json src/template.html index.html\npython3 scripts/make_readme.py\npython3 scripts/make_latex.py\ncd latex && xelatex Enterprise_AI_Syllabus.tex && xelatex Enterprise_AI_Syllabus.tex\ncp Enterprise_AI_Syllabus.pdf ../Enterprise_AI_Syllabus.pdf\n```\n")
 w("## Author\n\n**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC  \nFounder, CEO & Chief Agentic AI Scientist, AlgoProfessor AI R&D Solutions, Hyderabad  \nInternational Postdoctoral Research Co-Supervisor, NYUST (YunTech) & NKUST, Taiwan  \n[GitHub](https://github.com/drssnaiml1-cell) · [ceo@algoprofessor.com](mailto:ceo@algoprofessor.com)\n")
 w('---\n\n<p align="center"><sub>© 2026 Dr S Satyanarayana, AlgoProfessor AI R&amp;D Solutions. All rights reserved.</sub></p>')
 
