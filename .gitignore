@@ -2,3 +2,9 @@ latex/*.aux
 latex/*.log
 latex/*.out
 latex/*.toc
+slides/*.aux
+slides/*.log
+slides/*.nav
+slides/*.out
+slides/*.snm
+slides/*.toc

@@ -34,6 +34,8 @@ This curriculum prepares learners to **design, build, deploy and govern AI produ
 
 Every course follows one arc: **foundations → core methods → advanced methods → production engineering → enterprise deployment, governance and capstone.**
 
+**🎞️ Presentation:** [Enterprise_AI_Curriculum_Slides.pdf](slides/Enterprise_AI_Curriculum_Slides.pdf) (33 slides, 16:9, LaTeX Beamer source in [`slides/`](slides/)): curriculum at a glance, three tracks, five-unit arc, all 16 courses with skills, jobs and salaries, salary range chart, career matrix, language strategy, enterprise and unicorn-track products, FDE spotlight and consultancy.
+
 **📘 Syllabus book:** [Enterprise_AI_Syllabus.pdf](Enterprise_AI_Syllabus.pdf) (updated edition, November 2026: all 16 courses plus skills, jobs, salaries, career pathways, 10 enterprise products and 10 unicorn-track products), with its LaTeX source in [`latex/`](latex/).
 
 **🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).
@@ -1367,6 +1369,8 @@ scripts/build.py            builds index.html from the template and data
 scripts/make_readme.py      builds this README from the data
 scripts/make_latex.py       builds the LaTeX source of the syllabus from the data
 latex/                      LaTeX source (XeLaTeX) and compiled PDF of the syllabus
+slides/                     LaTeX Beamer source and compiled PDF of the presentation
+scripts/make_slides.py      builds the presentation source from the data
 assets/                     AlgoProfessor logo
 assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```
@@ -1378,7 +1382,9 @@ python3 scripts/build.py data/courses.json src/template.html index.html
 python3 scripts/make_readme.py
 python3 scripts/make_latex.py
 cd latex && xelatex Enterprise_AI_Syllabus.tex && xelatex Enterprise_AI_Syllabus.tex
-cp Enterprise_AI_Syllabus.pdf ../Enterprise_AI_Syllabus.pdf
+cp Enterprise_AI_Syllabus.pdf ../Enterprise_AI_Syllabus.pdf && cd ..
+python3 scripts/make_slides.py
+cd slides && xelatex Enterprise_AI_Curriculum_Slides.tex && xelatex Enterprise_AI_Curriculum_Slides.tex
 ```
 
 ## Author
