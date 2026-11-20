@@ -36,6 +36,8 @@ Every course follows one arc: **foundations → core methods → advanced method
 
 **🎞️ Presentation:** [Enterprise_AI_Curriculum_Slides.pdf](slides/Enterprise_AI_Curriculum_Slides.pdf) (33 slides, 16:9, LaTeX Beamer source in [`slides/`](slides/)): curriculum at a glance, three tracks, five-unit arc, all 16 courses with skills, jobs and salaries, salary range chart, career matrix, language strategy, enterprise and unicorn-track products, FDE spotlight and consultancy.
 
+**📊 PowerPoint deck:** [Enterprise_AI_Curriculum.pptx](slides/Enterprise_AI_Curriculum.pptx) (37 editable slides with speaker notes, Indian-tricolour colour code, track-coloured course-to-career matrix) · [PDF preview](slides/Enterprise_AI_Curriculum_PowerPoint.pdf) · generator [`scripts/make_pptx.js`](scripts/make_pptx.js).
+
 **📘 Syllabus book:** [Enterprise_AI_Syllabus.pdf](Enterprise_AI_Syllabus.pdf) (updated edition, November 2026: all 16 courses plus skills, jobs, salaries, career pathways, 10 enterprise products and 10 unicorn-track products), with its LaTeX source in [`latex/`](latex/).
 
 **🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).
@@ -1369,8 +1371,9 @@ scripts/build.py            builds index.html from the template and data
 scripts/make_readme.py      builds this README from the data
 scripts/make_latex.py       builds the LaTeX source of the syllabus from the data
 latex/                      LaTeX source (XeLaTeX) and compiled PDF of the syllabus
-slides/                     LaTeX Beamer source and compiled PDF of the presentation
-scripts/make_slides.py      builds the presentation source from the data
+slides/                     Beamer source + PDF, and the PowerPoint deck (.pptx + PDF preview)
+scripts/make_slides.py      builds the Beamer presentation source from the data
+scripts/make_pptx.js        builds the PowerPoint deck (pptxgenjs)
 assets/                     AlgoProfessor logo
 assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```
@@ -1384,7 +1387,8 @@ python3 scripts/make_latex.py
 cd latex && xelatex Enterprise_AI_Syllabus.tex && xelatex Enterprise_AI_Syllabus.tex
 cp Enterprise_AI_Syllabus.pdf ../Enterprise_AI_Syllabus.pdf && cd ..
 python3 scripts/make_slides.py
-cd slides && xelatex Enterprise_AI_Curriculum_Slides.tex && xelatex Enterprise_AI_Curriculum_Slides.tex
+cd slides && xelatex Enterprise_AI_Curriculum_Slides.tex && xelatex Enterprise_AI_Curriculum_Slides.tex && cd ..
+node scripts/make_pptx.js   # needs pptxgenjs, react-icons, react-dom, sharp
 ```
 
 ## Author

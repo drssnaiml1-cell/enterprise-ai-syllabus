@@ -134,7 +134,7 @@ w(r"""\node[text width=4.8cm,font=\scriptsize,align=left,anchor=north] at (10.2,
 \end{tikzpicture}\end{frame}""")
 
 # 5 five-unit arc
-arc = ["Foundations", "Core methods", "Advanced methods", "Production engineering", "Deployment, governance \\& capstone"]
+arc = ["Foundations", "Core methods", "Advanced methods", "Production engineering", "Deploy \\& capstone"]
 w(r"\begin{frame}{Every course follows the same five-unit arc}\centering\begin{tikzpicture}")
 cols5 = ["saffron", "goldl", "chakra", "navy2", "igreen"]
 for i, a in enumerate(arc):
@@ -150,11 +150,11 @@ w(r"""\end{tikzpicture}\\[0.6cm]
 # 6 course map
 w(r"\begin{frame}{The " + str(N) + r" courses}\centering\begin{tikzpicture}")
 for i, c in enumerate(C):
-    x, y = (i % 4) * 3.75, -(i // 4) * 1.55
+    x, y = (i % 4) * 3.75, -(i // 4) * 1.52
     col = TCOL[c["track"]]
-    w(rf"\node[draw={col},line width=0.8pt,fill=white,rounded corners=4pt,minimum width=3.55cm,minimum height=1.38cm,text width=3.3cm,align=left] at ({x},{y}) {{{{\tiny\bfseries\color{{{col}}}{e(c['code'])}}}\\{{\scriptsize\bfseries {e(c['title'])}}}\\{{\tiny\color{{muted}}{e(', '.join(c['languages']))}}}}};")
-    w(rf"\fill[{col}] ({x - 1.775 + 0.04},{y + 0.69}) rectangle ({x + 1.775 - 0.04},{y + 0.62});")
-w(r"\end{tikzpicture}\\[2pt]{\tiny\pill{navy}{Core AI} \pill{igreen}{Emerging Technologies} \pill{gold}{Industry Practice (FDE)} \quad\color{muted} Each tile lists the course's top-3 programming languages.}\end{frame}")
+    w(rf"\node[draw={col},line width=0.8pt,fill=white,rounded corners=4pt,minimum width=3.55cm,minimum height=1.42cm,text width=3.3cm,align=left] at ({x},{y}) {{\hyphenpenalty=10000\exhyphenpenalty=10000{{\tiny\bfseries\color{{{col}}}{e(c['code'])}\enspace\color{{muted}}{e(', '.join(c['languages'][:2]))}}}\\[1pt]{{\scriptsize\bfseries\color{{navy}} {' '.join(chr(92)+'mbox{'+x+'}' for x in e(c['title']).split())}}}}};")
+    w(rf"\fill[{col}] ({x - 1.775 + 0.04},{y + 0.71}) rectangle ({x + 1.775 - 0.04},{y + 0.64});")
+w(r"\end{tikzpicture}\\[2pt]{\tiny\pill{navy}{Core AI} \pill{igreen}{Emerging Technologies} \pill{gold}{Industry Practice (FDE)} \quad\color{muted} Each tile shows the course code and its two main languages.}\end{frame}")
 
 # course slides
 for c in C:
@@ -199,19 +199,21 @@ w(r"\node[font=\tiny,text=muted] at (80,-" + str(N) + r".2) {₹ lakh per annum}
 w(r"\end{tikzpicture}\\{\tiny\pill{saffron}{Fresher (0--2 yrs)} \pill{chakra}{Mid (3--5 yrs)} \pill{igreen}{Senior (6+ yrs)}\quad\color{muted}Ranges overlap where sources disagree; IT services pay at the lower end, product companies, GCCs and AI-first start-ups at the upper end.}\end{frame}")
 
 # career matrix
-w(r"\begin{frame}{Course-to-career matrix}\centering{\tiny\setlength{\tabcolsep}{1.6pt}\renewcommand{\arraystretch}{1.3}\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.6cm}" + "".join(r">{\centering\arraybackslash}p{0.42cm}" for _ in C) + r"@{}}")
-w(r"\rowcolor{navy}\textcolor{white}{\bfseries Career role}" + "".join(r"&\textcolor{" + ("white" if c["track"] == "core" else ("green!40!white" if c["track"] == "em" else "goldl")) + r"}{\bfseries " + str(c["num"]) + "}" for c in C) + r"\\")
+TINT = {"core": "navy!14", "em": "igreen!18", "fde": "goldbg"}
+w(r"\begin{frame}{Course-to-career matrix}\centering{\scriptsize\setlength{\tabcolsep}{1pt}\renewcommand{\arraystretch}{1.32}\arrayrulecolor{white}\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.9cm}" + "".join(r">{\centering\arraybackslash}p{0.5cm}" for _ in C) + r"@{}}")
+w(r"\cellcolor{navy}\textcolor{white}{\bfseries Career role}" + "".join(r"&\cellcolor{" + TCOL[c["track"]] + r"}\textcolor{white}{\bfseries " + str(c["num"]) + "}" for c in C) + r"\\")
 for i, p in enumerate(K["pathways"]):
-    row = (r"\rowcolor{rowbg}" if i % 2 else "") + r"\textbf{" + e(p["role"]) + "}"
+    row = (r"\rowcolor{rowbg}" if i % 2 else "") + r"\textbf{\color{navy}" + e(p["role"]) + "}"
     for c in C:
+        tc = TCOL[c["track"]]
         if c["num"] in p["courses"]:
-            row += r"&\cellcolor{goldl!60}\leavevmode{\color{navy}●}"
+            row += r"&\cellcolor{" + tc + r"}\leavevmode{\color{white}●}"
         elif c["num"] in p["plus"]:
-            row += r"&\cellcolor{goldbg}\leavevmode{\color{gold}○}"
+            row += r"&\cellcolor{" + TINT[c["track"]] + r"}\leavevmode{\color{" + tc + r"}○}"
         else:
             row += "&"
     w(row + r"\\")
-w(r"\end{tabular}}\\[3pt]{\tiny\colorbox{goldl!60}{\color{navy}●} core course \quad \colorbox{goldbg}{\color{gold}○} recommended extra \quad column numbers = course numbers}\end{frame}")
+w(r"\end{tabular}}\\[4pt]{\tiny\colorbox{navy}{\color{white}●}\,\colorbox{igreen}{\color{white}●}\,\colorbox{gold}{\color{white}●} core course, coloured by track (Core AI, Emerging, FDE) \quad \colorbox{navy!14}{\color{navy}○} recommended extra \quad columns = course numbers}\end{frame}")
 
 # language strategy
 w(r"""\begin{frame}{Programming language strategy 2026--2035}
@@ -228,14 +230,14 @@ w(r"""\begin{frame}{Programming language strategy 2026--2035}
 # enterprise products
 w(r"\begin{frame}{Top 10 real-time enterprise products}{\scriptsize\color{muted}One flagship product per industry, each combining several courses into a real-time system students build as a capstone.}\par\vspace{3pt}\centering\begin{tikzpicture}")
 for i, p in enumerate(P):
-    x, y = (i % 5) * 3.0, -(i // 5) * 2.55
-    w(rf"\node[draw=line,fill=white,rounded corners=4pt,minimum width=2.85cm,minimum height=2.4cm,text width=2.6cm,align=left,anchor=north] (p{i}) at ({x},{y}) {{\raggedright{{\fontsize{{14}}{{14}}\selectfont\bfseries\color{{goldl}}{p['id']:02d}}}\\{{\tiny\bfseries\color{{gold}}{e(p['domain'])}}}\\[1pt]{{\scriptsize\bfseries {e(p['name'])}}}\\[1pt]{{\tiny\color{{muted}}Courses {', '.join(map(str, p['courses']))}}}}};")
+    x, y = (i % 5) * 3.0, -(i // 5) * 2.95
+    w(rf"\node[draw=line,fill=white,rounded corners=4pt,minimum width=2.85cm,minimum height=2.85cm,text width=2.6cm,align=left,anchor=north] (p{i}) at ({x},{y}) {{\raggedright{{\fontsize{{14}}{{14}}\selectfont\bfseries\color{{goldl}}{p['id']:02d}}}\\{{\tiny\bfseries\color{{gold}}{e(p['domain'])}}}\\[1pt]{{\fontsize{{7.5}}{{8.4}}\selectfont\bfseries\color{{navy}} {e(p['name'])}\par}}\vspace{{1pt}}{{\tiny\color{{muted}}Courses {', '.join(map(str, p['courses']))}}}}};")
     w(rf"\fill[saffron] ([xshift=2pt]p{i}.north west) rectangle ([xshift=-2pt,yshift=-3pt]p{i}.north east);")
 w(r"\end{tikzpicture}\end{frame}")
 
 # example product deep dive: product 1
 p = P[0]
-w(r"\begin{frame}{Inside a product: " + e(p["name"]) + r"}")
+w(r"\begin{frame}{Product deep dive: Real-Time Fraud \& Risk Platform}")
 w(r"\begin{columns}[T]\begin{column}{0.5\textwidth}\scriptsize")
 w(r"\begin{tikzpicture}\node[fill=l1bg,text width=6.6cm,rounded corners=3pt,inner sep=5pt,align=left] {\textbf{Business problem:} " + e(p["problem"]) + r"};\end{tikzpicture}\par\vspace{3pt}")
 w(r"\begin{tikzpicture}\node[fill=l3bg,text width=6.6cm,rounded corners=3pt,inner sep=5pt,align=left] {\textbf{In real time:} " + e(p["realtime"]) + r"};\end{tikzpicture}\par\vspace{4pt}")
@@ -248,14 +250,14 @@ w(r"\vspace{2pt}{\tiny\textbf{Courses:} " + e(", ".join(f"{n}. {C[n-1]['title']}
 # unicorn grid
 w(r"\begin{frame}{Unicorn track: 10 frontier products}{\scriptsize\color{muted}Each starts as a 12-week team MVP and grows into a venture-scale platform. Company names show market categories, not partners or endorsements.}\par\vspace{3pt}\centering\begin{tikzpicture}")
 for i, u in enumerate(U["products"]):
-    x, y = (i % 5) * 3.0, -(i // 5) * 3.1
+    x, y = (i % 5) * 3.0, -(i // 5) * 3.3
     stars = "★" * u["complexity"] + "☆" * (5 - u["complexity"])
-    w(rf"\node[fill=navy,rounded corners=4pt,minimum width=2.85cm,minimum height=2.95cm,text width=2.6cm,align=left,anchor=north,text=white] (u{i}) at ({x},{y}) {{\raggedright{{\tiny\bfseries\color{{goldl}}{e(u['category'])}}}\\[2pt]{{\scriptsize\bfseries {e(u['name'])}}}\\[3pt]{{\small\color{{goldl}}{stars}}}\\{{\tiny\color{{white!75!navy}}{len(u['courses'])} courses}}}};")
+    w(rf"\node[fill=navy,rounded corners=4pt,minimum width=2.85cm,minimum height=3.2cm,text width=2.6cm,align=left,anchor=north,text=white] (u{i}) at ({x},{y}) {{\raggedright{{\tiny\bfseries\color{{goldl}}{e(u['category'])}}}\\[2pt]{{\scriptsize\bfseries {e(u['name'])}}}\\[3pt]{{\small\color{{goldl}}{stars}}}\\{{\tiny\color{{white!75!navy}}{len(u['courses'])} courses}}}};")
 w(r"\end{tikzpicture}\end{frame}")
 
 # unicorn architecture example: sovereign indic
 u = U["products"][2]
-w(r"\begin{frame}{Inside a unicorn-track product: " + e(u["name"]) + r"}\begin{columns}[T]\begin{column}{0.55\textwidth}{\scriptsize\bfseries\color{gold}SYSTEM ARCHITECTURE (TOP TO BOTTOM)}\par\vspace{3pt}")
+w(r"\begin{frame}{Unicorn deep dive: Sovereign Indic Foundation Model}\begin{columns}[T]\begin{column}{0.55\textwidth}{\scriptsize\bfseries\color{gold}SYSTEM ARCHITECTURE (TOP TO BOTTOM)}\par\vspace{3pt}")
 for i, l in enumerate(u["layers"]):
     h, r = l.split(":", 1)
     w(r"\begin{tikzpicture}\node[fill=lay" + str(i % 6) + r",text=white,text width=7.6cm,rounded corners=2pt,font=\tiny,inner sep=4pt,align=left] {{\color{goldl}\bfseries " + e(h) + ":}" + e(r) + r"};\end{tikzpicture}\par\vspace{1pt}")
@@ -286,7 +288,7 @@ w(r"\end{column}\end{columns}\end{frame}")
 # consultancy
 svc = ["Curriculum adoption \\& customisation", "Faculty development programmes", "AI \\& emerging-tech labs", "GitHub course repositories", "Industry capstones \\& live projects",
        "Certification readiness", "Centre of Excellence in AI", "Research, patents \\& Q1 papers", "Accreditation \\& ranking support", "Placement \\& career readiness"]
-w(r"\begin{frame}{AlgoProfessor consultancy: from syllabus to industry-ready graduates}\centering\begin{tikzpicture}")
+w(r"\begin{frame}{AlgoProfessor consultancy: syllabus to job-ready}\centering\begin{tikzpicture}")
 for i, t in enumerate(svc):
     x, y = (i % 5) * 3.0, -(i // 5) * 1.5
     col = ["saffron", "chakra", "igreen"][i % 3]
