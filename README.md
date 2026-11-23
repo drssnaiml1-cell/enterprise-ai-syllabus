@@ -44,6 +44,8 @@ Every course follows one arc: **foundations → core methods → advanced method
 
 **💻 Companion syllabus, Enterprise Programming Languages:** [Programming_Languages_Syllabus.pdf](programming-languages/Programming_Languages_Syllabus.pdf) (23 pages): five courses in **Python, Go, Rust, Scala and Java**, each with five units and hands-on outcomes, industry tools, 8 labs, CO–Bloom mapping, an enterprise capstone, certifications and a 2026–2035 outlook. Course-by-course summary in [`programming-languages/`](programming-languages/), LaTeX source in [`programming-languages/latex/`](programming-languages/latex/), and all five courses on the website at [#proglang](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#proglang).
 
+**🏢 AlgoProfessor company materials:** [Services & Solutions Brochure](algoprofessor/AlgoProfessor_Services_Brochure.pdf) (12 pages) and [Services & Solutions Deck](algoprofessor/AlgoProfessor_Services_Deck.pdf) (18 slides), covering six service lines and 16 platforms, with LaTeX source in [`algoprofessor/`](algoprofessor/).
+
 ## Core AI Track
 
 | # | Code | Course | Product focus | Top 3 languages |
@@ -1379,6 +1381,7 @@ scripts/make_slides.py      builds the Beamer presentation source from the data
 scripts/make_pptx.js        builds the PowerPoint deck (pptxgenjs)
 programming-languages/      companion syllabus: Python, Go, Rust, Scala, Java (PDF, README, latex/ source)
 scripts/make_lang_readme.py builds programming-languages/README.md and data/lang_courses.json from its LaTeX source
+algoprofessor/               company brochure and slide deck (PDFs, previews, brochure/ and deck/ LaTeX source)
 assets/                     AlgoProfessor logo
 assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```
@@ -1400,7 +1403,8 @@ node scripts/make_pptx.js   # needs pptxgenjs, react-icons, react-dom, sharp
 ## Author
 
 **Dr S Satyanarayana** Ph.D., PDF(AI), FARSC  
-Founder, CEO & Chief Agentic AI Scientist, AlgoProfessor AI R&D Solutions, Hyderabad  
+Agentic AI Scientist · Founder & CEO, AlgoProfessor · Creator of AlgoLang  
+AlgoProfessor AI R&D Solutions, Hyderabad  
 International Postdoctoral Research Co-Supervisor, NYUST (YunTech) & NKUST, Taiwan  
 [GitHub](https://github.com/drssnaiml1-cell) · [ceo@algoprofessor.com](mailto:ceo@algoprofessor.com)
 

@@ -242,6 +242,6 @@ AlgoProfessor helps institutions adopt this curriculum: syllabus customisation, 
 
 ---
 
-**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC · Founder, CEO & Chief Agentic AI Scientist, AlgoProfessor AI R&D Solutions, Hyderabad
+**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC · Agentic AI Scientist · Founder & CEO, AlgoProfessor · Creator of AlgoLang · AlgoProfessor AI R&D Solutions, Hyderabad
 
 <p align="center"><sub>© 2026 Dr S Satyanarayana, AlgoProfessor AI R&amp;D Solutions. All rights reserved.</sub></p>

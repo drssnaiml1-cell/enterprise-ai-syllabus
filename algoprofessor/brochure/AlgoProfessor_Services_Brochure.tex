@@ -1,0 +1,574 @@
+%% =====================================================================
+%%  AlgoProfessor AI R&D Solutions -- Corporate Services Brochure 2026-27
+%%  Compile with:  xelatex AlgoProfessor_Services_Brochure.tex  (run twice)
+%%  Font: Times New Roman (falls back to TeX Gyre Termes)
+%% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\usepackage[a4paper,top=24mm,bottom=22mm,left=18mm,right=18mm,headheight=22pt]{geometry}
+\usepackage{xcolor,graphicx,tabularx,booktabs,array,colortbl,enumitem,fancyhdr,multicol,needspace,amssymb}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.3}
+
+%% ---------- Brand colour code ----------
+% Primary:   Navy #0B1F3A (authority)      Gold #A8811C (excellence)
+% Tricolour: Saffron #FF9933  Green #138808  Chakra navy #000080
+% Neutrals:  Ink #1E293B  Muted #5B6678  Line #E6E2D6  Gold tint #FBF6E9
+\definecolor{navy}{HTML}{0B1F3A}
+\definecolor{navymid}{HTML}{1C3B66}
+\definecolor{navylight}{HTML}{EEF2F8}
+\definecolor{gold}{HTML}{A8811C}
+\definecolor{goldbright}{HTML}{C9A227}
+\definecolor{goldlight}{HTML}{FBF6E9}
+\definecolor{saffron}{HTML}{FF9933}
+\definecolor{indiagreen}{HTML}{138808}
+\definecolor{chakra}{HTML}{000080}
+\definecolor{ink}{HTML}{1E293B}
+\definecolor{muted}{HTML}{5B6678}
+\definecolor{line}{HTML}{E6E2D6}
+\definecolor{sky}{HTML}{2FAAE1}
+\color{ink}
+
+%% ---------- Header / footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\raisebox{-4pt}{\includegraphics[height=19pt]{algoprofessor-logo.pdf}}\hspace{6pt}{\small\color{navy}\textsc{AlgoProfessor AI R\&D Solutions}}}
+\fancyhead[R]{\small\color{gold}\textbf{Services \& Solutions Portfolio 2026--27}}
+\fancyfoot[L]{\footnotesize\color{muted}www.algoprofessor.com \quad\textbar\quad cto@algoprofessor.com}
+\fancyfoot[R]{\footnotesize\color{navy}\thepage}
+\renewcommand{\headrule}{{\color{saffron}\hrule height 1pt}\vspace{0.5pt}{\color{indiagreen}\hrule height 1pt}}
+
+%% ---------- Lists ----------
+\setlist[itemize]{leftmargin=14pt,itemsep=2pt,topsep=3pt,label={\color{gold}\small$\blacktriangleright$}}
+
+%% ---------- Macros ----------
+% Chapter band: \band{Kicker}{Title}{Lead}
+\newcommand{\band}[3]{%
+  \par\Needspace{14\baselineskip}\vspace{8pt}
+  \phantomsection\addcontentsline{toc}{section}{#2}%
+  \begin{tcolorbox}[enhanced,colback=navy,colframe=navy,arc=0pt,boxrule=0pt,
+     left=12pt,right=12pt,top=10pt,bottom=10pt,
+     borderline south={3pt}{0pt}{goldbright}]
+    {\color{goldbright}\small\bfseries\textsc{#1}}\\[3pt]
+    {\color{white}\fontsize{24}{29}\selectfont\bfseries #2}\\[4pt]
+    {\color{white!82!navy}\normalsize\itshape #3}
+  \end{tcolorbox}\vspace{4pt}}
+
+% Sub-heading
+\newcommand{\hd}[1]{\par\Needspace{6\baselineskip}\vspace{6pt}{\color{navy}\large\bfseries #1}\par\vspace{-6pt}{\color{gold}\rule{\linewidth}{0.9pt}}\par}
+
+% Service card: \svc{accent}{Tag}{Title}{web}{body}
+\newcommand{\svc}[5]{%
+  \begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.6pt,arc=4pt,
+     borderline north={3pt}{0pt}{#1},left=8pt,right=8pt,top=6pt,bottom=6pt]
+  {\color{#1!80!black}\scriptsize\bfseries\textsc{#2}}\\[1pt]
+  {\raggedright\color{navy}\bfseries\hyphenpenalty=10000 #3\par}\vspace{2pt}
+  {\footnotesize\raggedright #5\par}\vspace{3pt}
+  {\color{line}\rule{\linewidth}{0.5pt}}\\[-1pt]
+  {\fontsize{7.2}{9}\selectfont\itshape\color{chakra}\mbox{#4}}
+  \end{tcolorbox}}
+
+% Offering block: \offer{Title}{What you get}{Outcome}
+\newcommand{\offer}[3]{%
+  \begin{tcolorbox}[enhanced,colback=white,colframe=navymid,boxrule=0.6pt,arc=3pt,
+     left=9pt,right=9pt,top=5pt,bottom=5pt,
+     colbacktitle=navylight,coltitle=navy,fonttitle=\bfseries,title={#1},
+     segmentation style={draw=gold,dashed,line width=0.5pt},colbacklower=goldlight,
+     before skip=5pt,after skip=5pt]
+  \small #2
+  \tcblower
+  \small{\color{navy}\bfseries Client outcome:\ }#3
+  \end{tcolorbox}}
+
+% Quotation: \quotebox{text}{author}{source}
+\newcommand{\quotebox}[3]{%
+  \par\Needspace{6\baselineskip}%
+  \begin{tcolorbox}[enhanced,colback=goldlight,colframe=goldlight,boxrule=0pt,arc=4pt,
+    borderline west={3pt}{0pt}{gold},left=34pt,right=12pt,top=7pt,bottom=7pt,before skip=8pt,after skip=6pt,
+    overlay={\node[anchor=north west,text=gold!70,font=\fontsize{46}{46}\selectfont\bfseries] at ([xshift=6pt,yshift=8pt]frame.north west) {``};}]
+  {\color{navy}\large\itshape #1}\par\vspace{3pt}
+  {\raggedleft\small\color{gold}\bfseries --- #2\ifx\relax#3\relax\else{\normalfont\color{muted}, \textit{#3}}\fi\par}
+  \end{tcolorbox}}
+
+% Cover chip
+\newcommand{\cchip}[3]{\begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.6pt,arc=4pt,borderline west={3pt}{0pt}{#1},left=7pt,top=5pt,bottom=5pt]
+{\color{navy}\bfseries #2}\\{\footnotesize\raggedright\color{muted}#3\par}\end{tcolorbox}}
+% Stat tile
+\newcommand{\stat}[3]{%
+  \begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.6pt,arc=4pt,
+    borderline north={3pt}{0pt}{#1},halign=center,top=6pt,bottom=6pt]
+  {\color{#1!85!black}\fontsize{22}{26}\selectfont\bfseries #2}\\[2pt]{\footnotesize\color{muted}#3}
+  \end{tcolorbox}}
+
+
+
+% Founder identity banner (matches the AlgoProfessor letterhead)
+\definecolor{cream}{HTML}{FDF9EF}
+\definecolor{wave}{HTML}{EFE2C2}
+\definecolor{namegold}{HTML}{9A7414}
+\newcommand{\founderbanner}{%
+  \begin{tcolorbox}[enhanced,colback=cream,colframe=line,boxrule=0.6pt,arc=3pt,
+    left=8pt,right=8pt,top=8pt,bottom=14pt,
+    underlay={%
+      \fill[wave] ([yshift=4mm]interior.south west)
+        .. controls ([xshift=50mm,yshift=9mm]interior.south west) and ([xshift=-70mm,yshift=-1mm]interior.south east)
+        .. ([yshift=6mm]interior.south east) -- (interior.south east) -- (interior.south west) -- cycle;
+      \fill[wave!55!white] ([yshift=7mm]interior.south west)
+        .. controls ([xshift=60mm,yshift=1mm]interior.south west) and ([xshift=-50mm,yshift=10mm]interior.south east)
+        .. ([yshift=3mm]interior.south east) -- (interior.south east) -- (interior.south west) -- cycle;}]
+  \begin{minipage}[c]{0.20\linewidth}\centering\includegraphics[width=\linewidth]{algoprofessor-logo.pdf}\end{minipage}\hfill
+  \begin{minipage}[c]{0.78\linewidth}\centering
+    {\color{gold}\scriptsize\bfseries A\,L\,G\,O\,P\,R\,O\,F\,E\,S\,S\,O\,R\quad A\,I\quad R\,\&\,D\quad S\,O\,L\,U\,T\,I\,O\,N\,S\quad$\cdot$\quad H\,Y\,D\,E\,R\,A\,B\,A\,D}\\[4pt]
+    {\color{namegold}\fontsize{24}{28}\selectfont\bfseries Dr S Satyanarayana}\;{\color{namegold}\large\bfseries Ph.D., PDF(AI), FARSC}\\[4pt]
+    {\footnotesize\bfseries\color{ink} International Postdoctoral Research Co-Supervisor $\cdot$ NYUST (YunTech) \& NKUST, Taiwan}\\[2pt]
+    {\color{navymid}\bfseries Agentic AI Scientist $\cdot$ Founder \& CEO, AlgoProfessor $\cdot$ Creator of AlgoLang}\\[-1pt]
+    {\color{gold}\rule{0.32\linewidth}{1pt}}\\[1pt]
+    {\small\color{ink}Email: \href{mailto:ceo@algoprofessor.com}{\color{namegold}\bfseries ceo@algoprofessor.com}}
+  \end{minipage}
+  \end{tcolorbox}}
+
+\begin{document}
+
+%% ============================== COVER ===============================
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[saffron] (current page.north west) rectangle ([yshift=-12mm]current page.north east);
+  \fill[white] ([yshift=-12mm]current page.north west) rectangle ([yshift=-14mm]current page.north east);
+  \fill[indiagreen] (current page.south west) rectangle ([yshift=12mm]current page.south east);
+  \fill[navy] ([yshift=12mm]current page.south west) rectangle ([yshift=58mm]current page.south east);
+  \draw[goldbright,line width=2pt] ([yshift=58mm]current page.south west) -- ([yshift=58mm]current page.south east);
+\end{tikzpicture}
+
+\vspace*{6mm}
+\includegraphics[width=58mm]{algoprofessor-logo.pdf}
+
+\vspace{22mm}
+{\color{saffron!85!black}\large\bfseries\textsc{Services \& Solutions Portfolio 2026--27}}\\[10pt]
+{\color{navy}\fontsize{40}{46}\selectfont\bfseries AlgoProfessor\\[6pt]
+\color{gold}AI R\&D Solutions}\\[12pt]
+{\color{saffron}\rule{32mm}{2.5pt}}{\color{white!80!black}\rule{32mm}{2.5pt}}{\color{indiagreen}\rule{32mm}{2.5pt}}\\[14pt]
+{\color{navy}\Large Research \;\textbullet\; Talent \;\textbullet\; Products}\\[8pt]
+\begin{minipage}{0.80\textwidth}\color{muted}\large
+Enterprise AI, agentic automation, AI security, quantitative finance, university transformation,
+industry training and research publishing, under one roof.
+\end{minipage}
+
+\vspace{12mm}
+{\color{gold}\small\bfseries\textsc{Six service lines}}\par\vspace{2mm}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt]
+\cchip{chakra}{Enterprise AI}{Agentic automation, GenAI and custom products}
+\cchip{saffron}{AI Security}{Supply-chain assurance and red-teaming}
+\cchip{indiagreen}{Quantitative Finance}{QuantOracle\texttrademark\ and strategy development}
+\cchip{gold}{University Transformation}{Curricula, faculty and accreditation}
+\cchip{chakra}{Talent \& Training}{Courses, bootcamps and internships}
+\cchip{saffron}{Research \& Publishing}{Q1 papers, books and admissions}
+\end{tcbraster}
+
+\vfill
+\begin{minipage}{\textwidth}\color{white}
+{\Large\bfseries Dr S Satyanarayana Ph.D., PDF(AI), FARSC}\\[2pt]
+{\small\color{white!85!navy} Agentic AI Scientist \;$\cdot$\; Founder \& CEO, AlgoProfessor \;$\cdot$\; Creator of AlgoLang}\\[1pt]
+{\small\color{white!70!navy} International Postdoctoral Research Co-Supervisor \;$\cdot$\; NYUST (YunTech) \& NKUST, Taiwan}\\[8pt]
+{\Large\bfseries\color{goldbright} www.algoprofessor.com}\hfill{\small\color{white!85!navy} ceo@algoprofessor.com \;\textbar\; cto@algoprofessor.com \;\textbar\; Hyderabad}
+\end{minipage}
+\vspace*{8mm}
+\end{titlepage}
+
+%% ============================ ABOUT =================================
+\setcounter{page}{2}
+\phantomsection\addcontentsline{toc}{section}{About AlgoProfessor}
+\begin{tcolorbox}[enhanced,colback=white,colframe=navy,boxrule=0.8pt,arc=3pt,
+  borderline north={4pt}{0pt}{saffron},borderline south={4pt}{0pt}{indiagreen},left=12pt,right=12pt]
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+{\color{saffron!85!black}\small\bfseries\textsc{Who we are}}\newline
+{\color{navy}\fontsize{22}{27}\selectfont\bfseries About AlgoProfessor} & \raisebox{-14pt}{\includegraphics[height=17mm]{algoprofessor-logo.pdf}}
+\end{tabularx}
+\end{tcolorbox}
+
+\textbf{AlgoProfessor AI R\&D Solutions} is a Hyderabad-based artificial intelligence research, engineering and education
+company. We help enterprises, universities, start-ups and researchers turn AI from an idea into working systems, skilled people
+and published knowledge. Our work brings together three things that are rarely found in one organisation:
+
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=8pt]
+\begin{tcolorbox}[colback=goldlight,colframe=saffron,boxrule=0.8pt,arc=4pt,halign=center]
+{\color{navy}\large\bfseries Research}\\[3pt]\footnotesize Doctoral and post-doctoral research leadership, Q1 publication support and an in-house R\&D lab for agentic AI, AI security and new programming paradigms.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=navylight,colframe=chakra,boxrule=0.8pt,arc=4pt,halign=center]
+{\color{navy}\large\bfseries Talent}\\[3pt]\footnotesize Industry-aligned curricula, cohort courses, bootcamps and live internships that produce job-ready AI engineers and scientists.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=green!4,colframe=indiagreen,boxrule=0.8pt,arc=4pt,halign=center]
+{\color{navy}\large\bfseries Products}\\[3pt]\footnotesize Production AI platforms for markets, enterprises and institutions, including QuantOracle\texttrademark, AlgoCrew OS and the Research Paper Agent.
+\end{tcolorbox}
+\end{tcbraster}
+
+\hd{AlgoProfessor at a Glance}
+\begin{tcbraster}[raster columns=4,raster equal height,raster column skip=6pt,raster row skip=6pt]
+\stat{saffron}{16}{Digital platforms and service lines}
+\stat{chakra}{56}{Ph.D. and post-doctoral scholars mentored}
+\stat{indiagreen}{60+}{SCI / Scopus / IEEE publications}
+\stat{gold}{11+}{Patents}
+\stat{saffron}{11}{Books authored}
+\stat{chakra}{22}{Years of teaching and R\&D}
+\stat{indiagreen}{100+}{Satisfied research-publication clients}
+\stat{gold}{1982}{Publishing legacy (Satyans Publications)}
+\end{tcbraster}
+
+\hd{Our Mission}
+To make India and our global partners \textbf{AI-ready for 2026--2035}: by building AI products that create measurable value,
+by training engineers who can design, deploy and govern those products, and by advancing research that others can build on.
+
+\hd{A Message from the Founder}
+\begin{tcolorbox}[enhanced,colback=goldlight,colframe=gold,boxrule=0.6pt,arc=3pt,borderline west={4pt}{0pt}{gold},left=10pt]
+\small\itshape
+Every organisation now asks the same question: how do we turn AI into results? At AlgoProfessor, we answer it with working
+systems, not slide decks. Our team combines doctoral research, real-time product engineering and two decades of teaching, so that
+our clients receive solutions that are technically sound, deployed on their own data and supported by people who can run them.
+Whether you are a bank, a hospital, a university or a start-up, we would be glad to build the next step with you.
+
+\vspace{4pt}\upshape\normalsize
+{\color{navy}\bfseries Dr S Satyanarayana Ph.D., PDF(AI), FARSC}\\
+{\small Agentic AI Scientist $\cdot$ Founder \& CEO, AlgoProfessor $\cdot$ Creator of AlgoLang}
+\end{tcolorbox}
+
+%% =========================== CONTENTS ===============================
+\clearpage
+{\color{navy}\fontsize{22}{27}\selectfont\bfseries Contents}\par\vspace{-4pt}
+{\color{gold}\rule{\linewidth}{1pt}}
+\makeatletter\renewcommand\tableofcontents{\@starttoc{toc}}\makeatother
+\renewcommand{\contentsname}{}
+\par{\large\tableofcontents\par}
+
+\vspace{10pt}
+\hd{Who We Serve}
+\begin{tabularx}{\textwidth}{>{\bfseries\leavevmode\color{navy}}p{3.8cm} X}
+\rowcolor{navylight} Enterprises & AI strategy, agentic automation, AI security, custom AI products and forward-deployed engineering.\\
+Banks, brokers \& traders & Quantitative research, market intelligence (QuantOracle\texttrademark) and algorithmic strategy development.\\
+\rowcolor{navylight} Universities \& colleges & Industry-aligned curricula, faculty development, labs, accreditation and placement readiness.\\
+Start-ups & AI product engineering, prototypes, technical due diligence and talent.\\
+\rowcolor{navylight} Researchers \& scholars & Q1 / SCI publication training, research tools, admissions consulting and book publishing.\\
+Students \& professionals & Cohort courses, bootcamps, live internships and career guidance.\\
+\bottomrule
+\end{tabularx}
+
+\quotebox{We can only see a short distance ahead, but we can see plenty there that needs to be done.}{Alan Turing}{Computing Machinery and Intelligence, 1950}
+%% ======================== THE ECOSYSTEM =============================
+\band{One company, sixteen platforms}{The AlgoProfessor Ecosystem}{Every service line has its own platform, so clients go straight to what they need.}
+
+\begin{tcbraster}[raster columns=4,raster equal height=rows,raster column skip=6pt,raster row skip=6pt]
+\svc{gold}{Main domain}{AlgoProfessor}{algoprofessor.com}{The home of AlgoProfessor AI R\&D Solutions: research, talent and products under one roof.}
+\svc{saffron}{Learn}{AI Courses}{aicourses.algoprofessor.com}{Cohort 2026: six 30-day AI scientist tracks with 10 projects and 3 levels each.}
+\svc{saffron}{Learn}{Bootcamp}{bootcamp.algoprofessor.com}{Intensive AI engineer bootcamp with generative and agentic AI interview preparation.}
+\svc{saffron}{Learn}{Algo Trading}{algotrading.algoprofessor.com}{Algorithmic trading strategy courses built on quantitative finance and reinforcement learning.}
+\svc{saffron}{Learn}{Internship}{internship.algoprofessor.com}{Live AI internships and the 12-day SCI Q1 research paper training programme.}
+\svc{saffron}{Learn}{Q1 Research}{q1.algoprofessor.com}{Research Paper Agent and end-to-end support for Q1 SCI papers, from training to submission.}
+\svc{saffron}{Learn}{AlgoProfessor Campus}{campus.algoprofessor.com}{Design, training, research and consultancy for universities and start-ups, built for 2026--2035 skills.}
+\svc{chakra}{Products}{Products}{products.algoprofessor.com}{Our product portfolio: QuantOracle, healthcare imaging, university ERP, advertising and AI websites.}
+\svc{chakra}{Products}{QuantOracle\texttrademark}{quant.algoprofessor.com}{Live AI market-intelligence platform for Indian futures and options: NIFTY, BANKNIFTY and NSE stocks.}
+\svc{chakra}{Products}{AlgoCrew OS}{algocrewos.algoprofessor.com}{Our agentic workflow product for software companies, with a live multi-agent simulation.}
+\svc{chakra}{Services}{AI Security}{aisecurity.algoprofessor.com}{Enterprise AI security and AI supply-chain assurance, grounded in our security research.}
+\svc{chakra}{Platform}{Kritios}{kritios.algoprofessor.com}{A new AlgoProfessor platform. Visit the site for details.}
+\svc{indiagreen}{Research}{Research \& Careers}{research.algoprofessor.com}{MS, Ph.D. and post-doc admission consulting for top-ranked universities, plus careers at AlgoProfessor.}
+\svc{indiagreen}{Publish}{Publications}{publications.algoprofessor.com}{Books in emerging technologies with ISBN, plus journal publishing. Founded in 1982 as Satyans Publications.}
+\svc{indiagreen}{Policy}{Education Policies}{policies.algoprofessor.com}{Our education policy proposals: the NEP 2020 Learn-Build model and the AlgoProfessor Campus framework.}
+\svc{indiagreen}{Society}{AP-Super AI Society}{apsuperai.algoprofessor.com}{Professional society for superintelligence research, with four membership tiers.}
+\end{tcbraster}
+
+\vspace{4pt}
+{\small\color{muted}\textbf{Colour code:} \textcolor{saffron!85!black}{\textbf{Saffron}} -- Learn \& Train \quad
+\textcolor{chakra}{\textbf{Navy}} -- Products \& Services \quad
+\textcolor{indiagreen}{\textbf{Green}} -- Research \& Publishing \quad
+\textcolor{gold}{\textbf{Gold}} -- Main domain}
+
+\quotebox{The best way to predict the future is to invent it.}{Alan Kay}{}
+%% ===================== 1. ENTERPRISE AI =============================
+\band{Service line 1}{Enterprise AI Solutions}{From strategy to production: AI that runs on your data, inside your systems.}
+
+We design, build and deploy AI systems for enterprises, and stay until they deliver measurable value. Our engineers work
+\textbf{forward-deployed}: they embed with your team, start from a real business problem, prototype on your data and move the
+solution into production with security, monitoring and adoption built in.
+
+\offer{AI Strategy \& Use-Case Discovery}{Process and data audit, prioritised AI use-case roadmap, build-vs-buy analysis,
+ROI model and an AI governance plan aligned to the DPDP Act 2023, EU AI Act and ISO/IEC 42001.}
+{A board-ready AI roadmap with scoped projects, budgets and success metrics.}
+
+\offer{Agentic AI \& Workflow Automation (AlgoCrew OS)}{Multi-agent systems that plan, use tools and complete business workflows:
+customer operations, IT service desks, document processing, reporting and software engineering. Built with human approval for
+risky actions, full audit trails and integration with ERP, CRM and ticketing systems through the Model Context Protocol.}
+{Hours of manual work automated with agents your teams can trust and audit.}
+
+\offer{Generative AI, LLM \& RAG Applications}{Enterprise knowledge assistants grounded in your documents with citations,
+fine-tuned language models, vector databases, multilingual chat and voice assistants, and evaluation dashboards that track quality,
+cost and safety.}
+{Accurate answers from your own knowledge, with access control and measurable quality.}
+
+\offer{Custom AI Products}{Computer vision and healthcare image analysis, predictive analytics and forecasting, reinforcement-learning
+optimisation, recommendation engines, university ERP and project tracking, AI-driven advertising and AI-powered websites.}
+{A production-ready product, delivered with source code, documentation and handover.}
+
+\offer{MLOps, LLMOps \& Data Engineering}{Data pipelines and lakehouses, feature stores, model registries, CI/CD for ML,
+cloud and on-premises deployment, monitoring for drift and cost, and GPU inference optimisation.}
+{Models that stay accurate, fast and affordable after go-live.}
+
+\quotebox{AI creates value only when it runs in production, on real data, for real people.}{Dr S Satyanarayana}{Founder \& CEO, AlgoProfessor}
+%% ===================== 2. AI SECURITY ===============================
+\band{Service line 2}{AI Security \& Trustworthy AI}{Secure every model, dataset and agent your business depends on.}
+
+As enterprises roll out models and agents, new risks appear: prompt injection, data leakage, poisoned models and unsafe tool use.
+Our AI security practice is grounded in our own research on \textbf{enterprise AI supply-chain assurance}.
+
+\begin{tcbraster}[raster columns=2,raster equal height=rows,raster column skip=8pt,raster row skip=6pt]
+\offer{AI Supply-Chain Assurance}{Inventory of models, datasets and agents; provenance and lineage records (AI bill of materials);
+verification of third-party and open models before use.}{Know exactly what AI you run and where it came from.}
+\offer{AI Red-Teaming \& Testing}{Structured attacks on LLM applications and agents: jailbreaks, prompt injection, data exfiltration
+and excessive agency, with fixes.}{Vulnerabilities found and closed before attackers find them.}
+\offer{Runtime Guardrails}{Input and output filtering, PII redaction, tool-call policies and monitoring for LLM apps and agents.}
+{Safe AI in production, with every decision logged.}
+\offer{Responsible-AI Governance}{Fairness and explainability audits, model cards, impact assessments and readiness for the
+EU AI Act, NIST AI RMF, ISO/IEC 42001 and the DPDP Act.}{Audit-ready evidence for regulators, clients and boards.}
+\end{tcbraster}
+
+\quotebox{Security is a process, not a product.}{Bruce Schneier}{}
+%% ===================== 3. QUANT & FINTECH ===========================
+\band{Service line 3}{Quantitative Finance \& Trading Technology}{Market intelligence and algorithmic strategies for Indian and global markets.}
+
+\offer{QuantOracle\texttrademark\ -- AI Market-Intelligence Platform}{A live AI platform for Indian futures and options covering NIFTY,
+BANKNIFTY and NSE stocks. It combines market data, machine-learning signals and risk analytics in one interface.
+Available for broker and institutional partnerships at \textit{quant.algoprofessor.com}.}
+{Faster, data-driven trading decisions with transparent analytics.}
+
+\offer{Algorithmic Strategy Development}{Trading strategies designed to the client's own rules and risk appetite, built and
+connected on the Tradetron platform, and delivered with complete backtest results and performance reports. Packages range from a
+few strategies to an ongoing strategy-development retainer.}
+{Ready-to-deploy, fully backtested strategies with documented logic.}
+
+\offer{Quant \& Algo-Trading Training}{Courses in algorithmic trading, quantitative finance and reinforcement learning for markets,
+for individuals, trading desks and broker teams (\textit{algotrading.algoprofessor.com}).}
+{Teams that can research, test and run their own systematic strategies.}
+
+{\footnotesize\itshape\color{muted} Trading involves market risk. Backtest results do not guarantee future returns. AlgoProfessor provides
+technology and research, not investment advice.}
+
+\quotebox{Risk comes from not knowing what you're doing.}{Warren Buffett}{}
+%% ===================== 4. UNIVERSITIES ==============================
+\band{Service line 4}{University \& Institutional Transformation}{AlgoProfessor Campus and University Connect: AI-ready institutions for 2026--2035.}
+
+We partner with universities, colleges and education departments to modernise curricula, train faculty and produce graduates
+that industry hires. Our work aligns with \textbf{NEP 2020} and supports \textbf{OBE, NBA, NAAC, NIRF, QS and THE} requirements.
+
+\begin{tcbraster}[raster columns=2,raster equal height=rows,raster column skip=8pt,raster row skip=6pt]
+\offer{Industry-Aligned Curricula}{The 16-course \textit{Enterprise AI Product Development Curriculum} and the five-course
+\textit{Enterprise Programming Languages Curriculum} (Python, Go, Rust, Scala, Java), each with five units, hands-on outcomes,
+labs, capstones and certifications.}{A Board-of-Studies-ready syllabus from day one.}
+\offer{Faculty Development \& Training}{Hands-on FDPs, train-the-trainer bootcamps and Enterprise AI course training for faculty
+and students, delivered by practitioners.}{Faculty confident to teach emerging technologies.}
+\offer{GitHub Course Repositories \& Labs}{Complete version-controlled course repositories with notebooks, code and datasets;
+design of AI, GPU, edge, robotics and cloud labs.}{Students coding from the first week of the semester.}
+\offer{One Student, One Project}{UG, PG and Ph.D. emerging-technology projects completed in 12 weeks with one milestone per week,
+tracked end-to-end on our project-tracking ERP.}{A GitHub portfolio for every student, ready for placements.}
+\offer{Accreditation \& Rankings}{OBE and CO--PO evidence, outcome attainment, documentation for NBA and NAAC, and support for NIRF,
+QS and THE submissions.}{Stronger accreditation outcomes with less manual effort.}
+\offer{Centre of Excellence \& Policy}{Set-up of AI Centres of Excellence, industry partnerships and incubation; education policy
+advisory based on the NEP 2020 Learn-Build model.}{A visible, funded hub for AI innovation on campus.}
+\end{tcbraster}
+
+\hd{Engagement Models for Institutions}
+\begin{tabularx}{\textwidth}{>{\bfseries\leavevmode\color{navy}}p{3.6cm} X >{\raggedright\arraybackslash}p{4.4cm}}
+\rowcolor{navy}\multicolumn{1}{l}{\leavevmode\color{white}\textbf{Model}} & \leavevmode\color{white}\textbf{Scope} & \leavevmode\color{white}\textbf{Best suited for}\\
+Pilot & One or two courses, FDP, lab manual and GitHub repository for one department & Departments starting their AI journey\\
+\rowcolor{navylight} Department Programme & Full core AI track or language track with labs, capstones and certification preparation & AI \& DS, CSE and allied departments\\
+University Transformation & All courses, Centre of Excellence, research, accreditation and placement support across schools & Universities aiming for AI leadership\\
+\bottomrule
+\end{tabularx}
+
+\quotebox{Education is the most powerful weapon which you can use to change the world.}{Nelson Mandela}{}
+%% ===================== 5. TALENT ====================================
+\band{Service line 5}{Talent, Training \& Internships}{Job-ready AI engineers and scientists, trained on real projects.}
+
+\begin{tcbraster}[raster columns=2,raster equal height=rows,raster column skip=8pt,raster row skip=6pt]
+\offer{Cohort 2026 AI Courses}{Six 30-day tracks: Data Scientist, AI Scientist, Cyber Security Scientist, AI Architect,
+Agentic AI Scientist and Physical AI Scientist. Each has 10 projects and 3 levels, at our Hyderabad campus.}
+{Portfolio-backed skills in a focused month.}
+\offer{AI to Agentic AI Scientist (Sundays)}{A 12-week Sunday programme in three weekly steps: fundamentals, applications and
+real-time production, with a project pushed to GitHub every week and placement assistance.}
+{Upskilling for working professionals without leaving their jobs.}
+\offer{AI Engineer Bootcamp}{Intensive bootcamp in generative and agentic AI with interview preparation built from real
+industry interviews.}{Interview-ready candidates for AI engineering roles.}
+\offer{90-Day Live AI Internships}{Three models: fee-based, paid and university- or company-sponsored. Interns build production
+AI projects under mentorship and finish with GitHub portfolios.}{Real industry experience before graduation.}
+\offer{Corporate Training}{Custom programmes for companies in agentic AI, LLMs, MLOps, AI security and forward deployed
+engineering, delivered on-site or online.}{Teams that can build and run AI in-house.}
+\offer{Hiring Partnerships}{Access to trained AlgoProfessor graduates and interns for start-ups and enterprises.}
+{Pre-skilled talent with verified project work.}
+\end{tcbraster}
+
+\quotebox{Arise, awake, and stop not till the goal is reached.}{Swami Vivekananda}{}
+%% ===================== 6. RESEARCH & PUBLISHING =====================
+\band{Service line 6}{Research, Publishing \& Academic Careers}{From research idea to Q1 paper, published book and global admission.}
+
+\begin{tcbraster}[raster columns=2,raster equal height=rows,raster column skip=8pt,raster row skip=6pt]
+\offer{SCI Q1 Research Paper Training}{A 12-day programme with daily live sessions covering problem framing, experiments,
+writing, journal selection and response to reviewers (\textit{q1.algoprofessor.com}).}{A submission-ready manuscript and the skills to repeat it.}
+\offer{Research Paper Agent \& Due Diligence}{An AI research assistant plus expert pre-submission review of manuscripts for
+structure, novelty, results and journal fit.}{Fewer desk rejections and stronger papers.}
+\offer{Sponsored \& Collaborative Research}{Joint research projects with universities and industry in agentic AI, AI security,
+healthcare AI and sustainable AI, with doctoral and post-doctoral teams.}{Publishable research and deployable prototypes.}
+\offer{AlgoProfessor Publications}{Books in emerging technologies with ISBN and identifier services, plus journal publishing.
+A publishing legacy since 1982 (Satyans Publications, renamed in 2018).}{Professionally published books and journals.}
+\offer{MS, Ph.D. \& Post-Doc Admissions Consulting}{Guidance for admission to top-ranked universities worldwide: profile,
+research proposals, statements and supervisor outreach (\textit{research.algoprofessor.com}).}{Stronger applications to the world's best programmes.}
+\offer{ProfAlgoLabs\texttrademark\ R\&D Lab}{Our research lab for agentic AI architectures and new programming paradigms, including
+AlgoLang, an AI-native programming language where agents replace functions.}{Access to frontier R\&D and early technology partnerships.}
+\end{tcbraster}
+
+\hd{Research Impact}
+\begin{tcbraster}[raster columns=5,raster equal height,raster column skip=5pt]
+\stat{saffron}{56}{Ph.D. \& post-doc scholars}
+\stat{chakra}{60+}{Indexed publications}
+\stat{indiagreen}{11+}{Patents}
+\stat{gold}{11}{Books}
+\stat{saffron}{1982}{Publishing since}
+\end{tcbraster}
+\quotebox{If you want to shine like a sun, first burn like a sun.}{Dr A.\,P.\,J. Abdul Kalam}{}
+%% ===================== HOW WE WORK ==================================
+\band{Delivery methodology}{How We Work}{A clear, accountable path from first conversation to measured results.}
+
+\begin{tcbraster}[raster columns=5,raster equal height,raster column skip=5pt]
+\begin{tcolorbox}[colback=white,colframe=saffron,boxrule=0.8pt,arc=4pt,halign=center,top=5pt,bottom=5pt,left=3pt,right=3pt]
+{\color{saffron!85!black}\fontsize{20}{22}\selectfont\bfseries 01}\\[2pt]{\color{navy}\bfseries Discover}\\[2pt]\scriptsize Understand goals, data, systems and constraints.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=chakra,boxrule=0.8pt,arc=4pt,halign=center,top=5pt,bottom=5pt,left=3pt,right=3pt]
+{\color{chakra}\fontsize{20}{22}\selectfont\bfseries 02}\\[2pt]{\color{navy}\bfseries Design}\\[2pt]\scriptsize Architecture, scope, KPIs and a fixed plan.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=indiagreen,boxrule=0.8pt,arc=4pt,halign=center,top=5pt,bottom=5pt,left=3pt,right=3pt]
+{\color{indiagreen}\fontsize{20}{22}\selectfont\bfseries 03}\\[2pt]{\color{navy}\bfseries Build}\\[2pt]\scriptsize Weekly demos on your real data.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=gold,boxrule=0.8pt,arc=4pt,halign=center,top=5pt,bottom=5pt,left=3pt,right=3pt]
+{\color{gold}\fontsize{20}{22}\selectfont\bfseries 04}\\[2pt]{\color{navy}\bfseries Deploy}\\[2pt]\scriptsize Secure go-live, training and handover.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=navy,boxrule=0.8pt,arc=4pt,halign=center,top=5pt,bottom=5pt,left=3pt,right=3pt]
+{\color{navy}\fontsize{20}{22}\selectfont\bfseries 05}\\[2pt]{\color{navy}\bfseries Scale}\\[2pt]\scriptsize Measure value, improve and expand.
+\end{tcolorbox}
+\end{tcbraster}
+
+\hd{Engagement Options}
+\begin{tabularx}{\textwidth}{>{\bfseries\leavevmode\color{navy}}p{3.8cm} X >{\raggedright\arraybackslash}p{4.4cm}}
+\rowcolor{navy}\multicolumn{1}{l}{\leavevmode\color{white}\textbf{Option}} & \leavevmode\color{white}\textbf{How it works} & \leavevmode\color{white}\textbf{Ideal for}\\
+Fixed-scope project & Agreed deliverables, timeline and price, with milestone payments & Well-defined products and pilots\\
+\rowcolor{navylight} Proof of concept & 4--8 weeks to prove value on your data before a larger commitment & New AI ideas and first deployments\\
+Dedicated team / retainer & A forward-deployed AlgoProfessor team working as an extension of yours & Ongoing AI programmes\\
+\rowcolor{navylight} Training programme & Cohort, bootcamp, FDP or corporate programme, on-site or online & Universities and corporate L\&D\\
+Strategic partnership & Co-development, revenue sharing or joint research & Brokers, platforms and institutions\\
+\bottomrule
+\end{tabularx}
+
+\hd{Industries We Serve}
+\begin{tcbraster}[raster columns=4,raster equal height,raster column skip=5pt,raster row skip=5pt]
+\foreach \ind/\col in {Banking \& Fintech/saffron,Capital Markets/chakra,Healthcare/indiagreen,Higher Education/gold,
+Manufacturing/saffron,Retail \& E-commerce/chakra,Government \& Smart Cities/indiagreen,IT \& Software/gold}{%
+\begin{tcolorbox}[colback=white,colframe=\col,boxrule=0.7pt,arc=4pt,halign=center,valign=center,top=4pt,bottom=4pt]
+{\small\color{navy}\bfseries\ind}
+\end{tcolorbox}}
+\end{tcbraster}
+
+\hd{What Every Engagement Includes}
+\begin{tcbraster}[raster columns=3,raster equal height=rows,raster column skip=6pt,raster row skip=6pt]
+\begin{tcolorbox}[colback=white,colframe=line,borderline north={3pt}{0pt}{saffron},arc=3pt]{\color{navy}\bfseries Source code \& documentation}\\\footnotesize Full ownership of code, architecture notes and runbooks.\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline north={3pt}{0pt}{chakra},arc=3pt]{\color{navy}\bfseries Security \& compliance review}\\\footnotesize AI security checks and data-protection review before go-live.\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline north={3pt}{0pt}{indiagreen},arc=3pt]{\color{navy}\bfseries Training \& handover}\\\footnotesize Your team is trained to run, extend and support the solution.\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline north={3pt}{0pt}{gold},arc=3pt]{\color{navy}\bfseries KPI dashboard}\\\footnotesize Agreed success metrics tracked from the first demo onwards.\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline north={3pt}{0pt}{saffron},arc=3pt]{\color{navy}\bfseries Weekly progress reviews}\\\footnotesize A live demo and written status update every week.\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline north={3pt}{0pt}{chakra},arc=3pt]{\color{navy}\bfseries Post-launch support}\\\footnotesize Monitoring, fixes and improvement after go-live.\end{tcolorbox}
+\end{tcbraster}
+\quotebox{We do not measure our work by effort. We measure it by the results our clients can see.}{Dr S Satyanarayana}{Founder \& CEO, AlgoProfessor}
+%% ===================== WHY ALGOPROFESSOR ============================
+\band{Our difference}{Why Clients Choose AlgoProfessor}{Research depth, engineering discipline and the ability to train your people.}
+
+\begin{tcbraster}[raster columns=2,raster equal height=rows,raster column skip=8pt,raster row skip=6pt]
+\begin{tcolorbox}[colback=white,colframe=line,borderline west={4pt}{0pt}{saffron},arc=3pt]
+{\color{navy}\bfseries Research-grade expertise}\\\small Led by an Agentic AI Scientist and creator of AlgoLang, with doctoral and post-doctoral research leadership, 60+ indexed publications and 11+ patents.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline west={4pt}{0pt}{chakra},arc=3pt]
+{\color{navy}\bfseries Products, not prototypes}\\\small We ship to production with security, monitoring and documentation, and we operate our own live products.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline west={4pt}{0pt}{indiagreen},arc=3pt]
+{\color{navy}\bfseries Build and train together}\\\small Every engagement can include training, so your team owns and extends the solution after handover.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline west={4pt}{0pt}{gold},arc=3pt]
+{\color{navy}\bfseries Security and governance by design}\\\small AI security, responsible-AI checks and data-protection compliance are built in from day one.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline west={4pt}{0pt}{saffron},arc=3pt]
+{\color{navy}\bfseries Built for India, ready for the world}\\\small Indian languages, Indian regulations and Indian markets, with research and supervision links in Taiwan and beyond.
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white,colframe=line,borderline west={4pt}{0pt}{chakra},arc=3pt]
+{\color{navy}\bfseries One partner, end to end}\\\small Strategy, engineering, talent, research and publishing from one accountable team.
+\end{tcolorbox}
+\end{tcbraster}
+
+\hd{Leadership}
+\founderbanner
+\begin{tcolorbox}[enhanced,colback=navylight,colframe=navy,boxrule=0.6pt,arc=3pt,borderline west={4pt}{0pt}{gold},left=10pt,top=4pt,bottom=4pt]
+\small
+\begin{itemize}
+\item D.Eng. in AI \& Deep Learning.
+\item Creator of \textbf{AlgoLang}, an AI-native programming language in which agents replace functions, developed at \mbox{ProfAlgoLabs\texttrademark}.
+\item 22 years of teaching, research and professional experience; 60+ SCI / Scopus / IEEE publications, 11+ patents and 11 books.
+\item International Postdoctoral Research Co-Supervisor at NYUST (YunTech) and NKUST, Taiwan; mentor to 56 Ph.D. and post-doctoral scholars.
+\item Editor-in-Chief, IJCMI; Fellow of the Association of Research Society in Computing (FARSC).
+\end{itemize}
+\end{tcolorbox}
+
+%% ============================ CONTACT ===============================
+\clearpage
+\thispagestyle{empty}
+\phantomsection\addcontentsline{toc}{section}{Contact Us}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[saffron] (current page.north west) rectangle ([yshift=-12mm]current page.north east);
+  \fill[indiagreen] (current page.south west) rectangle ([yshift=12mm]current page.south east);
+  \fill[navy] ([yshift=12mm]current page.south west) rectangle ([yshift=96mm]current page.south east);
+  \draw[goldbright,line width=2pt] ([yshift=96mm]current page.south west) -- ([yshift=96mm]current page.south east);
+\end{tikzpicture}
+
+\vspace*{6mm}
+\begin{center}
+\includegraphics[width=52mm]{algoprofessor-logo.pdf}\\[12mm]
+{\color{saffron!85!black}\large\bfseries\textsc{Let's build what's next}}\\[8pt]
+{\color{navy}\fontsize{30}{36}\selectfont\bfseries Partner with AlgoProfessor}\\[10pt]
+{\color{saffron}\rule{26mm}{2.5pt}}{\color{white!80!black}\rule{26mm}{2.5pt}}{\color{indiagreen}\rule{26mm}{2.5pt}}\\[12pt]
+\begin{minipage}{0.78\textwidth}\centering\color{muted}\large
+Tell us about your goal. We will reply with a clear proposal: scope, timeline, team and the measurable results we commit to.
+\end{minipage}
+\end{center}
+
+\vspace{8mm}
+\begin{tcolorbox}[enhanced,colback=white,colframe=navy,boxrule=0.8pt,arc=4pt,
+  borderline north={4pt}{0pt}{saffron},borderline south={4pt}{0pt}{indiagreen},left=12pt,right=12pt,top=8pt,bottom=8pt]
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\linewidth}{>{\bfseries\leavevmode\color{navy}}p{6.2cm} X}
+Partnerships, enterprise AI, AI security \& internships & \href{mailto:cto@algoprofessor.com}{\color{gold}\bfseries cto@algoprofessor.com}\\
+Leadership, research, publications \& university programmes & \href{mailto:ceo@algoprofessor.com}{\color{gold}\bfseries ceo@algoprofessor.com}\\
+Products and product demos & \href{mailto:product@algoprofessor.com}{\color{gold}\bfseries product@algoprofessor.com}\\
+Courses and admissions & \href{mailto:aicourses@algoprofessor.com}{\color{gold}\bfseries aicourses@algoprofessor.com}\\
+General enquiries & \href{mailto:contact@algoprofessor.com}{\color{gold}\bfseries contact@algoprofessor.com}\\
+\end{tabularx}
+\end{tcolorbox}
+
+\vfill
+\begin{center}\color{white}
+{\Large\bfseries \href{https://www.algoprofessor.com}{www.algoprofessor.com}}\\[6pt]
+{\large AlgoProfessor AI R\&D Solutions \;\textbullet\; Hyderabad, India}\\[10pt]
+{\small\color{goldbright} Research \;\textbullet\; Talent \;\textbullet\; Products \;\textbullet\; Consultancy \;\textbullet\; Publishing}\\[12pt]
+{\scriptsize\color{white!70!navy} \textcopyright\ 2026 AlgoProfessor AI R\&D Solutions. All rights reserved. QuantOracle, AlgoCrew OS and ProfAlgoLabs are
+AlgoProfessor product names.\\ Services, programmes and fees are described as of November 2026 and may change; proposals are issued on request.}
+\end{center}
+\vspace*{10mm}
+
+\end{document}

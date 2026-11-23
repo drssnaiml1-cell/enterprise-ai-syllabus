@@ -56,6 +56,7 @@ w("**📊 PowerPoint deck:** [Enterprise_AI_Curriculum.pptx](slides/Enterprise_A
 w("**📘 Syllabus book:** [Enterprise_AI_Syllabus.pdf](Enterprise_AI_Syllabus.pdf) (updated edition, November 2026: all 16 courses plus skills, jobs, salaries, career pathways, 10 enterprise products and 10 unicorn-track products), with its LaTeX source in [`latex/`](latex/).\n")
 w(f"**🌐 Explore it as a 3D interactive website:** **{SITE}** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).\n")
 w(f"**💻 Companion syllabus, Enterprise Programming Languages:** [Programming_Languages_Syllabus.pdf](programming-languages/Programming_Languages_Syllabus.pdf) (23 pages): five courses in **Python, Go, Rust, Scala and Java**, each with five units and hands-on outcomes, industry tools, 8 labs, CO–Bloom mapping, an enterprise capstone, certifications and a 2026–2035 outlook. Course-by-course summary in [`programming-languages/`](programming-languages/), LaTeX source in [`programming-languages/latex/`](programming-languages/latex/), and all five courses on the website at [#proglang]({SITE}#proglang).\n")
+w("**🏢 AlgoProfessor company materials:** [Services & Solutions Brochure](algoprofessor/AlgoProfessor_Services_Brochure.pdf) (12 pages) and [Services & Solutions Deck](algoprofessor/AlgoProfessor_Services_Deck.pdf) (18 slides), covering six service lines and 16 platforms, with LaTeX source in [`algoprofessor/`](algoprofessor/).\n")
 
 
 def course_table(track):
@@ -168,11 +169,12 @@ w("scripts/make_slides.py      builds the Beamer presentation source from the da
 w("scripts/make_pptx.js        builds the PowerPoint deck (pptxgenjs)")
 w("programming-languages/      companion syllabus: Python, Go, Rust, Scala, Java (PDF, README, latex/ source)")
 w("scripts/make_lang_readme.py builds programming-languages/README.md and data/lang_courses.json from its LaTeX source")
+w("algoprofessor/               company brochure and slide deck (PDFs, previews, brochure/ and deck/ LaTeX source)")
 w("assets/                     AlgoProfessor logo")
 w("assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN")
 w("```\n\nTo rebuild the website and this README after editing any file in `data/` or the template:\n")
 w("```bash\npython3 scripts/make_lang_readme.py\npython3 scripts/build.py data/courses.json src/template.html index.html\npython3 scripts/make_readme.py\npython3 scripts/make_latex.py\ncd latex && xelatex Enterprise_AI_Syllabus.tex && xelatex Enterprise_AI_Syllabus.tex\ncp Enterprise_AI_Syllabus.pdf ../Enterprise_AI_Syllabus.pdf && cd ..\npython3 scripts/make_slides.py\ncd slides && xelatex Enterprise_AI_Curriculum_Slides.tex && xelatex Enterprise_AI_Curriculum_Slides.tex && cd ..\nnode scripts/make_pptx.js   # needs pptxgenjs, react-icons, react-dom, sharp\n```\n")
-w("## Author\n\n**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC  \nFounder, CEO & Chief Agentic AI Scientist, AlgoProfessor AI R&D Solutions, Hyderabad  \nInternational Postdoctoral Research Co-Supervisor, NYUST (YunTech) & NKUST, Taiwan  \n[GitHub](https://github.com/drssnaiml1-cell) · [ceo@algoprofessor.com](mailto:ceo@algoprofessor.com)\n")
+w("## Author\n\n**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC  \nAgentic AI Scientist · Founder & CEO, AlgoProfessor · Creator of AlgoLang  \nAlgoProfessor AI R&D Solutions, Hyderabad  \nInternational Postdoctoral Research Co-Supervisor, NYUST (YunTech) & NKUST, Taiwan  \n[GitHub](https://github.com/drssnaiml1-cell) · [ceo@algoprofessor.com](mailto:ceo@algoprofessor.com)\n")
 w('---\n\n<p align="center"><sub>© 2026 Dr S Satyanarayana, AlgoProfessor AI R&amp;D Solutions. All rights reserved.</sub></p>')
 
 open(os.path.join(ROOT, "README.md"), "w", encoding="utf-8").write("\n".join(o) + "\n")

@@ -13,3 +13,11 @@ programming-languages/latex/*.log
 programming-languages/latex/*.out
 programming-languages/latex/*.toc
 programming-languages/latex/main.pdf
+algoprofessor/*/*.aux
+algoprofessor/*/*.log
+algoprofessor/*/*.out
+algoprofessor/*/*.toc
+algoprofessor/*/*.nav
+algoprofessor/*/*.snm
+algoprofessor/brochure/AlgoProfessor_Services_Brochure.pdf
+algoprofessor/deck/AlgoProfessor_Services_Deck.pdf

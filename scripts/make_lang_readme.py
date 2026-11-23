@@ -122,7 +122,7 @@ w("AlgoProfessor helps institutions adopt this curriculum: syllabus customisatio
   "GitHub course repositories, industry capstones, certification readiness, accreditation support and placement readiness.\n")
 w("**Vice-Chancellors, Deans and HoDs:** contact **[cto@algoprofessor.com](mailto:cto@algoprofessor.com)** · "
   "[www.algoprofessor.com](https://www.algoprofessor.com) · [campus.algoprofessor.com](https://campus.algoprofessor.com)\n")
-w("---\n\n**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC · Founder, CEO & Chief Agentic AI Scientist, AlgoProfessor AI R&D Solutions, Hyderabad\n")
+w("---\n\n**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC · Agentic AI Scientist · Founder & CEO, AlgoProfessor · Creator of AlgoLang · AlgoProfessor AI R&D Solutions, Hyderabad\n")
 w('<p align="center"><sub>© 2026 Dr S Satyanarayana, AlgoProfessor AI R&amp;D Solutions. All rights reserved.</sub></p>')
 
 open(os.path.join(DIR, "README.md"), "w", encoding="utf-8").write("\n".join(o) + "\n")

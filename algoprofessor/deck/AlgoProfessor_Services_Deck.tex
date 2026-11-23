@@ -1,0 +1,440 @@
+%% =====================================================================
+%%  AlgoProfessor AI R&D Solutions -- Services & Solutions Deck 2026-27
+%%  Beamer 16:9  |  Compile:  xelatex AlgoProfessor_Services_Deck.tex (twice)
+%%  Font: Times New Roman (falls back to TeX Gyre Termes)
+%% =====================================================================
+\documentclass[aspectratio=169,10pt]{beamer}
+
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\usefonttheme{serif}
+\usepackage{tikz,graphicx,tabularx,booktabs,colortbl,array,amssymb}
+\usepackage[most]{tcolorbox}
+\usetikzlibrary{positioning,arrows.meta,calc,shapes.geometric,shadows}
+
+%% ---------------- Brand colour code ----------------
+% Navy #0B1F3A  Gold #A8811C  Saffron #FF9933  Green #138808  Chakra #000080
+% Ink #1E293B   Muted #5B6678 Line #E6E2D6     Cream #FDF9EF  Navy tint #EEF2F8
+\definecolor{navy}{HTML}{0B1F3A}
+\definecolor{navymid}{HTML}{1C3B66}
+\definecolor{navylight}{HTML}{EEF2F8}
+\definecolor{gold}{HTML}{A8811C}
+\definecolor{goldbright}{HTML}{C9A227}
+\definecolor{goldlight}{HTML}{FBF6E9}
+\definecolor{saffron}{HTML}{FF9933}
+\definecolor{indiagreen}{HTML}{138808}
+\definecolor{chakra}{HTML}{000080}
+\definecolor{ink}{HTML}{1E293B}
+\definecolor{muted}{HTML}{5B6678}
+\definecolor{line}{HTML}{E6E2D6}
+\definecolor{cream}{HTML}{FDF9EF}
+\definecolor{wave}{HTML}{EFE2C2}
+\definecolor{namegold}{HTML}{9A7414}
+
+%% ---------------- Minimal corporate theme ----------------
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamercolor{frametitle}{fg=navy}
+\setbeamercolor{structure}{fg=gold}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\color{gold}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{gold}\textbullet}
+\setbeamersize{text margin left=12mm,text margin right=12mm}
+
+% Tricolour hairline + logo + title
+\makeatletter
+\setbeamertemplate{frametitle}{%
+  \vspace*{5mm}%
+  {\usebeamercolor[fg]{frametitle}\fontsize{18}{21}\selectfont\bfseries\insertframetitle}\par
+  \ifx\insertframesubtitle\@empty\else{\vspace{1pt}\color{muted}\small\insertframesubtitle\par}\fi
+  \vspace{1mm}{\color{gold}\rule{18mm}{1.6pt}}}
+\setbeamertemplate{background}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[saffron] (current page.north west) rectangle ([xshift=-0.6667\paperwidth,yshift=-1.2mm]current page.north east);
+    \fill[line]    ([xshift=0.3333\paperwidth]current page.north west) rectangle ([xshift=-0.3333\paperwidth,yshift=-1.2mm]current page.north east);
+    \fill[indiagreen] ([xshift=0.6667\paperwidth]current page.north west) rectangle ([yshift=-1.2mm]current page.north east);
+    \node[anchor=north east,inner sep=0pt] at ([xshift=-10mm,yshift=-5mm]current page.north east) {\includegraphics[height=10mm]{algoprofessor-logo.pdf}};
+  \end{tikzpicture}}
+\setbeamertemplate{footline}{%
+  \leavevmode\hbox to\paperwidth{\hspace{12mm}%
+    {\tiny\color{muted}AlgoProfessor AI R\&D Solutions \,$\cdot$\, www.algoprofessor.com}\hfill
+    {\tiny\color{navy}\bfseries\insertframenumber}\hspace{12mm}}\vspace{4mm}}
+\makeatother
+
+%% ---------------- Building blocks ----------------
+% Card: \card{accent}{kicker}{title}{body}
+\newcommand{\card}[4]{%
+  \begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.5pt,arc=5pt,
+    borderline north={2.2pt}{0pt}{#1},left=6pt,right=6pt,top=5pt,bottom=5pt,
+    drop fuzzy shadow=black!12]
+  {\color{#1!80!black}\tiny\bfseries\MakeUppercase{#2}}\\[1pt]
+  {\raggedright\color{navy}\small\bfseries #3\par}\vspace{2pt}
+  {\scriptsize\color{ink}\raggedright #4\par}
+  \end{tcolorbox}}
+% Offer card with outcome: \offer{accent}{title}{body}{outcome}
+\newcommand{\offer}[4]{%
+  \begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.5pt,arc=5pt,
+    borderline west={2.5pt}{0pt}{#1},left=6pt,right=5pt,top=3pt,bottom=3pt,
+    drop fuzzy shadow=black!10]
+  {\raggedright\color{navy}\small\bfseries #2\par}\vspace{2pt}
+  {\scriptsize\raggedright #3\par}\vspace{2pt}
+  {\scriptsize\color{#1!75!black}\bfseries$\rightarrow$\ #4}
+  \end{tcolorbox}}
+% Stat: \stat{accent}{number}{label}
+\newcommand{\stat}[3]{%
+  \begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.5pt,arc=5pt,halign=center,
+    borderline north={2.2pt}{0pt}{#1},top=6pt,bottom=5pt,drop fuzzy shadow=black!10]
+  {\color{#1!85!black}\fontsize{22}{24}\selectfont\bfseries #2}\\[2pt]{\scriptsize\color{muted}#3}
+  \end{tcolorbox}}
+\newcommand{\plat}[3]{\begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.4pt,arc=3pt,
+  borderline west={2pt}{0pt}{#1},left=4pt,right=2pt,top=1.5pt,bottom=1.5pt]
+  {\color{navy}\scriptsize\bfseries #2}\\[-1pt]{\color{chakra}\fontsize{5.6}{7}\selectfont\itshape #3}\end{tcolorbox}}
+\newcommand{\ind}[2]{\begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.5pt,arc=5pt,halign=center,valign=center,
+  height=14mm,borderline north={2.2pt}{0pt}{#1},drop fuzzy shadow=black!10]{\color{navy}\small\bfseries #2}\end{tcolorbox}}
+% Compact stat (leadership slide)
+\newcommand{\statsm}[3]{\begin{tcolorbox}[enhanced,colback=white,colframe=line,boxrule=0.5pt,arc=5pt,halign=center,
+  borderline north={2.2pt}{0pt}{#1},top=3pt,bottom=3pt,drop fuzzy shadow=black!10]
+  {\color{#1!85!black}\fontsize{17}{19}\selectfont\bfseries #2}\\[1pt]{\scriptsize\color{muted}#3}\end{tcolorbox}}
+% Quotation band: \qband{text}{author}
+\newcommand{\qband}[2]{%
+  \begin{tcolorbox}[enhanced,colback=goldlight,colframe=goldlight,boxrule=0pt,arc=4pt,
+    borderline west={2.5pt}{0pt}{gold},left=22pt,right=8pt,top=4pt,bottom=4pt,
+    overlay={\node[anchor=north west,text=gold!70,font=\fontsize{30}{30}\selectfont\bfseries] at ([xshift=4pt,yshift=5pt]frame.north west) {``};}]
+  {\color{navy}\small\itshape #1}\hfill{\scriptsize\color{gold}\bfseries --- #2}
+  \end{tcolorbox}}
+% Section divider background
+\newcommand{\dividerbg}{%
+  \setbeamertemplate{background}{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[navy] (current page.south west) rectangle (current page.north east);
+      \fill[saffron] (current page.north west) rectangle ([xshift=-0.6667\paperwidth,yshift=-1.2mm]current page.north east);
+      \fill[white] ([xshift=0.3333\paperwidth]current page.north west) rectangle ([xshift=-0.3333\paperwidth,yshift=-1.2mm]current page.north east);
+      \fill[indiagreen] ([xshift=0.6667\paperwidth]current page.north west) rectangle ([yshift=-1.2mm]current page.north east);
+      \node[anchor=north east,fill=white,rounded corners=4pt,inner sep=3pt] at ([xshift=-10mm,yshift=-6mm]current page.north east) {\includegraphics[height=10mm]{algoprofessor-logo.pdf}};
+    \end{tikzpicture}}%
+  \setbeamertemplate{footline}{}}
+
+\begin{document}
+
+%% =============================== 1 TITLE ============================
+{\setbeamertemplate{footline}{}
+\setbeamertemplate{background}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[saffron] (current page.north west) rectangle ([xshift=-0.6667\paperwidth,yshift=-2mm]current page.north east);
+    \fill[line] ([xshift=0.3333\paperwidth]current page.north west) rectangle ([xshift=-0.3333\paperwidth,yshift=-2mm]current page.north east);
+    \fill[indiagreen] ([xshift=0.6667\paperwidth]current page.north west) rectangle ([yshift=-2mm]current page.north east);
+    \fill[navy] (current page.south west) rectangle ([yshift=14mm]current page.south east);
+    \draw[goldbright,line width=1.5pt] ([yshift=14mm]current page.south west) -- ([yshift=14mm]current page.south east);
+    \node[anchor=west,text=white,font=\small\bfseries] at ([xshift=12mm,yshift=8.8mm]current page.south west) {Dr S Satyanarayana Ph.D., PDF(AI), FARSC};
+    \node[anchor=west,text=white!75!navy,font=\scriptsize] at ([xshift=12mm,yshift=4.2mm]current page.south west) {Agentic AI Scientist $\cdot$ Founder \& CEO, AlgoProfessor $\cdot$ Creator of AlgoLang};
+    \node[anchor=east,text=goldbright,font=\small\bfseries] at ([xshift=-12mm,yshift=8.8mm]current page.south east) {www.algoprofessor.com};
+    \node[anchor=east,text=white!75!navy,font=\scriptsize] at ([xshift=-12mm,yshift=4.2mm]current page.south east) {ceo@algoprofessor.com $\cdot$ cto@algoprofessor.com};
+  \end{tikzpicture}}
+\begin{frame}[plain]
+  \vspace*{-4mm}
+  \includegraphics[height=17mm]{algoprofessor-logo.pdf}\\[3mm]
+  {\color{saffron!85!black}\footnotesize\bfseries SERVICES \& SOLUTIONS 2026--27}\\[3pt]
+  {\color{navy}\fontsize{32}{36}\selectfont\bfseries AlgoProfessor}\\[1pt]
+  {\color{gold}\fontsize{25}{29}\selectfont\bfseries AI R\&D Solutions}\\[6pt]
+  {\color{saffron}\rule{16mm}{2pt}}{\color{line}\rule{16mm}{2pt}}{\color{indiagreen}\rule{16mm}{2pt}}\\[8pt]
+  {\color{navy}\normalsize Research \;$\cdot$\; Talent \;$\cdot$\; Products}\\[2pt]
+  {\color{muted}\small Turning AI into working systems, skilled people and published knowledge.}
+\end{frame}}
+
+%% =============================== 2 AGENDA ===========================
+\begin{frame}{Agenda}
+\vspace{2mm}
+\begin{columns}[T]
+\begin{column}{0.47\textwidth}
+\begin{tikzpicture}[every node/.style={anchor=west}]
+\foreach \n/\t/\c [count=\i] in {01/Who we are/saffron,02/AlgoProfessor at a glance/chakra,03/The 16-platform ecosystem/indiagreen,04/Six service lines/gold}{
+  \node[font=\Large\bfseries,text=\c!85!black] at (0,-\i*0.95) {\n};
+  \node[font=\normalsize,text=navy] at (1.05,-\i*0.95) {\t};}
+\end{tikzpicture}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{tikzpicture}[every node/.style={anchor=west}]
+\foreach \n/\t/\c [count=\i] in {05/How we work/saffron,06/Industries we serve/chakra,07/Why AlgoProfessor/indiagreen,08/Leadership \& contact/gold}{
+  \node[font=\Large\bfseries,text=\c!85!black] at (0,-\i*0.95) {\n};
+  \node[font=\normalsize,text=navy] at (1.05,-\i*0.95) {\t};}
+\end{tikzpicture}
+\end{column}
+\end{columns}
+\vspace{4mm}\qband{We can only see a short distance ahead, but we can see plenty there that needs to be done.}{Alan Turing, 1950}
+\end{frame}
+
+%% =============================== 3 WHO WE ARE =======================
+\begin{frame}{Who we are}{A Hyderabad-based AI research, engineering and education company}
+\vspace{1mm}
+{\small We help enterprises, universities, start-ups and researchers turn AI from an idea into
+\textbf{working systems}, \textbf{skilled people} and \textbf{published knowledge}.}
+\vspace{3mm}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=4mm]
+\card{saffron}{Pillar 1}{Research}{Doctoral and post-doctoral research leadership, Q1 publication support and ProfAlgoLabs\texttrademark, our R\&D lab for agentic AI, AI security and new programming paradigms.}
+\card{chakra}{Pillar 2}{Talent}{Industry-aligned curricula, cohort courses, bootcamps and live internships that produce job-ready AI engineers and scientists.}
+\card{indiagreen}{Pillar 3}{Products}{Production AI platforms for markets, enterprises and institutions: QuantOracle\texttrademark, AlgoCrew OS and the Research Paper Agent.}
+\end{tcbraster}
+\vspace{0mm}
+\begin{tcolorbox}[enhanced,colback=goldlight,colframe=goldlight,arc=5pt,left=8pt,top=4pt,bottom=4pt,borderline west={2.5pt}{0pt}{gold}]
+\footnotesize\color{navy}\textbf{Mission:} make India and our global partners AI-ready for 2026--2035, with products that create measurable value, engineers who can run them and research others can build on.
+\end{tcolorbox}
+\end{frame}
+
+%% =============================== 4 AT A GLANCE ======================
+\begin{frame}{AlgoProfessor at a glance}
+\vspace{6mm}
+\begin{tcbraster}[raster columns=4,raster equal height,raster column skip=4mm,raster row skip=4mm]
+\stat{saffron}{16}{Digital platforms and service lines}
+\stat{chakra}{56}{Ph.D. and post-doctoral scholars mentored}
+\stat{indiagreen}{60+}{SCI / Scopus / IEEE publications}
+\stat{gold}{11+}{Patents}
+\stat{saffron}{11}{Books authored}
+\stat{chakra}{22}{Years of teaching and R\&D}
+\stat{indiagreen}{100+}{Research-publication clients}
+\stat{gold}{1982}{Publishing legacy}
+\end{tcbraster}
+\end{frame}
+
+%% =============================== 5 ECOSYSTEM ========================
+\begin{frame}{One company, sixteen platforms}{Every service line has its own platform, so clients go straight to what they need}
+\vspace{1mm}
+\begin{tcbraster}[raster columns=4,raster equal height,raster column skip=2.5mm,raster row skip=2mm]
+\plat{gold}{AlgoProfessor}{algoprofessor.com}
+\plat{saffron}{AI Courses}{aicourses.algoprofessor.com}
+\plat{saffron}{Bootcamp}{bootcamp.algoprofessor.com}
+\plat{saffron}{Algo Trading}{algotrading.algoprofessor.com}
+\plat{saffron}{Internship}{internship.algoprofessor.com}
+\plat{saffron}{Q1 Research}{q1.algoprofessor.com}
+\plat{saffron}{AlgoProfessor Campus}{campus.algoprofessor.com}
+\plat{chakra}{Products}{products.algoprofessor.com}
+\plat{chakra}{QuantOracle\texttrademark}{quant.algoprofessor.com}
+\plat{chakra}{AlgoCrew OS}{algocrewos.algoprofessor.com}
+\plat{chakra}{AI Security}{aisecurity.algoprofessor.com}
+\plat{chakra}{Kritios}{kritios.algoprofessor.com}
+\plat{indiagreen}{Research \& Careers}{research.algoprofessor.com}
+\plat{indiagreen}{Publications}{publications.algoprofessor.com}
+\plat{indiagreen}{Education Policies}{policies.algoprofessor.com}
+\plat{indiagreen}{AP-Super AI Society}{apsuperai.algoprofessor.com}
+\end{tcbraster}
+\vspace{1mm}
+{\tiny\color{muted}\textcolor{saffron!85!black}{\textbf{Saffron}} Learn \& Train \quad \textcolor{chakra}{\textbf{Navy}} Products \& Services \quad \textcolor{indiagreen}{\textbf{Green}} Research \& Publishing \quad \textcolor{gold}{\textbf{Gold}} Main domain}
+\end{frame}
+
+%% =============================== DIVIDER ============================
+{\dividerbg
+\begin{frame}[plain]
+  \vspace*{18mm}
+  {\color{goldbright}\small\bfseries SECTION 04}\\[6pt]
+  {\color{white}\fontsize{34}{40}\selectfont\bfseries Six service lines}\\[8pt]
+  {\color{gold}\rule{24mm}{2pt}}\\[8pt]
+  \begin{minipage}{0.70\textwidth}\color{white!80!navy}\large Enterprise AI, AI security, quantitative finance, university transformation, talent, and research \& publishing.\end{minipage}\\[10mm]
+  {\color{goldbright}\large\itshape ``Arise, awake, and stop not till the goal is reached.''}\\[2pt]
+  {\color{white!70!navy}\small --- Swami Vivekananda}
+\end{frame}}
+
+%% =============================== 7 ENTERPRISE AI ====================
+\begin{frame}{1 \;$\cdot$\; Enterprise AI Solutions}{From strategy to production: AI that runs on your data, inside your systems}
+\vspace{-1mm}
+\begin{tcbraster}[raster columns=3,raster equal height=rows,raster column skip=2.5mm,raster row skip=2mm]
+\offer{chakra}{AI Strategy \& Discovery}{Use-case roadmap, data audit, ROI model and a governance plan (DPDP Act, EU AI Act, ISO 42001).}{Board-ready AI roadmap}
+\offer{chakra}{Agentic AI (AlgoCrew OS)}{Multi-agent workflows for operations, service desks and documents, with approvals and audit trails.}{Manual work automated, safely}
+\offer{chakra}{GenAI, LLM \& RAG}{Knowledge assistants on your documents with citations, fine-tuned models and multilingual voice and chat.}{Accurate answers from your data}
+\offer{chakra}{Custom AI Products}{Vision and healthcare imaging, forecasting, optimisation, university ERP and AI websites.}{Production product with handover}
+\offer{chakra}{MLOps \& Data Engineering}{Pipelines, lakehouses, model registries, CI/CD, monitoring and GPU inference optimisation.}{Models stay accurate and affordable}
+\offer{chakra}{Forward-deployed teams}{Engineers embed with your team and stay until adoption is measured.}{Value proven in production}
+\end{tcbraster}
+\end{frame}
+
+%% =============================== 8 AI SECURITY ======================
+\begin{frame}{2 \;$\cdot$\; AI Security \& Trustworthy AI}{Secure every model, dataset and agent your business depends on}
+\vspace{1mm}
+\begin{columns}[T]
+\begin{column}{0.36\textwidth}
+\normalsize New risks arrive with every model and agent: prompt injection, data leakage, poisoned models and unsafe tool use.\\[4pt]
+Our practice is grounded in our own research on \textbf{enterprise AI supply-chain assurance}.\\[6pt]
+\begin{tcolorbox}[enhanced,colback=goldlight,colframe=goldlight,arc=4pt,borderline west={2.5pt}{0pt}{gold},left=6pt,top=3pt,bottom=3pt]
+{\color{navy}\small\itshape ``Security is a process, not a product.''}\\{\scriptsize\color{gold}\bfseries --- Bruce Schneier}
+\end{tcolorbox}
+\end{column}
+\begin{column}{0.60\textwidth}
+\begin{tcbraster}[raster columns=2,raster equal height=rows,raster column skip=2.5mm,raster row skip=2mm]
+\offer{saffron}{Supply-Chain Assurance}{Inventory and provenance of models, data and agents (AI bill of materials).}{Know what AI you run}
+\offer{saffron}{Red-Teaming \& Testing}{Jailbreak, injection, exfiltration and excessive-agency tests, with fixes.}{Gaps closed first}
+\offer{saffron}{Runtime Guardrails}{Input/output filters, PII redaction and tool-call policies.}{Safe AI, fully logged}
+\offer{saffron}{Responsible-AI Governance}{Fairness and explainability audits; EU AI Act, NIST AI RMF, ISO/IEC 42001.}{Audit-ready evidence}
+\end{tcbraster}
+\end{column}
+\end{columns}
+\end{frame}
+
+%% =============================== 9 QUANT ============================
+\begin{frame}{3 \;$\cdot$\; Quantitative Finance}{Market intelligence and algorithmic strategies for Indian and global markets}
+\vspace{1mm}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=3mm]
+\offer{indiagreen}{QuantOracle\texttrademark}{Live AI market-intelligence platform for Indian F\&O: NIFTY, BANKNIFTY and NSE stocks, with ML signals and risk analytics.}{Data-driven decisions}
+\offer{indiagreen}{Strategy Development}{Strategies built to the client's own rules, connected on Tradetron and delivered with complete backtest reports.}{Ready-to-deploy, backtested}
+\offer{indiagreen}{Quant Training}{Algorithmic trading, quantitative finance and RL for markets, for individuals, desks and broker teams.}{Teams that run their own systems}
+\end{tcbraster}
+\vspace{3mm}
+{\scriptsize\color{muted}\itshape Trading involves market risk. Backtest results do not guarantee future returns. AlgoProfessor provides technology and research, not investment advice.}
+\vspace{2mm}\qband{Risk comes from not knowing what you're doing.}{Warren Buffett}
+\end{frame}
+
+%% =============================== 10 UNIVERSITIES ====================
+\begin{frame}{4 \;$\cdot$\; University Transformation}{Aligned to NEP 2020, NBA, NAAC, NIRF, QS and THE}
+\vspace{1mm}
+\begin{tcbraster}[raster columns=3,raster equal height=rows,raster column skip=2.5mm,raster row skip=2mm]
+\offer{gold}{Industry-Aligned Curricula}{16-course Enterprise AI curriculum and 5-course Programming Languages curriculum, with labs and capstones.}{BoS-ready syllabus}
+\offer{gold}{Faculty Development}{Hands-on FDPs and train-the-trainer bootcamps delivered by practitioners.}{Confident faculty}
+\offer{gold}{GitHub Repositories \& Labs}{Full course repositories plus AI, GPU, edge, robotics and cloud lab design.}{Coding from week one}
+\offer{gold}{One Student, One Project}{12-week UG, PG and Ph.D. projects, one milestone a week, tracked on our ERP.}{Portfolio for every student}
+\offer{gold}{Accreditation \& Rankings}{CO--PO evidence, attainment and documentation for NBA, NAAC, NIRF, QS and THE.}{Stronger outcomes, less effort}
+\offer{gold}{Centre of Excellence}{AI CoE set-up, industry partnerships, incubation and education-policy advisory.}{A funded AI hub on campus}
+\end{tcbraster}
+\vspace{-3mm}\qband{Education is the most powerful weapon which you can use to change the world.}{Nelson Mandela}
+\end{frame}
+
+%% =============================== 11 TALENT ==========================
+\begin{frame}{5 \;$\cdot$\; Talent \& Training}{Job-ready AI engineers and scientists, trained on real projects}
+\vspace{1mm}
+\begin{tcbraster}[raster columns=3,raster equal height=rows,raster column skip=2.5mm,raster row skip=2mm]
+\offer{saffron}{Cohort 2026 AI Courses}{Six 30-day tracks: Data, AI, Cyber Security, AI Architect, Agentic AI and Physical AI Scientist.}{Portfolio in a month}
+\offer{saffron}{AI to Agentic AI Scientist}{12 Sundays: fundamentals, applications and production, with weekly GitHub projects.}{Upskill while working}
+\offer{saffron}{AI Engineer Bootcamp}{Generative and agentic AI with interview preparation from real industry interviews.}{Interview-ready}
+\offer{saffron}{90-Day Live Internships}{Fee-based, paid and sponsored models; production AI projects under mentorship.}{Real industry experience}
+\offer{saffron}{Corporate Training}{Agentic AI, LLMs, MLOps, AI security and forward deployed engineering, on-site or online.}{AI built in-house}
+\offer{saffron}{Hiring Partnerships}{Access to trained AlgoProfessor graduates and interns.}{Pre-skilled talent}
+\end{tcbraster}
+\vspace{-1mm}\qband{If you want to shine like a sun, first burn like a sun.}{Dr A.\,P.\,J. Abdul Kalam}
+\end{frame}
+
+%% =============================== 12 RESEARCH ========================
+\begin{frame}{6 \;$\cdot$\; Research \& Publishing}{From research idea to Q1 paper, published book and global admission}
+\vspace{1mm}
+\begin{tcbraster}[raster columns=3,raster equal height=rows,raster column skip=2.5mm,raster row skip=2mm]
+\offer{indiagreen}{SCI Q1 Paper Training}{12 days of daily live sessions, from problem framing to reviewer responses.}{Submission-ready manuscript}
+\offer{indiagreen}{Research Paper Agent}{AI research assistant plus expert pre-submission review.}{Fewer desk rejections}
+\offer{indiagreen}{Sponsored Research}{Joint projects in agentic AI, AI security, healthcare AI and sustainable AI.}{Publishable, deployable results}
+\offer{indiagreen}{AlgoProfessor Publications}{Books with ISBN and journal publishing; a legacy since 1982.}{Professionally published work}
+\offer{indiagreen}{Admissions Consulting}{MS, Ph.D. and post-doc applications to top-ranked universities.}{Stronger applications}
+\offer{indiagreen}{ProfAlgoLabs\texttrademark}{Frontier R\&D lab, home of AlgoLang, the AI-native language where agents replace functions.}{Early technology partnerships}
+\end{tcbraster}
+\vspace{-1mm}\qband{The best way to predict the future is to invent it.}{Alan Kay}
+\end{frame}
+
+%% =============================== 13 HOW WE WORK =====================
+\begin{frame}{How we work}{A clear, accountable path from first conversation to measured results}
+\vspace{6mm}
+\centering
+\begin{tikzpicture}[node distance=4mm,
+  stp/.style={rectangle,rounded corners=5pt,draw=line,fill=white,minimum width=24mm,minimum height=26mm,align=center,
+               text width=22mm,drop shadow={opacity=0.12}},
+  arr/.style={-{Stealth[length=3mm]},line width=1.2pt,color=gold}]
+\node[stp] (a) {{\color{saffron!85!black}\LARGE\bfseries 01}\\[2pt]{\color{navy}\bfseries Discover}\\[2pt]{\scriptsize Goals, data, systems, constraints}};
+\node[stp,right=of a] (b) {{\color{chakra}\LARGE\bfseries 02}\\[2pt]{\color{navy}\bfseries Design}\\[2pt]{\scriptsize Architecture, scope, KPIs, plan}};
+\node[stp,right=of b] (c) {{\color{indiagreen}\LARGE\bfseries 03}\\[2pt]{\color{navy}\bfseries Build}\\[2pt]{\scriptsize Weekly demos on your data}};
+\node[stp,right=of c] (d) {{\color{gold}\LARGE\bfseries 04}\\[2pt]{\color{navy}\bfseries Deploy}\\[2pt]{\scriptsize Secure go-live and handover}};
+\node[stp,right=of d] (e) {{\color{navy}\LARGE\bfseries 05}\\[2pt]{\color{navy}\bfseries Scale}\\[2pt]{\scriptsize Measure, improve, expand}};
+\foreach \x/\y in {a/b,b/c,c/d,d/e}{\draw[arr] (\x) -- (\y);}
+\foreach \n/\c in {a/saffron,b/chakra,c/indiagreen,d/gold,e/navy}{\fill[\c] ([xshift=3mm]\n.north west) rectangle ([xshift=-3mm,yshift=-0.8mm]\n.north east);}
+\end{tikzpicture}
+\vspace{6mm}\qband{We measure our work by the results our clients can see.}{Dr S Satyanarayana}
+\end{frame}
+
+%% =============================== 14 ENGAGEMENT ======================
+\begin{frame}{Engagement options}
+\vspace{3mm}
+\renewcommand{\arraystretch}{1.6}
+\small
+\begin{tabularx}{\textwidth}{>{\bfseries\leavevmode\color{navy}}p{3.4cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{4.0cm}}
+\rowcolor{navy}\multicolumn{1}{l}{\leavevmode\color{white}\textbf{Option}} & \leavevmode\color{white}\textbf{How it works} & \leavevmode\color{white}\textbf{Ideal for}\\
+Proof of concept & 4--8 weeks to prove value on your data & New AI ideas, first deployments\\
+\rowcolor{navylight} Fixed-scope project & Agreed deliverables, timeline and milestones & Well-defined products and pilots\\
+Dedicated team & A forward-deployed team working as part of yours & Ongoing AI programmes\\
+\rowcolor{navylight} Training programme & Cohort, bootcamp, FDP or corporate programme & Universities and corporate L\&D\\
+Strategic partnership & Co-development, revenue sharing or joint research & Brokers, platforms, institutions\\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+%% =============================== 15 INDUSTRIES ======================
+\begin{frame}{Industries we serve}
+\vspace{5mm}
+\begin{tcbraster}[raster columns=4,raster column skip=4mm,raster row skip=4mm]
+\ind{saffron}{Banking \& Fintech}\ind{chakra}{Capital Markets}\ind{indiagreen}{Healthcare}\ind{gold}{Higher Education}
+\ind{saffron}{Manufacturing}\ind{chakra}{Retail \& E-commerce}\ind{indiagreen}{Government \& Smart Cities}\ind{gold}{IT \& Software}
+\end{tcbraster}
+\vspace{6mm}\qband{Excellence is a continuous process and not an accident.}{Dr A.\,P.\,J. Abdul Kalam}
+\end{frame}
+
+%% =============================== 16 WHY US ==========================
+\begin{frame}{Why clients choose AlgoProfessor}
+\vspace{2mm}
+\begin{tcbraster}[raster columns=3,raster equal height=rows,raster column skip=2.5mm,raster row skip=2mm]
+\card{saffron}{01}{Research-grade expertise}{Led by an Agentic AI Scientist and creator of AlgoLang, with 60+ indexed publications and 11+ patents.}
+\card{chakra}{02}{Products, not prototypes}{We ship to production with security and monitoring, and run our own live products.}
+\card{indiagreen}{03}{Build and train together}{Every engagement can include training, so your team owns the solution.}
+\card{gold}{04}{Security by design}{AI security, responsible-AI checks and data protection from day one.}
+\card{saffron}{05}{Built for India, ready for the world}{Indian languages, regulations and markets, with research links in Taiwan and beyond.}
+\card{chakra}{06}{One partner, end to end}{Strategy, engineering, talent, research and publishing from one accountable team.}
+\end{tcbraster}
+\vspace{-2mm}\qband{AI creates value only when it runs in production, on real data, for real people.}{Dr S Satyanarayana}
+\end{frame}
+
+%% =============================== 17 LEADERSHIP ======================
+\begin{frame}{Leadership}
+
+\vspace{0mm}
+\begin{tcolorbox}[enhanced,colback=cream,colframe=line,boxrule=0.5pt,arc=5pt,left=8pt,right=8pt,top=7pt,bottom=12pt,
+  drop fuzzy shadow=black!10,
+  underlay={%
+    \fill[wave] ([yshift=3mm]interior.south west) .. controls ([xshift=50mm,yshift=8mm]interior.south west) and ([xshift=-60mm,yshift=-1mm]interior.south east) .. ([yshift=5mm]interior.south east) -- (interior.south east) -- (interior.south west) -- cycle;
+    \fill[wave!55!white] ([yshift=6mm]interior.south west) .. controls ([xshift=55mm,yshift=1mm]interior.south west) and ([xshift=-45mm,yshift=9mm]interior.south east) .. ([yshift=2mm]interior.south east) -- (interior.south east) -- (interior.south west) -- cycle;}]
+\begin{minipage}[c]{0.16\linewidth}\centering\includegraphics[width=\linewidth]{algoprofessor-logo.pdf}\end{minipage}\hfill
+\begin{minipage}[c]{0.82\linewidth}\centering
+{\color{gold}\tiny\bfseries A\,L\,G\,O\,P\,R\,O\,F\,E\,S\,S\,O\,R\quad A\,I\quad R\,\&\,D\quad S\,O\,L\,U\,T\,I\,O\,N\,S\quad$\cdot$\quad H\,Y\,D\,E\,R\,A\,B\,A\,D}\\[3pt]
+{\color{namegold}\fontsize{17}{20}\selectfont\bfseries Dr S Satyanarayana}\;{\color{namegold}\footnotesize\bfseries Ph.D., PDF(AI), FARSC}\\[2pt]
+{\tiny\bfseries International Postdoctoral Research Co-Supervisor $\cdot$ NYUST (YunTech) \& NKUST, Taiwan}\\[1pt]
+{\scriptsize\color{navymid}\bfseries Agentic AI Scientist $\cdot$ Founder \& CEO, AlgoProfessor $\cdot$ Creator of AlgoLang}\\[-1pt]
+{\color{gold}\rule{0.30\linewidth}{0.8pt}}\\[0pt]
+{\scriptsize Email: {\color{namegold}\bfseries ceo@algoprofessor.com}}
+\end{minipage}
+\end{tcolorbox}
+\vspace{-1mm}
+\begin{tcbraster}[raster columns=4,raster equal height,raster column skip=3mm]
+\statsm{saffron}{D.Eng.}{AI \& Deep Learning}
+\statsm{chakra}{22}{Years of R\&D}
+\statsm{indiagreen}{60+}{Indexed publications}
+\statsm{gold}{56}{Scholars mentored}
+\end{tcbraster}
+\end{frame}
+
+%% =============================== 18 CONTACT =========================
+{\setbeamertemplate{footline}{}
+\setbeamertemplate{background}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[navy] (current page.south west) rectangle (current page.north east);
+    \fill[saffron] (current page.north west) rectangle ([xshift=-0.6667\paperwidth,yshift=-2mm]current page.north east);
+    \fill[white] ([xshift=0.3333\paperwidth]current page.north west) rectangle ([xshift=-0.3333\paperwidth,yshift=-2mm]current page.north east);
+    \fill[indiagreen] ([xshift=0.6667\paperwidth]current page.north west) rectangle ([yshift=-2mm]current page.north east);
+      \node[anchor=north east,fill=white,rounded corners=4pt,inner sep=3pt] at ([xshift=-10mm,yshift=-6mm]current page.north east) {\includegraphics[height=11mm]{algoprofessor-logo.pdf}};
+  \end{tikzpicture}}
+\begin{frame}[plain]
+\vspace*{16mm}
+{\color{goldbright}\small\bfseries LET'S BUILD WHAT'S NEXT}\\[6pt]
+{\color{white}\fontsize{32}{38}\selectfont\bfseries Partner with AlgoProfessor}\\[6pt]
+{\color{gold}\rule{24mm}{2pt}}\\[8pt]
+\begin{minipage}{0.82\textwidth}
+\color{white!85!navy}\small Tell us about your goal. We will reply with a clear proposal: scope, timeline, team and the measurable results we commit to.\\[10pt]
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{@{}>{\color{white!70!navy}}l >{\color{goldbright}\bfseries}l@{}}
+Partnerships, enterprise AI, AI security, internships & cto@algoprofessor.com\\
+Leadership, research, publications, universities & ceo@algoprofessor.com\\
+Products and demos & product@algoprofessor.com\\
+Courses and admissions & aicourses@algoprofessor.com\\
+\end{tabular}\\[10pt]
+{\color{white}\Large\bfseries www.algoprofessor.com}\\[2pt]
+{\color{white!70!navy}\scriptsize AlgoProfessor AI R\&D Solutions $\cdot$ Hyderabad, India}
+\end{minipage}
+\end{frame}}
+
+\end{document}
