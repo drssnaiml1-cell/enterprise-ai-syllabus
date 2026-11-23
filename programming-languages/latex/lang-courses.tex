@@ -1,0 +1,516 @@
+%% =====================================================================
+%%  Courses 1--5: Python, Go, Rust, Scala, Java
+%% =====================================================================
+
+%% ============================ COURSE 1: PYTHON =======================
+\course{1}{EPL-201}{Python Programming for AI \& Enterprise}{3--0--2--4}{Basic programming logic, computer fundamentals}
+{From Pythonic fundamentals to production AI services, data pipelines and agents}
+
+\csec{Core Competencies}
+\begin{itemize}
+\item Write clean, typed, tested and idiomatic Python following PEP 8 and modern packaging practice.
+\item Process data at scale with NumPy, pandas and Polars, and use concurrency (asyncio, multiprocessing, free-threaded Python) correctly.
+\item Build secure web APIs, AI services and LLM-agent applications with FastAPI, Pydantic and model SDKs.
+\item Ship Python to production: packaging, performance tuning, containers, CI/CD and supply-chain security.
+\end{itemize}
+
+\csec{Five-Unit Curriculum}
+\unit{I}{Python Foundations and Pythonic Thinking}{9}{%
+Python 3 runtime and interpreters; variables, data types and operators; control flow; functions, arguments and scope;
+strings, lists, tuples, sets and dictionaries; comprehensions; files and context managers; exceptions;
+modules and packages; virtual environments and the uv/pip toolchain; Jupyter and VS Code workflows.}
+{Builds a command-line expense tracker with file storage, input validation and error handling, packaged as a module.}
+\unit{II}{Object-Oriented, Functional and Typed Python}{9}{%
+Classes, inheritance, composition, dunder methods and dataclasses; protocols and abstract base classes;
+iterators, generators and decorators; functional tools (map, filter, functools, itertools);
+type hints, generics and static checking (mypy/pyright); unit testing with pytest, fixtures and mocking; code quality with Ruff.}
+{Delivers a typed library-management package with dataclasses, decorators, 90\% pytest coverage and a clean Ruff/mypy report.}
+\unit{III}{Data, Scientific Python and Concurrency}{9}{%
+NumPy arrays and vectorisation; pandas and Polars for data wrangling; visualisation with Matplotlib and Plotly;
+SQL access with SQLAlchemy and DuckDB; concurrency models: threads, the GIL and free-threaded Python, multiprocessing, asyncio;
+profiling with cProfile and memory tools.}
+{Produces a sales-analytics pipeline in Polars + DuckDB with charts, and an asyncio web scraper benchmarked against a threaded version.}
+\unit{IV}{Web APIs and AI Engineering with Python}{9}{%
+HTTP and REST; FastAPI routing, dependency injection and async endpoints; Pydantic data validation; authentication (OAuth2, JWT);
+background tasks and queues (Celery, Redis); calling ML models and LLM APIs; structured outputs and tool calling;
+building retrieval-augmented and agent applications; MCP servers in Python.}
+{Ships a FastAPI service with JWT auth that serves an ML model and an LLM-powered assistant using tool calls and a Python MCP server.}
+\unit{V}{Production Python: Performance, Packaging and Security}{9}{%
+Project layout and pyproject.toml; packaging and publishing wheels; dependency locking; performance: vectorisation, Numba, Cython and
+Rust extensions via PyO3; logging and observability; Docker images for Python; CI/CD with GitHub Actions;
+security: secrets, dependency scanning (pip-audit), SBOMs and secure coding.}
+{Publishes a versioned package to a private index with a Rust-accelerated hot path, Docker image, CI pipeline and a clean pip-audit report.}
+
+\Needspace{16\baselineskip}\csec{Industry Tools \& Ecosystem}
+\begin{toolstable}
+Toolchain & Python 3.13/3.14, uv, pip, Poetry, Ruff, mypy, pyright, pytest, pre-commit \\
+Data \& science & NumPy, pandas, Polars, DuckDB, SQLAlchemy, Matplotlib, Plotly, Jupyter \\
+Web \& services & FastAPI, Pydantic, Django, Flask, Celery, Redis, Uvicorn \\
+AI \& agents & scikit-learn, PyTorch, Hugging Face, Anthropic/OpenAI SDKs, LangGraph, MCP Python SDK \\
+Performance & Numba, Cython, PyO3 / maturin, cProfile, py-spy \\
+Delivery \& security & Docker, GitHub Actions, pip-audit, Bandit, CycloneDX SBOM \\
+\end{toolstable}
+
+\csec{Hands-on Laboratory (30 Hours)}
+\labs
+{CLI tools with files, exceptions and argparse}
+{OOP design with dataclasses and protocols}
+{Generators, decorators and typed utilities with pytest}
+{Data wrangling with Polars and DuckDB}
+{asyncio vs threads vs multiprocessing benchmark}
+{FastAPI REST service with JWT and Pydantic}
+{LLM tool-calling assistant and a Python MCP server}
+{Packaging, Docker and CI with security scanning}
+
+\Needspace{12\baselineskip}\csec{Course Outcomes}
+\begin{cotable}
+CO1 & Explain Python's data model, runtime and idiomatic constructs. & L2 Understand \\
+CO2 & Apply object-oriented, functional and typed programming with automated tests. & L3 Apply \\
+CO3 & Analyse data and choose the right concurrency model for a workload. & L4 Analyse \\
+CO4 & Build secure web APIs and AI/LLM applications in Python. & L3 Apply \\
+CO5 & Create a packaged, optimised, secure and deployable Python product. & L6 Create \\
+\end{cotable}
+
+\capstone{\textbf{AI-Powered Business Insights Service:} a FastAPI platform that ingests company data with Polars, serves forecasts from an ML model,
+answers questions through an LLM agent with tool calls, and ships as a tested, containerised, security-scanned package with CI/CD.}
+
+\csec{Aligned Careers}
+{\raggedright
+\role{Python Developer}\role{AI / ML Engineer}\role{Data Engineer}\role{Backend Engineer}
+\role{Automation Engineer}\role{Agentic AI Developer}
+\par}
+
+\Needspace{12\baselineskip}\csec{Where Python Fits: 2026--2035 Outlook}
+\begin{outlooktable}
+AI, ML \& agents & First choice for model building, LLM applications, agents and evaluation; expected to remain the language of AI. \\
+Data \& analytics & Core language for data pipelines, notebooks and analytics, alongside SQL. \\
+Automation \& DevOps & Scripting, testing, infrastructure automation and AI-driven operations. \\
+Performance trend & Free-threaded Python and Rust extensions (PyO3) close the speed gap for production workloads. \\
+\end{outlooktable}
+
+\Needspace{15\baselineskip}\csec{Recommended Industry Certifications}
+\begin{certtable}
+PCEP -- Certified Entry-Level Python Programmer & OpenEDG Python Institute & Entry & I \\
+PCAP -- Certified Associate Python Programmer & OpenEDG Python Institute & Associate & I--III \\
+PCPP1 / PCPP2 -- Certified Professional Python Programmer & OpenEDG Python Institute & Professional & II--V \\
+Databricks Certified Associate Developer for Apache Spark (Python) & Databricks & Associate & III \\
+NPTEL/SWAYAM: The Joy of Computing using Python & IIT faculty, Govt. of India & Academic & I, II \\
+\end{certtable}
+
+\csec{Text \& Reference Books}
+\begin{refs}
+\item L. Ramalho, \emph{Fluent Python}, 2nd ed., O'Reilly, 2022.
+\item E. Matthes, \emph{Python Crash Course}, 3rd ed., No Starch Press, 2023.
+\item B. Slatkin, \emph{Effective Python: 125 Specific Ways to Write Better Python}, 3rd ed., Addison-Wesley, 2024.
+\item W. McKinney, \emph{Python for Data Analysis}, 3rd ed., O'Reilly, 2022.
+\end{refs}
+
+%% ============================ COURSE 2: GO ===========================
+\course{2}{EPL-202}{Go Programming for Cloud-Native Systems}{3--0--2--4}{One programming language, networking basics}
+{Simple, fast, concurrent services for cloud platforms, DevOps and AI infrastructure}
+
+\csec{Core Competencies}
+\begin{itemize}
+\item Write idiomatic Go with clear types, interfaces, generics, explicit error handling and table-driven tests.
+\item Design safe concurrent programs with goroutines, channels, select, context and the sync package.
+\item Build high-performance HTTP and gRPC microservices with databases, observability and security.
+\item Deliver cloud-native tools: CLIs, Kubernetes controllers, AI gateways and MCP servers.
+\end{itemize}
+
+\csec{Five-Unit Curriculum}
+\unit{I}{Go Foundations}{9}{%
+Go philosophy and toolchain (go build, run, fmt, vet); packages and modules; variables, constants and basic types;
+control flow; functions, multiple returns and closures; arrays, slices and maps; strings, runes and UTF-8;
+pointers; explicit error values and wrapping.}
+{Builds a log-file analyser CLI that parses large files with slices and maps and reports errors with wrapping.}
+\unit{II}{Types, Interfaces, Generics and Testing}{9}{%
+Structs, methods and embedding; interfaces and implicit satisfaction; type switches; generics with type parameters and constraints;
+package design and visibility; table-driven unit tests, benchmarks and fuzzing; examples and documentation;
+dependency management with Go modules.}
+{Delivers a generic, interface-based inventory library with table-driven tests, fuzz tests and benchmarks.}
+\unit{III}{Concurrency in Go}{9}{%
+Goroutines and the Go scheduler; channels (buffered, unbuffered) and select; worker pools, pipelines and fan-in/fan-out;
+context for cancellation and deadlines; sync.Mutex, WaitGroup, Once and atomics; errgroup;
+race detection; common concurrency bugs and how to avoid them.}
+{Builds a concurrent web crawler with a worker pool, rate limiting and context cancellation that passes the race detector.}
+\unit{IV}{Network Services and Microservices}{9}{%
+net/http servers, routing and middleware; JSON APIs; gRPC and Protocol Buffers; database access with database/sql and pgx;
+configuration and graceful shutdown; authentication; structured logging (slog); metrics and tracing with OpenTelemetry and Prometheus.}
+{Ships a REST + gRPC order microservice on PostgreSQL with middleware, graceful shutdown and Prometheus metrics.}
+\unit{V}{Cloud-Native Go and AI Infrastructure}{9}{%
+Container-friendly Go builds (static binaries, distroless images); Kubernetes client-go and operators;
+CLI tools with Cobra; profiling with pprof and performance tuning; security (govulncheck, secrets, TLS);
+Go for AI infrastructure: LLM gateways, vector-search services and MCP servers.}
+{Deploys a Kubernetes operator and an LLM API gateway in Go with caching, rate limits, pprof profiling and a clean govulncheck scan.}
+
+\Needspace{16\baselineskip}\csec{Industry Tools \& Ecosystem}
+\begin{toolstable}
+Toolchain & Go 1.2x, go test, go vet, gofmt, golangci-lint, govulncheck, Delve \\
+Web \& RPC & net/http, chi, Gin, Echo, gRPC-Go, Protocol Buffers, Connect \\
+Data & database/sql, pgx, sqlc, Redis, NATS, Kafka (franz-go) \\
+Cloud-native & Docker, Kubernetes client-go, Kubebuilder, Helm, Terraform \\
+Observability & slog, OpenTelemetry, Prometheus, Grafana, pprof \\
+AI infrastructure & MCP Go SDK, LLM provider Go SDKs, Weaviate / Milvus Go clients \\
+\end{toolstable}
+
+\csec{Hands-on Laboratory (30 Hours)}
+\labs
+{Go toolchain, modules and a CLI with Cobra}
+{Slices, maps and error handling exercises}
+{Interfaces and generics with table-driven tests}
+{Goroutines, channels and worker pools}
+{Context, cancellation and race detection}
+{REST + gRPC microservice on PostgreSQL}
+{Observability with slog, OpenTelemetry and pprof}
+{Kubernetes operator and an LLM gateway}
+
+\Needspace{12\baselineskip}\csec{Course Outcomes}
+\begin{cotable}
+CO1 & Explain Go's design, types, slices, maps and error model. & L2 Understand \\
+CO2 & Apply interfaces, generics and testing to build reusable packages. & L3 Apply \\
+CO3 & Analyse and build correct concurrent programs with goroutines and channels. & L4 Analyse \\
+CO4 & Build observable HTTP and gRPC microservices with persistent storage. & L3 Apply \\
+CO5 & Create cloud-native Go tools and AI infrastructure services for Kubernetes. & L6 Create \\
+\end{cotable}
+
+\capstone{\textbf{Cloud-Native AI Gateway Platform:} a Go platform that routes, caches and rate-limits requests to several LLM providers,
+exposes REST and gRPC APIs, runs on Kubernetes with an operator for configuration, and provides full metrics and tracing.}
+
+\csec{Aligned Careers}
+{\raggedright
+\role{Go Backend Engineer}\role{Cloud-Native Engineer}\role{Site Reliability Engineer}
+\role{Platform / DevOps Engineer}\role{AI Infrastructure Engineer}
+\par}
+
+\Needspace{12\baselineskip}\csec{Where Go Fits: 2026--2035 Outlook}
+\begin{outlooktable}
+Cloud-native platforms & Kubernetes, Docker, Terraform and much of the cloud-native ecosystem are written in Go; expected to stay central. \\
+Microservices \& APIs & Fast, low-memory services with simple deployment as single binaries. \\
+AI infrastructure & Gateways, agent hosting, vector-search services and MCP servers that must be reliable at scale. \\
+DevOps \& SRE & CLIs, automation and observability tooling. \\
+\end{outlooktable}
+
+\Needspace{15\baselineskip}\csec{Recommended Industry Certifications}
+\begin{certtable}
+Certified Kubernetes Application Developer (CKAD) & CNCF / Linux Foundation & Professional & V \\
+Certified Kubernetes Administrator (CKA) & CNCF / Linux Foundation & Professional & V \\
+Google Cloud Professional Cloud Developer & Google Cloud & Professional & IV, V \\
+HashiCorp Certified: Terraform Associate & HashiCorp & Associate & V \\
+GitHub portfolio assessment (no official Go language exam exists) & AlgoProfessor / institution & Project-based & I--V \\
+\end{certtable}
+
+\csec{Text \& Reference Books}
+\begin{refs}
+\item A. A. A. Donovan and B. W. Kernighan, \emph{The Go Programming Language}, Addison-Wesley, 2015.
+\item J. Bodner, \emph{Learning Go}, 2nd ed., O'Reilly, 2024.
+\item K. Cox-Buday, \emph{Concurrency in Go}, O'Reilly, 2017.
+\item T. Harsanyi, \emph{100 Go Mistakes and How to Avoid Them}, Manning, 2022.
+\end{refs}
+
+%% ============================ COURSE 3: RUST =========================
+\course{3}{EPL-203}{Rust Programming for Safe Systems}{3--0--2--4}{C or any compiled language, data structures}
+{Memory-safe, high-performance software for systems, security, edge and AI infrastructure}
+
+\csec{Core Competencies}
+\begin{itemize}
+\item Reason confidently about ownership, borrowing and lifetimes to write memory-safe code without a garbage collector.
+\item Model problems with enums, traits, generics and pattern matching, with robust error handling.
+\item Write fearless concurrent and async programs with threads, channels and Tokio.
+\item Build production Rust: web services, WebAssembly, embedded firmware, Python extensions and AI inference.
+\end{itemize}
+
+\csec{Five-Unit Curriculum}
+\unit{I}{Rust Foundations and Ownership}{9}{%
+Why Rust: memory safety, performance and security; rustup, Cargo and crates.io; variables, mutability and data types;
+functions and control flow; ownership, moves and copies; references and borrowing; slices; the stack and the heap;
+reading compiler errors as guidance.}
+{Builds a text-statistics CLI with Cargo that processes files using borrowed slices and passes Clippy with no warnings.}
+\unit{II}{Types, Traits and Error Handling}{9}{%
+Structs and methods; enums and pattern matching; Option and Result; error handling with ?, thiserror and anyhow;
+traits, trait objects and generics; lifetimes in functions and structs; modules, crates and workspaces;
+unit, integration and documentation tests.}
+{Delivers a bank-ledger library modelled with enums and traits, typed errors and full unit and integration tests.}
+\unit{III}{Collections, Iterators and Smart Pointers}{9}{%
+Vec, String, HashMap and BTreeMap; iterators and closures; iterator adapters for zero-cost data processing;
+Box, Rc, Arc, RefCell and interior mutability; Deref and Drop; macros (declarative); performance measurement with Criterion;
+idiomatic API design.}
+{Builds a fast CSV analytics engine with iterator chains and smart pointers, benchmarked with Criterion against a Python version.}
+\unit{IV}{Fearless Concurrency, Async and Interoperability}{9}{%
+Threads, message passing and shared state with Mutex and Arc; Send and Sync; Rayon for data parallelism;
+async/await and the Tokio runtime; async I/O and networking; unsafe Rust and its rules;
+FFI with C; Python extensions with PyO3 and maturin.}
+{Ships a Tokio-based concurrent TCP chat server and a PyO3 extension that speeds up a Python hot loop.}
+\unit{V}{Production Rust: Web, WebAssembly, Embedded and AI}{9}{%
+Web services with Axum and SQLx; WebAssembly with wasm-bindgen; embedded Rust (embedded-hal, Embassy) on microcontrollers;
+AI and ML in Rust (Candle, Burn, ONNX Runtime bindings); observability with tracing;
+supply-chain security (cargo-audit, cargo-deny); Rust in the Linux kernel and safety-critical industries.}
+{Deploys an Axum REST service with SQLx, a WebAssembly front-end module and an on-device inference demo, with a clean cargo-audit report.}
+
+\Needspace{16\baselineskip}\csec{Industry Tools \& Ecosystem}
+\begin{toolstable}
+Toolchain & rustup, Cargo, Clippy, rustfmt, rust-analyzer, Miri, Criterion \\
+Async \& web & Tokio, Axum, Actix Web, Hyper, Reqwest, SQLx, Serde \\
+Parallel \& systems & Rayon, Crossbeam, nix, PyO3 / maturin, cbindgen \\
+WebAssembly \& embedded & wasm-bindgen, wasm-pack, Leptos, embedded-hal, Embassy, probe-rs \\
+AI \& data & Candle, Burn, ort (ONNX Runtime), Polars (Rust core), Hugging Face tokenizers \\
+Security & cargo-audit, cargo-deny, cargo-fuzz, tracing \\
+\end{toolstable}
+
+\csec{Hands-on Laboratory (30 Hours)}
+\labs
+{Cargo projects and ownership exercises}
+{Borrowing, slices and lifetimes puzzles}
+{Enums, traits and typed error handling}
+{Iterators, closures and Criterion benchmarks}
+{Threads, Arc/Mutex and Rayon parallelism}
+{Async TCP server with Tokio}
+{PyO3 extension and C FFI}
+{Axum + SQLx service, WebAssembly and embedded demo}
+
+\Needspace{12\baselineskip}\csec{Course Outcomes}
+\begin{cotable}
+CO1 & Explain ownership, borrowing and lifetimes and why they guarantee memory safety. & L2 Understand \\
+CO2 & Apply enums, traits, generics and error handling to model real problems. & L3 Apply \\
+CO3 & Analyse performance and write efficient code with iterators and smart pointers. & L4 Analyse \\
+CO4 & Build safe concurrent, async and cross-language (FFI, PyO3) components. & L3 Apply \\
+CO5 & Create production Rust services for web, WebAssembly, embedded or AI targets. & L6 Create \\
+\end{cotable}
+
+\capstone{\textbf{Secure High-Performance Inference Service:} a Rust platform with an Axum API, Tokio-based request batching,
+an ONNX/Candle model runtime, a PyO3 module for data scientists and a WebAssembly client, delivered with fuzz tests and supply-chain checks.}
+
+\csec{Aligned Careers}
+{\raggedright
+\role{Rust Systems Engineer}\role{Backend / Infrastructure Engineer}\role{Embedded Software Engineer}
+\role{Security Engineer}\role{WebAssembly Developer}\role{AI Infrastructure Engineer}
+\par}
+
+\Needspace{12\baselineskip}\csec{Where Rust Fits: 2026--2035 Outlook}
+\begin{outlooktable}
+Memory-safe systems & Security guidance increasingly favours memory-safe languages for new critical code; Rust is the leading choice. \\
+AI infrastructure & Tokenisers, inference engines, data engines (Polars) and vector databases. \\
+Edge, embedded \& automotive & Safe firmware and safety-critical components. \\
+WebAssembly \& blockchain & Browser, serverless and smart-contract platforms. \\
+\end{outlooktable}
+
+\Needspace{15\baselineskip}\csec{Recommended Industry Certifications}
+\begin{certtable}
+LFEL1002: Getting Started with Rust (exam-based badge) & Linux Foundation & Foundational & I, II \\
+LFD480: Programming in Rust (course certificate and badge) & Linux Foundation & Advanced & I--V \\
+Courses from Rust Foundation Trusted Training providers & Rust Foundation accredited providers & Course certificate & I--V \\
+Ardan Labs Rust certification (vendor exam) & Ardan Labs & Professional & II--IV \\
+\end{certtable}
+{\footnotesize\itshape Note: there is no official Rust Foundation certification exam yet; in June 2026 the Rust Foundation launched a Trusted Training accreditation for training providers.}
+
+\csec{Text \& Reference Books}
+\begin{refs}
+\item S. Klabnik and C. Nichols, \emph{The Rust Programming Language}, 2nd ed., No Starch Press, 2023.
+\item J. Blandy, J. Orendorff and L. F. S. Tindall, \emph{Programming Rust}, 2nd ed., O'Reilly, 2021.
+\item J. Gjengset, \emph{Rust for Rustaceans}, No Starch Press, 2021.
+\item L. Palmieri, \emph{Zero To Production in Rust}, 2022.
+\end{refs}
+
+%% ============================ COURSE 4: SCALA ========================
+\course{4}{EPL-204}{Scala Programming for Big Data \& Functional Systems}{3--0--2--4}{Java or Python, SQL basics}
+{Functional programming on the JVM for data platforms, streaming and reliable distributed services}
+
+\csec{Core Competencies}
+\begin{itemize}
+\item Write expressive Scala 3 combining object-oriented and functional programming.
+\item Model domains safely with immutable data, algebraic data types, pattern matching and type classes.
+\item Build large-scale batch and streaming data pipelines with Apache Spark, Kafka and Flink.
+\item Build reliable concurrent services with effect systems (Cats Effect, ZIO) and actors (Apache Pekko).
+\end{itemize}
+
+\csec{Five-Unit Curriculum}
+\unit{I}{Scala 3 Foundations on the JVM}{9}{%
+Scala and the JVM; sbt and scala-cli; expressions, values and types; methods and functions; classes, objects and traits;
+case classes and companion objects; Scala 3 syntax (indentation, enums, extension methods); string interpolation;
+interoperability with Java libraries.}
+{Builds a student-records application with case classes, enums and traits, using a Java library from Scala.}
+\unit{II}{Functional Programming in Scala}{9}{%
+Immutability and pure functions; higher-order functions and currying; algebraic data types and pattern matching;
+Option, Either and Try for safe error handling; recursion and tail calls; type classes with givens and using clauses;
+for-comprehensions; property-based testing with ScalaCheck.}
+{Delivers a pure-functional order-validation module with ADTs, Either-based errors and ScalaCheck property tests.}
+\unit{III}{Collections, Effects and Concurrency}{9}{%
+Immutable and mutable collections; lazy views; Futures and Promises; effect systems: Cats Effect IO and ZIO;
+resource safety, fibers and structured concurrency; streaming with fs2 / ZIO Streams; the actor model with Apache Pekko (Akka fork).}
+{Builds a concurrent file-processing pipeline in Cats Effect with fs2 streaming and safe resource handling.}
+\unit{IV}{Big Data with Apache Spark}{9}{%
+Spark architecture (driver, executors, DAG); RDDs, DataFrames and Datasets in Scala; Spark SQL and Catalyst optimiser;
+partitioning, joins and performance tuning; Delta Lake / Iceberg tables; Spark Structured Streaming with Kafka;
+Spark MLlib pipelines.}
+{Ships a Spark-Scala lakehouse job that processes millions of transactions, plus a Structured Streaming fraud-alert pipeline from Kafka.}
+\unit{V}{Production Scala: Services, Streaming and Data Platforms}{9}{%
+HTTP services with http4s, ZIO HTTP or Play; JSON with Circe; database access with Doobie/Skunk; Kafka producers and consumers;
+Apache Flink stream processing concepts; testing (MUnit, ScalaTest, Testcontainers); packaging, Docker and deployment;
+observability and JVM tuning.}
+{Deploys a containerised http4s service on Kafka and PostgreSQL with full tests and a Spark job orchestrated on a schedule.}
+
+\Needspace{16\baselineskip}\csec{Industry Tools \& Ecosystem}
+\begin{toolstable}
+Toolchain & Scala 3, sbt, scala-cli, Metals, IntelliJ IDEA, Scalafmt, Scalafix \\
+Functional \& effects & Cats, Cats Effect, ZIO, fs2, Circe, ScalaCheck \\
+Big data & Apache Spark, Delta Lake, Apache Iceberg, Spark MLlib, Databricks \\
+Streaming \& messaging & Apache Kafka, Apache Flink, Apache Pekko (Akka fork) \\
+Services \& data access & http4s, ZIO HTTP, Play Framework, Doobie, Skunk \\
+Testing \& delivery & MUnit, ScalaTest, Testcontainers, Docker, GitHub Actions \\
+\end{toolstable}
+
+\csec{Hands-on Laboratory (30 Hours)}
+\labs
+{sbt projects, case classes and traits}
+{Pattern matching and ADT modelling}
+{Type classes, givens and for-comprehensions}
+{Cats Effect / ZIO concurrent programs}
+{Spark DataFrames and Spark SQL in Scala}
+{Spark Structured Streaming with Kafka}
+{http4s REST service with Circe and Doobie}
+{Containerised Scala service with Testcontainers}
+
+\Needspace{12\baselineskip}\csec{Course Outcomes}
+\begin{cotable}
+CO1 & Explain Scala 3's type system, syntax and JVM interoperability. & L2 Understand \\
+CO2 & Apply functional programming to model domains safely. & L3 Apply \\
+CO3 & Build concurrent, resource-safe programs with effect systems and actors. & L3 Apply \\
+CO4 & Analyse and optimise large-scale Spark batch and streaming jobs. & L4 Analyse \\
+CO5 & Create production Scala data platforms and services. & L6 Create \\
+\end{cotable}
+
+\capstone{\textbf{Real-Time Financial Data Platform:} Kafka ingestion, Spark Structured Streaming for fraud detection, Delta Lake storage,
+and a functional http4s API serving risk scores, built with typed, tested Scala and deployed in containers.}
+
+\csec{Aligned Careers}
+{\raggedright
+\role{Big Data Engineer}\role{Scala Developer}\role{Spark Engineer}\role{Streaming Engineer}
+\role{Functional Programmer (FinTech)}\role{Data Platform Engineer}
+\par}
+
+\Needspace{12\baselineskip}\csec{Where Scala Fits: 2026--2035 Outlook}
+\begin{outlooktable}
+Big data engines & Spark, Kafka-based systems and many data platforms are built on the JVM; Scala skills help with core engine work. \\
+Streaming \& FinTech & Type-safe, functional code for real-time, high-reliability financial systems. \\
+Functional programming & Its ideas (immutability, ADTs, effects) shape modern Java, Kotlin, Rust and TypeScript. \\
+Data for AI & Large-scale feature pipelines and data preparation for AI products. \\
+\end{outlooktable}
+
+\Needspace{15\baselineskip}\csec{Recommended Industry Certifications}
+\begin{certtable}
+Databricks Certified Associate Developer for Apache Spark & Databricks & Associate & IV \\
+Databricks Certified Data Engineer Associate / Professional & Databricks & Assoc./Prof. & IV, V \\
+Confluent Certified Developer for Apache Kafka & Confluent & Associate & IV, V \\
+Functional Programming in Scala Specialization & EPFL (Coursera) & Course certificate & I--III \\
+AWS Certified Data Engineer -- Associate & AWS & Associate & IV, V \\
+\end{certtable}
+
+\csec{Text \& Reference Books}
+\begin{refs}
+\item M. Odersky, L. Spoon, B. Venners and F. Sommers, \emph{Programming in Scala}, 5th ed., Artima, 2021.
+\item M. Pilquist, R. Bjarnason and P. Chiusano, \emph{Functional Programming in Scala}, 2nd ed., Manning, 2023.
+\item B. Chambers and M. Zaharia, \emph{Spark: The Definitive Guide}, O'Reilly, 2018.
+\item D. Wampler, \emph{Programming Scala}, 3rd ed., O'Reilly, 2021.
+\end{refs}
+
+%% ============================ COURSE 5: JAVA =========================
+\course{5}{EPL-205}{Java Programming for Enterprise \& AI Applications}{3--0--2--4}{Basic programming logic, computer fundamentals}
+{Modern Java, Spring Boot microservices and AI-enabled enterprise systems}
+
+\csec{Core Competencies}
+\begin{itemize}
+\item Write modern Java (LTS 21/25) using records, sealed types, pattern matching, generics, lambdas and streams.
+\item Build scalable concurrent applications with virtual threads, structured concurrency and JVM tuning.
+\item Develop secure, tested Spring Boot microservices with persistence, messaging and observability.
+\item Add AI to enterprise Java with Spring AI and LangChain4j, and deploy cloud-native with containers and GraalVM.
+\end{itemize}
+
+\csec{Five-Unit Curriculum}
+\unit{I}{Java Foundations and Object-Oriented Programming}{9}{%
+JDK, JVM and JRE; compilation and bytecode; data types, operators and control flow; arrays and strings;
+classes, objects, constructors, encapsulation, inheritance, polymorphism and abstraction; interfaces;
+packages and the module system; exception handling; build tools (Maven, Gradle).}
+{Builds a console banking system with full OOP design, custom exceptions and a Maven build.}
+\unit{II}{Modern Java: Generics, Collections, Lambdas and Streams}{9}{%
+Generics and bounded types; the Collections Framework (List, Set, Map, Queue); equals, hashCode and Comparable;
+lambdas, functional interfaces and method references; Stream API and collectors; Optional;
+records, sealed classes and pattern matching for switch; text blocks; unit testing with JUnit 5 and Mockito.}
+{Delivers an employee-analytics module using records, sealed types and the Stream API, with JUnit 5 tests.}
+\unit{III}{Concurrency, the JVM and Performance}{9}{%
+Threads, executors and CompletableFuture; virtual threads (Project Loom) and structured concurrency;
+synchronisation, locks and concurrent collections; memory model; JVM internals: class loading, JIT, garbage collectors (G1, ZGC);
+profiling with JDK Flight Recorder; I/O and NIO.}
+{Builds a high-throughput order processor comparing platform and virtual threads, profiled with JFR and tuned GC.}
+\unit{IV}{Enterprise Java with Spring Boot}{9}{%
+Dependency injection and Spring Core; Spring Boot 3; REST APIs with Spring Web; validation; data access with Spring Data JPA and Hibernate;
+transactions; Spring Security with OAuth2/JWT; testing with Spring Boot Test and Testcontainers; API documentation (OpenAPI).}
+{Ships a secured Spring Boot e-commerce API with JPA, PostgreSQL, OAuth2/JWT and Testcontainers integration tests.}
+\unit{V}{Cloud-Native and AI-Enabled Java}{9}{%
+Microservices patterns; messaging with Apache Kafka; caching with Redis; observability with Micrometer and OpenTelemetry;
+Docker, Kubernetes and GraalVM native images; AI in Java: Spring AI and LangChain4j for LLM calls, RAG and tool use;
+security and dependency scanning (OWASP Dependency-Check).}
+{Deploys Kafka-connected Spring Boot microservices on Kubernetes with a GraalVM native image and a Spring AI RAG assistant.}
+
+\Needspace{16\baselineskip}\csec{Industry Tools \& Ecosystem}
+\begin{toolstable}
+Toolchain & JDK 21/25 (LTS), Maven, Gradle, IntelliJ IDEA, JUnit 5, Mockito \\
+Enterprise frameworks & Spring Boot 3, Spring Data JPA, Hibernate, Spring Security, Quarkus, Micronaut \\
+Messaging \& data & Apache Kafka, Redis, PostgreSQL, Flyway, Testcontainers \\
+Cloud-native & Docker, Kubernetes, GraalVM Native Image, Spring Cloud \\
+AI in Java & Spring AI, LangChain4j, Deep Java Library (DJL), ONNX Runtime Java \\
+Observability \& security & Micrometer, OpenTelemetry, JDK Flight Recorder, OWASP Dependency-Check, SonarQube \\
+\end{toolstable}
+
+\csec{Hands-on Laboratory (30 Hours)}
+\labs
+{OOP design: classes, inheritance and interfaces}
+{Exceptions, files and Maven project build}
+{Generics, collections and Comparable}
+{Lambdas, streams, records and pattern matching}
+{Virtual threads vs platform threads benchmark}
+{Spring Boot REST API with JPA and PostgreSQL}
+{Spring Security (OAuth2/JWT) and Testcontainers}
+{Kafka microservices, GraalVM native image and Spring AI}
+
+\Needspace{12\baselineskip}\csec{Course Outcomes}
+\begin{cotable}
+CO1 & Explain the JVM, object-oriented principles and Java's type system. & L2 Understand \\
+CO2 & Apply generics, collections, lambdas and streams in modern Java. & L3 Apply \\
+CO3 & Analyse concurrency and JVM performance and tune applications. & L4 Analyse \\
+CO4 & Build secure, tested Spring Boot services with persistence. & L3 Apply \\
+CO5 & Create cloud-native, AI-enabled Java microservices. & L6 Create \\
+\end{cotable}
+
+\capstone{\textbf{AI-Enabled Enterprise Commerce Platform:} Spring Boot microservices for catalogue, orders and payments connected by Kafka,
+secured with OAuth2, deployed on Kubernetes with native images, and a Spring AI assistant that answers customer and staff questions from company data.}
+
+\csec{Aligned Careers}
+{\raggedright
+\role{Java Developer}\role{Spring Boot Microservices Engineer}\role{Full-Stack Java Developer}
+\role{Enterprise Solutions Architect}\role{Android / JVM Developer}\role{AI-Enabled Backend Engineer}
+\par}
+
+\Needspace{12\baselineskip}\csec{Where Java Fits: 2026--2035 Outlook}
+\begin{outlooktable}
+Enterprise systems & Banking, insurance, telecom, e-commerce and government systems run on Java; expected to stay the enterprise backbone. \\
+Modern Java & Twice-yearly releases and LTS versions (21, 25) keep adding productivity and performance features. \\
+AI in the enterprise & Spring AI and LangChain4j bring LLMs and agents into existing Java systems. \\
+Cloud \& big data & Native images, Kubernetes and JVM data engines (Kafka, Flink, Spark). \\
+\end{outlooktable}
+
+\Needspace{15\baselineskip}\csec{Recommended Industry Certifications}
+\begin{certtable}
+Oracle Certified Professional: Java SE 21 Developer (1Z0-830) & Oracle & Professional & I--III \\
+Oracle Certified Professional: Java SE 17 Developer (1Z0-829) & Oracle & Professional & I--III \\
+Spring Certified Professional 2024 (exam 2V0-72.22) & Broadcom (VMware Tanzu) & Professional & IV \\
+Certified Kubernetes Application Developer (CKAD) & CNCF / Linux Foundation & Professional & V \\
+NPTEL/SWAYAM: Programming in Java & IIT faculty, Govt. of India & Academic & I, II \\
+\end{certtable}
+
+\csec{Text \& Reference Books}
+\begin{refs}
+\item J. Bloch, \emph{Effective Java}, 3rd ed., Addison-Wesley, 2018.
+\item C. S. Horstmann, \emph{Core Java, Vol. I and II}, 13th ed., Pearson, 2024.
+\item B. Goetz et al., \emph{Java Concurrency in Practice}, Addison-Wesley, 2006.
+\item C. Walls, \emph{Spring in Action}, 6th ed., Manning, 2022.
+\item J. Boyarsky and S. Selikoff, \emph{OCP Oracle Certified Professional Java SE 21 Developer Study Guide}, Sybex, 2024.
+\end{refs}

@@ -55,6 +55,7 @@ w("**🎞️ Presentation:** [Enterprise_AI_Curriculum_Slides.pdf](slides/Enterp
 w("**📊 PowerPoint deck:** [Enterprise_AI_Curriculum.pptx](slides/Enterprise_AI_Curriculum.pptx) (37 editable slides with speaker notes, Indian-tricolour colour code, track-coloured course-to-career matrix) · [PDF preview](slides/Enterprise_AI_Curriculum_PowerPoint.pdf) · generator [`scripts/make_pptx.js`](scripts/make_pptx.js).\n")
 w("**📘 Syllabus book:** [Enterprise_AI_Syllabus.pdf](Enterprise_AI_Syllabus.pdf) (updated edition, November 2026: all 16 courses plus skills, jobs, salaries, career pathways, 10 enterprise products and 10 unicorn-track products), with its LaTeX source in [`latex/`](latex/).\n")
 w(f"**🌐 Explore it as a 3D interactive website:** **{SITE}** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).\n")
+w("**💻 Companion syllabus, Enterprise Programming Languages:** [Programming_Languages_Syllabus.pdf](programming-languages/Programming_Languages_Syllabus.pdf) (23 pages): five courses in **Python, Go, Rust, Scala and Java**, each with five units and hands-on outcomes, industry tools, 8 labs, CO–Bloom mapping, an enterprise capstone, certifications and a 2026–2035 outlook. Course-by-course summary in [`programming-languages/`](programming-languages/), LaTeX source in [`programming-languages/latex/`](programming-languages/latex/).\n")
 
 
 def course_table(track):
@@ -164,6 +165,8 @@ w("latex/                      LaTeX source (XeLaTeX) and compiled PDF of the sy
 w("slides/                     Beamer source + PDF, and the PowerPoint deck (.pptx + PDF preview)")
 w("scripts/make_slides.py      builds the Beamer presentation source from the data")
 w("scripts/make_pptx.js        builds the PowerPoint deck (pptxgenjs)")
+w("programming-languages/      companion syllabus: Python, Go, Rust, Scala, Java (PDF, README, latex/ source)")
+w("scripts/make_lang_readme.py builds programming-languages/README.md from its LaTeX source")
 w("assets/                     AlgoProfessor logo")
 w("assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN")
 w("```\n\nTo rebuild the website and this README after editing any file in `data/` or the template:\n")

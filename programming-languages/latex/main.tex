@@ -1,0 +1,198 @@
+%% =====================================================================
+%%  Industry-Aligned Programming Languages Syllabus
+%%  Python, Go, Rust, Scala, Java  |  5 courses x 5 units
+%%  Compile with:  xelatex main.tex  (run twice)
+%% =====================================================================
+\input{preamble}
+
+% Outlook table: Domain | 2026-2035 role
+\newenvironment{outlooktable}{%
+  \small
+  \tabularx{\textwidth}{>{\raggedright\arraybackslash\bfseries\leavevmode\color{navy}}p{3.6cm} >{\raggedright\arraybackslash}X}
+  \rowcolor{navy}\multicolumn{1}{l}{\leavevmode\color{white}\textbf{Domain}} & \leavevmode\color{white}\textbf{Role and 2026--2035 engineering outlook}\\}%
+  {\bottomrule\endtabularx}
+
+\begin{document}
+
+%% ----------------------------- COVER --------------------------------
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[saffron] (current page.north west) rectangle ([yshift=-14mm]current page.north east);
+  \fill[saffron!35] ([yshift=-14mm]current page.north west) rectangle ([yshift=-16mm]current page.north east);
+  \fill[indiagreen] (current page.south west) rectangle ([yshift=14mm]current page.south east);
+  \fill[indiagreen!35] ([yshift=14mm]current page.south west) rectangle ([yshift=16mm]current page.south east);
+  \begin{scope}[shift={([yshift=-72mm]current page.north)}]
+    \draw[chakra,line width=2.2pt] (0,0) circle (17mm);
+    \foreach \a in {0,15,...,345}{
+      \draw[chakra,line width=0.7pt] (0,0) -- (\a:16.2mm);
+      \fill[chakra] (\a+7.5:16.4mm) circle (0.55mm);}
+    \fill[chakra] (0,0) circle (2.6mm);
+  \end{scope}
+\end{tikzpicture}
+
+\vspace*{80mm}
+\begin{center}
+  {\color{saffron!85!black}\large\bfseries\textsc{Industry-Aligned Course Syllabus}}\\[10pt]
+  {\color{chakra}\fontsize{30}{36}\selectfont\bfseries Enterprise Programming\\[4pt] Languages}\\[10pt]
+  {\color{saffron}\rule{0.18\linewidth}{2pt}}{\color{white!80!black}\rule{0.18\linewidth}{2pt}}{\color{indiagreen}\rule{0.18\linewidth}{2pt}}\\[10pt]
+  {\color{chakra}\Large Five Courses \quad$\cdot$\quad Five Units Each}\\[16pt]
+  {\color{chakra}\fontsize{17}{22}\selectfont\bfseries Python \;\textbullet\; Go \;\textbullet\; Rust \;\textbullet\; Scala \;\textbullet\; Java}\\[16pt]
+  {\color{ink}\normalsize
+  \begin{tabular}{c}
+  Python for AI \& Enterprise \;\textbullet\; Go for Cloud-Native Systems \;\textbullet\; Rust for Safe Systems\\[2pt]
+  Scala for Big Data \& Functional Systems \;\textbullet\; Java for Enterprise \& AI Applications
+  \end{tabular}}\\[18pt]
+  {\color{chakra}\bfseries Core Competencies \;\textbar\; Five-Unit Curriculum \;\textbar\; Industry Tools \& Hands-on Outcomes\\[3pt]
+  \color{saffron!85!black}Certifications \;\textbar\; 2026--2035 Engineering Outlook \;\textbar\; Aligned Careers}\\[26pt]
+  {\color{chakra}\large\bfseries Dr S Satyanarayana Ph.D., PDF(AI), FARSC}\\[3pt]
+  {\color{chakra}\normalsize AlgoProfessor AI R\&D Solutions, Hyderabad}\\[8pt]
+  {\color{indiagreen!80!black}\small Curriculum Edition 2026--27}
+\end{center}
+\end{titlepage}
+
+\input{ap-message}
+
+%% ------------------------- TABLE OF CONTENTS ------------------------
+\clearpage
+\renewcommand{\contentsname}{\color{navy}Contents}
+\tableofcontents
+\clearpage
+
+%% ------------------------- PROGRAMME OVERVIEW -----------------------
+\section*{Programme Overview}
+\addcontentsline{toc}{section}{Programme Overview}
+This curriculum builds \textbf{polyglot engineers} who can choose and use the right language for each layer of a modern
+enterprise and AI product. Each course follows the same five-unit arc:
+\emph{foundations $\rightarrow$ core language design $\rightarrow$ concurrency and performance $\rightarrow$ services and
+data $\rightarrow$ production, cloud and AI integration}. Every unit ends with a concrete \textbf{hands-on outcome}, and every course
+pairs 45 lecture hours with 30 laboratory hours and ends in an enterprise capstone.
+
+\vspace{4pt}
+{\small
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{0.7cm} >{\raggedright\arraybackslash\bfseries}p{5.4cm} >{\centering\arraybackslash}p{1.8cm} >{\centering\arraybackslash}p{1.6cm} X}
+\rowcolor{navy}\leavevmode\color{white}\textbf{No.} & \multicolumn{1}{l}{\leavevmode\color{white}\textbf{Course}} & \leavevmode\color{white}\textbf{Code} & \leavevmode\color{white}\textbf{L-T-P-C} & \leavevmode\color{white}\textbf{Product Focus}\\
+1 & Python Programming for AI \& Enterprise & EPL-201 & 3-0-2-4 & AI services, data pipelines, automation and agents\\
+\rowcolor{navylight} 2 & Go Programming for Cloud-Native Systems & EPL-202 & 3-0-2-4 & Microservices, Kubernetes tools and AI gateways\\
+3 & Rust Programming for Safe Systems & EPL-203 & 3-0-2-4 & Memory-safe systems, edge, WebAssembly and inference engines\\
+\rowcolor{navylight} 4 & Scala Programming for Big Data \& Functional Systems & EPL-204 & 3-0-2-4 & Spark and streaming data platforms, FinTech services\\
+5 & Java Programming for Enterprise \& AI Applications & EPL-205 & 3-0-2-4 & Spring Boot microservices and AI-enabled enterprise systems\\
+\bottomrule
+\end{tabularx}}
+
+\begin{multicols}{2}
+\csec{Assessment Scheme (per course)}
+{\small
+\begin{tabularx}{\linewidth}{X >{\centering\arraybackslash}p{1.4cm}}
+Weekly lab programs \& GitHub commits & 20\% \\
+Two mid-term evaluations & 20\% \\
+Code reviews \& mini-project & 20\% \\
+Enterprise capstone (demo + report) & 40\% \\
+\bottomrule
+\end{tabularx}}
+
+\csec{Bloom's Taxonomy Legend}
+{\small
+L1 Remember \quad L2 Understand \quad L3 Apply\\
+L4 Analyse \quad L5 Evaluate \quad L6 Create}
+
+\columnbreak
+\csec{Common Engineering Standards}
+{\small
+\begin{itemize}
+\item Git, pull requests and code review for every lab
+\item Automated tests, linters and formatters in CI
+\item Containerised delivery with Docker; Kubernetes for capstones
+\item Dependency and security scanning on every build
+\item Responsible use of AI coding assistants, with human review
+\end{itemize}}
+\end{multicols}
+
+\csec{Suggested Learning Pathway}
+{\small
+\textbf{Year 1:} Python (EPL-201) $\rightarrow$ Java (EPL-205) \quad
+\textbf{Year 2:} Go (EPL-202) or Scala (EPL-204) \quad
+\textbf{Year 3:} Rust (EPL-203).\\
+\textbf{Specialisations:} AI \& Data -- Python, Scala; Cloud \& Platform -- Go, Java; Systems, Security \& Edge -- Rust, Go;
+Enterprise Applications -- Java, Python.}
+
+%% ------------------------- WHY THESE FIVE ---------------------------
+\clearpage
+\section*{Why These Five Languages for 2026--2035}
+\addcontentsline{toc}{section}{Why These Five Languages for 2026--2035}
+Modern products are \textbf{polyglot}. A typical AI product uses Python for models and agents, Java or Go for business services,
+Scala for large data pipelines, and Rust for the fast, safe core. Together these five languages cover every layer an engineer will
+meet between 2026 and 2035.
+
+\vspace{4pt}
+{\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash\bfseries\leavevmode\color{navy}}p{1.6cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{3.3cm}}
+\rowcolor{navy}\multicolumn{1}{l}{\leavevmode\color{white}\textbf{Language}} & \leavevmode\color{white}\textbf{Core strength} & \leavevmode\color{white}\textbf{Role in the AI era} & \leavevmode\color{white}\textbf{Key industries}\\
+Python & Fast to write, huge library ecosystem, readable & Language of AI models, LLM apps, agents and data science & AI, analytics, research, automation\\
+\rowcolor{navylight} Go & Simple, fast compile, built-in concurrency & Infrastructure that hosts and scales AI: gateways, agents, operators & Cloud, SaaS, DevOps, telecom\\
+Rust & Memory safety without garbage collection, C-level speed & Safe, fast engines: inference, tokenisers, data engines, edge AI & Systems, security, automotive, blockchain\\
+\rowcolor{navylight} Scala & Functional + OOP on the JVM, strong types & Large-scale data and streaming pipelines that feed AI & Big data, FinTech, streaming\\
+Java & Mature, stable, huge enterprise base, modern LTS releases & AI added to existing enterprise systems via Spring AI and LangChain4j & Banking, insurance, e-commerce, government\\
+\bottomrule
+\end{tabularx}}
+
+\csec{Engineering Outcomes Expected by 2030--2035}
+\begin{itemize}
+\item \textbf{AI-assisted programming is normal:} engineers direct coding assistants and agents, so reading code, reviewing it, testing it and designing systems matter more than typing it.
+\item \textbf{Polyglot by default:} graduates move between Python, a JVM language and a systems language within one product.
+\item \textbf{Memory safety and secure-by-design:} new critical software increasingly uses memory-safe languages such as Rust, Go and Java.
+\item \textbf{Concurrency everywhere:} virtual threads, goroutines, async Rust and effect systems are core skills for scalable AI services.
+\item \textbf{Specification and verification:} types, tests and evaluation suites become the way humans control AI-written code.
+\end{itemize}
+
+\csec{Industry Certification Policy}
+{\small Each course lists certifications that match its units. Names and exam codes were checked in November 2026.
+Some languages (Go and Rust) have no official language-level exam, so cloud-native certifications, accredited training and GitHub
+portfolio assessment are listed instead. Python Institute exams are moving to new versions during 2026. Learners should confirm the
+current exam code on the issuer's website before registering.}
+
+{\footnotesize\itshape The 2026--2035 outlook reflects current industry direction and is a planning guide, not a forecast guarantee; review it every academic year.}
+
+\input{lang-courses}
+
+%% ------------------------- CAREER MAP -------------------------------
+\clearpage
+\section*{Language-to-Career Alignment Matrix}
+\addcontentsline{toc}{section}{Language-to-Career Alignment Matrix}
+\renewcommand{\arraystretch}{1.1}
+{\small
+\newcommand{\y}{\cellcolor{gold!55}\color{navy}\textbf{$\bullet$}}
+\newcommand{\p}{\cellcolor{goldlight}\color{navymid}$\circ$}
+\begin{tabularx}{\textwidth}{>{\bfseries\leavevmode\color{navy}}X *{5}{>{\centering\arraybackslash}p{1.5cm}}}
+\rowcolor{navy}\leavevmode\color{white}\textbf{Career Role} & \leavevmode\color{white}\textbf{Python} & \leavevmode\color{white}\textbf{Go} & \leavevmode\color{white}\textbf{Rust} & \leavevmode\color{white}\textbf{Scala} & \leavevmode\color{white}\textbf{Java}\\
+AI / ML Engineer                 & \y &    & \p &    & \p \\
+Agentic AI Developer             & \y & \p &    &    & \p \\
+Data Engineer                    & \y &    & \p & \y & \p \\
+Big Data / Spark Engineer        & \p &    &    & \y & \p \\
+Backend Engineer                 & \y & \y & \p &    & \y \\
+Cloud-Native / Platform Engineer & \p & \y & \p &    & \p \\
+Site Reliability / DevOps        & \y & \y &    &    &    \\
+Enterprise Java / Spring Engineer&    &    &    & \p & \y \\
+Systems / Embedded Engineer      &    & \p & \y &    &    \\
+Security Engineer                & \y & \y & \y &    &    \\
+AI Infrastructure Engineer       & \y & \y & \y &    & \p \\
+FinTech / Streaming Engineer     & \p & \p &    & \y & \y \\
+Solutions Architect              & \y & \p &    & \p & \y \\
+\bottomrule
+\end{tabularx}
+\par\vspace{4pt}
+\colorbox{gold!55}{\color{navy}\textbf{$\bullet$}} Primary language for the role \qquad
+\colorbox{goldlight}{\color{navymid}$\circ$} Supporting language}
+
+\vspace{10pt}
+\begin{tcolorbox}[enhanced,colback=navylight,colframe=navy,boxrule=0.8pt,arc=2pt,
+  borderline west={4pt}{0pt}{gold}]
+\small\color{navy}
+\textbf{Graduate profile.} A learner who completes these five courses can build an AI service in Python, run it on cloud infrastructure
+written in Go, feed it with Scala data pipelines, integrate it into Java enterprise systems and optimise its critical paths in Rust,
+with tested, secure and observable code in every language.
+\end{tcolorbox}
+
+\input{ap-contact}
+
+\end{document}

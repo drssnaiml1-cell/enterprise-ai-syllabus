@@ -42,6 +42,8 @@ Every course follows one arc: **foundations → core methods → advanced method
 
 **🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).
 
+**💻 Companion syllabus, Enterprise Programming Languages:** [Programming_Languages_Syllabus.pdf](programming-languages/Programming_Languages_Syllabus.pdf) (23 pages): five courses in **Python, Go, Rust, Scala and Java**, each with five units and hands-on outcomes, industry tools, 8 labs, CO–Bloom mapping, an enterprise capstone, certifications and a 2026–2035 outlook. Course-by-course summary in [`programming-languages/`](programming-languages/), LaTeX source in [`programming-languages/latex/`](programming-languages/latex/).
+
 ## Core AI Track
 
 | # | Code | Course | Product focus | Top 3 languages |
@@ -1374,6 +1376,8 @@ latex/                      LaTeX source (XeLaTeX) and compiled PDF of the sylla
 slides/                     Beamer source + PDF, and the PowerPoint deck (.pptx + PDF preview)
 scripts/make_slides.py      builds the Beamer presentation source from the data
 scripts/make_pptx.js        builds the PowerPoint deck (pptxgenjs)
+programming-languages/      companion syllabus: Python, Go, Rust, Scala, Java (PDF, README, latex/ source)
+scripts/make_lang_readme.py builds programming-languages/README.md from its LaTeX source
 assets/                     AlgoProfessor logo
 assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```

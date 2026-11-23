@@ -1,0 +1,45 @@
+%% =====================================================================
+%%  Final page: Contact AlgoProfessor
+%% =====================================================================
+\clearpage
+\thispagestyle{empty}
+\phantomsection\addcontentsline{toc}{section}{Contact AlgoProfessor}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[saffron] (current page.north west) rectangle ([yshift=-14mm]current page.north east);
+  \fill[saffron!35] ([yshift=-14mm]current page.north west) rectangle ([yshift=-16mm]current page.north east);
+  \fill[indiagreen] (current page.south west) rectangle ([yshift=14mm]current page.south east);
+  \fill[indiagreen!35] ([yshift=14mm]current page.south west) rectangle ([yshift=16mm]current page.south east);
+  \begin{scope}[shift={([yshift=-58mm]current page.north)}]
+    \draw[chakra,line width=1.8pt] (0,0) circle (13mm);
+    \foreach \a in {0,15,...,345}{
+      \draw[chakra,line width=0.6pt] (0,0) -- (\a:12.3mm);
+      \fill[chakra] (\a+7.5:12.5mm) circle (0.45mm);}
+    \fill[chakra] (0,0) circle (2mm);
+  \end{scope}
+\end{tikzpicture}
+
+\vspace*{62mm}
+\begin{center}
+{\color{saffron!85!black}\large\bfseries\textsc{Partner with AlgoProfessor}}\\[10pt]
+{\color{chakra}\fontsize{26}{32}\selectfont\bfseries Build Industry-Ready Engineers\\[4pt] for 2026--2035}\\[10pt]
+{\color{saffron}\rule{0.16\linewidth}{2pt}}{\color{white!80!black}\rule{0.16\linewidth}{2pt}}{\color{indiagreen}\rule{0.16\linewidth}{2pt}}\\[14pt]
+\begin{minipage}{0.82\textwidth}\centering\color{ink}
+Python \;\textbullet\; Go \;\textbullet\; Rust \;\textbullet\; Scala \;\textbullet\; Java\\[4pt]Curriculum adoption \;\textbullet\; Faculty development \;\textbullet\; Programming \& cloud labs \;\textbullet\; GitHub course repositories\\[2pt]
+Industry capstones \;\textbullet\; Certification readiness \;\textbullet\; Centre of Excellence \;\textbullet\; Research \& Q1 publications\\[2pt]
+Accreditation \& ranking support \;\textbullet\; Placement \& career readiness
+\end{minipage}\\[22pt]
+
+\begin{tcolorbox}[enhanced,width=0.72\textwidth,colback=white,colframe=chakra,boxrule=1pt,arc=3pt,
+  borderline north={4pt}{0pt}{saffron},borderline south={4pt}{0pt}{indiagreen},halign=center,
+  left=10pt,right=10pt,top=10pt,bottom=10pt]
+{\color{chakra}\large\bfseries Vice-Chancellors, Deans and HoDs: contact us to schedule a curriculum consultation}\\[12pt]
+{\color{saffron!85!black}\Large\bfseries \href{mailto:cto@algoprofessor.com}{cto@algoprofessor.com}}\\[8pt]
+{\color{chakra}\large \href{https://www.algoprofessor.com}{www.algoprofessor.com}}\\[8pt]
+{\color{ink}\small University partnerships: \href{https://campus.algoprofessor.com}{campus.algoprofessor.com}}
+\end{tcolorbox}
+
+\vspace{18pt}
+{\color{chakra}\large\bfseries AlgoProfessor AI R\&D Solutions}\\[3pt]
+{\color{ink}Hyderabad, India}\\[10pt]
+{\color{indiagreen!80!black}\small\itshape Design \;\textbullet\; Training \;\textbullet\; Research \;\textbullet\; Innovation \;\textbullet\; Consultancy}
+\end{center}
