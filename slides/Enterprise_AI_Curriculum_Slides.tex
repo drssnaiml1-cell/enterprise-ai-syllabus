@@ -1,5 +1,6 @@
 \documentclass[aspectratio=169,10pt]{beamer}
-\usepackage{fontspec}\setmainfont{FreeSerif}\setsansfont{FreeSerif}
+\usepackage{fontspec}\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}[Ligatures={NoCommon}]\setsansfont{Times New Roman}[Ligatures={NoCommon}]}{\setmainfont{FreeSerif}\setsansfont{FreeSerif}}
+\newfontfamily\fbfont{FreeSerif}\usepackage{newunicodechar}\newunicodechar{₹}{{\fbfont ₹}}\newunicodechar{★}{{\fbfont ★}}\newunicodechar{☆}{{\fbfont ☆}}\newunicodechar{▶}{{\fbfont ▶}}\newunicodechar{ﬀ}{ff}\newunicodechar{ﬁ}{fi}\newunicodechar{ﬂ}{fl}\newunicodechar{ﬃ}{ffi}\newunicodechar{ﬄ}{ffl}
 \usepackage{tikz,tabularx,booktabs,colortbl,array}
 \usetikzlibrary{shapes.geometric,shapes.symbols,arrows.meta,positioning,calc,shadows}
 \definecolor{navy}{HTML}{0B1F3A}\definecolor{navy2}{HTML}{1E3A6E}
@@ -37,7 +38,7 @@
 {\fontsize{27}{31}\selectfont\bfseries\color{navy}Enterprise AI\\Product Development}\\[8pt]
 {\normalsize\color{navy2}16 courses \textbullet{} 3 tracks \textbullet{} skills, jobs \& salaries \textbullet{} 20 products}\\[12pt]
 {\small\bfseries Dr S Satyanarayana Ph.D., PDF(AI), FARSC}\\
-{\scriptsize Founder, CEO \& Chief Agentic AI Scientist, AlgoProfessor AI R\&D Solutions, Hyderabad}\\[6pt]
+{\scriptsize Agentic AI Scientist $\cdot$ Founder \& CEO, AlgoProfessor $\cdot$ Creator of AlgoLang}\\[6pt]
 {\scriptsize\color{gold}\bfseries cto@algoprofessor.com \;|\; drssnaiml1-cell.github.io/enterprise-ai-syllabus}};
 \end{tikzpicture}
 \end{frame}}

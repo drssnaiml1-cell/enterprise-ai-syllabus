@@ -46,7 +46,8 @@ w = out.append
 w(r"""\documentclass[10pt,a4paper]{article}
 \usepackage[a4paper,top=2.1cm,bottom=2.0cm,left=2.0cm,right=2.0cm,headheight=14pt]{geometry}
 \usepackage{fontspec}
-\setmainfont{FreeSerif}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}[Ligatures={NoCommon}]}{\setmainfont{FreeSerif}}
+\newfontfamily\fbfont{FreeSerif}\usepackage{newunicodechar}\newunicodechar{₹}{{\fbfont ₹}}\newunicodechar{★}{{\fbfont ★}}\newunicodechar{☆}{{\fbfont ☆}}\newunicodechar{▶}{{\fbfont ▶}}\newunicodechar{ﬀ}{ff}\newunicodechar{ﬁ}{fi}\newunicodechar{ﬂ}{fl}\newunicodechar{ﬃ}{ffi}\newunicodechar{ﬄ}{ffl}
 \usepackage{xcolor}
 \definecolor{navy}{HTML}{0B1F3A}\definecolor{navy2}{HTML}{1E3A6E}
 \definecolor{gold}{HTML}{A8811C}\definecolor{goldl}{HTML}{C9A227}\definecolor{goldbg}{HTML}{FBF6E9}
@@ -144,7 +145,7 @@ I invite you to partner with us to make your institution a model of AI-ready hig
 
 With regards,\\[2pt]
 {\bfseries\color{navy}Dr S Satyanarayana Ph.D., PDF(AI), FARSC}\\
-{\small Founder, CEO \& Chief Agentic AI Scientist, AlgoProfessor AI R\&D Solutions, Hyderabad\\Editor-in-Chief, IJCMI\\
+{\small Agentic AI Scientist $\cdot$ Founder \& CEO, AlgoProfessor $\cdot$ Creator of AlgoLang\\AlgoProfessor AI R\&D Solutions, Hyderabad\\Editor-in-Chief, IJCMI\\
 {\color{gold}\bfseries Partnership enquiries: cto@algoprofessor.com \quad|\quad www.algoprofessor.com}}
 \newpage
 """)

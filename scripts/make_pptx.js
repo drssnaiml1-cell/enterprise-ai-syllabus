@@ -20,7 +20,7 @@ const SKILL = process.env.PPTX_SKILL_DIR;
 const HEX = { navy: "0B1F3A", navy2: "1E3A6E", gold: "C9A227", goldDk: "A8811C", saffron: "FF9933", saffronDk: "B35400",
   chakra: "1A2F8F", green: "138808", greenDk: "0E6B06", ink: "1E293B", muted: "5B6678", line: "E3E7EE", panel: "F5F7FA", white: "FFFFFF",
   goldTint: "F7EFD8", saffTint: "FFF1E3", chakTint: "E9ECF8", greenTint: "E8F5E6", navyTint: "E8ECF3", navyMid: "16305A" };
-const THEME = { name: "AlgoProfessor Tricolour", headFontFace: "Cambria", bodyFontFace: "Calibri",
+const THEME = { name: "AlgoProfessor Tricolour", headFontFace: "Times New Roman", bodyFontFace: "Times New Roman",
   colors: { dk1: HEX.navy, lt1: HEX.white, dk2: HEX.navy2, lt2: HEX.panel, accent1: HEX.gold, accent2: HEX.saffron, accent3: HEX.green,
     accent4: HEX.chakra, accent5: HEX.goldDk, accent6: HEX.muted, hlink: HEX.chakra, folHlink: HEX.navy2 } };
 const TR = { core: { name: "Core AI Track", col: HEX.navy, tint: HEX.navyTint }, em: { name: "Emerging Technologies Track", col: HEX.green, tint: HEX.greenTint },
@@ -102,11 +102,11 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
   s.addShape(S.ROUNDED_RECTANGLE, { x: 0.6, y: 0.5, w: 1.9, h: 1.2, rectRadius: 0.12, fill: { color: HEX.white }, line: { color: HEX.white }, objectName: "logo badge" });
   logo(s, 0.72, 0.58, 1.66);
   s.addText("INDUSTRY-ALIGNED COURSE SYLLABUS  ·  2026–27", { x: 0.6, y: 2.05, w: 7.6, h: 0.35, fontSize: 14, bold: true, color: HEX.gold, charSpacing: 2, margin: 0, isTextBox: true });
-  s.addText("Enterprise AI Product Development", { x: 0.6, y: 2.45, w: 7.9, h: 1.9, fontFace: "Cambria", fontSize: 50, bold: true, color: HEX.white, margin: 0, valign: "top", isTextBox: true });
+  s.addText("Enterprise AI Product Development", { x: 0.6, y: 2.45, w: 7.9, h: 1.9, fontFace: "Times New Roman", fontSize: 50, bold: true, color: HEX.white, margin: 0, valign: "top", isTextBox: true });
   s.addText(`${N} courses  ·  3 tracks  ·  skills, jobs & salaries  ·  20 products`, { x: 0.6, y: 4.4, w: 7.8, h: 0.45, fontSize: 20, color: "D9DFEA", margin: 0, isTextBox: true });
   ribbon(s, 0.6, 5.12);
   s.addText([{ text: "Dr S Satyanarayana Ph.D., PDF(AI), FARSC", options: { bold: true, fontSize: 18, color: HEX.white, breakLine: true } },
-    { text: "Founder, CEO & Chief Agentic AI Scientist · AlgoProfessor AI R&D Solutions, Hyderabad", options: { fontSize: 13, color: "C9D3E3" } }],
+    { text: "Agentic AI Scientist · Founder & CEO, AlgoProfessor · Creator of AlgoLang", options: { fontSize: 13, color: "C9D3E3" } }],
     { x: 0.6, y: 5.45, w: 8.0, h: 0.8, margin: 0, isTextBox: true });
   s.addText("cto@algoprofessor.com   ·   drssnaiml1-cell.github.io/enterprise-ai-syllabus", { x: 0.6, y: 6.45, w: 8.0, h: 0.35, fontSize: 13, bold: true, color: HEX.gold, margin: 0, isTextBox: true });
   chakra(s, 10.55, 3.75, 2.15, "3E5BD8", 1.1);
@@ -117,12 +117,12 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
   s = content("Introduction");
   s.addText("The gap every university must close by 2035", { placeholder: "title" });
   s.addShape(S.ROUNDED_RECTANGLE, { x: 0.6, y: 1.55, w: 5.6, h: 1.55, rectRadius: 0.12, fill: { color: HEX.panel }, line: { color: HEX.line }, objectName: "then card" });
-  s.addText([{ text: "Employers used to ask", options: { fontSize: 14, color: HEX.muted, breakLine: true } }, { text: "“Did you study AI?”", options: { fontFace: "Cambria", fontSize: 26, bold: true, color: HEX.navy } }],
+  s.addText([{ text: "Employers used to ask", options: { fontSize: 14, color: HEX.muted, breakLine: true } }, { text: "“Did you study AI?”", options: { fontFace: "Times New Roman", fontSize: 26, bold: true, color: HEX.navy } }],
     { x: 0.6, y: 1.55, w: 5.6, h: 1.55, align: "center", valign: "middle", isTextBox: true });
   s.addShape(S.DOWN_ARROW, { x: 3.05, y: 3.25, w: 0.7, h: 0.65, fill: { color: HEX.gold }, line: { color: HEX.gold }, objectName: "shift arrow" });
   s.addShape(S.ROUNDED_RECTANGLE, { x: 0.6, y: 4.05, w: 5.6, h: 2.3, rectRadius: 0.12, fill: { color: HEX.navy }, line: { color: HEX.navy }, shadow: shadow(), objectName: "now card" });
   s.addText([{ text: "Employers now ask", options: { fontSize: 14, color: HEX.gold, bold: true, breakLine: true } },
-    { text: "“What AI product have you built, deployed and governed?”", options: { fontFace: "Cambria", fontSize: 26, bold: true, color: HEX.white } }],
+    { text: "“What AI product have you built, deployed and governed?”", options: { fontFace: "Times New Roman", fontSize: 26, bold: true, color: HEX.white } }],
     { x: 0.85, y: 4.05, w: 5.1, h: 2.3, align: "center", valign: "middle", isTextBox: true });
   const gap = [["FaUsers", "Every graduate will work beside AI", "Engineering, science and management graduates will use AI daily; many will build it."],
     ["FaChartBar", "First movers lead", "Universities that close the gap first lead in placements, research, accreditation and rankings."],
@@ -149,7 +149,7 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
     const col = [HEX.saffron, HEX.chakra, HEX.green][i % 3], tc = [HEX.saffronDk, HEX.chakra, HEX.greenDk][i % 3];
     s.addShape(S.ROUNDED_RECTANGLE, { x, y, w: 3.9, h: 1.65, rectRadius: 0.1, fill: { color: HEX.white }, line: { color: HEX.line }, shadow: shadow(), objectName: "stat card" });
     await circleIcon(s, x + 0.3, y + 0.5, 0.65, col, stats[i][2]);
-    s.addText(String(stats[i][0]), { x: x + 1.15, y: y + 0.2, w: 2.6, h: 0.85, fontFace: "Cambria", fontSize: 44, bold: true, color: tc, margin: 0, valign: "middle", isTextBox: true });
+    s.addText(String(stats[i][0]), { x: x + 1.15, y: y + 0.2, w: 2.6, h: 0.85, fontFace: "Times New Roman", fontSize: 44, bold: true, color: tc, margin: 0, valign: "middle", isTextBox: true });
     s.addText(stats[i][1], { x: x + 1.15, y: y + 1.05, w: 2.6, h: 0.4, fontSize: 15, color: HEX.muted, margin: 0, isTextBox: true });
   }
   s.addNotes("Headline numbers. Each course is 45 lecture plus 30 lab hours with eight labs and five Bloom-mapped course outcomes.");
@@ -191,7 +191,7 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
   arcStats.forEach(([n, a, b], i) => {
     const x = 0.6 + i * 3.08;
     s.addShape(S.ROUNDED_RECTANGLE, { x, y: 3.85, w: 2.88, h: 2.0, rectRadius: 0.1, fill: { color: HEX.white }, line: { color: HEX.line }, shadow: shadow(), objectName: "arc stat" });
-    s.addText(n, { x, y: 4.0, w: 2.88, h: 0.85, fontFace: "Cambria", fontSize: 44, bold: true, color: HEX.goldDk, align: "center", margin: 0, isTextBox: true });
+    s.addText(n, { x, y: 4.0, w: 2.88, h: 0.85, fontFace: "Times New Roman", fontSize: 44, bold: true, color: HEX.goldDk, align: "center", margin: 0, isTextBox: true });
     s.addText([{ text: a, options: { bold: true, fontSize: 16, color: HEX.navy, breakLine: true } }, { text: b, options: { fontSize: 13, color: HEX.muted } }],
       { x: x + 0.15, y: 4.9, w: 2.58, h: 0.8, align: "center", margin: 0, isTextBox: true });
   });
@@ -306,7 +306,7 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
         : p.plus.includes(c.num) ? { text: "○", options: { color: hdrColor(c), fill: { color: TR[c.track].tint }, align: "center", fontSize: 13, bold: true } }
           : { text: "", options: { fill: { color: band } } })]);
   });
-  s.addTable(rows, { x: 0.6, y: 1.35, w: 12.13, colW: [3.65].concat(Array(N).fill((12.13 - 3.65) / N)), rowH: 0.355, border: { type: "solid", pt: 0.75, color: "FFFFFF" }, valign: "middle", fontFace: "Calibri", margin: [0.02, 0.06, 0.02, 0.06] });
+  s.addTable(rows, { x: 0.6, y: 1.35, w: 12.13, colW: [3.65].concat(Array(N).fill((12.13 - 3.65) / N)), rowH: 0.355, border: { type: "solid", pt: 0.75, color: "FFFFFF" }, valign: "middle", fontFace: "Times New Roman", margin: [0.02, 0.06, 0.02, 0.06] });
   const mLeg = [["●  Core course", HEX.navy], ["○  Recommended extra", HEX.muted]];
   s.addText([{ text: "●", options: { color: HEX.navy, bold: true } }, { text: " core course (cell coloured by track)     ", options: { color: HEX.ink } },
     { text: "○", options: { color: HEX.goldDk, bold: true } }, { text: " recommended extra     ", options: { color: HEX.ink } },
@@ -356,7 +356,7 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
     const x = 0.6 + (i % 5) * 2.47, y = 1.4 + Math.floor(i / 5) * 2.72;
     s.addShape(S.ROUNDED_RECTANGLE, { x, y, w: 2.3, h: 2.55, rectRadius: 0.1, fill: { color: HEX.white }, line: { color: HEX.line }, shadow: shadow(), objectName: "product card" });
     await circleIcon(s, x + 0.18, y + 0.18, 0.6, [HEX.saffron, HEX.chakra, HEX.green][i % 3], PROD_ICON[i]);
-    s.addText(String(p.id).padStart(2, "0"), { x: x + 1.3, y: y + 0.12, w: 0.85, h: 0.6, fontFace: "Cambria", fontSize: 26, bold: true, color: HEX.gold, align: "right", margin: 0, isTextBox: true });
+    s.addText(String(p.id).padStart(2, "0"), { x: x + 1.3, y: y + 0.12, w: 0.85, h: 0.6, fontFace: "Times New Roman", fontSize: 26, bold: true, color: HEX.gold, align: "right", margin: 0, isTextBox: true });
     s.addText(p.domain, { x: x + 0.18, y: y + 0.85, w: 1.98, h: 0.45, fontSize: 10, bold: true, color: HEX.goldDk, margin: 0, valign: "top", isTextBox: true });
     s.addText(p.name, { x: x + 0.18, y: y + 1.3, w: 1.98, h: 0.9, fontSize: 12.5, bold: true, color: HEX.navy, margin: 0, valign: "top", isTextBox: true });
     s.addText("Courses " + p.courses.join(", "), { x: x + 0.18, y: y + 2.18, w: 1.98, h: 0.3, fontSize: 10, color: HEX.muted, margin: 0, isTextBox: true });
@@ -384,7 +384,7 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
 
   // unicorn grid (dark)
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Products" });
-  s.addText("Unicorn track: 10 frontier products", { x: 0.6, y: 0.32, w: 11.4, h: 0.8, fontFace: "Cambria", fontSize: 30, bold: true, color: HEX.white, margin: 0, valign: "middle", isTextBox: true });
+  s.addText("Unicorn track: 10 frontier products", { x: 0.6, y: 0.32, w: 11.4, h: 0.8, fontFace: "Times New Roman", fontSize: 30, bold: true, color: HEX.white, margin: 0, valign: "middle", isTextBox: true });
   s.addText("Modelled on 2026's unicorn categories. Each starts as a 12-week team MVP and grows into a venture-scale platform.", { x: 0.6, y: 1.05, w: 12.1, h: 0.35, fontSize: 14, color: "C9D3E3", margin: 0, isTextBox: true });
   for (const [i, u] of U.products.entries()) {
     const x = 0.6 + (i % 5) * 2.47, y = 1.6 + Math.floor(i / 5) * 2.65;
@@ -454,7 +454,7 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
     const x = 0.6 + (i % 5) * 2.47, y = 1.45 + Math.floor(i / 5) * 1.75;
     s.addShape(S.ROUNDED_RECTANGLE, { x, y, w: 2.3, h: 1.55, rectRadius: 0.1, fill: { color: HEX.white }, line: { color: HEX.line }, shadow: shadow(), objectName: "service card" });
     await circleIcon(s, x + 0.18, y + 0.2, 0.55, [HEX.saffron, HEX.chakra, HEX.green][i % 3], ic);
-    s.addText(String(i + 1).padStart(2, "0"), { x: x + 1.4, y: y + 0.15, w: 0.75, h: 0.5, fontFace: "Cambria", fontSize: 22, bold: true, color: HEX.gold, align: "right", margin: 0, isTextBox: true });
+    s.addText(String(i + 1).padStart(2, "0"), { x: x + 1.4, y: y + 0.15, w: 0.75, h: 0.5, fontFace: "Times New Roman", fontSize: 22, bold: true, color: HEX.gold, align: "right", margin: 0, isTextBox: true });
     s.addText(t, { x: x + 0.18, y: y + 0.85, w: 1.98, h: 0.62, fontSize: 12.5, bold: true, color: HEX.navy, margin: 0, valign: "top", isTextBox: true });
   }
   const em = [["Pilot", "1–2 courses, FDP, lab manual and GitHub repository for one department", HEX.saffron],
@@ -496,7 +496,7 @@ const rng = (s) => { const m = String(s).match(/\d+/g).map(Number); return [m[0]
   s = pres.addSlide({ masterName: "DARK", sectionTitle: "Partnership" });
   chakra(s, 6.667, 1.35, 0.72, "3E5BD8", 0.8);
   s.addText("PARTNER WITH ALGOPROFESSOR", { x: 1.0, y: 2.3, w: 11.33, h: 0.4, fontSize: 15, bold: true, color: HEX.gold, align: "center", charSpacing: 2, margin: 0, isTextBox: true });
-  s.addText("Build an AI-Ready University for 2026–2035", { x: 1.0, y: 2.75, w: 11.33, h: 1.0, fontFace: "Cambria", fontSize: 40, bold: true, color: HEX.white, align: "center", margin: 0, isTextBox: true });
+  s.addText("Build an AI-Ready University for 2026–2035", { x: 1.0, y: 2.75, w: 11.33, h: 1.0, fontFace: "Times New Roman", fontSize: 40, bold: true, color: HEX.white, align: "center", margin: 0, isTextBox: true });
   s.addText("Vice-Chancellors, Deans and HoDs: let's schedule a curriculum consultation.", { x: 1.0, y: 3.8, w: 11.33, h: 0.45, fontSize: 18, color: "D9DFEA", align: "center", margin: 0, isTextBox: true });
   s.addShape(S.ROUNDED_RECTANGLE, { x: 3.67, y: 4.5, w: 6.0, h: 1.3, rectRadius: 0.12, fill: { color: HEX.navyMid }, line: { color: HEX.gold, width: 1.5 }, objectName: "contact card" });
   s.addText([{ text: "cto@algoprofessor.com", options: { fontSize: 24, bold: true, color: HEX.gold, breakLine: true } }, { text: "www.algoprofessor.com   ·   campus.algoprofessor.com", options: { fontSize: 15, color: HEX.white } }],
