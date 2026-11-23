@@ -12,4 +12,7 @@ prod=json.load(open(os.path.join(os.path.dirname(sys.argv[1]),'products.json')))
 t=t.replace('__PRODUCTS__',json.dumps(prod,ensure_ascii=False).replace('</','<\\/'))
 uni=json.load(open(os.path.join(os.path.dirname(sys.argv[1]),'unicorn.json')))
 t=t.replace('__UNICORN__',json.dumps(uni,ensure_ascii=False).replace('</','<\\/'))
+_l=os.path.join(os.path.dirname(sys.argv[1]),'lang_courses.json')
+lc=json.load(open(_l)) if os.path.exists(_l) else []
+t=t.replace('__LANGCOURSES__',json.dumps(lc,ensure_ascii=False).replace('</','<\\/'))
 open(sys.argv[3],'w').write(t)

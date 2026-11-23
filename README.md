@@ -42,7 +42,7 @@ Every course follows one arc: **foundations → core methods → advanced method
 
 **🌐 Explore it as a 3D interactive website:** **https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/** (click any course in the 3D orbit to see its units, labs, outcomes, skills, jobs, salaries and the products it builds).
 
-**💻 Companion syllabus, Enterprise Programming Languages:** [Programming_Languages_Syllabus.pdf](programming-languages/Programming_Languages_Syllabus.pdf) (23 pages): five courses in **Python, Go, Rust, Scala and Java**, each with five units and hands-on outcomes, industry tools, 8 labs, CO–Bloom mapping, an enterprise capstone, certifications and a 2026–2035 outlook. Course-by-course summary in [`programming-languages/`](programming-languages/), LaTeX source in [`programming-languages/latex/`](programming-languages/latex/).
+**💻 Companion syllabus, Enterprise Programming Languages:** [Programming_Languages_Syllabus.pdf](programming-languages/Programming_Languages_Syllabus.pdf) (23 pages): five courses in **Python, Go, Rust, Scala and Java**, each with five units and hands-on outcomes, industry tools, 8 labs, CO–Bloom mapping, an enterprise capstone, certifications and a 2026–2035 outlook. Course-by-course summary in [`programming-languages/`](programming-languages/), LaTeX source in [`programming-languages/latex/`](programming-languages/latex/), and all five courses on the website at [#proglang](https://drssnaiml1-cell.github.io/enterprise-ai-syllabus/#proglang).
 
 ## Core AI Track
 
@@ -1367,6 +1367,7 @@ data/extra_courses.json     course 16: Forward Deployed Engineering
 data/careers.json           skills, jobs, companies, salaries and career pathways
 data/products.json          10 real-time enterprise product blueprints
 data/unicorn.json           10 unicorn-track frontier product blueprints
+data/lang_courses.json      Python, Go, Rust, Scala, Java courses for the website (from the LaTeX source)
 src/template.html           website template
 scripts/parse.py            extracts course data from the syllabus text
 scripts/build.py            builds index.html from the template and data
@@ -1377,7 +1378,7 @@ slides/                     Beamer source + PDF, and the PowerPoint deck (.pptx 
 scripts/make_slides.py      builds the Beamer presentation source from the data
 scripts/make_pptx.js        builds the PowerPoint deck (pptxgenjs)
 programming-languages/      companion syllabus: Python, Go, Rust, Scala, Java (PDF, README, latex/ source)
-scripts/make_lang_readme.py builds programming-languages/README.md from its LaTeX source
+scripts/make_lang_readme.py builds programming-languages/README.md and data/lang_courses.json from its LaTeX source
 assets/                     AlgoProfessor logo
 assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the site needs no CDN
 ```
@@ -1385,6 +1386,7 @@ assets/vendor/              Three.js 0.187 (MIT) for the 3D hero, bundled so the
 To rebuild the website and this README after editing any file in `data/` or the template:
 
 ```bash
+python3 scripts/make_lang_readme.py
 python3 scripts/build.py data/courses.json src/template.html index.html
 python3 scripts/make_readme.py
 python3 scripts/make_latex.py

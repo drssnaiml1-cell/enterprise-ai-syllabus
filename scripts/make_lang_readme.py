@@ -1,7 +1,9 @@
-"""Build programming-languages/README.md from programming-languages/latex/lang-courses.tex.
+"""Build programming-languages/README.md and data/lang_courses.json (used by the website)
+from programming-languages/latex/lang-courses.tex.
 
 Usage:  python3 scripts/make_lang_readme.py
 """
+import json
 import os
 import re
 
@@ -124,4 +126,12 @@ w("---\n\n**Dr S Satyanarayana** Ph.D., PDF(AI), FARSC · Founder, CEO & Chief A
 w('<p align="center"><sub>© 2026 Dr S Satyanarayana, AlgoProfessor AI R&amp;D Solutions. All rights reserved.</sub></p>')
 
 open(os.path.join(DIR, "README.md"), "w", encoding="utf-8").write("\n".join(o) + "\n")
-print(f"programming-languages/README.md written: {len(courses)} courses, {sum(len(c['units']) for c in courses)} units")
+LANG = {"1": "Python", "2": "Go", "3": "Rust", "4": "Scala", "5": "Java"}
+site = [dict(num=int(c["num"]), lang=LANG[c["num"]], code=c["code"], title=c["title"], tagline=c["tagline"],
+             prereq=c["prereq"], units=[dict(r=r, t=t, topics=tp, out=out) for r, t, tp, out in c["units"]],
+             capstone=c["capstone"].replace("**", ""), roles=c["roles"],
+             certs=[dict(name=n, issuer=i, level=l, units=u) for n, i, l, u in c["certs"]],
+             outlook=[dict(d=d, t=t) for d, t in c["outlook"]],
+             cos=[dict(co=co, txt=t, lvl=l) for co, t, l in c["cos"]]) for c in courses]
+json.dump(site, open(os.path.join(ROOT, "data", "lang_courses.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+print(f"programming-languages/README.md written: {len(courses)} courses, {sum(len(c['units']) for c in courses)} units; data/lang_courses.json written")
